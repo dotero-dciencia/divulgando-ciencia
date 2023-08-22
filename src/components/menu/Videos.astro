@@ -1,0 +1,56 @@
+<header class="py-3 flex items-center fixed top-0 w-full justify-center" id="landing-header">
+    <nav class="">
+        <ul class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-3 [&>li>a]:font-poppins [&>li>a]:py-2">
+            <li>
+                <a href="/articulos">
+                    Artículos
+                </a>
+            </li>
+            <li>
+                <a href="/videos" class="bg-faded-black backdrop-blur-lg rounded px-2 py-3">
+                    Vídeos
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div
+        id="menu-backdrop"
+        class={`absolute bg-faded-black backdrop-blur-lg rounded left-[var(--left)] top-[var(--top)] w-[var(--width)] h-[var(--height)] transition-all duration-300 ease-in-out opacity-0 -z-10
+        `}
+    />
+</header> 
+
+<script>
+    const listItem = document.querySelectorAll("#landing-header li")
+    const menuBackdrop = document.querySelector("#menu-backdrop") as HTMLElement
+
+    listItem.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+            const { left, top, width, height } = item.getBoundingClientRect()
+            const { clientHeight, clientWidth } = item
+
+            menuBackdrop.style.setProperty("--left", `${left}px`)
+            menuBackdrop.style.setProperty("--top", `${top}px`) 
+            menuBackdrop.style.setProperty("--width", `${width}px`)
+            menuBackdrop.style.setProperty("--height", `${height}px`)
+            menuBackdrop.style.opacity = "1"
+            menuBackdrop.style.visibility = "visible"
+        })
+
+        item.addEventListener("mouseleave", () => {
+            menuBackdrop.style.opacity = "0"
+            menuBackdrop.style.visibility = "hidden"
+        })
+    })
+</script>
+
+<style is:global>
+    @font-face{
+        font-family: 'Poppins';
+        src: url("/fonts/Poppins-Medium.ttf") format("ttf");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+</style>
