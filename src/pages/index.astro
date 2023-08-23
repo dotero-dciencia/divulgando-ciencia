@@ -5,10 +5,17 @@ const title = "Inicio";
 
 <Layout title={title}>
     <section class="bg-principal-black h-screen w-screen text-center relative overflow-hidden text-principal-white">
-        <h1>divulgandociencia.com</h1>
-        <h3>Descubre el poder de la divulgación científica abierta</h3>
-        <div>¿Qué quieres aprender hoy?</div>
+        <header class="z-30 relative">
+            <h1 class="text-5xl font-semibold">divulgandociencia.com</h1>
+            <h3 class="text-xl">Descubre el poder de la divulgación científica abierta</h3>
+        </header>
 
-        <img src="/images/landing-page/portada.webp"/>
+        <footer class="z-30 relative">
+            <div>¿Qué quieres aprender hoy?</div>
+        </footer>
+
+        <div class="absolute top-0 bottom-0 z-10">
+            <img src="/images/landing-page/portada.webp"/>
+        </div>
     </section>
 </Layout>
