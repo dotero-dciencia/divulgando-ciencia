@@ -4,18 +4,18 @@ const title = "Inicio";
 ---
 
 <Layout title={title}>
-    <section class="h-screen w-screen text-center relative overflow-hidden text-principal-white flex">
+    <section class="bg-principal-black h-screen w-screen text-center relative overflow-hidden text-principal-white flex">
         <section class="m-auto">
             <header class="z-30 relative">
-                <h1 class="text-5xl font-semibold">
+                <h1 class="text-8xl font-semibold mb-2">
                     divulgandociencia.com
                 </h1>
-                <h3 class="text-xl">
+                <h3 class="text-2xl mt-2 mb-16">
                     Descubre el poder de la divulgación científica abierta
                 </h3>
             </header>
 
-            <footer class="z-30 relative flex font-poppins text-principal-white">
+            <footer class="z-30 relative flex font-poppins text-principal-white w-full place-content-center">
                 <div class="flex px-3 py-2 rounded-[0.5rem] bg-faded-white gap-3 text-base">
                     ¿Qué quieres aprender hoy?
                     <span class="search-icon">
@@ -27,7 +27,7 @@ const title = "Inicio";
             </footer>
         </section>
 
-        <div class="absolute top-0 bottom-0 z-10">
+        <div class="absolute top-0 bottom-0 z-10 blur opacity-40">
             <img src="/images/landing-page/portada.webp"/>
         </div>
     </section>
