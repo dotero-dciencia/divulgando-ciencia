@@ -1,5 +1,11 @@
+---
+const {contenido} = Astro.props
+---
+
 <a class="group w-[18%]" href="/mi-articulo">
-    <img src="/images/contenido/la-idea-de-eratostenes/imagen-de-portada.webp" class="w-full rounded-lg h-40 group-hover:scale-110 transition-all">
+    <div id="image" class="bg-principal-black group-hover:scale-110 rounded-lg transition-all">
+        <img id="portada" src="/images/contenido/la-idea-de-eratostenes/imagen-de-portada.webp" class="w-full rounded-lg h-40 opacity-60">
+    </div>
     <h6 class="text-dark-math font-medium mt-4 dark:text-light-math">
         MATEMÁTICAS
     </h6>
@@ -12,3 +18,17 @@
         <p>3 agosto, 2023</p>
     </footer>
 </a>
+
+<script>
+    const image = document.querySelector("#image") as HTMLElement
+    const portada = document.querySelector("#portada") as HTMLElement
+    if (contenido === "article"){
+        image.style.opacity=0;
+        portada.style.opacity=0;
+        
+    } else if (contenido === "video"){
+        image.style.opacity=1;
+        portada.style.opacity=0.6;
+    }
+    console.log(contenido)
+</script>
