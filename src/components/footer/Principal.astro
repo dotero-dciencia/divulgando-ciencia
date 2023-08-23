@@ -1,4 +1,4 @@
-<footer class="w-full items-center py-4 px-4 h-full flex">
+<footer class="w-full items-center py-4 px-4 h-full flex bg-principal-white dark:bg-principal-dark text-principal-black dark:text-principal-white">
     <ul class="flex flex-grow basis-0">
         <li>
             <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +65,11 @@
   
         const isDark = element.classList.contains("dark");
         localStorage.setItem("theme", isDark ? "dark" : "light");
+
+        console.log(isDark ? "dark" : "light");
     }
   
     document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
+
+    
 </script>
