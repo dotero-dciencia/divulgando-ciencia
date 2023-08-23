@@ -4,8 +4,10 @@ const title = "Inicio";
 ---
 
 <Layout title={title}>
+    <!--Parte principal del landing-->
     <section class="bg-principal-black h-screen w-screen text-center relative overflow-hidden text-principal-white flex">
         <section class="m-auto">
+            <!--Texto (título y subtítulo)-->
             <header class="z-30 relative">
                 <h1 class="text-8xl font-semibold mb-8">
                     divulgandociencia.com
@@ -15,6 +17,7 @@ const title = "Inicio";
                 </h3>
             </header>
 
+            <!--Botón de búsqueda-->
             <footer class="z-30 relative flex font-poppins w-full place-content-center">
                 <div class="flex px-8 py-3 bg-faded-white gap-3 text-xl font-normal rounded-2xl text-principal-white">
                     ¿Qué quieres aprender hoy?
@@ -27,6 +30,7 @@ const title = "Inicio";
             </footer>
         </section>
 
+        <!--Imagen de fondo-->
         <div class="absolute top-0 bottom-0 z-10 blur opacity-50 bg-auto bg-center">
             <img src="/images/landing-page/portada.webp"/>
         </div>
