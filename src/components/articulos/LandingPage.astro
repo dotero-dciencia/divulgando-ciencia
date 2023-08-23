@@ -20,15 +20,13 @@ const {contenido} = Astro.props
 </a>
 
 <script>
+    const contenido = "article";
     const image = document.querySelector("#image") as HTMLElement
     const portada = document.querySelector("#portada") as HTMLElement
     if (contenido === "article"){
-        image.style.opacity=0;
-        portada.style.opacity=0;
+        portada.style.opacity=1;
         
     } else if (contenido === "video"){
-        image.style.opacity=1;
         portada.style.opacity=0.6;
     }
-    console.log(contenido)
 </script>
