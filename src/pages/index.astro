@@ -1,7 +1,40 @@
 ---
-import PrincipalLayout from "../layouts/PrincipalLayout.astro";
+import Layout from "../layouts/Layout.astro";
 const title = "Inicio";
 ---
 
-<PrincipalLayout title={title}>
-</PrincipalLayout>
+<Layout title={title}>
+    <!--Parte principal del landing-->
+    <section class="bg-principal-black h-screen w-screen text-center relative overflow-hidden text-principal-white flex">
+        <section class="m-auto">
+            <!--Texto (título y subtítulo)-->
+            <header class="z-30 relative">
+                <h1 class="text-8xl font-semibold mb-8">
+                    divulgandociencia.com
+                </h1>
+                <h3 class="text-2xl mb-16 font-normal">
+                    Descubre el poder de la divulgación científica abierta
+                </h3>
+            </header>
+
+            <!--Botón de búsqueda-->
+            <footer class="z-30 relative flex font-poppins w-full place-content-center">
+                <div class="flex px-8 py-3 bg-faded-white gap-3 text-xl font-normal rounded-2xl text-principal-white">
+                    ¿Qué quieres aprender hoy?
+                    <span class="search-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-full align-middle">
+                            <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"/>
+                        </svg>
+                    </span>
+                </div>
+            </footer>
+        </section>
+
+        <!--Imagen de fondo-->
+        <div class="absolute top-0 bottom-0 z-10 blur opacity-50 bg-auto bg-center">
+            <img src="/images/landing-page/portada.webp"/>
+        </div>
+    </section>
+    <!--Zona de los artículos-->
+    <!--Footer-->
+</Layout>
