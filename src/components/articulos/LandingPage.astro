@@ -5,7 +5,7 @@ const {contenido} = Astro.props
 <a class="group w-[18%]" href="/mi-articulo">
     <div class="bg-principal-black group-hover:scale-110 rounded-lg transition-all relative w-full">
         <img id="image" src="/images/contenido/la-idea-de-eratostenes/imagen-de-portada.webp" class="w-full rounded-lg h-40 opacity-60">
-        <div id="play" class="absolute top-0 bottom-0 w-full h-full items-center justify-center flex">
+        <div id="play" class="absolute top-0 bottom-0 w-full h-full items-center justify-center hidden">
             <svg width="96" height="96" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#f2f2f2" d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.736 4 21.276 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648l12.812 6.968Z"/>
             </svg>
@@ -22,17 +22,17 @@ const {contenido} = Astro.props
         <p>·</p>
         <p>3 agosto, 2023</p>
     </footer>
+    <div id="contenedor" data-document-path={contenido}/>
 </a>
 
 <script>
-    const contenido = "article";
-    const play = document.querySelector("#play") as HTMLElement
-    const image = document.querySelector("#image") as HTMLElement
-    if (contenido === "article"){
-        image.style.opacity=1;
-        play.style.display="none";
-    } else if (contenido === "video"){
+    const container = document.querySelector('#contenedor');
+    const content = container.dataset.documentPath;
+    const play = document.querySelector("#play") as HTMLElement;
+    const image = document.querySelector("#image") as HTMLElement;
+    if (content === "video"){
         image.style.opacity=0.6;
-        play.style.display="inline";
+        play.style.display="flex";
     }
+    console.log({contenido})
 </script>
