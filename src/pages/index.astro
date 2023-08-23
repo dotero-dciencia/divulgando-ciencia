@@ -1,7 +1,14 @@
 ---
-import PrincipalLayout from "../layouts/PrincipalLayout.astro";
+import Layout from "../layouts/Layout.astro";
 const title = "Inicio";
 ---
 
-<PrincipalLayout title={title}>
-</PrincipalLayout>
+<Layout title={title}>
+    <section class="bg-principal-black h-screen w-screen text-center relative overflow-hidden text-principal-white">
+        <h1>divulgandociencia.com</h1>
+        <h3>Descubre el poder de la divulgación científica abierta</h3>
+        <div>¿Qué quieres aprender hoy?</div>
+
+        <img src="/images/landing-page/portada.webp"/>
+    </section>
+</Layout>
