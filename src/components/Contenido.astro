@@ -1,5 +1,5 @@
 ---
-const {contenido = 'article', autor, titulo, ciencia, fecha, duracion, imagen} = Astro.props
+const {contenido = 'article', autor, titulo, ciencia, fecha, duracion, imagen, design} = Astro.props
 ---
 <a class="group w-[18%]" href="/mi-articulo" id={contenido}>
     <div class="bg-principal-black group-hover:scale-110 rounded-lg transition-all relative w-full">
@@ -37,10 +37,10 @@ const {contenido = 'article', autor, titulo, ciencia, fecha, duracion, imagen} =
             display:flex;
         }
         .metadata-article{
-            display:flex;
+            display:none;
         }
         .metadata-video{
-            display:none;
+            display:inline;
         }
     }
 
@@ -52,10 +52,10 @@ const {contenido = 'article', autor, titulo, ciencia, fecha, duracion, imagen} =
             display:none;
         }
         .metadata-article{
-            display:none;
+            display:flex;
         }
         .metadata-video{
-            display:inline;
+            display:none;
         }
     }
     #matemáticas{
@@ -81,5 +81,10 @@ const {contenido = 'article', autor, titulo, ciencia, fecha, duracion, imagen} =
     }
     #científicos{
         color:#004f3e;
+    }
+    .dark{
+        #matemáticas{
+            display:none;
+        }
     }
 </style>
