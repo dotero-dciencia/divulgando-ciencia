@@ -11,7 +11,7 @@ const {contenido = 'article', autor, titulo, ciencia, fecha, duracion} = Astro.p
             </svg>
         </div>
     </div>
-    <h6 class="text-dark-math font-medium mt-4 dark:text-light-math uppercase">
+    <h6 class={ciencia} id={ciencia}>
         {ciencia}
     </h6>
     <h2 class="text-[1.3rem] font-medium text-principal-black dark:text-principal-white">
@@ -58,5 +58,55 @@ const {contenido = 'article', autor, titulo, ciencia, fecha, duracion} = Astro.p
         .metadata-video{
             display:inline;
         }
-}
+    }
+    #matemáticas{
+        color:#004193;
+    }
+    #biología{
+        color:#005100;
+    }
+    #geología{
+        color:#6E3400;
+    }
+    #física{
+        color:#950000;
+    }
+    #química{
+        color:#820083;
+    }
+    #tecnología{
+        color:#623B00;
+    }
+    #programación{
+        color:#5a12b0;
+    }
+    #científicos{
+        color:#004f3e;
+    }
+    .dark{
+        #matemáticas{
+            color:#a8c6e3;
+        }
+        #biología{
+            color:#64db62;
+        }
+        #geología{
+            color:#e2bba5;
+        }
+        #física{
+            color:#ffaaa2;
+        }
+        #química{
+            color:#ff99ff;
+        }
+        #tecnología{
+            color:#f2ba48;
+        }
+        #programación{
+            color:#e9aaff;
+        }
+        #científicos{
+            color:#16dac0;
+        }
+    } 
 </style>

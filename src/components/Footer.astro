@@ -70,8 +70,6 @@ import ThemeIcon from "./ThemeIcon.astro";
   
         const isDark = element.classList.contains("dark");
         localStorage.setItem("theme", isDark ? "dark" : "light");
-
-        console.log(isDark ? "dark" : "light");
     }
   
     document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
