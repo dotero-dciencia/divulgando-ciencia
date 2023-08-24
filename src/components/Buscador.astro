@@ -1,23 +1,35 @@
-<div class="search-container flex items-center justify-center mt-">
-    <input type="text" id="search-input" class="p-2 border rounded-l border-none" placeholder="¿Qué quieres aprender hoy?">
-    <button id="search-button">
-        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"/>
-        </svg>
-    </button>
+---
+const {design} = Astro.props
+---
+
+<div id={design} class="search-container flex items-center justify-center">
+    <div class=" h-fit flex rounded">
+        <input type="text" id="search-input" class="w-72 p-2 py-3 border border-none focus:outline-none bg-faded-white rounded-l-lg placeholder-light-gray px-3 font-medium text-xl" placeholder="¿Qué quieres aprender hoy?">
+        <button id="search-button" class="py-2 pr-2 border-none cursor-pointer rounded-r-lg bg-faded-white">
+            <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"/>
+            </svg>
+        </button>
+    </div>
 </div>
 
 <style>
-
-
-#search-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    color: white;
-    cursor: pointer;
-    outline: none;
-}
-
+    #landing-page{
+        #search-input{
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 500;
+        }
+        #search-button{
+        }
+    }
+    #menu{
+        #search-input{
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 500;
+        }
+        #search-button{
+        }
+    }
 </style>
