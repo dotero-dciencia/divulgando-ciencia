@@ -33,22 +33,36 @@ const title = "Inicio";
 
         <!--Imagen de fondo-->
         <div class="absolute top-0 bottom-0 z-10 blur opacity-50 bg-auto bg-center">
-            <img src="/images/landing-page/portada.webp"/>
+            <img alt="Imagen de portada de divulgandociencia.com. Mujer escribiendo sobre una pizarra verde." src="/images/landing-page/portada.webp"/>
         </div>
     </section>
     <!--Zona de los artículos-->
-    <section class="w-full">
-        <div class="flex w-full gap-x-7 justify-center mt-7 h-full items-start">
+    <main class="w-full">
+        <section class="flex w-full gap-x-7 justify-center mt-7 h-full items-start">
             <Article contenido="article" ciencia="matemáticas" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
             <Article contenido="video" ciencia="biología" titulo="Título de la entrada" duracion="30:42" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
             <Article contenido="article" ciencia="geología" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
             <Article contenido="article" ciencia="física" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
-        </div>
-        <div class="flex w-full items-center gap-x-7 justify-center my-7">
+        </section>
+        <section class="flex w-full items-center gap-x-7 justify-center my-7">
             <Article contenido="article" ciencia="química" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
             <Article contenido="article" ciencia="tecnología" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
             <Article contenido="article" ciencia="programación" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
             <Article contenido="video" ciencia="científicos" titulo="Título de la entrada" duracion="21:03" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
-        </div>
-    </section>
+        </section>
+        <section class="flex w-full justify-end gap-x-3 px-36">
+            <a href="/articulos" class="bg-faded-black w-44 py-2 rounded-lg flex gap-x-1 h-full items-center hover:scale-110 transition-all justify-center">
+                Todos los artículos
+                <svg width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3zm0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5zm-1 5v5h-5v2h5v5h2v-5h5v-2h-5v-5h-2z"/>
+                </svg>
+            </a>
+            <a href="/videos" class="bg-faded-black w-44 py-2 rounded-lg flex gap-x-1 h-full items-center hover:scale-110 transition-all justify-center">
+                Todos los vídeos
+                <svg width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3zm0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5zm-1 5v5h-5v2h5v5h2v-5h5v-2h-5v-5h-2z"/>
+                </svg>
+            </a>
+        </section>
+    </main>
 </Layout>
