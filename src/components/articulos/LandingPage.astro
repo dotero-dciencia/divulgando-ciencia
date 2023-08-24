@@ -1,5 +1,5 @@
 ---
-const {contenido} = Astro.props
+const {contenido = 'article', autor, titulo, ciencia, fecha, duracion} = Astro.props
 ---
 
 <a class="group w-[18%]" href="/mi-articulo">
@@ -11,28 +11,44 @@ const {contenido} = Astro.props
             </svg>
         </div>
     </div>
-    <h6 class="text-dark-math font-medium mt-4 dark:text-light-math">
-        MATEMÁTICAS
+    <h6 class="text-dark-math font-medium mt-4 dark:text-light-math uppercase">
+        {ciencia}
     </h6>
     <h2 class="text-[1.3rem] font-medium text-principal-black dark:text-principal-white">
         La inteligencia artificial en la Olimpiada Matemática
     </h2>
-    <footer class="flex gap-x-1 text-dark-gray dark:text-light-gray">
-        <p>Autor</p>
-        <p>·</p>
-        <p>3 agosto, 2023</p>
+    <footer>
+        <div id="article" class="flex gap-x-1 text-dark-gray dark:text-light-gray">
+            <p>Autor</p>
+            <p>·</p>
+            <p>3 agosto, 2023</p>
+        </div>
+        <div id="video" class="hidden text-dark-gray dark:text-light-gray">
+            <p>Duración: 21:09</p>
+        </div>
     </footer>
-    <div id="contenedor" data-document-path={contenido}/>
+    <div id="contenedor" data-type={contenido}/>
+    <astro-greet data-content={contenido}>
+    </astro-greet>
 </a>
 
 <script>
-    const container = document.querySelector('#contenedor');
-    const content = container.dataset.documentPath;
-    const play = document.querySelector("#play") as HTMLElement;
-    const image = document.querySelector("#image") as HTMLElement;
-    if (content === "video"){
-        image.style.opacity=0.6;
-        play.style.display="flex";
+    class AstroGreet extends HTMLElement {
+      constructor() {
+        super();
+        let content = this.dataset.content;
+        console.log(content)
+        const play = document.querySelector("#play") as HTMLElement;
+        const image = document.querySelector("#image") as HTMLElement;
+        const article = document.querySelector("#article") as HTMLElement;
+        const video = document.querySelector("#video") as HTMLElement;
+        if (content === "video"){
+            console.log("true");
+            play.style.display="flex";
+            article.style.display="none";
+            video.style.display="inline";
+        }
+      }
     }
-    console.log({contenido})
+    customElements.define('astro-greet', AstroGreet);
 </script>
