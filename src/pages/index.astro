@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Article from "../components/articulos/LandingPage.astro";
+import Article from "../components/Contenido.astro";
 const title = "Inicio";
 ---
 
@@ -38,11 +38,11 @@ const title = "Inicio";
     </section>
     <!--Zona de los artículos-->
     <section class="w-full">
-        <div class="flex w-full items-center gap-x-7 justify-center mt-7 content-start h-full">
-            <Article contenido="video" ciencia="matemáticas"/>
-            <Article contenido="video"/>
-            <Article contenido="article"/>
-            <Article contenido="video"/>
+        <div class="flex w-full gap-x-7 justify-center mt-7 h-full items-start">
+            <Article contenido="video" ciencia="matemáticas" titulo="Las bacterias"/>
+            <Article contenido="video" ciencia="matemáticas" titulo="La Olimpiada Matemática"/>
+            <Article contenido="article" ciencia="matemáticas" titulo="La Raspberry Pi"/>
+            <Article contenido="video" ciencia="matemáticas" titulo="la espiral de Fibonaccim, famosa en todo el mundo"/>
         </div>
         <div class="flex w-full items-center gap-x-7 justify-center my-7">
             <Article/>
