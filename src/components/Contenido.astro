@@ -1,0 +1,118 @@
+---
+const {contenido = 'article', autor, titulo, ciencia, fecha, duracion, imagen, design} = Astro.props
+---
+<a class="group" href="/mi-articulo" id={design}>
+    <main id={contenido}>
+        <div class="bg-principal-black group-hover:scale-[1.075] rounded-lg transition-all relative w-full">
+            <img src={imagen} class="w-full rounded-lg image object-cover">
+            <div class="absolute top-0 bottom-0 w-full h-full items-center justify-center play">
+                <svg width="96" height="96" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#f2f2f2" d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.736 4 21.276 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648l12.812 6.968Z"/>
+                </svg>
+            </div>
+        </div>
+        <h6 class="font-medium uppercase mt-4" id={ciencia}>
+            {ciencia}
+        </h6>
+        <h2 class="text-[1.3rem] font-medium text-principal-black dark:text-principal-white title">
+            {titulo}
+        </h2>
+        <footer>
+            <div class="flex gap-x-1 text-dark-gray dark:text-light-gray metadata-article">
+                <p>{autor}</p>
+                <p>·</p>
+                <p>{fecha}</p>
+            </div>
+            <div class="hidden text-dark-gray dark:text-light-gray metadata-video">
+                <p>Duración: {duracion}</p>
+            </div>
+        </footer>
+    </main>
+</a>
+
+<style>
+    #video{
+        .image{
+            opacity:40%;
+        }
+        .play{
+            display:flex;
+        }
+        .metadata-article{
+            display:none;
+        }
+        .metadata-video{
+            display:inline;
+        }
+    }
+
+    #article{
+        .image{
+            opacity:100%;
+        }
+        .play{
+            display:none;
+        }
+        .metadata-article{
+            display:flex;
+        }
+        .metadata-video{
+            display:none;
+        }
+    }
+    #matemáticas{
+        color:#004193;
+    }
+    #biología{
+        color:#005100;
+    }
+    #geología{
+        color:#6E3400;
+    }
+    #física{
+        color:#950000;
+    }
+    #química{
+        color:#820083;
+    }
+    #tecnología{
+        color:#623B00;
+    }
+    #programación{
+        color:#5a12b0;
+    }
+    #científicos{
+        color:#004f3e;
+    }
+    .dark{
+        #matemáticas{
+            display:none;
+        }
+    }
+    #desktop-a-4{
+        width: 18%;
+        .image{
+            height:10rem;
+        }
+    }
+
+    #desktop-a-2-grande{
+        width: 48%;
+        .title{
+            font-size: 1.6rem;
+        }
+        .image{
+            height:16rem;
+        }
+    }
+
+    #desktop-a-2-mini{
+        width:28%;
+        .title{
+            font-size: 1.4rem;
+        }
+        .image{
+            height:16rem;
+        }
+    }
+</style>
