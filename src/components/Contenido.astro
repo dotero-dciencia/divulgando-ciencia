@@ -1,7 +1,6 @@
 ---
 const {contenido = 'article', autor, titulo, ciencia, fecha, duracion} = Astro.props
 ---
-
 <a class="group w-[18%]" href="/mi-articulo" id={contenido}>
     <div class="bg-principal-black group-hover:scale-110 rounded-lg transition-all relative w-full">
         <img src="/images/contenido/la-idea-de-eratostenes/imagen-de-portada.webp" class="w-full rounded-lg h-40 image">
@@ -11,7 +10,7 @@ const {contenido = 'article', autor, titulo, ciencia, fecha, duracion} = Astro.p
             </svg>
         </div>
     </div>
-    <h6 class={ciencia} id={ciencia}>
+    <h6 class="font-medium uppercase mt-4" id={ciencia}>
         {ciencia}
     </h6>
     <h2 class="text-[1.3rem] font-medium text-principal-black dark:text-principal-white">
@@ -83,30 +82,4 @@ const {contenido = 'article', autor, titulo, ciencia, fecha, duracion} = Astro.p
     #científicos{
         color:#004f3e;
     }
-    .dark{
-        #matemáticas{
-            color:#a8c6e3;
-        }
-        #biología{
-            color:#64db62;
-        }
-        #geología{
-            color:#e2bba5;
-        }
-        #física{
-            color:#ffaaa2;
-        }
-        #química{
-            color:#ff99ff;
-        }
-        #tecnología{
-            color:#f2ba48;
-        }
-        #programación{
-            color:#e9aaff;
-        }
-        #científicos{
-            color:#16dac0;
-        }
-    } 
 </style>
