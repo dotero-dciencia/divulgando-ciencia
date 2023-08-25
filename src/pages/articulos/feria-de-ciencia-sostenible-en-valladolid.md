@@ -24,11 +24,3 @@ El Club de Jóvenes Programadores de Valladolid y CREATICS organizan esta exposi
 Puedes ver todos los proyectos en creatics.fun, dirigido por Alfonso Sanz.
 
 Si quieres pasar un gran día interactuando con la ciencia, ¡te esperamos mañana en la Feria de Ciencia Sostenible de Valladolid!
-
-> Esta es una cita - Darío Otero
-
-```
-//config.js
-
-print("Hello world")
-```
