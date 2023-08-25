@@ -3,10 +3,10 @@ import PrincipalLayout from "./PrincipalLayout.astro";
 const{frontmatter} = Astro.props;
 ---
 
-<PrincipalLayout class="text-principal-black" title={frontmatter.title}>
-    <section class="w-full text-center m-auto px-64">
+<PrincipalLayout title={frontmatter.title}>
+    <section class="w-full text-center m-auto px-64 text-principal-black dark:text-principal-white">
         <h4 class="font-medium uppercase" id={frontmatter.ciencia}>{frontmatter.ciencia}</h4>
-        <h1 class="font-bold text-5xl leading-[3.25rem]">{frontmatter.titulo}</h1>
+        <h1 class="font-bold text-5xl leading-[3.25rem] dark:text-princi">{frontmatter.titulo}</h1>
         <section class="flex w-fit m-auto my-4 gap-x-3">
             <img alt="Foto de perfil del autor de esta entrada" class="w-12 h-12 object-cover rounded-full" src="/images/autores/dotero.jpg">
             <div class="flex-col text-left font-normal ">
@@ -20,7 +20,7 @@ const{frontmatter} = Astro.props;
         </section>
         <img alt={frontmatter.portadaAlt} class="w-full h-96 object-cover rounded-lg my-5" src="/images/landing-page/portada.webp"/>
     </section> 
-    <section class="px-64">
+    <section class="mx-64 text-principal-black dark:text-principal-white">
         <slot></slot>
     </section>
 </PrincipalLayout>
@@ -50,8 +50,28 @@ const{frontmatter} = Astro.props;
     #científicos{
         color:#004f3e;
     }
-    p{
-        margin-left: 16rem;
-        margin-right: 16rem;
+    :is(.dark #matemáticas) {
+        color:#a8c6e3
+    }
+    :is(.dark #biología) {
+        color:#64db62
+    }
+    :is(.dark #geología) {
+        color:#e2bba5
+    }
+    :is(.dark #física) {
+        color:#ffaaa2
+    }
+    :is(.dark #química) {
+        color:#ff99ff
+    }
+    :is(.dark #tecnología) {
+        color:#f2ba48
+    }
+    :is(.dark #programación) {
+        color:#e9aaff
+    }
+    :is(.dark #científicos) {
+        color:#16dac0
     }
 </style>
