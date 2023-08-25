@@ -28,5 +28,7 @@ module.exports = {
 			'faded-black': 'rgb(34, 34, 34, .1)'
 		}
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/typography'),
+	],
 }

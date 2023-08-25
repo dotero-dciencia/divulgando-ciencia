@@ -20,8 +20,10 @@ const{frontmatter} = Astro.props;
         </section>
         <img alt={frontmatter.portadaAlt} class="w-full h-96 object-cover rounded-lg my-5" src="/images/landing-page/portada.webp"/>
     </section> 
-    <section class="px-64">
-        <slot></slot>
+    <section class="w-full justify-center flex">
+        <article class="prose dark:prose-invert ">
+            <slot></slot>
+        </article>
     </section>
 </PrincipalLayout>
 
@@ -50,8 +52,7 @@ const{frontmatter} = Astro.props;
     #científicos{
         color:#004f3e;
     }
-    p{
-        margin-left: 16rem;
-        margin-right: 16rem;
+    p {
+        display:none;
     }
 </style>
