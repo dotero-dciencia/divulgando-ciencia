@@ -84,10 +84,29 @@ const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imag
     #científicos{
         color:#004f3e;
     }
-    .dark{
-        #matemáticas{
-            display:none;
-        }
+    :is(.dark #matemáticas) {
+        color:#a8c6e3
+    }
+    :is(.dark #biología) {
+        color:#64db62
+    }
+    :is(.dark #geología) {
+        color:#e2bba5
+    }
+    :is(.dark #física) {
+        color:#ffaaa2
+    }
+    :is(.dark #química) {
+        color:#ff99ff
+    }
+    :is(.dark #tecnología) {
+        color:#f2ba48
+    }
+    :is(.dark #programación) {
+        color:#e9aaff
+    }
+    :is(.dark #científicos) {
+        color:#16dac0
     }
     #desktop-a-4{
         width: 18%;
