@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ArticleLayout.astro
 titulo: Feria de Ciencia Sostenible en Valladolid
-ciencia: Matemáticas
+ciencia: matemáticas
 portada: /images/landing-page/bacteria.jpg
 autor: Darío
 fecha: 3 agosto, 2023
