@@ -1,5 +1,12 @@
-# Feria de Ciencia Sostenible en Valladolid
-
+---
+layout: ../../layouts/ArticleLayout.astro
+titulo: Feria de Ciencia Sostenible en Valladolid
+ciencia: Matemáticas
+portada: /images/landing-page/bacteria.jpg
+autor: Darío
+fecha: 3 agosto, 2023
+duracion: 4
+---
 ### Mañana, sábado 6 de mayo, tendrá lugar la V edición de la Feria de Ciencia Sostenible en Valladolid en el Parque Científico de la UVa.
 
 Con horario de 10:30 horas a 15:00 horas, todo el mundo podrá disfrutar de una jornada llena de ciencia abierta para todos los públicos, mayores y pequeños.

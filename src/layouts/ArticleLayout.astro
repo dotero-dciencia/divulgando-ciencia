@@ -1,0 +1,21 @@
+---
+import PrincipalLayout from "./PrincipalLayout.astro";
+const{frontmatter} = Astro.props;
+---
+
+<PrincipalLayout>
+    <h4>{frontmatter.ciencia}</h4>
+    <h1>{frontmatter.titulo}</h1>
+    <section class="flex">
+        <img src={frontmatter.portada}>
+        <div class="flex-col">
+            <h4>{frontmatter.autor}</h4>
+            <li class="flex">
+                <ul>{frontmatter.fecha}</ul>
+                ·
+                <ul>{frontmatter.duracion} min de lectura</ul>
+            </li>
+        </div>
+    </section>  
+    <slot></slot>
+</PrincipalLayout>

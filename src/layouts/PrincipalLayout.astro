@@ -1,9 +1,10 @@
 ---
 import Layout from "./Layout.astro";
-import Menu from "../components/menu/Principal.astro";
+import Menu from "../components/Menu.astro";
 const {title} = Astro.props
 ---
 
 <Layout title={title}>
     <Menu></Menu>
+    <slot></slot>
 </Layout>
