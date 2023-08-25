@@ -3,6 +3,7 @@ layout: ../../layouts/ArticleLayout.astro
 titulo: Feria de Ciencia Sostenible en Valladolid
 ciencia: programación
 portada: /images/contenido/feria-de-ciencia-sostenible-en-valladolid/portada.webp
+portadaAlt: Imagen de la feria de ciencia de Valladolid
 autor: Darío
 fecha: 3 agosto, 2023
 duracion: 4
