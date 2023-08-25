@@ -1,0 +1,57 @@
+---
+import PrincipalLayout from "./PrincipalLayout.astro";
+const{frontmatter} = Astro.props;
+---
+
+<PrincipalLayout class="text-principal-black ">
+    <section class="w-full text-center m-auto px-64">
+        <h4 class="font-medium uppercase" id={frontmatter.ciencia}>{frontmatter.ciencia}</h4>
+        <h1 class="font-bold text-5xl leading-[3.25rem]">{frontmatter.titulo}</h1>
+        <section class="flex w-fit m-auto my-4 gap-x-3">
+            <img class="w-12 h-12 object-cover rounded-full" src="/images/autores/dotero.jpg">
+            <div class="flex-col text-left font-normal ">
+                <h4 class="font-medium">{frontmatter.autor}</h4>
+                <li class="flex gap-x-1">
+                    <ul>{frontmatter.fecha}</ul>
+                    ·
+                    <ul>{frontmatter.duracion} min de lectura</ul>
+                </li>
+            </div>
+        </section>
+        <img class="w-full h-96 object-cover rounded-lg my-5" src="/images/landing-page/portada.webp"/>
+    </section> 
+    <section class="px-64">
+        <slot></slot>
+    </section>
+</PrincipalLayout>
+
+<style>
+    #matemáticas{
+        color:#004193;
+    }
+    #biología{
+        color:#005100;
+    }
+    #geología{
+        color:#6E3400;
+    }
+    #física{
+        color:#950000;
+    }
+    #química{
+        color:#820083;
+    }
+    #tecnología{
+        color:#623B00;
+    }
+    #programación{
+        color:#5a12b0;
+    }
+    #científicos{
+        color:#004f3e;
+    }
+    p{
+        margin-left: 16rem;
+        margin-right: 16rem;
+    }
+</style>
