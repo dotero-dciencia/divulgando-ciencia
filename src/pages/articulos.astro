@@ -1,12 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Menu from "../components/menu/Articulos.astro";
+import Menu from "../components/Menu.astro";
 import Contenido from "../components/Contenido.astro";
 const title = "Artículos";
 ---
 
 <Layout title={title}>
-	<Menu></Menu>
+	<Menu design="articles"/>
 	<section class="flex gap-x-7 w-full justify-center h-full mt-7">
 		<Contenido contenido="article" ciencia="matemáticas" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-2-grande"/>
 		<Contenido contenido="article" ciencia="científicos" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-2-mini"/>

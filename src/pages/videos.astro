@@ -1,12 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Menu from "../components/menu/Videos.astro";
+import Menu from "../components/Menu.astro";
 import Contenido from "../components/Contenido.astro";
 const title = "Vídeos";
 ---
 
 <Layout title={title}>
-	<Menu></Menu>
+	<Menu design="videos"/>
 	<div class="flex gap-x-7 w-full justify-center h-full my-7">
 		<Contenido contenido="video" ciencia="matemáticas" titulo="Título de la entrada" duracion="21:30" imagen="images/landing-page/bacteria.jpg" design="desktop-a-2-grande"/>
 		<Contenido contenido="video" ciencia="geología" titulo="Título de la entrada" duracion="21:30" imagen="images/landing-page/bacteria.jpg" design="desktop-a-2-mini"/>
