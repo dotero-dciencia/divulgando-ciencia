@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/ArticleLayout.astro
+layout: ../layouts/ArticleLayout.astro
 titulo: Feria de Ciencia Sostenible en Valladolid
 ciencia: programación
 portada: /images/contenido/feria-de-ciencia-sostenible-en-valladolid/portada.webp
