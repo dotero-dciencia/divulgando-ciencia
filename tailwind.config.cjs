@@ -1,5 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	plugins: {
+		'postcss-import': {},
+		'tailwindcss/nesting': {},
+		tailwindcss: {},
+		autoprefixer: {},
+	},
 	darkMode: ["class"],
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
