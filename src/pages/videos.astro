@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Menu from "../components/Menu.astro";
 import Contenido from "../components/Contenido.astro";
+import FilaBotones from "../components/FilaBotones.astro";
 const title = "Vídeos";
 ---
 
@@ -11,6 +12,7 @@ const title = "Vídeos";
 		<Contenido contenido="video" ciencia="matemáticas" titulo="Título de la entrada" duracion="21:30" imagen="images/landing-page/bacteria.jpg" design="desktop-a-2-grande"/>
 		<Contenido contenido="video" ciencia="geología" titulo="Título de la entrada" duracion="21:30" imagen="images/landing-page/bacteria.jpg" design="desktop-a-2-mini"/>
 	</div>
+	<FilaBotones/>
 	<div class="flex gap-x-7 w-full justify-center h-full mb-7">
 		<Contenido contenido="video" ciencia="biología" titulo="Título de la entrada" duracion="21:30" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
 		<Contenido contenido="video" ciencia="tecnología" titulo="Título de la entrada" duracion="21:30" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>

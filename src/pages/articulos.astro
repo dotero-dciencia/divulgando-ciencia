@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Menu from "../components/Menu.astro";
 import Contenido from "../components/Contenido.astro";
+import FilaBotones from "../components/FilaBotones.astro";
 const title = "Artículos";
 ---
 
@@ -11,50 +12,7 @@ const title = "Artículos";
 		<Contenido contenido="article" ciencia="matemáticas" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-2-grande"/>
 		<Contenido contenido="article" ciencia="científicos" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-2-mini"/>
 	</section>
-	<section class="">
-		<ul class="flex gap-x-2 w-full justify-center my-4">
-			<li class="py-2 px-4 bg-dark-math rounded-full text-principal-white font-medium text-sm">
-				<a href="/">
-					Matemáticas
-				</a>
-			</li>
-			<li class="py-2 px-4 bg-dark-biology rounded-full text-principal-white font-medium text-sm">
-				<a href="/">
-					Biología
-				</a>
-			</li>
-			<li class="py-2 px-4 bg-dark-geology rounded-full text-principal-white font-medium text-sm">
-				<a href="/">
-					Geología
-				</a>
-			</li>
-			<li class="py-2 px-4 bg-dark-physics rounded-full text-principal-white font-medium text-sm">
-				<a href="/">
-					Física
-				</a>
-			</li>
-			<li class="py-2 px-4 bg-dark-chemistry rounded-full text-principal-white font-medium text-sm">
-				<a href="/">
-					Química
-				</a>
-			</li>
-			<li class="py-2 px-4 bg-dark-technology rounded-full text-principal-white font-medium text-sm">
-				<a href="/">
-					Tecnología
-				</a>
-			</li>
-			<li class="py-2 px-4 bg-dark-coding rounded-full text-principal-white font-medium text-sm">
-				<a href="/">
-					Programación
-				</a>
-			</li>
-			<li class="py-2 px-4 bg-dark-scientifics rounded-full text-principal-white font-medium text-sm">
-				<a href="/">
-					Científicos
-				</a>
-			</li>
-		</ul>
-	</section>
+	<FilaBotones/>
 	<section class="flex gap-x-7 w-full justify-center h-full mb-7">
 		<Contenido contenido="article" ciencia="biología" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
 		<Contenido contenido="article" ciencia="geología" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
