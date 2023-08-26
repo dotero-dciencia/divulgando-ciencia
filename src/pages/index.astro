@@ -1,8 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Article from "../components/Contenido.astro";
+import Contenido from "../components/Contenido.astro";
 import Buscador from "../components/Buscador.astro";
 const title = "Inicio";
+
+const contenido = await Astro.glob('../pages/*.md');
 ---
 
 <Layout title={title}>
@@ -32,17 +34,15 @@ const title = "Inicio";
     </section>
     <!--Zona de los artículos-->
     <main class="w-full">
-        <section class="flex w-full gap-x-7 justify-center mt-7 h-full items-start">
-            <Article contenido="article" ciencia="matemáticas" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
-            <Article contenido="video" ciencia="biología" titulo="Título de la entrada" duracion="30:42" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
-            <Article contenido="article" ciencia="geología" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
-            <Article contenido="article" ciencia="física" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
+        <section class="flex gap-x-7 w-full justify-center h-full my-7">
+            {contenido.slice(0, 4).map((post) => (
+                <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fecha} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+              ))}
         </section>
-        <section class="flex w-full items-center gap-x-7 justify-center my-7">
-            <Article contenido="article" ciencia="química" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
-            <Article contenido="article" ciencia="tecnología" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
-            <Article contenido="article" ciencia="programación" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
-            <Article contenido="video" ciencia="científicos" titulo="Título de la entrada" duracion="21:03" imagen="images/landing-page/bacteria.jpg" design="desktop-a-4"/>
+        <section class="flex gap-x-7 w-full h-full mb-7 justify-center">
+            {contenido.slice(4, 8).map((post) => (
+                <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fecha} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+              ))}
         </section>
         <section class="flex w-full justify-end gap-x-3 px-36">
             <a href="/articulos" class="bg-faded-black font-medium w-48 py-2 rounded-lg flex gap-x-1 h-full items-center hover:scale-105 transition-all justify-center dark:bg-faded-white dark:text-principal-white">
