@@ -6,7 +6,8 @@ fotoDelAutor: /images/autores/dotero.jpg
 portada: /images/contenido/como-midio-eratostenes-la-tierra-con-un-palo/portada.webp
 portadaAlt: ALT
 ciencia: matemáticas
-fecha: 11 febrero, 2023
+fechaMostrar: 20 junio, 2022
+fechaOrdenar: Jun 20, 2022
 duracion: 5
 url: /como-midio-eratostenes-la-tierra-con-un-palo
 ---

@@ -1,11 +1,12 @@
 ---
 layout: ../layouts/ArticleLayout.astro
-titulo: Rosalin Yalow
+titulo: Rosalind Franklin
 ciencia: científicos
 portada: /images/contenido/rosalin-elsie-franklin/portada.webp
 portadaAlt: Fotografía de Rosalin Franklin.
 autor: Marcos G.
-fecha: 11 febrero, 2023
+fechaMostrar: 11 febrero, 2023
+fechaOrdenar: Feb 11, 2023
 duracion: 4
 url: /rosalin-elsie-franklin
 ---

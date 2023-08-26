@@ -5,7 +5,8 @@ ciencia: científicos
 portada: /images/contenido/marianne-grunberg-manago/portada.webp
 portadaAlt: Fotografía de Marianne Grunberg-Manago.
 autor: Guillermo M.
-fecha: 11 febrero, 2023
+fechaMostrar: 11 febrero, 2023
+fechaOrdenar: Feb 11, 2023
 duracion: 4
 url: /marianne-grunberg-manago
 ---

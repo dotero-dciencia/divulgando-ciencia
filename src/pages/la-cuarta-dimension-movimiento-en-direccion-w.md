@@ -6,7 +6,8 @@ fotoDelAutor: /images/autores/neplod.webp
 portada: /images/contenido/la-cuarta-dimension-movimiento-en-direccion-w/portada.webp
 portadaAlt: Imagen del Juego de la Vida.
 ciencia: física
-fecha: 25 marzo, 2023
+fechaOrdenar: Mar 25, 2023
+fechaMostrar: 25 marzo, 2023
 duracion: 5
 url: /la-cuarta-dimension-movimiento-en-direccion-w
 ---

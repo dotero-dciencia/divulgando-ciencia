@@ -5,7 +5,8 @@ ciencia: científicos
 portada: /images/contenido/rosalyn-yalow/portada.webp
 portadaAlt: Fotografía de Rosalyn Yalow.
 autor: Carolina A.
-fecha: 11 febrero, 2023
+fechaMostrar: 11 febrero, 2023
+fechaOrdenar: Feb 11, 2023
 duracion: 4
 url: /rosalyn-yalow
 ---
