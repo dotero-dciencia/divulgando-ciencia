@@ -8,6 +8,7 @@ portadaAlt: Imagen del Juego de la Vida.
 ciencia: física
 fecha: 25 marzo, 2023
 duracion: 5
+url: /la-cuarta-dimension-movimiento-en-direccion-w
 ---
 
 Antes de empezar, esta es la segunda parte de un artículo ya escrito anteriormente ([**La Cuarta Dimensión: Introducción**](/la-cuarta-dimension-introduccion)), si no lo has leído, ve a leerlo para comprender este artículo mucho mejor. Como ya habéis leído en el título, vamos a hablar sobre el movimiento en dirección W, como funciona, y como podría estar entre nosotros.

@@ -4,13 +4,15 @@ import Menu from "../components/Menu.astro";
 import Contenido from "../components/Contenido.astro";
 import FilaBotones from "../components/FilaBotones.astro";
 const title = "Artículos";
+
+const articulos = await Astro.glob('../pages/*.md');
 ---
 
 <Layout title={title}>
 	<Menu design="articles"/>
 	<section class="flex gap-x-7 w-full justify-center h-full mt-7">
-		<Contenido contenido="article" url="/articulos/feria-de-ciencia-sostenible-en-valladolid" ciencia="programación" titulo="Feria de Ciencia Sostenible en Valladolid" autor="Darío" fecha="4 mayo, 2023" imagen="/images/contenido/feria-de-ciencia-sostenible-en-valladolid/portada.webp" design="desktop-a-2-grande"/>
-		<Contenido contenido="article" ciencia="científicos" titulo="Título de la entrada" autor="Autor" fecha="24 agosto, 2023" imagen="/images/landing-page/bacteria.jpg" design="desktop-a-2-mini"/>
+		<Contenido contenido="article" url={articulos[0].frontmatter.url} ciencia={articulos[0].frontmatter.ciencia} titulo={articulos[0].frontmatter.titulo} autor={articulos[0].frontmatter.autor} fecha={articulos[0].frontmatter.fecha} imagen={articulos[0].frontmatter.portada} design="desktop-a-2-grande"/>
+		<Contenido contenido="article" url={articulos[1].frontmatter.url} ciencia={articulos[1].frontmatter.ciencia} titulo={articulos[1].frontmatter.titulo} autor={articulos[1].frontmatter.autor} fecha={articulos[1].frontmatter.fecha} imagen={articulos[1].frontmatter.portada} design="desktop-a-2-mini"/>
 	</section>
 	<FilaBotones/>
 	<section class="flex gap-x-7 w-full justify-center h-full mb-7">

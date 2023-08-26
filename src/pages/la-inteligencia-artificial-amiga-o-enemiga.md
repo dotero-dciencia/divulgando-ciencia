@@ -8,6 +8,7 @@ portadaAlt: Imagen de la cabeza de un robot generada por la inteligencia artific
 ciencia: programación
 fecha: 22 mayo, 2023
 duracion: 5
+url: /la-inteligencia-artificial-amiga-o-enemiga
 ---
 
 Seguro que si estás leyendo esto, en los últimos días, en las últimas semanas o incluso meses has oído hablar sobre la inteligencia artificial. Pues este es un tema muy interesante que en los últimos tiempos ha ido cobrando cada vez más importancia. En este artículo haremos un recorrido a través de la inteligencia artificial, hablaremos de su historia, de la actualidad y de lo que nos deparará en un futuro.

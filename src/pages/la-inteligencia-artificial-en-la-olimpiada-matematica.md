@@ -8,6 +8,7 @@ portadaAlt: Imagen de personas corriendo una maratón.
 ciencia: matemáticas
 fecha: 11 junio, 2023
 duracion: 5
+url: /la-inteligencia-artificial-en-la-olimpiada-matematica
 ---
 
 Sin duda, uno de los temas más actuales es la inteligencia artificial, una “inteligencia computacional” que pretende sustituir a la humana. Pero, ¿es eso cierto? ¿Es ya capaz de sustituir a la humana? ¿Puede ganar una Olimpiada Matemática la inteligencia artificial?

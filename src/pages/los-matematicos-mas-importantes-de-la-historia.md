@@ -8,6 +8,7 @@ portadaAlt: Cuadro de Leonhard Euler.
 ciencia: matemáticas
 fecha: 14 marzo, 2023
 duracion: 5
+url: /los-matematicos-mas-importantes-de-la-historia
 ---
 
 A lo largo de la historia ha habido mucha gente que se ha decidido dedicar a esa disciplina que tanto odio y miedo genera a una gran parte de la población: las matemáticas. Como en todas las disciplinas, ha habido gente que, gracias a su esfuerzo y dedicación, además de a su talento, ha destacado por encima de los demás, sobresaliendo. Hoy, 14 de marzo, Día Internacional de las Matemáticas, rendiremos homenaje a varios de los matemáticos más importantes, dejándonos a muchos en el camino.

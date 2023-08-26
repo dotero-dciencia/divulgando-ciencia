@@ -8,6 +8,7 @@ portadaAlt: Imagen del Juego de la Vida.
 ciencia: programación
 fecha: 11 abril, 2023
 duracion: 5
+url: /que-es-el-juego-de-la-vida
 ---
 
 El Juego de la Vida fue una invención del matemático John Horton Conway, fallecido el 11 de abril de 2020, más conocido como Conway. En su vida consiguió grandes logros matemáticos, pero si hay uno que destaca por encima de todo es el ya mencionado Juego de la Vida.
