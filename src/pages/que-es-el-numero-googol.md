@@ -8,6 +8,7 @@ portadaAlt: Imagen de persona usando una calculadora.
 ciencia: matemáticas
 fecha: 26 mayo, 2023
 duracion: 5
+url: /que-es-el-numero-googol
 ---
 
 Dirás que lo he escrito mal porque se pone Google, pero no, no estoy hablando de la tan conocida web Google, estoy hablando de Googol, el número que equivale a 10^100, es decir, un 1 seguido de cien 0.

@@ -7,6 +7,7 @@ portadaAlt: Imagen de la feria de ciencia de Valladolid
 autor: Darío
 fecha: 3 agosto, 2023
 duracion: 4
+url: /feria-de-ciencia-sostenible-en-valladolid
 ---
 #### Mañana, sábado 6 de mayo, tendrá lugar la V edición de la Feria de Ciencia Sostenible en Valladolid en el Parque Científico de la UVa.
 
