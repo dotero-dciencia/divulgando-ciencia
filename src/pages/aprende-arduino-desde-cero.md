@@ -101,8 +101,44 @@ Con este montaje ya podríamos encenderlo, pero, a continuación, veremos el mon
 - Un cable está conectado desde **5V hasta una conexión de la línea roja** (+).
 - Un cable está conectado desde **GND hasta una conexión de la línea negra** (-).
 - Un botón está conectado por:
-    - En la columna de una de sus patas por una resistencia hasta la línea roja (+), lo cual hace llegar la energía al botón.
-    - En la columna de la otra de sus patas, por un cable hasta el ánodo del LED que queramos encender. Este cable es el que llevará la corriente de salida del botón.
+    - En la columna de una de sus patas por una **resistencia hasta la línea roja** (+), lo cual hace llegar la energía al botón.
+    - En la columna de la otra de sus patas, por un **cable hasta el ánodo del LED** que queramos encender. Este cable es el que llevará la corriente de salida del botón.
 - El LED está conectado por:
-    - En la columna del ánodo por un cable desde el botón que lo encenderá cuando toquemos el botón.
-    - En la columna del cátodo por una resistencia para cerrar el circuito hasta la línea negra (-). Es súper importante poner la resistencia, aunque solo sea para cerrar el circuito.
+    - En la columna del ánodo por un **cable desde el botón** que lo encenderá cuando toquemos el botón.
+    - En la columna del cátodo por una **resistencia para cerrar el circuito hasta la línea negra** (-). Es súper importante poner la resistencia, aunque solo sea para cerrar el circuito.
+
+### Regular el LED con un potenciómetro
+
+Un potenciómetro es como un grifo, pues dependiendo de su inclinación dejará pasar **más o menos voltaje**. Esto está explicado en la ley de Ohm (apartado 3).
+
+Para regular la potencia de un LED con un potenciómetro, necesitaremos: el propio **LED**, el propio **potenciómetro**, una **resistencia**, la placa **Arduino** y la placa **Protoboard**.
+
+Con este montaje ya podríamos encenderlo y regularlo, pero, a continuación, veremos el montaje a fondo:
+
+- Un cable está conectado desde **5V hasta una conexión de la línea roja** (+).
+- Un cable está conectado desde **GND hasta una conexión de la línea negra** (-).
+- Un potenciómetro está conectado por:
+    - En la columna **central** por un **cable que se conectará a la columna del ánodo del LED** que queramos encender.
+    - En una de las dos **columnas laterales** por un **cable conectado desde la línea roja** (+) para hacer llegar la corriente al potenciómetro.
+    - En la otra **columna lateral** por un **cable conectado desde la línea negra** (-) para cerrar el circuito.
+- El LED está conectado por:
+    - La columna del ánodo **está conectada a la salida del potenciómetro**.
+    - La columna del cátodo tiene una **resistencia conectada a la línea negra** (-) para cerrar el circuito.
+
+## Componentes, ¿qué se puede hacer?
+
+Lo bueno de Arduino es que cuenta con una inmensa cantidad de componentes, así como de utilidades y programas posibles.
+
+A continuación, adjunto un par de fotos de unos **kits de Arduino** que se encuentran en Amazon y que contienen una gran y diversa cantidad de componentes para Arduino, si haces clic en la foto, serás redireccionado a la página web de compra:
+
+Hay una gran variedad de proyectos que podemos hacer en Arduino, desde juegos hasta cosas de domótica para tu casa, en el siguiente vídeo, hay varias ideas de proyectos:
+
+Si quieres conocer más sobre estos componentes, estate atento al apartado 6 de esta guía, donde explicamos dónde se puede aprender más al respecto.
+
+## ¿Dónde aprender más? Webs de referencia
+
+Esta guía ha sido un pequeño **acercamiento al mundo del Arduino y al mundo de la electricidad**, pero, si te ha gustado, puedes indagar más al respecto.
+
+Hay una página web muy recomendable para aprender Arduino y aprender a manejar algunos componentes, que es la web de Luis Llamas en el apartado de tutoriales de Arduino: [https://www.luisllamas.es/tutoriales-de-arduino/](https://www.luisllamas.es/tutoriales-de-arduino/).
+
+Además, próximamente publicaré en este blog más guías sobre Arduino, sobre todo, enfocadas a la programación.
