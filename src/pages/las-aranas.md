@@ -6,8 +6,8 @@ fotoDelAutor: /images/autores/borealmantis.jpg
 portada: /images/contenido/las-aranas/portada.webp
 portadaAlt: Imagen de personas corriendo una maratón.
 ciencia: biología
-fechaMostrar: 31 octubre, 2023
-fechaOrdenar: Oct 31, 2023
+fechaMostrar: 31 octubre, 2022
+fechaOrdenar: Oct 31, 2022
 duracion: 5
 url: /las-aranas
 ---

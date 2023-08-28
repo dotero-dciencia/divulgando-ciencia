@@ -30,4 +30,29 @@ const articulos = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.front
 			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
 		  ))}
 	</section>
+	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
+		{articulos.slice(14, 18).map((post) => (
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+		  ))}
+	</section>
+	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
+		{articulos.slice(18, 22).map((post) => (
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+		  ))}
+	</section>
+	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
+		{articulos.slice(22, 26).map((post) => (
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+		  ))}
+	</section>
+	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
+		{articulos.slice(26, 30).map((post) => (
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+		  ))}
+	</section>
+	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
+		{articulos.slice(30, 34).map((post) => (
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+		  ))}
+	</section>
 </Layout>

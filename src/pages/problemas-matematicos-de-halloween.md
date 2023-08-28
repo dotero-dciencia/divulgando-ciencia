@@ -6,8 +6,8 @@ fotoDelAutor: /images/autores/dotero.jpg
 portada: /images/contenido/problemas-matematicos-de-halloween/portada.webp
 portadaAlt: Imagen del Juego de la Vida.
 ciencia: matemáticas
-fechaMostrar: 31 octubre, 2023
-fechaOrdenar: Oct 31, 2023
+fechaMostrar: 31 octubre, 2022
+fechaOrdenar: Oct 31, 2022
 duracion: 5
 url: /problemas-matematicos-de-halloween
 ---
