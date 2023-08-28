@@ -6,7 +6,8 @@ fotoDelAutor: /images/autores/dotero.jpg
 portada: /images/contenido/la-inteligencia-artificial-en-la-olimpiada-matematica/portada.webp
 portadaAlt: Imagen de personas corriendo una maratón.
 ciencia: matemáticas
-fecha: 11 junio, 2023
+fechaMostrar: 11 junio, 2023
+fechaOrdenar: Jun 11, 2023
 duracion: 5
 url: /la-inteligencia-artificial-en-la-olimpiada-matematica
 ---

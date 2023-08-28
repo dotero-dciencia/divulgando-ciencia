@@ -6,7 +6,8 @@ fotoDelAutor: /images/autores/neplod.jpg
 portada: /images/contenido/que-es-el-numero-googol/portada.webp
 portadaAlt: Imagen de persona usando una calculadora.
 ciencia: matemáticas
-fecha: 26 mayo, 2023
+fechaMostrar: 18 diciembre, 2022
+fechaOrdenar: Dic 18, 2022
 duracion: 5
 url: /que-es-el-numero-googol
 ---

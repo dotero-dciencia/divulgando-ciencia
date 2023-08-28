@@ -6,7 +6,8 @@ fotoDelAutor: /images/autores/dotero.jpg
 portada: /images/contenido/que-es-el-juego-de-la-vida/portada.webp
 portadaAlt: Imagen del Juego de la Vida.
 ciencia: programación
-fecha: 11 abril, 2023
+fechaMostrar: 11 abril, 2023
+fechaOrdenar: Apr 11, 2023
 duracion: 5
 url: /que-es-el-juego-de-la-vida
 ---
