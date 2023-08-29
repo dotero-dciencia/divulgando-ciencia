@@ -1,15 +1,15 @@
 ---
 layout: ../layouts/ArticleLayout.astro
-titulo: La cartografía, ¿arte o ciencia?
-autor: abgomez
-fotoDelAutor: /images/autores/dotero.jpg
-portada: /images/contenido/la-cartografia-arte-o-ciencia/portada.webp
+titulo: 'La cuarta dimensión: introducción'
+autor: neplod
+fotoDelAutor: /images/autores/neplod.jpg
+portada: /images/contenido/la-cuarta-dimension-introduccion/portada.webp
 portadaAlt: ALT
-ciencia: matemáticas
-fechaMostrar: 25 octubre, 2022
-fechaOrdenar: Oct 25, 2022
+ciencia: química
+fechaMostrar: 10 febrero, 2023
+fechaOrdenar: Feb 10, 2023
 duracion: 5
-url: /la-cartografia-arte-o-ciencia
+url: /la-cuarta-dimension-introduccion
 ---
 
 Antes de empezar me gustaría aclarar que este artículo solo es una pequeña porción de la **Cuarta Dimensión**, una introducción para meteros en una nueva dimensión a la que llamamos la cuarta dimensión. En este artículo no nos meteremos mucho en la cuarta dimensión sino que hablaremos más de qué son las dimensiones y como cambiar entre ellas.
