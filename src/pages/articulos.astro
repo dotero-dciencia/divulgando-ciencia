@@ -55,4 +55,9 @@ const articulos = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.front
 			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
 		  ))}
 	</section>
+	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
+		{articulos.slice(34, 38).map((post) => (
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+		  ))}
+	</section>
 </Layout>

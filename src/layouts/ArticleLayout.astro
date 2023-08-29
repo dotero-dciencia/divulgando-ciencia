@@ -12,16 +12,18 @@ const{frontmatter} = Astro.props;
             <div class="flex-col text-left font-normal ">
                 <h4 class="font-medium">{frontmatter.autor}</h4>
                 <ul class="flex gap-x-1">
-                    <li>{frontmatter.fecha}</li>
+                    <li>{frontmatter.fechaMostrar}</li>
                     ·
                     <li>{frontmatter.duracion} min de lectura</li>
                 </ul>
             </div>
         </section>
-        <img alt={frontmatter.portadaAlt} class="w-full h-96 object-cover rounded-lg my-5" src={frontmatter.portada}/>
+        <figure>
+            <img class="mb-2" alt={frontmatter.portadaAlt} class="w-full h-96 object-cover rounded-lg my-5" src={frontmatter.portada}/>
+        </figure>
     </section> 
-    <section class="w-full justify-center flex">
-        <article class="prose dark:prose-invert ">
+    <section class="w-full justify-center flex mt-5">
+        <article class="prose dark:prose-invert prose-img:mb-3">
             <slot></slot>
         </article>
     </section>
