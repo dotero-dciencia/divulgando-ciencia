@@ -28,8 +28,12 @@ El primer paso para nuestra calculadora en Python será recoger dos números, qu
 
 Declararemos dos variables, llamadas ‘a’ y ‘b’. ‘a’ contendrá el primer número y ‘b’ el segundo, para ello usaremos un ‘input’ para declarar las variables. Se vería tal que así.
 
-1. a = int(input("Número 1: "))
-2. b = int(input("Número 2: "))
+<code> 
+a = int(input("Número 1: "))
+
+b = int(input("Número 2: "))
+</code>
+
 Hagamos un repaso de lo que hace cada línea del código:
 
 Declara una variable llamada ‘a’ que será igual al ‘int’ (integger, número entero) de lo que escriba el usuario en el ‘input(“Número 1: “)’.

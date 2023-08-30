@@ -1,8 +1,8 @@
 ---
 layout: ../layouts/ArticleLayout.astro
 titulo: ¿Cuál es el mejor detector de IA?
-autor: Darío
-fotoDelAutor: /images/autores/dotero.jpg
+autor: Darío O.
+fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/cual-es-el-mejor-detector-de-ia/portada.webp
 portadaAlt: Imagen de la página del detector de IA Copyleaks mostrando sus características principales.
 ciencia: tecnología
