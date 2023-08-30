@@ -1,8 +1,8 @@
 ---
 layout: ../layouts/ArticleLayout.astro
 titulo: Problemas matemáticos de Halloween
-autor: Darío
-fotoDelAutor: /images/autores/dotero.jpg
+autor: Darío O.
+fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/problemas-matematicos-de-halloween/portada.webp
 portadaAlt: Imagen del Juego de la Vida.
 ciencia: matemáticas
@@ -20,33 +20,35 @@ Vamos a aprovechar el día de hoy, Halloween, para disfrutar de las matemáticas
 
 La familia Méndez quiere decorar su casa por Halloween y se han puesto un presupuesto de 450€. Juntos han elaborado una lista donde dicen qué es lo que quieren comprar:
 
-2 cadenas de luces
-200 miniarañas de goma
-1 proyector
-300 chuches
-4 fantasmas de tela
-3 focos de luz
-5 disfraces
+- 2 cadenas de luces
+- 200 miniarañas de goma
+- 1 proyector
+- 300 chuches
+- 4 fantasmas de tela
+- 3 focos de luz
+- 5 disfraces
+
 Se van de compras al centro comercial de la ciudad y se encuentran con los siguientes precios:
 
-Una cadena de luces: 5,99€ (con rebaja al 80%)
-Bolsa de miniarañas de goma (100): 3,99€
-Un proyector: 49,99€
-Una bolsa de chuches variadas (25): 9,99€ (con rebaja al 70%)
-Un fantasma de tela: 4,99€
-Un foco de luz: 14,99€
-Disfraz a elegir: 21€ (con rebaja al 65%)
+- Una cadena de luces: 5,99€ (con rebaja al 80%)
+- Bolsa de miniarañas de goma (100): 3,99€
+- Un proyector: 49,99€
+- Una bolsa de chuches variadas (25): 9,99€ (con rebaja al 70%)
+- Un fantasma de tela: 4,99€
+- Un foco de luz: 14,99€
+- Disfraz a elegir: 21€ (con rebaja al 65%)
+
 Anotan los precios en su libreta y vuelven mañana, ¡vaya, ya no hay ningún descuento!
 
-1. Calcula cuánto les costaría comprar todo lo que quieren sin descuentos. ¿Podrán pagarlo con el presupuesto que se han marcado?
+**1. Calcula cuánto les costaría comprar todo lo que quieren sin descuentos. ¿Podrán pagarlo con el presupuesto que se han marcado?**
 
 A pesar de que los precios hayan subido, deciden meter todo en su bolsa de compra y van a pagar, cuando el cajero les informa de que hay un descuento disponible para los tres objetos más baratos de su bolsa al 50% de precio (aplicable a todas las unidades de estos tres productos más baratos), pero, en cambio, el objeto más caro les valdrá el doble (aplicable a todas las unidades del producto más caro).
 
-2. Explica por qué deberán o no coger el descuento.
+**2. Explica por qué deberán o no coger el descuento.**
 
 Finalmente, deciden deshacerse del objeto más caro que iban a comprar y no lo compran:
 
-3.  ¿Ahora deberán coger el descuento?
+**3.  ¿Ahora deberán coger el descuento?**
 
 ### Solución
 
@@ -60,7 +62,7 @@ Empezaremos por el principio, que será calcular cuánto les costará todo sin d
 - Una bolsa de chuches variadas (25): 9,99€ · 100 / 70 = 999 / 70 ≈ 14,27€
 - Un fantasma de tela: 4,99€
 - Un foco de luz: 14,99€
-- Disfraz a elegir: 21€ · 100 / 65 = 2100 / 65 ≈ 32,31
+- Disfraz a elegir: 21€ · 100 / 65 = 2100 / 65 ≈ 32,31€
 
 Ahora ya tenemos los precios calculados de cada producto sin descuentos, pero la familia Méndez quiere varios productos de cada en la mayoría de los casos, así que multiplicaremos:
 
@@ -94,7 +96,7 @@ Ahora sumamos los nuevos precios de estos productos más los precios de los otro
 
 #### Apartado 3
 
-Para responder esta pregunta, solamente tenemos que hacer muy pocas cosas que son las siguientes.
+Para responder esta pregunta, haremos las siguientes operaciones:
 
 Restamos al precio que conseguimos en el apartado B (499,19€) lo que vale el proyector por 2 (99,98€) y nos da como resultado 399,21€.
 
@@ -111,6 +113,7 @@ Seis amigos han quedado para pedir caramelos, da la casualidad que dos de ellos 
 - Alejandro todavía no tiene carné de conducir y acompaña a Benito que no va en autobús.
 - Andrés va en autobús.
 - Carlos no va con Darío ni va en autobús.
+- Una pareja fue en tren, otra en autobús y la otra en coche.
 
 ### Solución
 
@@ -122,7 +125,7 @@ Si leemos atentamente la primera afirmación, podemos sacar tres cosas:
 - Que Benito no va en autobús.
 - Que van juntos.
 
-Sabiendo estas tres cosas podemos asignarles ya un medio de transporte, que no será ni coche ni autobús, y aunque el problema no lo menciona, les podemos asignar, por ejemplo, el tren.
+Sabiendo estas tres cosas podemos asignarles ya un medio de transporte, que no será ni coche ni autobús, por lo que será el tren.
 
 Nos quedan cuatro personas y, por lo tanto, dos medios de transporte, vamos allá.
 

@@ -11,53 +11,53 @@ const articulos = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.front
 <Layout title={title}>
 	<Menu design="articles"/>
 	<section class="flex gap-x-7 w-full justify-center h-full mt-7">
-		<Contenido contenido="article" url={articulos[0].frontmatter.url} ciencia={articulos[0].frontmatter.ciencia} titulo={articulos[0].frontmatter.titulo} autor={articulos[0].frontmatter.autor} fecha={articulos[0].frontmatter.fechaMostrar} imagen={articulos[0].frontmatter.portada} design="desktop-a-2-grande"/>
-		<Contenido contenido="article" url={articulos[1].frontmatter.url} ciencia={articulos[1].frontmatter.ciencia} titulo={articulos[1].frontmatter.titulo} autor={articulos[1].frontmatter.autor} fecha={articulos[1].frontmatter.fechaMostrar} imagen={articulos[1].frontmatter.portada} design="desktop-a-2-mini"/>
+		<Contenido contenido="article" url={articulos[0].frontmatter.url} ciencia={articulos[0].frontmatter.ciencia} titulo={articulos[0].frontmatter.titulo} autor={articulos[0].frontmatter.autor} fecha={articulos[0].frontmatter.fechaMostrar} imagen={articulos[0].frontmatter.portada} design="desktop-a-2-grande" fotoAutor={articulos[0].frontmatter.fotoDelAutor}/>
+		<Contenido contenido="article" url={articulos[1].frontmatter.url} ciencia={articulos[1].frontmatter.ciencia} titulo={articulos[1].frontmatter.titulo} autor={articulos[1].frontmatter.autor} fecha={articulos[1].frontmatter.fechaMostrar} imagen={articulos[1].frontmatter.portada} design="desktop-a-2-mini" fotoAutor={articulos[1].frontmatter.fotoDelAutor}/>
 	</section>
 	<FilaBotones/>
 	<section class="flex gap-x-7 w-full justify-center h-full mb-7">
 		{articulos.slice(2, 6).map((post) => (
-			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4" fotoAutor={post.frontmatter.fotoDelAutor} alt={post.frontmatter.portadaAlt}/>
 		  ))}
 	</section>
 	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
 		{articulos.slice(6, 10).map((post) => (
-			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4" fotoAutor={post.frontmatter.fotoDelAutor}/>
 		  ))}
 	</section>
 	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
 		{articulos.slice(10, 14).map((post) => (
-			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4" fotoAutor={post.frontmatter.fotoDelAutor}/>
 		  ))}
 	</section>
 	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
 		{articulos.slice(14, 18).map((post) => (
-			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4" fotoAutor={post.frontmatter.fotoDelAutor}/>
 		  ))}
 	</section>
 	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
 		{articulos.slice(18, 22).map((post) => (
-			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4" fotoAutor={post.frontmatter.fotoDelAutor}/>
 		  ))}
 	</section>
 	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
 		{articulos.slice(22, 26).map((post) => (
-			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4" fotoAutor={post.frontmatter.fotoDelAutor}/>
 		  ))}
 	</section>
 	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
 		{articulos.slice(26, 30).map((post) => (
-			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4" fotoAutor={post.frontmatter.fotoDelAutor}/>
 		  ))}
 	</section>
 	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
 		{articulos.slice(30, 34).map((post) => (
-			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4" fotoAutor={post.frontmatter.fotoDelAutor}/>
 		  ))}
 	</section>
 	<section class="flex gap-x-7 w-full h-full mb-7 justify-center">
 		{articulos.slice(34, 38).map((post) => (
-			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4"/>
+			<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} design="desktop-a-4" fotoAutor={post.frontmatter.fotoDelAutor}/>
 		  ))}
 	</section>
 </Layout>
