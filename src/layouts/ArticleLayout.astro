@@ -19,11 +19,11 @@ const{frontmatter} = Astro.props;
             </div>
         </section>
         <figure>
-            <img class="mb-2" alt={frontmatter.portadaAlt} class="w-full h-96 object-cover rounded-lg my-5" src={frontmatter.portada}/>
+            <img alt={frontmatter.portadaAlt} class="w-full h-96 object-cover rounded-lg my-5 mb-2" src={frontmatter.portada}/>
         </figure>
     </section> 
     <section class="w-full justify-center flex mt-5">
-        <article class="prose dark:prose-invert prose-img:mb-3">
+        <article class="prose dark:prose-invert prose-img:my-3 prose-img:rounded">
             <slot></slot>
         </article>
     </section>

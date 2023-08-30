@@ -1,26 +1,28 @@
 ---
 layout: ../layouts/ArticleLayout.astro
 titulo: ChatGPT contra Rafa en Pasapalabra, ¿quién ganará?
-autor: Darío
-fotoDelAutor: /images/autores/dotero.jpg
+autor: Darío O.
+fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/chatgpt-contra-rafa-en-pasapalabra-quien-ganara/portada.webp
-portadaAlt: ALT
-ciencia: tecnología
+portadaAlt: El concursante de Pasapalabra, Rafa, con las manos en la cabeza tras ganar el bote de Pasapalabra.
+ciencia: matemáticas
 fechaMostrar: 29 mayo, 2023
 fechaOrdenar: May 29, 2023
-duracion: 5
+duracion: 7
 url: /chatgpt-contra-rafa-en-pasapalabra-quien-ganara
 ---
 
 En este artículo trataremos de juntar dos grandes temas del momento: ChatGPT y la victoria de Rafa en Pasapalabra, para ello, los enfrentaremos: ChatGPT contra Rafa, ¿quién ganará?
 
-Antes de nada, cabe decir que el concursante de Pasapalabra, Rafa, se hizo el jueves con el mayor bote en la historia del programa: 2 272 000 euros. Lo hizo tras acertar del tirón las 25 preguntas del rosco. Sin lugar a duda, en su cabeza quedará por siempre la palabra “zabro”, que, segun la RAE, significa “escarabajo de la familia de los carábidos que ataca los trigales, especialmente cuando los granos son tiernos.”
+Antes de nada, cabe decir que el concursante de Pasapalabra, Rafa, se hizo el jueves con el mayor bote en la historia del programa: 2 272 000 euros. Lo hizo tras acertar del tirón las 25 preguntas del rosco. Sin lugar a duda, en su cabeza quedará por siempre la palabra “zabro”, que, según la RAE, significa “escarabajo de la familia de los carábidos que ataca los trigales, especialmente cuando los granos son tiernos.”
 
-Una de las grandes inteligencias artificiales del momento es ChatGPT, que a través de un texto, te genera una respuesta lo más adecuada posible a dicho texto, bien sea una pregunta, una petición… Así, pedí a esta inteligencia artificial que resolviera el rosco, pregunta por pregunta y le diera un porcentaje de dificultad a cada pregunta.
+Una de las grandes inteligencias artificiales del momento es [ChatGPT](https://chat.openai.com/), que a través de un texto, te genera una respuesta lo más adecuada posible a dicho texto, bien sea una pregunta, una petición… Así, pedí a esta inteligencia artificial que resolviera el rosco, pregunta por pregunta y le diera un porcentaje de dificultad a cada pregunta.
 
 Para hacer este experimento, introduciremos el siguiente prompt (entrada) inicial a ChatGPT, referido al concurso Pasapalabra:
 
 “Actúa como un concursante de Pasapalabra. Yo te digo una pregunta. La primera letra del prompt será la inicial de la respuesta, por ejemplo, “M. Fruto del manzano”, donde la respuesta es “Manzana”, que empieza por M. Me tienes que contestar con dos cosas: la respuesta que crees que es correcta y el porcentaje de dificultad que le darías a esa pregunta. ¿Lo has entendido bien?”
+
+![Imagen de la interfaz de ChatGPT tras introducirle el prompt.](/images/contenido/chatgpt-contra-rafa-en-pasapalabra-quien-ganara/chatgpt.webp)
 
 Después de su respuesta afirmativa, iba lanzándole las siguientes preguntas (una por cada prompt), a las que él me contestaba con su respuesta y un porcentaje de dificultad.
 
@@ -60,7 +62,7 @@ Como podemos ver, ChatGPT ha fallado tan solo una pregunta: la penúltima. Es de
 
 ## Según ChatGPT, ¿cómo era el nivel de este Rosco de Pasapalabra?
 
-Tal y como dije al principio, le pedí a esta inteligencia artificial que me dijera el porcentaje de dificultad de cada pregunta además de la respuesta que él creía correcta. Ahora, con las respuestas correctas (no las que él respondió erróneamente), he elaborado esta tabla con el porcentaje de dificultad de cada pregunta.
+Tal y como dije al principio, le pedí a esta inteligencia artificial que me dijera el porcentaje de dificultad de cada pregunta además de la respuesta que él creía correcta. A continuación podéis ver el porcentaje de dificultad que otorgó a cada pregunta.
 
 | Pregunta | Dificultad |
 |----------|----------|
@@ -171,4 +173,4 @@ Obtenemos las siguientes conclusiones tras los experimentos realizados con ChatG
 - Cabe decir que, a pesar de decirle varias veces a la inteligencia artificial que la respuesta a cada pregunta debía empezar por la letra que le indicaba, en varias ocasiones respondía sin usar dicha letra como inicial y había veces que se olvidaba de decirme el porcentaje de dificultad que le otorgaba a dicha pregunta. En resumen: se olvidaba de las instrucciones anteriores a veces.
 - Tras todo esto observamos que los seres humanos seguimos siendo más inteligentes que las actuales inteligencias artificiales, y que les queda mucho por mejorar. Pero, ¡ojo! No las infravaloremos, porque cuando mejoren es probable que sean más fuertes que nosotros.
 
-***NOTA: Este experimento se ha realizado con el modelo de ChatGPT antiguo: GPT-3.5. El más actual es GPT-4. Si este artículo recibe el apoyo suficiente, podemos volver a probar con estos roscos u otros con la próxima versión de ChatGPT: GPT-4.***
+***NOTA: Este experimento se ha realizado con el modelo de ChatGPT antiguo: GPT-3.5. El más actual es GPT-4.***
