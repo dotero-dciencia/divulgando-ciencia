@@ -24,7 +24,7 @@ Por esta razón, aprovechamos el día de hoy para hablar de los **matemáticos m
 
 ## Euclides (323 a. C. - 285 a. C.)
 
-![Cuadro del matemático griego Euclides](images/contenido/los-matematicos-mas-importantes-de-la-historia/euclides.webp)
+![Cuadro del matemático griego Euclides](/images/contenido/los-matematicos-mas-importantes-de-la-historia/euclides.webp)
 
 El matemático griego **Euclides** es conocido por todos como **“el padre de la geometría”**, y no es para menos, ya que él escribió el libro **“Elementos”**, considerado en muchas ocasiones como el libro con más éxito de la historia de las Matemáticas, que contiene un gran conjunto de teoremas sobre la geometría y la aritmética teórica, con sus correspondientes demostraciones. Este matemático es uno de los matemáticos destacados más antiguos, pues vivió entre el IV y el III siglo a. C.
 
@@ -34,7 +34,7 @@ La famosa **geometría euclidiana**, el **algoritmo de Euclides** y la **divisi�
 
 ## Arquímedes (287 a. C. - 212 a. C.)
 
-![Cuadro del matemático Arquímedes de Siracusa](images/contenido/los-matematicos-mas-importantes-de-la-historia/arquimedes.webp)
+![Cuadro del matemático Arquímedes de Siracusa](/images/contenido/los-matematicos-mas-importantes-de-la-historia/arquimedes.webp)
 
 El siguiente matemático del que vamos a hablar es **Arquímedes de Siracusa**, sin lugar a duda uno de los matemáticos más importantes de la historia.
 
@@ -46,7 +46,7 @@ Este matemático vivió durante el siglo III a. C., en Siracusa, Sicilia. La cau
 
 ## Hipatia (355 d. C. - 415 d. C.)
 
-![Cuadro de la matemática Hipatia de Alejandría](images/contenido/los-matematicos-mas-importantes-de-la-historia/hipatia.webp)
+![Cuadro de la matemática Hipatia de Alejandría](/images/contenido/los-matematicos-mas-importantes-de-la-historia/hipatia.webp)
 
 Esta gran matemática fue una destacada **maestra** en la Escuela neoplática de Alejandría, además de una destacada **filósofa** y **astrónoma**. En el área de las matemáticas, Hipatia fue conocida por sus aportaciones al **álgebra**, **geometría** y a la **trigonometría**. Además, inventó varios instrumentos matemáticos, como puede ser el **astrolabio**.
 
@@ -54,7 +54,7 @@ Su vida terminó de una manera trágica: fue asesinada por una turba cristiana e
 
 ## Leonhard Euler (1707 - 1783)
 
-![Cuadro del matemático Leonhard Euler](images/contenido/los-matematicos-mas-importantes-de-la-historia/portada.webp)
+![Cuadro del matemático Leonhard Euler](/images/contenido/los-matematicos-mas-importantes-de-la-historia/portada.webp)
 
 Euler fue probablemente el matemático más importante del siglo XVIII, ya que hizo varias grandes aportaciones al mundo de las matemáticas, como son:
 
@@ -66,7 +66,7 @@ Sin lugar a duda, Euler hizo muchas más aportaciones a este campo, pero si quer
 
 ## Sophie Germain (1776 - 1831)
 
-![Cuadro de la matemática Sophie Germain](images/contenido/los-matematicos-mas-importantes-de-la-historia/germain.webp)
+![Cuadro de la matemática Sophie Germain](/images/contenido/los-matematicos-mas-importantes-de-la-historia/germain.webp)
 
 Sophie Germain fue una matemática muy importante en la historia, ya que fue una pionera en la **teoría de la elasticidad** e hizo aportaciones de gran carácter a la **teoría de números**.
 
@@ -74,7 +74,7 @@ Sin lugar a duda, uno de sus grandes trabajos fue el estudio que hizo sobre los 
 
 ## Carl Friederich Gauss (1777 – 1855)
 
-![Cuadro del matemático Gauss](images/contenido/los-matematicos-mas-importantes-de-la-historia/gauss.webp)
+![Cuadro del matemático Gauss](/images/contenido/los-matematicos-mas-importantes-de-la-historia/gauss.webp)
 
 Gauss fue un niño prodigio, a pesar de que su familia tenía poca cultura. La mayor aportación a las matemáticas de este matemático es la famosa **suma de Gauss**, que consiste en lo siguiente: dada una **suma de n números que guardan entre sí la misma diferencia**, puedes hallar el resultado sumando el primer número más el último y multiplicándolo por n/2.
  
@@ -86,7 +86,7 @@ También cabe destacar sus aportaciones al **Álgebra**, a la **Astronomía** y 
 
 ## Évariste Galois (1811 – 1832)
 
-![Cuadro del matemático Galois](images/contenido/los-matematicos-mas-importantes-de-la-historia/galois.webp)
+![Cuadro del matemático Galois](/images/contenido/los-matematicos-mas-importantes-de-la-historia/galois.webp)
 
 Este matemático francés descubrió a temprana edad, mientras era un adolescente, las condiciones necesarias y suficientes para que una **ecuación algebraica sea resuelta por radicales**. En Argentina, el día 31 de mayo, se celebra el Día del Matemático en honor a Évariste.
 
@@ -98,7 +98,7 @@ Las alumnas del **IES Agra do Orzán** le mencionan en la canción que hicieron 
 
 ## Ada Lovelace (1815 – 1852)
 
-![Cuadro de la matemática Ada Lovelace](images/contenido/los-matematicos-mas-importantes-de-la-historia/lovelace.webp)
+![Cuadro de la matemática Ada Lovelace](/images/contenido/los-matematicos-mas-importantes-de-la-historia/lovelace.webp)
 
 Sin duda, esta matemática tiene una grandísima importancia en que hoy estés leyendo este artículo. Ella fue la primera persona en reconocer que las **máquinas tenían más aplicaciones que el cálculo**. Además, diseñó el **primer algoritmo que fue procesado por una computadora**. Por esto es considerada como la **primera programadora de ordenadores** y, sin lugar a duda, como una de las personas a la que más debemos que estés leyendo este artículo desde un dispositivo digital.
 
@@ -106,7 +106,7 @@ El algoritmo que ella diseñó tenía como objetivo que la Máquina Analítica c
 
 ## Emmy Noether (1882 – 1935)
 
-![Cuadro de la matemática Emmy Noether](images/contenido/los-matematicos-mas-importantes-de-la-historia/noether.webp)
+![Cuadro de la matemática Emmy Noether](/images/contenido/los-matematicos-mas-importantes-de-la-historia/noether.webp)
 
 Esta mujer es considerada por muchas personas como la **matemática más importante de la historia**. Hizo grandes aportaciones a la teoría de la invariante algebraica y desarrolló teoremas (los teoremas de Noether). Estos últimos fueron fundamentales para que el propio Albert Einstein elaborara más tarde la teoría de la relatividad.
 
@@ -114,7 +114,7 @@ También revolucionó la teoría de los **anillos**, la teoría de **cuerpos** y
 
 ## Clara Grima
 
-![Cuadro de la matemática Clara Grima](images/contenido/los-matematicos-mas-importantes-de-la-historia/grima.webp)
+![Cuadro de la matemática Clara Grima](/images/contenido/los-matematicos-mas-importantes-de-la-historia/grima.webp)
 
 **Clara**, nacida en Coria, es **doctora en Matemáticas** por la Universidad de Sevilla y **profesora titular** de Matemática Aplicada en dicha universidad. A lo largo de su vida ha compaginado su labor educativa con labor docente e investigadora con la divulgativa, pues a lo largo de su vida ha escrito varios libros de gran interés para todo tipo de público, como son:
 
@@ -128,7 +128,7 @@ Ha ganado grandes premios a lo largo de su vida y continúa con su labor: enseñ
 
 ## Eduardo Sáenz de Cabezón
 
-![Cuadro del matemático Eduardo Sáenz de Cabezón](images/contenido/los-matematicos-mas-importantes-de-la-historia/saenz-de-cabezon.webp)
+![Cuadro del matemático Eduardo Sáenz de Cabezón](/images/contenido/los-matematicos-mas-importantes-de-la-historia/saenz-de-cabezon.webp)
 
 Eduardo es conocido por su labor divulgativa en su canal de YouTube, **Derivando**, un canal estupendo para aquellos amantes de las matemáticas, ya que explica en unos vídeos muy **amenos, claros e ilustrados** conceptos matemáticos realmente interesantes.
 

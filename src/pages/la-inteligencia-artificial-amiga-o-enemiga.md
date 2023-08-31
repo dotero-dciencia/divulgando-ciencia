@@ -74,7 +74,7 @@ Si ChatGPT nos respondía de forma escrita, Dall·E 2 nos responde con imágenes
 
 En el siguiente ejemplo pedimos a esta I. A. un panda científico loco mezclando compuestos químicos espumosos, con estilo de arte digital, tal y como nos dice en un ejemplo.
 
-![Imagen de los resultados al introducir en Dall·E 2 el siguiente prompt: "Panda científico loco mezclando compuestos químicos espumosos. Arte digital"](images/contenido/la-inteligencia-artificial-amiga-o-enemiga/dalle.webp)
+![Imagen de los resultados al introducir en Dall·E 2 el siguiente prompt: "Panda científico loco mezclando compuestos químicos espumosos. Arte digital"](/images/contenido/la-inteligencia-artificial-amiga-o-enemiga/dalle.webp)
 
 ### Bing AI
 
@@ -90,7 +90,7 @@ La inteligencia artificial más actual es la de Google. Tiene un funcionamiento 
 
 También **tiene acceso a Internet y proporciona sus fuentes**. Como principal característica que le diferencia del resto de IAs, ofrece varias respuestas a una misma pregunta, tal y como se puede observar en la siguiente imagen.
 
-![Imagen de la interfaz de Google Bard](images/contenido/la-inteligencia-artificial-amiga-o-enemiga/google-bard.webp)
+![Imagen de la interfaz de Google Bard](/images/contenido/la-inteligencia-artificial-amiga-o-enemiga/google-bard.webp)
 
 ### [Tome](https://tome.app/)
 
