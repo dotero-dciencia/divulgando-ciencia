@@ -8,7 +8,7 @@ const{frontmatter} = Astro.props;
         <h4 class="font-medium uppercase" id={frontmatter.ciencia}>{frontmatter.ciencia}</h4>
         <h1 class="font-bold text-5xl leading-[3.25rem]">{frontmatter.titulo}</h1>
         <section class="flex w-fit m-auto my-4 gap-x-3">
-            <img alt="Foto de perfil del autor de esta entrada" class="w-12 h-12 object-cover rounded-full" src={frontmatter.fotoDelAutor}>
+            <img alt="Foto de perfil del autor de esta entrada" class="bg-principal-white w-12 h-12 object-cover rounded-full" src={frontmatter.fotoDelAutor}>
             <div class="flex-col text-left font-normal ">
                 <h4 class="font-medium">{frontmatter.autor}</h4>
                 <ul class="flex gap-x-1">

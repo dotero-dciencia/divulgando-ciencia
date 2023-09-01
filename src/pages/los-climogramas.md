@@ -4,11 +4,11 @@ titulo: Los climogramas
 autor: abgomez
 fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/los-climogramas/portada.webp
-portadaAlt: ALT
+portadaAlt: Climograma completo con los datos de Valladolid.
 ciencia: geología
 fechaMostrar: 30 octubre, 2022
 fechaOrdenar: Oct 30, 2022
-duracion: 5
+duracion: 3
 url: /los-climogramas
 ---
 

@@ -83,7 +83,7 @@ El siguiente detector que vamos a probar se llama corrector.app. Tras introducir
 Pasamos al cuarto detector que veremos, en este caso es de Compilatio. Este también nos asegura ser multilingüe, ya que nos dice que podemos escribir el texto en inglés, francés, italiano o español. Como contra nos encontramos con el límite de caracteres: nuestro texto tiene que oscilar entre los 200 y los 2000 caracteres. Tampoco es necesario el registro y, tras introducir el texto y pulsar “Start” nos dirá quién ha escrito el texto: humano o IA y la probabilidad con la que ha sido así.
 
 <details>
-  <summary>Resultados</summary>![Alt text](image.png)
+  <summary>Resultados</summary>
   
   - **Texto generado por ChatGPT-3.5:** IA (99%) 🟩
   - **Texto generado por ChatGPT-3.5 y parafraseado por Paraphraser.io:** IA (99%) 🟩
