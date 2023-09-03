@@ -4,7 +4,7 @@ import Contenido from "../components/Contenido.astro";
 import Buscador from "../components/Buscador.astro";
 const title = "Inicio";
 
-const contenido = await Astro.glob('../pages/*.md');
+const contenido = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
 
 <Layout title={title}>
@@ -16,7 +16,7 @@ const contenido = await Astro.glob('../pages/*.md');
                 <h1 class="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-semibold mb-8">
                     divulgandociencia.com
                 </h1>
-                <h3 class="text-base xl:text-2xl mb-16 font-normal">
+                <h3 class="text-base sm:text-lg lg:text-xl xl:text-2xl mb-16 font-normal">
                     Descubre el poder de la divulgación científica abierta
                 </h3>
             </header>
@@ -34,15 +34,29 @@ const contenido = await Astro.glob('../pages/*.md');
     </section>
     <!--Zona de los artículos-->
     <main class="w-full">
-        <section class="flex gap-x-7 w-full justify-center h-full my-7">
-            {contenido.slice(0, 4).map((post) => (
-                <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fecha} imagen={post.frontmatter.portada} design="desktop-a-4"/>
-              ))}
+        <section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
+            <div class="lg:px-0 px-12 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
+                {contenido.slice(0, 2).map((post) => (
+                    <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
+                ))}
+            </div>
+            <div class="lg:px-0 px-12 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
+                {contenido.slice(2, 4).map((post) => (
+                    <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
+                ))}
+            </div>
         </section>
-        <section class="flex gap-x-7 w-full h-full mb-7 justify-center">
-            {contenido.slice(4, 8).map((post) => (
-                <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fecha} imagen={post.frontmatter.portada} design="desktop-a-4"/>
-              ))}
+        <section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
+            <div class="lg:px-0 px-12  md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
+                {contenido.slice(0, 2).map((post) => (
+                    <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
+                ))}
+            </div>
+            <div class="lg:px-0 px-12 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
+                {contenido.slice(2, 4).map((post) => (
+                    <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
+                ))}
+            </div>
         </section>
         <section class="flex w-full justify-end gap-x-3 px-36">
             <a href="/articulos" class="bg-faded-black font-medium w-48 py-2 rounded-lg flex gap-x-1 h-full items-center hover:scale-105 transition-all justify-center dark:bg-faded-white dark:text-principal-white">
