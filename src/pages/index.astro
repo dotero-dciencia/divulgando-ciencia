@@ -10,13 +10,13 @@ const contenido = await Astro.glob('../pages/*.md');
 <Layout title={title}>
     <!--Parte principal del landing-->
     <section class="bg-principal-black h-screen w-full text-center relative overflow-hidden text-principal-white flex">
-        <section class="m-auto w-full place-content-center">
+        <section class="m-auto w-full place-content-center px-8">
             <!--Texto (título y subtítulo)-->
             <header class="z-30 relative">
-                <h1 class="text-8xl font-semibold mb-8">
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-semibold mb-8">
                     divulgandociencia.com
                 </h1>
-                <h3 class="text-2xl mb-16 font-normal">
+                <h3 class="text-base xl:text-2xl mb-16 font-normal">
                     Descubre el poder de la divulgación científica abierta
                 </h3>
             </header>
@@ -28,8 +28,8 @@ const contenido = await Astro.glob('../pages/*.md');
         </section>
 
         <!--Imagen de fondo-->
-        <div class="absolute top-0 bottom-0 z-10 blur opacity-50 bg-auto bg-center h-screen w-full">
-            <img alt="Imagen de portada de divulgandociencia.com. Mujer escribiendo sobre una pizarra verde." src="/images/landing-page/portada.webp"/>
+        <div class="absolute top-0 bottom-0 z-10 blur opacity-50 bg-center h-full w-full">
+            <img class="h-full object-cover w-full" alt="Imagen de portada de divulgandociencia.com. Mujer escribiendo sobre una pizarra verde." src="/images/landing-page/portada.webp"/>
         </div>
     </section>
     <!--Zona de los artículos-->
