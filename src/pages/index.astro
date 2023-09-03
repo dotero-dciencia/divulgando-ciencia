@@ -4,19 +4,19 @@ import Contenido from "../components/Contenido.astro";
 import Buscador from "../components/Buscador.astro";
 const title = "Inicio";
 
-const contenido = await Astro.glob('../pages/*.md');
+const contenido = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
 
 <Layout title={title}>
     <!--Parte principal del landing-->
     <section class="bg-principal-black h-screen w-full text-center relative overflow-hidden text-principal-white flex">
-        <section class="m-auto w-full place-content-center">
+        <section class="m-auto w-full place-content-center px-8">
             <!--Texto (título y subtítulo)-->
             <header class="z-30 relative">
-                <h1 class="text-8xl font-semibold mb-8">
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-semibold mb-8">
                     divulgandociencia.com
                 </h1>
-                <h3 class="text-2xl mb-16 font-normal">
+                <h3 class="text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl mb-16 font-normal">
                     Descubre el poder de la divulgación científica abierta
                 </h3>
             </header>
@@ -28,21 +28,35 @@ const contenido = await Astro.glob('../pages/*.md');
         </section>
 
         <!--Imagen de fondo-->
-        <div class="absolute top-0 bottom-0 z-10 blur opacity-50 bg-auto bg-center h-screen w-full">
-            <img alt="Imagen de portada de divulgandociencia.com. Mujer escribiendo sobre una pizarra verde." src="/images/landing-page/portada.webp"/>
+        <div class="absolute top-0 bottom-0 z-10 blur opacity-50 bg-center h-full w-full">
+            <img class="h-full object-cover w-full" alt="Imagen de portada de divulgandociencia.com. Mujer escribiendo sobre una pizarra verde." src="/images/landing-page/portada.webp"/>
         </div>
     </section>
     <!--Zona de los artículos-->
     <main class="w-full">
-        <section class="flex gap-x-7 w-full justify-center h-full my-7">
-            {contenido.slice(0, 4).map((post) => (
-                <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fecha} imagen={post.frontmatter.portada} design="desktop-a-4"/>
-              ))}
+        <section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
+            <div class="lg:px-0 px-12 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
+                {contenido.slice(0, 2).map((post) => (
+                    <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
+                ))}
+            </div>
+            <div class="lg:px-0 px-12 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
+                {contenido.slice(2, 4).map((post) => (
+                    <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
+                ))}
+            </div>
         </section>
-        <section class="flex gap-x-7 w-full h-full mb-7 justify-center">
-            {contenido.slice(4, 8).map((post) => (
-                <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fecha} imagen={post.frontmatter.portada} design="desktop-a-4"/>
-              ))}
+        <section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
+            <div class="lg:px-0 px-12  md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
+                {contenido.slice(0, 2).map((post) => (
+                    <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
+                ))}
+            </div>
+            <div class="lg:px-0 px-12 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
+                {contenido.slice(2, 4).map((post) => (
+                    <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
+                ))}
+            </div>
         </section>
         <section class="flex w-full justify-end gap-x-3 px-36">
             <a href="/articulos" class="bg-faded-black font-medium w-48 py-2 rounded-lg flex gap-x-1 h-full items-center hover:scale-105 transition-all justify-center dark:bg-faded-white dark:text-principal-white">

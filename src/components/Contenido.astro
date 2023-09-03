@@ -1,45 +1,47 @@
 ---
 const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imagen, design, fotoAutor, alt} = Astro.props
 ---
-<a class="group" href={url} id={design}>
-    <m id={contenido}>
-        <div class="bg-principal-black group-hover:scale-[1.075] rounded-lg transition-all relative w-full">
-            <img src={imagen} class="w-full rounded-lg image object-cover text-principal-white text-sm" alt={alt}>
-            <div class="absolute top-0 bottom-0 w-full h-full items-center justify-center play">
-                <svg width="96" height="96" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#f2f2f2" d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.736 4 21.276 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648l12.812 6.968Z"/>
-                </svg>
+<div class="my-7" id={design}>
+    <a class="group" href={url}>
+        <m id={contenido}>
+            <div class="bg-principal-black group-hover:scale-[1.075] rounded-lg transition-all relative w-full">
+                <img src={imagen} class="bg-principal-white w-full rounded-lg image object-cover text-principal-white text-sm" alt={alt}>
+                <div class="absolute top-0 bottom-0 w-full h-full items-center justify-center play">
+                    <svg width="96" height="96" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#f2f2f2" d="M21.409 9.353a2.998 2.998 0 0 1 0 5.294L8.597 21.614C6.534 22.736 4 21.276 4 18.968V5.033c0-2.31 2.534-3.769 4.597-2.648l12.812 6.968Z"/>
+                    </svg>
+                </div>
             </div>
-        </div>
-        <div id={ciencia}>
-            <h6 class="font-medium uppercase mt-4">
-                {ciencia}
-            </h6>
-            <div class="svg-wrap">
-                <svg viewBox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
-                    <path id="svg_line" d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571"></path>
-                </svg>
+            <div id={ciencia}>
+                <h6 class="font-medium uppercase mt-4">
+                    {ciencia}
+                </h6>
+                <div class="svg-wrap">
+                    <svg viewBox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
+                        <path id="svg_line" d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571"></path>
+                    </svg>
+                </div>
+                <section class="link-svgline">
+                    <h2 class="my-1 text-[1.3rem] font-medium text-principal-black dark:text-principal-white title">
+                        {titulo}
+                        <svg class="link-svgline"><use xlink:href="#svg_line"></use></svg>
+                    </h2>
+                    <footer>
+                        <div class="z-0 flex gap-x-1 text-dark-gray dark:text-light-gray metadata-article text-[0.85rem] [&>p]:my-auto h-fit">
+                            <img alt="Foto de perfil del autor" src={fotoAutor} class="bg-principal-white h-4 w-4 rounded-full object-contain my-auto">
+                            <p>{autor}</p>
+                            <p>·</p>
+                            <p>{fecha}</p>
+                        </div>
+                        <div class="hidden text-dark-gray dark:text-light-gray metadata-video">
+                            <p>Duración: {duracion}</p>
+                        </div>
+                    </footer>
+                </section>
             </div>
-            <section class="link-svgline">
-                <h2 class="my-1 text-[1.3rem] font-medium text-principal-black dark:text-principal-white title">
-                    {titulo}
-                    <svg class="link-svgline"><use xlink:href="#svg_line"></use></svg>
-                </h2>
-                <footer>
-                    <div class="z-0 flex gap-x-1 text-dark-gray dark:text-light-gray metadata-article text-sm [&>p]:my-auto h-fit">
-                        <img alt="Foto de perfil del autor" src={fotoAutor} class="h-5 w-5 rounded-full object-contain">
-                        <p>{autor}</p>
-                        <p>·</p>
-                        <p>{fecha}</p>
-                    </div>
-                    <div class="hidden text-dark-gray dark:text-light-gray metadata-video">
-                        <p>Duración: {duracion}</p>
-                    </div>
-                </footer>
-            </section>
-        </div>
-    </main>
-</a>
+        </main>
+    </a>
+</div>
 
 <style>
     #video{
@@ -167,14 +169,22 @@ const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imag
         stroke: #16dac0;
         }
     }
-    #desktop-a-4{
-        width: 18%;
+    #sm{
+        width: 35%;
         .image{
             height:10rem;
         }
+
+        @media only screen and (max-width: 1024px){
+            width: 40%;
+        }
+
+        @media only screen and (max-width: 768px){
+            width: 100%;
+        }
     }
 
-    #desktop-a-2-grande{
+    #xl{
         width: 48%;
         .title{
             font-size: 1.6rem;
@@ -182,15 +192,21 @@ const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imag
         .image{
             height:16rem;
         }
+        @media only screen and (max-width: 768px){
+            width: 100%;
+        }
     }
 
-    #desktop-a-2-mini{
+    #lg{
         width:28%;
         .title{
             font-size: 1.4rem;
         }
         .image{
             height:16rem;
+        }
+        @media only screen and (max-width: 768px){
+            width: 100%;
         }
     }
     .svg-wrap {

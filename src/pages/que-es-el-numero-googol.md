@@ -2,13 +2,13 @@
 layout: ../layouts/ArticleLayout.astro
 titulo: Qué es el número Googol
 autor: Neplod
-fotoDelAutor: /images/autores/neplod.jpg
+fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/que-es-el-numero-googol/portada.webp
-portadaAlt: Imagen de persona usando una calculadora.
+portadaAlt: Imagen mostrando muchos unos y ceros.
 ciencia: matemáticas
 fechaMostrar: 18 diciembre, 2022
 fechaOrdenar: Dec 18, 2022
-duracion: 5
+duracion: 1
 url: /que-es-el-numero-googol
 ---
 
