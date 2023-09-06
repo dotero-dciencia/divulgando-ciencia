@@ -4,12 +4,7 @@ const {design} = Astro.props
 
 <div id={design} class="search-container flex items-center justify-center w-full">
     <div class="xl:w-3/12 lg:w-4/12 md:w-5/12 sm:w-7/12 w-9/12 h-fit flex rounded">
-        <input type="text" id="campo-de-busqueda" class="w-full 2xl:p-4 p-2 py-3 border border-none focus:outline-none rounded-l-lg 2xl:rounded-l-xl px-3 font-medium" placeholder="¿Qué quieres aprender hoy?">
-        <button id="boton-de-busqueda" class="py-2 pr-2 border-none cursor-pointer rounded-r-lg 2xl:rounded-r-xl">
-            <svg class="w-6 h-6 2xl:w-10 2xl:h-10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"/>
-            </svg>
-        </button>
+        <div id="search"></div>
     </div>
 </div>
 
@@ -62,3 +57,11 @@ const {design} = Astro.props
         
     }
 </style>
+
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search" });
+    });
+</script>
