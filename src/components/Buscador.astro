@@ -3,13 +3,20 @@ const {design} = Astro.props
 ---
 
 <div id={design} class="search-container flex items-center justify-center w-full">
-    <div class="xl:w-3/12 lg:w-4/12 md:w-5/12 sm:w-7/12 w-9/12 h-fit flex rounded">
-        <input type="text" id="campo-de-busqueda" class="w-full 2xl:p-4 p-2 py-3 border border-none focus:outline-none rounded-l-lg 2xl:rounded-l-xl px-3 font-medium" placeholder="¿Qué quieres aprender hoy?">
-        <button id="boton-de-busqueda" class="py-2 pr-2 border-none cursor-pointer rounded-r-lg 2xl:rounded-r-xl">
-            <svg class="w-6 h-6 2xl:w-10 2xl:h-10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <div class="2xl:w-2/3 xl:w-3/12 lg:w-4/12 md:w-5/12 sm:w-7/12 w-9/12 h-fit flex rounded">
+        <input type="text" id="campo-de-busqueda" class="w-full 2xl:py-4 py-3 border border-none focus:outline-none rounded-l-lg 2xl:rounded-l-xl px-3 font-medium" placeholder="¿Qué quieres aprender hoy?">
+        <div class="w-full">
+            <button id="boton-de-busqueda" class="hidden md:inline py-2 pr-2 border-none cursor-pointer rounded-r-lg 2xl:rounded-r-xl">
+                <svg class="w-6 h-6 2xl:w-10 2xl:h-10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"/>
+                </svg>
+            </button>
+        </div>
+        <a class="block md:hidden w-full" href="./../pages/buscador.astro">
+            <svg class="w-6 h-6 2xl:w-10 2xl:h-10 dark:stroke-principal-white stroke-principal-black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"/>
             </svg>
-        </button>
+        </a>
     </div>
 </div>
 
@@ -37,14 +44,20 @@ const {design} = Astro.props
     }
     #menu{
         #campo-de-busqueda{
-            font-size: 1rem;
+            font-size:0.75rem;
+            display: none;
+            @media only screen and (min-width: 767px){
+                display: block;
+                font-size:1rem;
+            }
+            @media only screen and (min-width: 1536px){
+                font-size:1.5rem;
+            }
             font-weight: 500;
             background-color: rgb(34, 34, 34, .1);
             padding: 0 0 0 0.5rem;
             width: 14rem;
-            @media only screen and (min-width: 1536px){
-                font-size:3rem;
-            }}
+        }
         :is(.dark #campo-de-busqueda){
             background-color: rgb(245, 245, 245, .25);
         }
@@ -56,9 +69,5 @@ const {design} = Astro.props
             background-color: rgb(34, 34, 34, .1);
             stroke: #222222;
         }
-        #search-input::placeholder{
-            color: #000000;
-        }
-        
     }
 </style>
