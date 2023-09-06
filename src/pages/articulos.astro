@@ -18,120 +18,120 @@ const articulos = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.front
 	<FilaBotones/>
 	<section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
-			{articulos.slice(0, 2).map((post) => (
+			{articulos.slice(2, 4).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
-			{articulos.slice(2, 4).map((post) => (
+			{articulos.slice(4, 6).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 	</section>
 	<section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
-			{articulos.slice(0, 2).map((post) => (
+			{articulos.slice(6, 8).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
-			{articulos.slice(2, 4).map((post) => (
+			{articulos.slice(8, 10).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 	</section>
 	<section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
-			{articulos.slice(0, 2).map((post) => (
+			{articulos.slice(10, 12).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
-			{articulos.slice(2, 4).map((post) => (
+			{articulos.slice(12, 14).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 	</section>
 	<section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
-			{articulos.slice(0, 2).map((post) => (
+			{articulos.slice(14, 16).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
-			{articulos.slice(2, 4).map((post) => (
+			{articulos.slice(16, 18).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 	</section>
 	<section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
-			{articulos.slice(0, 2).map((post) => (
+			{articulos.slice(18, 20).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
-			{articulos.slice(2, 4).map((post) => (
+			{articulos.slice(20, 22).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 	</section>
 	<section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
-			{articulos.slice(0, 2).map((post) => (
+			{articulos.slice(22, 24).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
-			{articulos.slice(2, 4).map((post) => (
+			{articulos.slice(24, 26).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 	</section>
 	<section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
-			{articulos.slice(0, 2).map((post) => (
+			{articulos.slice(26, 28).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
-			{articulos.slice(2, 4).map((post) => (
+			{articulos.slice(28, 30).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 	</section>
 	<section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
-			{articulos.slice(0, 2).map((post) => (
+			{articulos.slice(30, 32).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
-			{articulos.slice(2, 4).map((post) => (
+			{articulos.slice(32, 34).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 	</section>
 	<section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
-			{articulos.slice(0, 2).map((post) => (
+			{articulos.slice(34, 36).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
-			{articulos.slice(2, 4).map((post) => (
+			{articulos.slice(36, 38).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 	</section>
 	<section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
-			{articulos.slice(0, 2).map((post) => (
+			{articulos.slice(38, 40).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
-			{articulos.slice(2, 4).map((post) => (
+			{articulos.slice(42, 44).map((post) => (
 				<Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} design="sm"/>
 			))}
 		</div>
