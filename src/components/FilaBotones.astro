@@ -2,14 +2,21 @@
 import Boton from "./Boton.astro";
 ---
 
-<ul class="flex gap-x-2 w-full justify-center my-4">
-    <Boton ciencia="matemáticas"/>
-    <Boton ciencia="biología"/>
-    <Boton ciencia="geología"/>
-    <Boton ciencia="física"/>
-    <Boton ciencia="química"/>
-    <Boton ciencia="tecnología"/>
-    <Boton ciencia="programación"/>
-    <Boton ciencia="científicos"/>
+<ul class="lg:flex lg:gap-x-2 w-full justify-center my-4 py-2">
+    <div class="md:flex gap-x-2 md:w-full lg:w-fit justify-center">
+        <div class="flex gap-x-2 md:w-fit w-full justify-center">
+            <Boton ciencia="matemáticas"/>
+            <Boton ciencia="biología"/>
+            <Boton ciencia="geología"/>
+        </div>
+        <div class="flex gap-x-2 md:w-fit w-full justify-center my-3 md:m-0">
+            <Boton ciencia="física"/>
+            <Boton ciencia="química"/>
+            <Boton ciencia="tecnología"/>
+        </div>
+    </div>
+    <div class="flex gap-x-2 w-full lg:w-fit justify-center md:mt-3 lg:m-0">
+        <Boton ciencia="programación"/>
+        <Boton ciencia="científicos"/>
+    </div>
 </ul>
-
