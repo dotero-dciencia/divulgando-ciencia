@@ -25,7 +25,7 @@ const articulos = (await Astro.glob('../pages/*.md')).sort((a, b) => Date.parse(
         </figure>
     </section> 
     <section class="w-full justify-center flex mt-5">
-        <article class="prose dark:prose-invert prose-img:my-3 prose-img:rounded mb-4">
+        <article class="prose dark:prose-invert prose-img:my-3 prose-img:rounded mb-4 max-w-1/2">
             <slot></slot>
         </article>
     </section>
