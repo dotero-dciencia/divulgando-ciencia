@@ -1,0 +1,93 @@
+---
+import PrincipalLayout from "../../layouts/PrincipalLayout.astro";
+---
+
+<PrincipalLayout>
+    <img decoding="async" id="contenedor" src="https://divulgandociencia.com/wp-content/uploads/2023/05/playing-card-ga3bfbb6e1_1280.webp" alt="Carta" style="width: 30%;">
+    <br>
+    <br>
+    <div id="bct">
+    <div>
+    <div class="button-container" id="bc1">
+    <textarea id="ta-q" name="prod" placeholder="Introduce tu resultado aquí" ></textarea>
+    <button onclick="sub()" id="but1" accesskey="N">
+    <img decoding="async" id="but1-img" src="https://divulgandociencia.com/wp-content/uploads/2023/05/si.webp" alt="">
+    </button>
+    </div>
+    </div>
+    <div class="button-container" id="bc2" style="background-color: #4264C9; color: #FFFFFF; width: 100%;">
+    <label id="cont" class="txt" style="text-align: center; color: #FFFFFF;">Introduce tu resultado y te diré tu carta y tu número de hermanos.</label>
+    <button onclick="sub()" id="but2">
+    </button>
+    </div>
+    </div>
+    <br>
+    <p id="links_bot"><a href="https://divulgandociencia.com/guia-adivino-tu-carta/">¿Todavía no sabes cómo jugar a este juego? ¡No te preocupes! Puedes entrar en la guía haciendo clic aquí.</a></p>
+</PrincipalLayout>
+
+<script>
+    function crearListaNumeros() {
+      let listaNumeros = [];
+    
+      // Definir los intervalos como pares de números
+      let intervalos = [
+        [226, 275],
+        [626, 665],
+        [1226, 1265],
+        [2026, 3065],
+        [4226, 4265],
+        [5626, 5665],
+        [7226, 7265],
+        [9026, 9065],
+        [11026, 11065]
+      ];
+    
+      // Iterar sobre cada intervalo y agregar los números a la lista
+      for (let i = 0; i < intervalos.length; i++) {
+        let inicio = intervalos[i][0];
+        let fin = intervalos[i][1];
+        for (let j = inicio; j <= fin; j++) {
+          listaNumeros.push(j);
+        }
+      }
+    
+      return listaNumeros;
+    }
+    function sub(){
+    lista = crearListaNumeros();
+    console.log("true");
+            var objetivo = document.getElementById('cont');
+            let resultado = parseInt(document.getElementsByName("prod")[0].value);
+            if (lista.includes(parseInt(resultado))){
+                let hermanos = 0;
+    
+                while (true) {
+                if ((resultado-5)%10 !== 0) {
+                    resultado += 1;
+                    hermanos += 1;
+                } else {
+                    break;
+                }
+                }
+    
+                resultado = String(resultado);
+                let palo = parseInt(resultado[resultado.length-2] + resultado[resultado.length-1]);
+                if (palo - 25 === 10) {
+                palo = "oros";
+                } else if (palo - 25 === 20) {
+                palo = "copas";
+                } else if (palo - 25 === 30) {
+                palo = "espadas";
+                } else if (palo - 25 === 40) {
+                palo = "bastos";
+                }
+                let numero = parseInt(resultado.slice(0, -2));
+                numero = parseInt(Math.sqrt(numero));
+                console.log("Tu carta es " + numero + " de " + palo + " y tienes " + hermanos + " hermano(s).");
+                objetivo.innerHTML = "Tu carta es " + numero + " de " + palo + " y tienes " + hermanos + " hermano(s).";
+            }
+            else{
+                objetivo.innerHTML = "Introduce un número válido."
+            }
+        }
+    </script>
