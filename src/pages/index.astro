@@ -13,10 +13,10 @@ const contenido = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.front
         <section class="m-auto w-full place-content-center px-8">
             <!--Texto (título y subtítulo)-->
             <header class="z-30 relative">
-                <h1 class="text-3xl sm:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl min-[2250px]:text-[10rem] font-semibold mb-8">
+                <h1 class="text-3xl sm:text-5xl lg:text-7xl xl:text-8xl min-[1800px]:text-9xl min-[2250px]:text-[10rem] font-semibold mb-8">
                     divulgandociencia.com
                 </h1>
-                <h3 class="text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl min-[2250px]:text-4xl mb-16 font-normal">
+                <h3 class="text-base sm:text-lg lg:text-xl xl:text-2xl min-[1800px]:text-3xl min-[2250px]:text-4xl mb-16 font-normal">
                     Descubre el poder de la divulgación científica abierta
                 </h3>
             </header>
@@ -33,7 +33,7 @@ const contenido = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.front
         </div>
     </section>
     <!--Zona de los artículos-->
-    <main class="w-full 2xl:py-8">
+    <main class="w-full min-[1800px]:py-8">
         <section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
             <div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
                 {contenido.slice(0, 2).map((post) => (
@@ -59,15 +59,15 @@ const contenido = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.front
             </div>
         </section>
         <section class="flex w-full justify-center lg:justify-end gap-x-3 px-36">
-            <a href="/articulos" class="bg-faded-black font-medium w-48 py-2 px-4 sm:px-0 rounded-lg flex gap-x-1 h-full items-center hover:scale-105 transition-all justify-center dark:bg-faded-white dark:text-principal-white text-base 2xl:text-2xl 2xl:w-64">
+            <a href="/articulos" class="bg-faded-black font-medium w-48 py-2 px-4 sm:px-0 rounded-lg flex gap-x-1 h-full items-center hover:scale-105 transition-all justify-center dark:bg-faded-white dark:text-principal-white text-base min-[1800px]:text-2xl min-[1800px]:w-64">
                 <span class="hidden md:inline">Todos los </span><span class="capitalize md:lowercase">artículos</span>
-                <svg class="hidden sm:inline w-5 h-5 2xl:w-7 2xl:h-7" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <svg class="hidden sm:inline w-5 h-5 min-[1800px]:w-7 min-[1800px]:h-7" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3zm0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5zm-1 5v5h-5v2h5v5h2v-5h5v-2h-5v-5h-2z"/>
                 </svg>
             </a>
-            <a href="/videos" class="bg-faded-black font-medium w-48 py-2 px-4 sm:px-0 rounded-lg flex gap-x-1 h-full items-center hover:scale-105 transition-all justify-center dark:bg-faded-white dark:text-principal-white text-base 2xl:text-2xl 2xl:w-64">
+            <a href="/videos" class="bg-faded-black font-medium w-48 py-2 px-4 sm:px-0 rounded-lg flex gap-x-1 h-full items-center hover:scale-105 transition-all justify-center dark:bg-faded-white dark:text-principal-white text-base min-[1800px]:text-2xl min-[1800px]:w-64">
                 <span class="hidden md:inline">Todos los </span><span class="capitalize md:lowercase">vídeos</span>
-                <svg class="hidden sm:inline w-5 h-5 2xl:w-7 2xl:h-7" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <svg class="hidden sm:inline w-5 h-5 min-[1800px]:w-7 min-[1800px]:h-7" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3zm0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5zm-1 5v5h-5v2h5v5h2v-5h5v-2h-5v-5h-2z"/>
                 </svg>
             </a>
