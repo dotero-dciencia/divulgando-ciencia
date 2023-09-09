@@ -7,11 +7,11 @@ const articulos = (await Astro.glob('../pages/*.md')).sort((a, b) => Date.parse(
 
 <PrincipalLayout title={frontmatter.titulo}>
     <section class="w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white">
-        <h4 class="font-medium uppercase text-base 2xl:text-xl" id={frontmatter.ciencia}>{frontmatter.ciencia}</h4>
-        <h1 class="font-bold text-5xl leading-[3.25rem] 2xl:text-7xl mb-8">{frontmatter.titulo}</h1>
+        <h4 class="font-medium uppercase text-base min-[1800px]:text-xl" id={frontmatter.ciencia}>{frontmatter.ciencia}</h4>
+        <h1 class="font-bold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-8">{frontmatter.titulo}</h1>
         <section class="flex w-fit m-auto mb-4 gap-x-3">
             <img alt="Foto de perfil del autor de esta entrada" class="bg-principal-white w-12 h-12 object-cover rounded-full" src={frontmatter.fotoDelAutor}>
-            <div class="flex-col text-left font-normal text-base 2xl:text-xl">
+            <div class="flex-col text-left font-normal text-base min-[1800px]:text-xl">
                 <h4 class="font-medium">{frontmatter.autor}</h4>
                 <ul class="flex gap-x-1">
                     <li>{frontmatter.fechaMostrar}</li>
@@ -21,15 +21,15 @@ const articulos = (await Astro.glob('../pages/*.md')).sort((a, b) => Date.parse(
             </div>
         </section>
         <section class="w-full justify-center flex">
-            <img alt={frontmatter.portadaAlt} class="bg-principal-white w-full text-center justify-center object-cover rounded-lg mt-5 mb-2 h-[12rem] sm:h-[16rem] md:h-96 lg:h-[22rem] xl:h-[25rem] 2xl:h-[32rem] 2xl:w-1/2" src={frontmatter.portada}/>
+            <img alt={frontmatter.portadaAlt} class="bg-principal-white w-full text-center justify-center object-cover rounded-lg mt-5 mb-2 h-[12rem] sm:h-[16rem] md:h-96 lg:h-[22rem] xl:h-[25rem] min-[1800px]:h-[32rem] min-[1800px]:w-1/2" src={frontmatter.portada}/>
         </section>
     </section> 
     <section class="w-full justify-center flex mt-5">
-        <article class="prose dark:prose-invert prose-img:my-3 prose-img:rounded mb-4 text-normal  px-8 sm:px-0 sm:max-w-lg 2xl:text-xl 2xl:max-w-4xl">
+        <article class="prose dark:prose-invert prose-img:my-3 prose-img:rounded mb-4 text-normal  px-8 sm:px-0 sm:max-w-lg min-[1800px]:text-xl min-[1800px]:max-w-4xl">
             <slot></slot>
         </article>
     </section>
-    <section class="flex gap-x-7 w-full justify-center h-full mt-7 px-8 md:px-32 lg:px-60 xl:px-72 2xl:px-96">
+    <section class="flex gap-x-7 w-full justify-center h-full mt-7 px-8 md:px-32 lg:px-60 xl:px-72 min-[1800px]:px-96">
         <div class="w-full">
 		    <Contenido contenido="article" url={articulos[0].frontmatter.url} ciencia={articulos[0].frontmatter.ciencia} titulo={articulos[0].frontmatter.titulo} autor={articulos[0].frontmatter.autor} fecha={articulos[0].frontmatter.fechaMostrar} imagen={articulos[0].frontmatter.portada} design="sm" fotoAutor={articulos[0].frontmatter.fotoDelAutor}/>
         </div>
