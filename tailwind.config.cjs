@@ -9,6 +9,11 @@ module.exports = {
 	darkMode: ["class"],
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		theme: {
+			screens: {
+			  '2xl': '1800px',
+			},
+		  },
 		colors: {
 			'principal-white': '#F5F5F5',
 			'principal-black': '#222222',
