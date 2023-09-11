@@ -9,11 +9,11 @@ module.exports = {
 	darkMode: ["class"],
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		theme: {
-			screens: {
-			  '2xl': '1800px',
-			},
-		  },
+		fontFamily: {
+			'generalsans': ['General Sans Regular', 'sans-serif'],
+			'generalsans-semibold': ['General Sans Semibold', 'sans-serif'],
+			'generalsans-medium': ['General Sans Medium', 'sans-serif']
+		},
 		colors: {
 			'principal-white': '#F5F5F5',
 			'principal-black': '#222222',

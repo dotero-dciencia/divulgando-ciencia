@@ -15,4 +15,28 @@ import Footer from "../components/Footer.astro";
         <slot/>
 		<Footer/>
 	</body>
+	<style is:global>
+		@font-face {
+		  font-family: 'General Sans Semibold';
+		  src: url('/fonts/GeneralSans-Semibold.woff2') format('woff2');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+		@font-face {
+		  font-family: 'General Sans Regular';
+		  src: url('/fonts/GeneralSans-Regular.woff2') format('woff2');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+		@font-face {
+		  font-family: 'General Sans Medium';
+		  src: url('/fonts/GeneralSans-Medium.woff2') format('woff2');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+	  </style> 
 </html>
+
