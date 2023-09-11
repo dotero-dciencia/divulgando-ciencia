@@ -13,14 +13,14 @@ import Buscador from "./Buscador.astro";
 
     <!--Elementos del menú-->
     <nav id={design}>
-        <ul class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-3 [&>li>a]:font-poppins [&>li>a]:py-2 [&>li>a]:text-base [&>li>a]:min-[1800px]:text-xl">
+        <ul class="flex [&>li>a]:inline-block [&>li>a]:px-3 [&>li>a]:font-generalsans-medium [&>li>a]:py-2 [&>li>a]:text-base [&>li>a]:min-[1800px]:text-xl">
             <li>
-                <a href="/articulos" class="text-principal-black dark:text-principal-white articles font-medium">
+                <a href="/articulos" class="text-principal-black dark:text-principal-white articles">
                     Artículos
                 </a>
             </li>
             <li>
-                <a href="/articulos" class = "font-medium text-principal-black dark:text-principal-white videos">
+                <a href="/articulos" class = "text-principal-black dark:text-principal-white videos">
                     Vídeos
                 </a>
             </li>
@@ -73,6 +73,9 @@ import Buscador from "./Buscador.astro";
             backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
             border-radius: 0.25rem/* 4px */;
         }
+        :is(.dark .articles){
+            background-color: rgb(245, 245, 245, .25);
+        }
     }
     #videos{
         .videos{
@@ -80,6 +83,9 @@ import Buscador from "./Buscador.astro";
             --tw-backdrop-blur: blur(16px);
             backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
             border-radius: 0.25rem/* 4px */;
+        }
+        :is(.dark .videos){
+            background-color: rgb(245, 245, 245, .25);
         }
     }
 </style>
