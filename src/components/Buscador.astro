@@ -3,8 +3,13 @@ const {design} = Astro.props
 ---
 
 <div id={design} class="search-container flex items-center justify-center w-full">
-    <div class="xl:w-3/12 lg:w-4/12 md:w-5/12 sm:w-7/12 w-9/12 h-fit flex rounded">
-        <div id="search"></div>
+    <div class="xl:w-3/12 lg:w-4/12 md:w-5/12 sm:w-7/12 w-9/12 h-fit flex rounded justify-center">
+        <a href="/buscador" class="rounded text-lg text-principal-white bg-faded-white px-3 py-2 font-generalsans text-center flex gap-x-2">
+            ¿Qué quieres aprender hoy?
+            <svg class="h-full my-auto" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#f5f5f5" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"/>
+            </svg>
+        </a>
     </div>
 </div>
 
