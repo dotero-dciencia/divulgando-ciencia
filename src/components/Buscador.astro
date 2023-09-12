@@ -8,56 +8,6 @@ const {design} = Astro.props
     </div>
 </div>
 
-<style>
-    #landing-page{
-        #campo-de-busqueda{
-            font-weight: 500;
-            background-color: rgb(245, 245, 245, .25);
-            font-size:0.75rem;
-            @media only screen and (min-width: 640px){
-                font-size:1.25rem;
-            }
-            @media only screen and (min-width: 1280px){
-                font-size:1.4rem;
-            }
-            @media only screen and (min-width: 1536px){
-                font-size:2.5rem;
-            }
-            
-        }
-        #boton-de-busqueda{
-            background-color: rgb(245, 245, 245, .25);
-            stroke:#f5f5f5;
-        }
-    }
-    #menu{
-        #campo-de-busqueda{
-            font-size: 1rem;
-            font-weight: 500;
-            background-color: rgb(34, 34, 34, .1);
-            padding: 0 0 0 0.5rem;
-            width: 14rem;
-            @media only screen and (min-width: 1536px){
-                font-size:3rem;
-            }}
-        :is(.dark #campo-de-busqueda){
-            background-color: rgb(245, 245, 245, .25);
-        }
-        :is(.dark #boton-de-busqueda){
-            background-color: rgb(245, 245, 245, .25);
-            stroke:#f5f5f5;
-        }
-        #boton-de-busqueda{
-            background-color: rgb(34, 34, 34, .1);
-            stroke: #222222;
-        }
-        #search-input::placeholder{
-            color: #000000;
-        }
-        
-    }
-</style>
-
 <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
 <script>

@@ -3,7 +3,7 @@ import Layout from "../../../layouts/Layout.astro";
 import Menu from "../../../components/Menu.astro";
 import Contenido from "../../../components/Contenido.astro";
 import FilaBotones from "../../../components/FilaBotones.astro";
-const title = "Biología";
+const title = "Programación - Artículos";
 
 const articulos = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
