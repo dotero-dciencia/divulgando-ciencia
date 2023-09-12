@@ -1,9 +1,9 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Menu from "../components/Menu.astro";
-import Contenido from "../components/Contenido.astro";
-import FilaBotones from "../components/FilaBotones.astro";
-const title = "Artículos";
+import Layout from "../../../layouts/Layout.astro";
+import Menu from "../../../components/Menu.astro";
+import Contenido from "../../../components/Contenido.astro";
+import FilaBotones from "../../../components/FilaBotones.astro";
+const title = "Científicos - Artículos";
 
 const articulos = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
@@ -15,7 +15,7 @@ const articulos = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.front
 		<Contenido contenido="article" url={articulos[0].frontmatter.url} ciencia={articulos[0].frontmatter.ciencia} titulo={articulos[0].frontmatter.titulo} autor={articulos[0].frontmatter.autor} fecha={articulos[0].frontmatter.fechaMostrar} imagen={articulos[0].frontmatter.portada} design="xl" fotoAutor={articulos[0].frontmatter.fotoDelAutor}/>
 		<Contenido contenido="article" url={articulos[1].frontmatter.url} ciencia={articulos[1].frontmatter.ciencia} titulo={articulos[1].frontmatter.titulo} autor={articulos[1].frontmatter.autor} fecha={articulos[1].frontmatter.fechaMostrar} imagen={articulos[1].frontmatter.portada} design="lg" fotoAutor={articulos[1].frontmatter.fotoDelAutor}/>
 	</section>
-	<FilaBotones/>
+	<FilaBotones inicial="c"/>
 	<section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
 		<div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
 			{articulos.slice(2, 4).map((post) => (
