@@ -5,9 +5,18 @@ import Buscador from "../components/Buscador.astro";
 const title = "Inicio";
 
 const contenido = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
+
+console.log(contenido, "hello")
+
+for (var i = 0; i < contenido.length; i++){
+    if (contenido[i].frontmatter.ciencia != "matemáticas"){
+        console.log("no es matemáticas")
+    }
+    console.log(i)
+}
 ---
 
-<Layout title={title}>
+<Layout title={title} data-content={contenido} id="layout">
     <!--Parte principal del landing-->
     <section class="bg-principal-black h-screen w-full text-center relative overflow-hidden text-principal-white flex">
         <section class="m-auto w-full place-content-center px-8">
