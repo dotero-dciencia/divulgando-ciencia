@@ -31,13 +31,13 @@ const articulos = (await Astro.glob('../pages/*.md')).sort((a, b) => Date.parse(
     </section>
     <section class="flex gap-x-7 w-full justify-center h-full mt-7 px-8 md:px-32 lg:px-60 xl:px-72 min-[1800px]:px-96">
         <div class="w-full">
-		    <Contenido contenido="article" url={articulos[0].frontmatter.url} ciencia={articulos[0].frontmatter.ciencia} titulo={articulos[0].frontmatter.titulo} autor={articulos[0].frontmatter.autor} fecha={articulos[0].frontmatter.fechaMostrar} imagen={articulos[0].frontmatter.portada} design="sm" fotoAutor={articulos[0].frontmatter.fotoDelAutor}/>
+		    <Contenido contenido="article" url={articulos[0].frontmatter.url} ciencia={articulos[0].frontmatter.ciencia} titulo={articulos[0].frontmatter.titulo} autor={articulos[0].frontmatter.autor} fecha={articulos[0].frontmatter.fechaMostrar} imagen={articulos[0].frontmatter.portada} design="xs" fotoAutor={articulos[0].frontmatter.fotoDelAutor}/>
         </div>
         <div class="hidden sm:block w-full">
-		    <Contenido contenido="article" url={articulos[1].frontmatter.url} ciencia={articulos[1].frontmatter.ciencia} titulo={articulos[1].frontmatter.titulo} autor={articulos[1].frontmatter.autor} fecha={articulos[1].frontmatter.fechaMostrar} imagen={articulos[1].frontmatter.portada} design="sm" fotoAutor={articulos[1].frontmatter.fotoDelAutor}/>
+		    <Contenido contenido="article" url={articulos[1].frontmatter.url} ciencia={articulos[1].frontmatter.ciencia} titulo={articulos[1].frontmatter.titulo} autor={articulos[1].frontmatter.autor} fecha={articulos[1].frontmatter.fechaMostrar} imagen={articulos[1].frontmatter.portada} design="xs" fotoAutor={articulos[1].frontmatter.fotoDelAutor}/>
         </div>
         <div class="hidden sm:block w-full"> 
-            <Contenido contenido="article" url={articulos[2].frontmatter.url} ciencia={articulos[2].frontmatter.ciencia} titulo={articulos[2].frontmatter.titulo} autor={articulos[2].frontmatter.autor} fecha={articulos[2].frontmatter.fechaMostrar} imagen={articulos[2].frontmatter.portada} design="sm" fotoAutor={articulos[2].frontmatter.fotoDelAutor}/>
+            <Contenido contenido="article" url={articulos[2].frontmatter.url} ciencia={articulos[2].frontmatter.ciencia} titulo={articulos[2].frontmatter.titulo} autor={articulos[2].frontmatter.autor} fecha={articulos[2].frontmatter.fechaMostrar} imagen={articulos[2].frontmatter.portada} design="xs" fotoAutor={articulos[2].frontmatter.fotoDelAutor}/>
         </div>
 	</section>
 </PrincipalLayout>

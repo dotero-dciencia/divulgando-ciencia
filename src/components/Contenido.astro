@@ -185,6 +185,15 @@ const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imag
         }
     }
 
+    #xs{
+        width: 100%;
+        .image{
+            height:10rem;
+            @media only screen and (min-width: 1800px){
+                height:18rem;
+        }}
+    }
+
     #xl{
         width: 48%;
         .title{
@@ -218,7 +227,6 @@ const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imag
     }
 
     h2 {
-    color: #404d5b;
     text-decoration: none;
     outline: none;
     }
