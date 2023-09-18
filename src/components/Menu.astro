@@ -15,13 +15,13 @@ import Buscador from "./Buscador.astro";
     <nav id={design}>
         <ul class="flex [&>li>a]:inline-block [&>li>a]:px-3 [&>li>a]:font-generalsans-medium [&>li>a]:py-2 [&>li>a]:text-base [&>li>a]:min-[1800px]:text-xl">
             <li>
-                <a href="/articulos" class="text-principal-black dark:text-principal-white articles">
-                    Artículos
+                <a href="/" class="text-principal-black dark:text-principal-white index">
+                    Inicio
                 </a>
             </li>
             <li>
-                <a href="/articulos" class = "text-principal-black dark:text-principal-white videos">
-                    Vídeos
+                <a href="/articulos" class = "text-principal-black dark:text-principal-white articles">
+                    Artículos
                 </a>
             </li>
         </ul>
@@ -77,14 +77,18 @@ import Buscador from "./Buscador.astro";
             background-color: rgb(245, 245, 245, .25);
         }
     }
-    #videos{
-        .videos{
+    #index{
+        .index{
             background-color: rgb(34, 34, 34, .1);
+            color: white;
             --tw-backdrop-blur: blur(16px);
             backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
             border-radius: 0.25rem/* 4px */;
         }
-        :is(.dark .videos){
+        .articles{
+            color:white;
+        }
+        :is(.dark .index){
             background-color: rgb(245, 245, 245, .25);
         }
     }
