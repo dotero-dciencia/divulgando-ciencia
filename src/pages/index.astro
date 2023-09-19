@@ -3,49 +3,36 @@ import Layout from "../layouts/Layout.astro";
 import Contenido from "../components/Contenido.astro";
 import Buscador from "../components/Buscador.astro";
 import Menu from "../components/Menu.astro";
+import FilaBotones from "../components/FilaBotonesDifuminados.astro";
 const title = "Inicio";
 
 const contenido = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
-
-console.log(contenido, "hello")
-
-for (var i = 0; i < contenido.length; i++){
-    if (contenido[i].frontmatter.ciencia != "matemáticas"){
-        console.log("no es matemáticas")
-    }
-    console.log(i)
-}
 ---
 
 <Layout title={title} data-content={contenido} id="layout">
     <!--Parte principal del landing-->
-    <section class="bg-principal-black h-screen w-full text-center relative overflow-hidden text-principal-white flex">
-        <section class="w-full place-content-center px-8">
-            <!--Texto (título y subtítulo)-->
-            <header class="z-30 relative h-full">
-                <Menu class="z-30 relative" design="index"/>
-                <div class="my-auto h-full m-auto w-full flex-col relative o">
-                    <h1 class="text-[1.8rem] sm:text-5xl lg:text-7xl xl:text-8xl min-[1800px]:text-9xl min-[2250px]:text-[10rem] mb-4 md:mb-8 font-generalsans-semibold">
-                        divulgandociencia.com
-                    </h1>
-                    <h3 class="text-base sm:text-lg lg:text-xl xl:text-2xl min-[1800px]:text-3xl min-[2250px]:text-4xl mb-16 font-generalsans">
-                        Descubre el poder de la divulgación científica abierta
-                    </h3>
-                    <div class="w-full justify-center relative z-30 flex">
-                        <div class="w-fit">
-                            <Buscador design="landing-page"/>
-                        </div>
-                    </div>
-                </div>
-            </header>
+    <Menu class="z-40" design="index"/>
+    <section
+	class="landing-section bg-black h-screen w-full text-center overflow-hidden relative"
+	>
+		<div class="z-30 relative h-full flex flex-col text-principal-white">
+			<header>
+			<h2 class="text-[1.8rem] sm:text-5xl lg:text-7xl xl:text-8xl min-[1800px]:text-9xl min-[2250px]:text-[10rem] mb-4 md:mb-8 font-generalsans-semibold pt-56">
+				divulgandociencia.com
+			</h2>
+			<p class="text-base sm:text-lg lg:text-xl xl:text-2xl min-[1800px]:text-3xl min-[2250px]:text-4xl mb-8 md:mb-12 font-generalsans">
+				Descubre el poder de la divulgación científica abierta
+			</p>
             
-        </section>
+        <FilaBotones class="z-30 relative h-full flex flex-col text-principal-white"/>
+			</header>
+		</div>
 
-        <!--Imagen de fondo-->
-        <div class="absolute top-0 bottom-0 z-10 blur opacity-50 bg-center h-full w-full">
-            <img class="h-full object-cover w-full" alt="Imagen de portada de divulgandociencia.com. Mujer escribiendo sobre una pizarra verde." src="/images/landing-page/portada.webp"/>
-        </div>
-    </section>
+
+		<div class="absolute top-0 bottom-0 h-full w-full z-10 bg-principal-black">
+			<img class="h-full w-full object-cover opacity-60 blur-md" src="/images/landing-page/portada.webp">
+		</div>
+	</section>
     <!--Zona de los artículos-->
     <main class="w-full min-[1800px]:py-8">
         <section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
