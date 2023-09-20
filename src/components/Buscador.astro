@@ -3,16 +3,16 @@ const {design} = Astro.props
 ---
 
 <div id={design} class="search-container flex items-center justify-end w-full">
-    <a href="/buscador" id="buscador" class=" gap-x-2 w-fit px-3 h-full lg:flex rounded-lg 2xl:rounded-xl 2xl:p-4 py-2 font-medium my-auto font-generalsans-medium hidden text-base">
+    <a href="/buscador" id="buscador" class=" gap-x-2 w-fit px-3 h-full lg:flex rounded-lg 2xl:rounded-xl py-2 2xl:px-4 2xl:py-3 font-medium my-auto font-generalsans-medium hidden text-base 2xl:text-xl">
         ¿Qué quieres aprender hoy?
         <div class="w-fit">
-            <svg id="boton-de-busqueda" class="w-6 h-6 2xl:w-10 2xl:h-10 justify-end " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg id="boton-de-busqueda" class="w-6 h-6 justify-end " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"/>
             </svg>
         </div>
     </a>
     <a class="block lg:hidden">
-        <svg id="boton-de-busqueda" class="w-4 h-4 2xl:w-10 2xl:h-10 justify-end " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg id="boton-de-busqueda" class="w-4 h-4 justify-end 2xl:w-6 2xl:h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"/>
         </svg>
     </a>
@@ -27,10 +27,7 @@ const {design} = Astro.props
         #campo-de-busqueda{
             font-weight: 500;
             padding: 0 0 0 0.5rem;
-            width: 14rem;
-            @media only screen and (min-width: 1536px){
-                font-size:3rem;
-            }}
+            width: 14rem;}
         #boton-de-busqueda{
             stroke:#f5f5f5;
         }
@@ -42,10 +39,7 @@ const {design} = Astro.props
         #campo-de-busqueda{
             font-weight: 500;
             padding: 0 0 0 0.5rem;
-            width: 14rem;
-            @media only screen and (min-width: 1536px){
-                font-size:3rem;
-            }}
+            width: 14rem;}
         :is(.dark #buscador){
             background-color: rgb(245, 245, 245, .25);
         }

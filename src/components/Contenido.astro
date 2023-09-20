@@ -1,7 +1,7 @@
 ---
 const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imagen, design, fotoAutor, alt} = Astro.props
 ---
-<div class="my-4" id={design}>
+<div class="my-6 md:my-4 2xl:my-8" id={design}>
     <a class="group" href={url}>
         <main id={contenido}>
             <div class="bg-principal-black group-hover:scale-[1.045] rounded-lg transition-all relative w-full">
@@ -175,10 +175,10 @@ const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imag
     #xl{
         width: 48%;
         .title{
-            font-size: 1.6rem;
+            font-size: 2rem;
         }
         .image{
-            height:16rem;
+            height:25rem;
         }
         @media only screen and (max-width: 768px){
             width: 100%;
@@ -188,10 +188,10 @@ const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imag
     #lg{
         width:28%;
         .title{
-            font-size: 1.4rem;
+            font-size: 2rem;
         }
         .image{
-            height:16rem;
+            height:25rem;
         }
         @media only screen and (max-width: 768px){
             width: 100%;
