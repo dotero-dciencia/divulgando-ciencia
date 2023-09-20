@@ -10,7 +10,7 @@ const articles = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontm
 
 <Layout title={title} id="layout">
     <!--Parte principal del landing-->
-    <Menu class="z-40" design="index"/>
+    <Menu class="z-40" design="landing-page"/>
     <section
 	class="landing-section bg-black h-screen w-full text-center overflow-hidden relative"
 	>
