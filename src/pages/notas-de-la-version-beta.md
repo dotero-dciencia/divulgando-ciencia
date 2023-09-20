@@ -24,10 +24,12 @@ Agradecemos a todos los visitantes informen de todos los errores y/o mejoras que
 # Actualización 23.09.20
 
 En la actualización con fecha 20 de septiembre de 2023 se han implementado las siguientes mejoras al sitio web:
-- Botones con todas las ciencias tratadas en la portada de la misma.
+- Botones con todas las ciencias tratadas en la portada de la misma.*
 - Eliminación del apartado "Vídeos".
 - Implementación en el menú del apartado "Inicio".
 - Menú añadido a la página de inicio.
 - Error al seleccionar "Científicos" solucionado.
 - Animación al pasar el cursor por los botones.
 - Refactorización del código para mostrar los artículos.
+
+*El diseño responsive de la portada de la web, esto incluye título, subtítulo y botones, se encuentra en desarrollo, pues no están centrados verticalmente de forma correcta.
