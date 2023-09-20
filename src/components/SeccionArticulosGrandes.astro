@@ -2,7 +2,7 @@
 import Contenido from "./Contenido.astro";
 const {articulos} = Astro.props
 ---
-<section class="md:flex px-12 sm:px-24 md:px-0 gap-x-7 w-full justify-center h-full mt-12">
+<section class="md:flex px-12 sm:px-24 md:px-0 gap-x-7 w-full justify-center h-full mt-16">
     <Contenido contenido="article" url={articulos[0].frontmatter.url} ciencia={articulos[0].frontmatter.ciencia} titulo={articulos[0].frontmatter.titulo} autor={articulos[0].frontmatter.autor} fecha={articulos[0].frontmatter.fechaMostrar} imagen={articulos[0].frontmatter.portada} design="xl" fotoAutor={articulos[0].frontmatter.fotoDelAutor}/>
     <Contenido contenido="article" url={articulos[1].frontmatter.url} ciencia={articulos[1].frontmatter.ciencia} titulo={articulos[1].frontmatter.titulo} autor={articulos[1].frontmatter.autor} fecha={articulos[1].frontmatter.fechaMostrar} imagen={articulos[1].frontmatter.portada} design="lg" fotoAutor={articulos[1].frontmatter.fotoDelAutor}/>
 </section>
