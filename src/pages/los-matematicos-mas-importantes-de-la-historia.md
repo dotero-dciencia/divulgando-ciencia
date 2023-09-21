@@ -10,6 +10,10 @@ fechaMostrar: 14 marzo, 2023
 fechaOrdenar: Mar 14, 2023
 duracion: 5
 url: /los-matematicos-mas-importantes-de-la-historia
+x: https://x.com/tecnomagia_es
+instagram: https://instagram.com/tecnomagia_es
+github: https://github.com/dotero-dev
+rrss: x instagram github
 ---
 
 A lo largo de la historia ha habido mucha gente que se ha decidido dedicar a esa disciplina que tanto odio y miedo genera a una gran parte de la población: las matemáticas. Como en todas las disciplinas, ha habido gente que, gracias a su esfuerzo y dedicación, además de a su talento, ha destacado por encima de los demás, sobresaliendo. Hoy, 14 de marzo, Día Internacional de las Matemáticas, rendiremos homenaje a varios de los matemáticos más importantes, dejándonos a muchos en el camino, ya que haría falta un blog entero para hablar de todos ellos.

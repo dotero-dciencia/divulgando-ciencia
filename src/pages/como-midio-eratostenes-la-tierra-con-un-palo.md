@@ -10,6 +10,10 @@ fechaMostrar: 20 junio, 2022
 fechaOrdenar: Jun 20, 2022
 duracion: 3
 url: /como-midio-eratostenes-la-tierra-con-un-palo
+x: https://x.com/tecnomagia_es
+instagram: https://instagram.com/tecnomagia_es
+github: https://github.com/dotero-dev
+rrss: x instagram github
 ---
 
 Descubre cómo midió el matemático griego, Eratóstenes, la Tierra usando tan solo un palo en el solsticio de verano.

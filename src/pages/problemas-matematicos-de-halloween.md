@@ -10,6 +10,10 @@ fechaMostrar: 31 octubre, 2022
 fechaOrdenar: Oct 31, 2022
 duracion: 6
 url: /problemas-matematicos-de-halloween
+x: https://x.com/tecnomagia_es
+instagram: https://instagram.com/tecnomagia_es
+github: https://github.com/dotero-dev
+rrss: x instagram github
 ---
 
 Vamos a aprovechar el día de hoy, Halloween, para disfrutar de las matemáticas gracias a estos problemas matemáticos, iremos de menor a mayor dificultad, en ascendente. ¡Agarraos fuerte porque vienen curvas!

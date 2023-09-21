@@ -10,6 +10,10 @@ fechaMostrar: 29 mayo, 2023
 fechaOrdenar: May 29, 2023
 duracion: 7
 url: /chatgpt-contra-rafa-en-pasapalabra-quien-ganara
+x: https://x.com/tecnomagia_es
+instagram: https://instagram.com/tecnomagia_es
+github: https://github.com/dotero-dev
+rrss: x instagram github
 ---
 
 En este artículo trataremos de juntar dos grandes temas del momento: ChatGPT y la victoria de Rafa en Pasapalabra, para ello, los enfrentaremos: ChatGPT contra Rafa, ¿quién ganará?

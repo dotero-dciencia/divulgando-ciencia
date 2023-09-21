@@ -10,6 +10,10 @@ fechaMostrar: 9 noviembre, 2022
 fechaOrdenar: Nov 9, 2022
 duracion: 2
 url: /convertir-una-moneda-de-cobre-en-plata
+x: https://x.com/tecnomagia_es
+instagram: https://instagram.com/tecnomagia_es
+github: https://github.com/dotero-dev
+rrss: x instagram github
 ---
 
 Las monedas, como toda la materia que te rodea, están formadas por sustancias químicas. Podemos hacerlas reaccionar y cambiarán de apariencia. Con un poco de suerte (y la reacción química adecuada) conseguiremos que una moneda de cobre de cinco céntimos parezca ser de plata o de oro.
