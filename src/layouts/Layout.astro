@@ -39,3 +39,23 @@ import Footer from "../components/Footer.astro";
 		}
 	  </style> 
 </html>
+
+
+<script src="https://getinsights.io/js/insights.js"></script>
+<script>
+import { init, track, parameters } from "insights-js"
+// Initialize for your project, you can find this on your dashboard
+init("XkJsfa5KasGf9W_8")
+
+// ...
+
+// track something
+track({
+  id: "user-registered",
+  parameters: {
+    method: "google",
+    from: "top-link",
+  },
+})
+
+</script>
