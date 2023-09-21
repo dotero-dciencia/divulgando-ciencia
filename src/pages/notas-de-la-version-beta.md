@@ -10,6 +10,9 @@ fechaMostrar: 20 septiembre, 2023
 fechaOrdenar: Sep 20, 2023
 duracion: 1
 url: /notas-de-la-version-beta
+x: https://x.com/tecnomagia_es
+instagram: https://instagram.com/tecnomagia_es
+rrss: x instagram
 ---
 
 La versión beta de la página web representa una versión avanzada del desarrollo de divulgandociencia.com. A continuación se enuncian diferentes puntos a tener en cuenta en la visualización de esta versión:
