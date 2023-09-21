@@ -15,6 +15,11 @@ import Footer from "../components/Footer.astro";
         <slot/>
 		<Footer/>
 	</body>
+	<script src="https://getinsights.io/js/insights.js"></script>
+	<script>
+	insights.init('Ng9EbB5Epe9lo8r4');
+	insights.trackPages();
+	</script>
 	<style is:global>
 		@font-face {
 		  font-family: 'General Sans Semibold';
@@ -41,8 +46,3 @@ import Footer from "../components/Footer.astro";
 </html>
 
 
-<script src="https://getinsights.io/js/insights.js"></script>
-<script>
-insights.init('Ng9EbB5Epe9lo8r4');
-insights.trackPages();
-</script>
