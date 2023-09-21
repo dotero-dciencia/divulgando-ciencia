@@ -10,6 +10,10 @@ fechaMostrar: 31 octubre, 2022
 fechaOrdenar: Oct 31, 2022
 duracion: 4
 url: /las-matematicas-en-una-telarana
+x: https://x.com/tecnomagia_es
+instagram: https://instagram.com/tecnomagia_es
+github: https://github.com/dotero-dev
+rrss: x instagram github
 ---
 
 Hoy veremos todas las matemáticas en una telaraña, que parecen muy simples, pero allí donde las ves, contienen muuuuuchas matemáticas.

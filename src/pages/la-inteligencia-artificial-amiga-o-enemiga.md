@@ -10,6 +10,10 @@ fechaMostrar: 22 marzo, 2023
 fechaOrdenar: Mar 22, 2023
 duracion: 5
 url: /la-inteligencia-artificial-amiga-o-enemiga
+x: https://x.com/tecnomagia_es
+instagram: https://instagram.com/tecnomagia_es
+github: https://github.com/dotero-dev
+rrss: x instagram github
 ---
 
 Seguro que si estás leyendo esto, en los últimos días, en las últimas semanas o incluso meses has oído hablar sobre la inteligencia artificial. Pues este es un tema muy interesante que en los últimos tiempos ha ido cobrando cada vez más importancia. En este artículo haremos un recorrido a través de la inteligencia artificial, hablaremos de su historia, de la actualidad y de lo que nos deparará en un futuro.

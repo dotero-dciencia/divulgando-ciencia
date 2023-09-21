@@ -10,6 +10,10 @@ fechaMostrar: 1 octubre, 2022
 fechaOrdenar: Oct 1, 2022
 duracion: 1
 url: /el-arbol-de-diana
+x: https://x.com/tecnomagia_es
+instagram: https://instagram.com/tecnomagia_es
+github: https://github.com/dotero-dev
+rrss: x instagram github
 ---
 
 En esta práctica haremos un árbol de Diana.
