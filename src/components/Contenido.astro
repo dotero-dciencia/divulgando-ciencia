@@ -3,18 +3,17 @@ const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imag
 ---
 <div class="my-6 md:my-4 2xl:my-8 w-full" id={design}>
     <a class="group w-full" href={url}>
-        <main id={contenido}>
+        <main class="w-full" id={contenido}>
             <div class="bg-principal-black group-hover:scale-[1.045] rounded-lg transition-all relative w-full">
                 <img src={imagen} class="bg-principal-white w-full rounded-lg image object-cover text-principal-white text-sm" alt={alt}>
             </div>
-            <div id={ciencia}>
+            <div class="w-full" id={ciencia}>
                 <h6 class="uppercase mt-4 min-[1800px]:text-xl font-generalsans-medium">
                     {ciencia}
                 </h6>
                 <section>
                     <h2 class="font-generalsans-semibold my-1 min-[1800px]:my-2 text-[1.1rem] min-[1800px]:text-3xl text-principal-black dark:text-principal-white title">
                         {titulo}
-                        <svg class="link-svgline"><use xlink:href="#svg_line"></use></svg>
                     </h2>
                     <footer>
                         <div class="z-0 flex gap-x-1 min-[1800px]:gap-x-2 text-dark-gray dark:text-light-gray metadata-article text-[0.85rem] [&>p]:my-auto h-fit min-[1800px]:text-xl font-generalsans-medium">
