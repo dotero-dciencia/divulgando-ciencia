@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: ../../../layouts/ArticleLayout.astro
 titulo: Los bolsos de sirena. Un ejemplo de estrategia reproductiva en la evolución.
 autor: Biologramer
 fotoDelAutor: /images/autores/biologramer.webp

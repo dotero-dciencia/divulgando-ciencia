@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: ../../../layouts/ArticleLayout.astro
 titulo: El duelo de las urracas
 autor: Biologramer
 fotoDelAutor: /images/autores/biologramer.webp
