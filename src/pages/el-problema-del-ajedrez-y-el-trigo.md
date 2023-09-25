@@ -3,9 +3,9 @@ layout: ../layouts/ArticleLayout.astro
 titulo: El problema del ajedrez y el trigo
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
-portada: /images/portada-por-defecto.webp
+portada: /images/el-problema-del-ajedrez-y-el-trigo/portada.webp
 portadaAlt: Imagen de la página del detector de IA Copyleaks mostrando sus características principales.
-ciencia: química
+ciencia: matemáticas
 fechaMostrar: 1 mayo, 2022
 fechaOrdenar: May 1, 2022
 duracion: 5
@@ -76,6 +76,8 @@ Esto lo podemos describir como una función exponencial: f(x) = 2^x
 
 Con ayuda del GeoGebra, la representaremos:
 
+![Imagen de la función 2^x representada en el programa Geogebra.](/images/contenido/el-problema-del-ajedrez-y-el-trigo/2-elevado-a-x.webp)
+
 Como podemos observar, cada vez la función crece más rápido, pues esta es la base de **un crecimiento exponencial**, el cual se ve reflejado en las **funciones exponenciales** como esta.
 
 Es importante saber lo siguiente, pues tenemos dos opciones: contar la primera casilla como la casilla número 0 y, de esta forma, en la primera casilla, elevar 2 a 0 o elevar 2 a x-1.
@@ -86,17 +88,17 @@ Si elevamos en la primera casilla 2 a 1, 2^1 = 2 granos de trigo y se supone que
 
 En la siguiente imagen vemos la función **f(x) = 2 ^ (x-1)**
 
+![Imagen de la función 2^x-1 representada en el programa Geogebra.](/images/contenido/el-problema-del-ajedrez-y-el-trigo/2-elevado-a-x-1.webp)
+
 ## Programa en Python
 
 Para terminar de sacarle jugo a este problema vamos a hacer un pequeño programa en Python para que calcule cuántos granos de arroz habrá en x casilla y cuántos granos de arroz habrá en total hasta x casilla.
 
-<code>
 n = int(input("Número de casilla: "))
 gr = 2 ** (n - 1)
 tot = gr * 2 - 1
 print ("En la casilla número", n, "hay un total de", gr, "granos de trigo")
 print ("Hasta la casilla  número", n, "(incluyéndola) hay un total de", tot, "granos de trigo)
-</code>
 
 Analicemos línea por línea:
 

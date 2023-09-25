@@ -2,7 +2,7 @@
 layout: ../../../layouts/ArticleLayout.astro
 titulo: Calculadora con Python
 autor: Darío
-fotoDelAutor: /images/autores/dotero.jpg
+fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/calculadora-con-python/portada.webp
 portadaAlt: ALT
 ciencia: programación

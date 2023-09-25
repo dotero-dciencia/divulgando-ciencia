@@ -1,0 +1,17 @@
+---
+import PrincipalLayout from "../layouts/PrincipalLayout.astro";
+---
+
+<PrincipalLayout title="Sobre nosotros">
+    <section class="mt-20 w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white">
+        <h1 class="font-generalsans-semibold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-4">Sobre nosotros</h1>
+        <section class="w-full justify-center flex">
+            <img alt="Fotografía" class="bg-principal-white w-full text-center justify-center object-cover rounded-lg mt-3 mb-2 h-[12rem] sm:h-[16rem] md:h-96 lg:h-[22rem] xl:h-[25rem] min-[1800px]:h-[32rem] min-[1800px]:w-1/2" src="/images/landing-page/portada.webp"/>
+        </section>
+    </section>
+    <section class="w-full justify-center flex mt-5">
+        <article class="prose font-generalsans dark:prose-invert prose-img:my-3 prose-img:rounded mb-4 text-normal  px-8 sm:px-0 sm:max-w-lg min-[1800px]:text-xl min-[1800px]:max-w-4xl">
+            <slot></slot>
+        </article>
+    </section>
+</PrincipalLayout>
