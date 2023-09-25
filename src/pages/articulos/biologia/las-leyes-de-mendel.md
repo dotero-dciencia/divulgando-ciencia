@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: ../../../layouts/ArticleLayout.astro
 titulo: Las leyes de Mendel
 autor: Biologramer
 fotoDelAutor: /images/autores/biologramer.webp

@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: ../../../layouts/ArticleLayout.astro
 titulo: Fósiles. Las huellas del pasado
 autor: Biologramer
 fotoDelAutor: /images/autores/biologramer.webp
