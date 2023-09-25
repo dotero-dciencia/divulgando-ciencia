@@ -45,15 +45,14 @@ import Buscador from "./Buscador.astro";
 <script>
     const listItem = document.querySelectorAll("#landing-header li")
     const menuBackDrop = document.querySelector("#menu-backdrop") as HTMLElement
+    menuBackDrop.style.setProperty("--left", `592.5px`)
+    menuBackDrop.style.setProperty("--top", `18px`)
+    menuBackDrop.style.setProperty("--width", `66.546875px`)
+    menuBackDrop.style.setProperty("--height", `36px`)
   
     listItem.forEach((item) => {
       item.addEventListener("mouseenter", () => {
-        const { left, top, width, height } = item.getBoundingClientRect()
-
-	menuBackDrop.style.setProperty("--left", `592.5px`)
-    	menuBackDrop.style.setProperty("--top", `18px`)
-   	menuBackDrop.style.setProperty("--width", `66.546875px`)
-   	menuBackDrop.style.setProperty("--height", `36px`)
+        const { left, top, width, height } = item.getBoundingClientRect()	
           
         menuBackDrop.style.setProperty("--left", `${left}px`)
         menuBackDrop.style.setProperty("--top", `${top}px`)
