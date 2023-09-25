@@ -43,9 +43,40 @@ import Buscador from "./Buscador.astro";
 
 <!--Script para que se mueva el contenedor en el menú-->
 
-     
+<script>
+    const listItem = document.querySelectorAll("#landing-header li")
+    const menuBackDrop = document.querySelector("#menu-backdrop") as HTMLElement
+    menuBackDrop.style.setProperty("--left", `592.5px`)
+    menuBackDrop.style.setProperty("--top", `18px`)
+    menuBackDrop.style.setProperty("--width", `66.546875px`)
+    menuBackDrop.style.setProperty("--height", `36px`)
+  
+    listItem.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        const { left, top, width, height } = item.getBoundingClientRect()	
+          
+        menuBackDrop.style.setProperty("--left", `${left}px`)
+        menuBackDrop.style.setProperty("--top", `${top}px`)
+        menuBackDrop.style.setProperty("--width", `${width}px`)
+        menuBackDrop.style.setProperty("--height", `${height}px`)
+  
+        menuBackDrop.style.opacity = "1"
+        menuBackDrop.style.visibility = "visible"
+      })
+  
+      item.addEventListener("mouseleave", () => {
+        menuBackDrop.style.opacity = "0"
+        menuBackDrop.style.visibility = "hidden"
+      })
+    })
+</script>
 
 <style>
+    @media only screen and (max-width: 1080px){
+        #menu-backdrop{
+            display:none;
+        }
+    }
     #articles{
         color:#222222;
         .articles{

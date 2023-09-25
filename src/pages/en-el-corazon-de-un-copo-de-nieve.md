@@ -2,17 +2,17 @@
 layout: ../layouts/ArticleLayout.astro
 titulo: En el corazón de un copo de nieve
 autor: Darío
-fotoDelAutor: /images/autores/dotero.jpg
+fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/en-el-corazon-de-un-copo-de-nieve/portada.webp
-portadaAlt: Imagen de la página del detector de IA Copyleaks mostrando sus características principales.
-ciencia: química
+portadaAlt: Fotografía de un copo de nieve navideño.
+ciencia: matemáticas
 fechaMostrar: 9 enero, 2022
 fechaOrdenar: Jan 9, 2022
-duracion: 5
+duracion: 6
 url: /en-el-corazon-de-un-copo-de-nieve
 ---
 
-Un copo de nieve, tan básico como frío y como rápido se deshace al tocarlo, está lleno de matemáticas, aunque no lo parezca. Hoy nos adentraremos en el corazón de un copo de nieve para explicar las matemáticas que contiene, haremos un programilla de Python para automatizar la parte matemática y una representación interactiva en Geogebra. ¡Vamos allá con las matemáticas de un copo de nieve!
+Un copo de nieve, tan básico como frío y como rápido se deshace al tocarlo, está **lleno de matemáticas**, aunque no lo parezca. Hoy nos adentraremos en el corazón de un copo de nieve para explicar las matemáticas que contiene, haremos un programilla de Python para automatizar la parte matemática y una representación interactiva en Geogebra. ¡Vamos allá con las matemáticas de un copo de nieve!
 
 ## Explicación matemática del copo de nieve
 
@@ -36,6 +36,8 @@ Con esos datos, habrá un total de 60 palos pequeños en el copo.
 ## Programa en Python
 
 A continuación, mostraremos el programa de Python con el que se puede calcular automáticamente la cantidad de palos cortos por palo largo, la cantidad total de palos cortos y la posición de ellos relativa a cada palo largo.
+
+CÓDIGO PYTHON
 
 Ese sería el código en Python, y a continuación, una demostración de ello:
 
@@ -67,7 +69,9 @@ Esta es la explicación del código línea por línea:
 
 ## Representación interactiva en Geogebra del copo de nieve
 
-En este applet de Geogebra puedes modificar los parámetros anteriormente comentados, y, con ellos, el copo de nieve.
+En [este applet de Geogebra](https://www.geogebra.org/m/keemj7ka) puedes modificar los parámetros anteriormente comentados, y, con ellos, el copo de nieve.
+
+![Previsualización del applet de Geogebra donde puedes recrear tu copo de nieve matemático.](/images/contenido/en-el-corazon-de-un-copo-de-nieve/previsualizacion-del-copo-de-nieve-en-geogebra.webp)
 
 ## Elaboración del copo en Geogebra
 
@@ -99,9 +103,13 @@ Ponemos el deslizador de “Longitud” al máximo y el de “Distancia” al m�
 
 Si nos damos cuenta, si disminuimos el deslizador de “Longitud” o aumentamos el de “Distancia”, los puntos que no entran en los segmentos del paso 2, se ocultarán automáticamente. Ahora, con los deslizadores igual que el paso 5, haremos ángulos basados en su amplitud de todos los puntos, empezando por el final. Tal que así:
 
+![Previsualización del applet de Geogebra donde puedes recrear tu copo de nieve matemático.](/images/contenido/en-el-corazon-de-un-copo-de-nieve/palos-en-45-grados.webp)
+
 ### Paso 7
 
 Ocultar todo y dejar solo los palos (largos y pequeños). De forma que ocultemos todos los puntos, todas las circunferencias y todos los ángulos. Ahora ya tendremos nuestro resultado final.
+
+![Previsualización del paso número 7.](/images/contenido/en-el-corazon-de-un-copo-de-nieve/previsualizacion-del-copo-de-nieve-en-geogebra.webp)
 
 ### Paso extra
 
