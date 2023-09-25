@@ -52,7 +52,7 @@ import Buscador from "./Buscador.astro";
   
     listItem.forEach((item) => {
       item.addEventListener("mouseenter", () => {
-        const { left, top, width, height } = item.getBoundingClientRect()
+        const { left, top, width, height } = item.getBoundingClientRect()	
           
         menuBackDrop.style.setProperty("--left", `${left}px`)
         menuBackDrop.style.setProperty("--top", `${top}px`)
