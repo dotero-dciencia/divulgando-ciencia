@@ -1,19 +1,25 @@
 ---
 const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imagen, design, fotoAutor, alt} = Astro.props
 ---
-<div class="my-6 md:my-4 2xl:my-8 w-full" id={design}>
-    <a class="group w-full" href={url}>
-        <main class="w-full" id={contenido}>
+<div class="my-6 md:my-4 2xl:my-8" id={design}>
+    <a class="group" href={url}>
+        <main id={contenido}>
             <div class="bg-principal-black group-hover:scale-[1.045] rounded-lg transition-all relative w-full">
                 <img src={imagen} class="bg-principal-white w-full rounded-lg image object-cover text-principal-white text-sm" alt={alt}>
             </div>
-            <div class="w-full" id={ciencia}>
+            <div id={ciencia}>
                 <h6 class="uppercase mt-4 min-[1800px]:text-xl font-generalsans-medium">
                     {ciencia}
                 </h6>
-                <section>
-                    <h2 class="font-generalsans-semibold my-1 min-[1800px]:my-2 text-[1.1rem] min-[1800px]:text-3xl text-principal-black dark:text-principal-white title">
+                <div class="svg-wrap">
+                    <svg viewBox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
+                        <path id="svg_line" d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571"></path>
+                    </svg>
+                </div>
+                <section class="link-svgline">
+                    <h2 class="font-generalsans-semibold my-1 min-[1800px]:my-2 text-[1.3rem] min-[1800px]:text-3xl text-principal-black dark:text-principal-white title">
                         {titulo}
+                        <svg class="link-svgline"><use xlink:href="#svg_line"></use></svg>
                     </h2>
                     <footer>
                         <div class="z-0 flex gap-x-1 min-[1800px]:gap-x-2 text-dark-gray dark:text-light-gray metadata-article text-[0.85rem] [&>p]:my-auto h-fit min-[1800px]:text-xl font-generalsans-medium">
