@@ -6,8 +6,8 @@ fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/landing-page/portada.webp
 portadaAlt: Mujer escribiendo en una pizarra de espaldas.
 ciencia: información
-fechaMostrar: 20 septiembre, 2023
-fechaOrdenar: Sep 20, 2023
+fechaMostrar: 25 septiembre, 2023
+fechaOrdenar: Sep 25, 2023
 duracion: 1
 url: /notas-de-la-version-beta
 x: https://x.com/tecnomagia_es
@@ -18,9 +18,7 @@ rrss: x instagram github
 
 La versión beta de la página web representa una versión avanzada del desarrollo de divulgandociencia.com. A continuación se enuncian diferentes puntos a tener en cuenta en la visualización de esta versión:
 
-- La imagen de portada de la página web será sustituida al publicar la página web oficial.
 - El buscador se encuentra en fase de desarrollo, de forma que es fácil encontrar errores en el mismo, tanto en la búsqueda como en el diseño.
-- El logo será sustituido por el logo de divulgandociencia.com, todavía en desarrollo.
 - Todavía faltan varios artículos por actualizar.
 
 Agradecemos a todos los visitantes informen de todos los errores y/o mejoras que encuentren a través de [este formulario](https://forms.gle/m3qJgrLvXxGyxEr6A) para ser conscientes de los mismos.
@@ -37,3 +35,11 @@ En la actualización con fecha 20 de septiembre de 2023 se han implementado las 
 - Refactorización del código para mostrar los artículos.
 
 *El diseño responsive de la portada de la web, esto incluye título, subtítulo y botones, se encuentra en desarrollo, pues no están centrados verticalmente de forma correcta.
+
+# Actualización 23.09.25
+
+En la actualización con fecha 20 de septiembre de 2023 se han implementado las siguientes mejoras al sitio web:
+- Corrección del menú en los artículos.
+- Implementación del logo en el menú.
+- Cambio a la portada definitiva.
+- Redes sociales del autor.
