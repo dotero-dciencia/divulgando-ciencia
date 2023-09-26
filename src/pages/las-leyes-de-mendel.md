@@ -4,7 +4,7 @@ titulo: Las leyes de Mendel
 autor: Biologramer
 fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/las-leyes-de-mendel/portada.webp
-portadaAlt: Cuadro de Leonhard Euler.
+portadaAlt: Gregor Mendel.
 ciencia: biología
 fechaMostrar: 12 julio, 2023
 fechaOrdenar: Jul 12, 2023
