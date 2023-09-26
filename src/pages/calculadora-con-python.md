@@ -3,8 +3,8 @@ layout: ../layouts/ArticleLayout.astro
 titulo: Calculadora con Python
 autor: Darío
 fotoDelAutor: /images/autores/dario-o.webp
-portada: /images/el-problema-del-ajedrez-y-el-trigo/portada.webp
-portadaAlt: ALT
+portada: /images/contenido/calculadora-con-python/portada.webp
+portadaAlt: Fotografía de código en Python.
 ciencia: programación
 fechaMostrar: 1 octubre, 2022
 fechaOrdenar: Oct 1, 2022
@@ -28,8 +28,7 @@ El primer paso para nuestra calculadora en Python **será recoger dos números**
 
 Declararemos dos variables, llamadas ‘a’ y ‘b’. ‘a’ contendrá el primer número y ‘b’ el segundo, para ello usaremos un ‘input’ para declarar las variables. Se vería tal que así.
 
-a = int(input("Número 1: "))
-b = int(input("Número 2: "))
+![Fragmento de código en Python](/images/contenido/calculadora-con-python/fragmento-1.webp)
 
 Hagamos un repaso de lo que hace cada línea del código:
 
@@ -52,7 +51,7 @@ El siguiente paso del reto es **recoger el tipo de operación que el usuario mar
 
 Este paso del reto se resuelve igual que el paso anterior. Lo primero que hacemos es declarar una variable, la llamaremos ‘op’ (de operación), y será igual a la entrada del usuario.
 
-op = input("Operación: ")
+![Fragmento de código en Python](/images/contenido/calculadora-con-python/fragmento-2.webp)
 
 Expliquemos lo que hace la línea de código:
 
@@ -91,19 +90,7 @@ Este paso es un pelín más complicado que los otros dos, puesto que en este añ
 
 El código después de este paso se vería tal que así:
 
-a = int(input("Número 1: "))
-b = int(input("Número 2: "))
-op = input("Operación: ")
-if (op == "+"):
-    print ("Has introducido una suma.")
-elif (op == "-"):
-    print ("Has introducido una resta.")
-elif (op == "*"):
-    print ("Has introducido una multiplicación.")
-elif (op == "/"):
-    print ("Has introducido una división.")
-else:
-    print ("No es válido el signo que has introducido.")
+![Fragmento de código en Python](/images/contenido/calculadora-con-python/fragmento-3.webp)
 
 A continuación, explicaremos cada línea de código:
 
@@ -145,19 +132,7 @@ El siguiente paso será **operar sabiendo los números que ha introducido y el o
 
 Si tenemos bien asentado el código de los pasos anteriores, este es pan comido. Lo único que tendremos que hacer es operar dentro de cada condicional con el operador que indica ese condicional, es decir:
 
-a = int(input("Número 1: "))
-b = int(input("Número 2: "))
-op = input("Operación: ")
-if (op == "+"):
- print (a+b)
-elif (op == "-"):
- print (a-b)
-elif (op == "*"):
- print (a*b)
-elif (op == "/"):
- print (a/b)
-else:
- print ("No es válido el signo que has introducido.")
+![Fragmento de código en Python](/images/contenido/calculadora-con-python/fragmento-4.webp)
 
 Veamos qué es lo que hace cada línea:
 

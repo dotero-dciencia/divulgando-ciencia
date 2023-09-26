@@ -2,7 +2,7 @@
 layout: ../layouts/ArticleLayout.astro
 titulo: 'La Cuarta Dimensión: Movimiento en dirección W'
 autor: Neplod
-fotoDelAutor: /images/autores/anonimo.svg
+fotoDelAutor: /images/autores/neplod.webp
 portada: /images/contenido/la-cuarta-dimension-movimiento-en-direccion-w/portada.webp
 portadaAlt: Imagen de un cubo realizado por muchos cubos más pequeños.
 ciencia: física

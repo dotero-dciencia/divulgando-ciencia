@@ -2,9 +2,9 @@
 layout: ../layouts/ArticleLayout.astro
 titulo: El duelo de las urracas
 autor: Biologramer
-fotoDelAutor: /images/autores/biologramer.webp
+fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/el-duelo-de-las-urracas/portada.webp
-portadaAlt: Imagen del Juego de la Vida.
+portadaAlt: Fotografía de una urraca.
 ciencia: geología
 fechaOrdenar: Nov 4, 2022
 fechaMostrar: 4 noviembre, 2022
@@ -38,15 +38,15 @@ Pero además, el hecho de superar esta prueba sugiere que estos animales pueden 
 
 ## El duelo de las urracas
 
-Pero el comportamiento de estas criaturas llega a ser tan extraordinario que fue objeto de estudio por un equipo de investigadores de la Universidad de Colorado. Este estudio se centro en la observación de algunas aves que parecían custodiar el cadáver uno de sus compañeros muerto y es que parece más que evidente que tanto las urracas como otros córvidos reaccionan de manera especial ante el cadáver de algunos de sus congéneres como por ejemplo emitiendo reclamos que no son típicos de esa especie, pasando el pico por encima del fallecido o incluso pudiendo hostigar a personas que llevan un trapo negro u otro córvido muerto en sus manos (esto se comprobó experimentalmente). Además, las urracas parecen dejar algunas pequeñas estructuras hechas con paja y madera al lado de los cadáveres.
+Pero el comportamiento de estas criaturas llega a ser tan extraordinario que fue objeto de estudio por un equipo de investigadores de la Universidad de Colorado. Este estudio se centró en la observación de algunas aves que parecían custodiar el cadáver uno de sus compañeros muerto y es que parece más que evidente que tanto las urracas como otros córvidos reaccionan de manera especial ante el cadáver de algunos de sus congéneres como por ejemplo emitiendo reclamos que no son típicos de esa especie, pasando el pico por encima del fallecido o incluso pudiendo hostigar a personas que llevan un trapo negro u otro córvido muerto en sus manos (esto se comprobó experimentalmente). Además, las urracas parecen dejar algunas pequeñas estructuras hechas con paja y madera al lado de los cadáveres.
 
 Lo primero que podríamos pensar es que todos estos comportamientos son una advertencia de peligro y que las aves los hacen para incrementar la supervivencia de su propia especie algo comparable con la necroforesis que realizan algunos insectos sociales como hormigas y termitas y que consiste en eliminar rápidamente los restos de sus parientes muertos. Si esto es así, poco entonces tendrían que ver estos comportamientos con los sentimientos.
 
 Pero la cosa no está tan clara, ya que especialistas en comportamiento animal como Barbara J King, afirman que en muchos animales se producen respuestas ante los parientes muertos que solo podrían interpretarse como un comportamiento de duelo lo cual sería un total cambio de paradigma en la etología y el comportamiento animal ya que esto no estaría diciendo que no solo los humanos tenemos sentimientos de vacío y tristeza ante la muerte de un compañero o un ser querido.
 
-A continuación os dejo un video de YouTube donde podéis ver este sorprendente comportamiento:
-
 Si quieres saber más sobre estos sorprendentes animales y otras aves urbanas puedes ver este video en mi canal de YouTube:
+
+<iframe class="w-full h-80 object-cover"  src="https://www.youtube-nocookie.com/embed/_dkbV3gBa1Y" title="BIOLOGIA_CIENCIA_MEDIO AMBIENTE_ SABER DONDE MIRAR aves urbanas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
 
 ## Bibliografía
 

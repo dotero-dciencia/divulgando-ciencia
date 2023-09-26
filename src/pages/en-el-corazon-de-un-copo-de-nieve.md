@@ -37,7 +37,7 @@ Con esos datos, habrá un total de 60 palos pequeños en el copo.
 
 A continuación, mostraremos el programa de Python con el que se puede calcular automáticamente la cantidad de palos cortos por palo largo, la cantidad total de palos cortos y la posición de ellos relativa a cada palo largo.
 
-CÓDIGO PYTHON
+![Fragmento de código en Python](/images/contenido/en-el-corazon-de-un-copo-de-nieve/fragmento.webp)
 
 Ese sería el código en Python, y a continuación, una demostración de ello:
 
