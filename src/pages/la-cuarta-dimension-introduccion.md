@@ -2,7 +2,7 @@
 layout: ../layouts/ArticleLayout.astro
 titulo: 'La cuarta dimensión: introducción'
 autor: neplod
-fotoDelAutor: /images/autores/anonimo.svg
+fotoDelAutor: /images/autores/neplod.webp
 portada: /images/contenido/la-cuarta-dimension-introduccion/portada.webp
 portadaAlt: Imagen con varios hipercubos.
 ciencia: física

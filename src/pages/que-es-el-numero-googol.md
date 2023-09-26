@@ -2,7 +2,7 @@
 layout: ../layouts/ArticleLayout.astro
 titulo: Qué es el número Googol
 autor: Neplod
-fotoDelAutor: /images/autores/anonimo.svg
+fotoDelAutor: /images/autores/neplod.webp
 portada: /images/contenido/que-es-el-numero-googol/portada.webp
 portadaAlt: Imagen mostrando muchos unos y ceros.
 ciencia: matemáticas

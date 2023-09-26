@@ -3,8 +3,8 @@ layout: ../layouts/ArticleLayout.astro
 titulo: El problema del ajedrez y el trigo
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
-portada: /images/el-problema-del-ajedrez-y-el-trigo/portada.webp
-portadaAlt: Imagen de la página del detector de IA Copyleaks mostrando sus características principales.
+portada: /images/contenido/el-problema-del-ajedrez-y-el-trigo/portada.webp
+portadaAlt: Fotografía de un ajedrez.
 ciencia: matemáticas
 fechaMostrar: 1 mayo, 2022
 fechaOrdenar: May 1, 2022
@@ -94,11 +94,7 @@ En la siguiente imagen vemos la función **f(x) = 2 ^ (x-1)**
 
 Para terminar de sacarle jugo a este problema vamos a hacer un pequeño programa en Python para que calcule cuántos granos de arroz habrá en x casilla y cuántos granos de arroz habrá en total hasta x casilla.
 
-n = int(input("Número de casilla: "))
-gr = 2 ** (n - 1)
-tot = gr * 2 - 1
-print ("En la casilla número", n, "hay un total de", gr, "granos de trigo")
-print ("Hasta la casilla  número", n, "(incluyéndola) hay un total de", tot, "granos de trigo)
+![Fragmento de código en Python](/images/contenido/el-problema-del-ajedrez-y-el-trigo/fragmento.webp)
 
 Analicemos línea por línea:
 
