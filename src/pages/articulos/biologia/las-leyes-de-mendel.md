@@ -2,7 +2,7 @@
 layout: ../../../layouts/ArticleLayout.astro
 titulo: Las leyes de Mendel
 autor: Biologramer
-fotoDelAutor: /images/autores/biologramer.webp
+fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/las-leyes-de-mendel/portada.webp
 portadaAlt: Cuadro de Leonhard Euler.
 ciencia: biología
