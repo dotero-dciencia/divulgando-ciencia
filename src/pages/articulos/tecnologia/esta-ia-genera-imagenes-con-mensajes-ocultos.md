@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: ../../../layouts/ArticleLayout.astro
 titulo: Esta IA genera imágenes con mensajes ocultos
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
