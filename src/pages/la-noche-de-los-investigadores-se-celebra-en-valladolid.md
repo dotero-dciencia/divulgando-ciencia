@@ -5,7 +5,7 @@ autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/la-noche-de-los-investigadores-se-celebra-en-valladolid/portada.webp
 portadaAlt: Dibujo de una telaraña con una araña en ella.
-ciencia: matemáticas
+ciencia: información
 fechaMostrar: 28 septiembre, 2023
 fechaOrdenar: Sep 28, 2023
 duracion: 4
