@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: ../../../layouts/ArticleLayout.astro
 titulo: ¿Es buena idea beber agua del mar?
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
