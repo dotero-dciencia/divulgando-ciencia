@@ -8,7 +8,7 @@ const title = "Inicio";
 const articles = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
 
-<Layout title={title} id="layout">
+<Layout title={title} id="layout" description="Descubre el poder de la divulgación científica abierta junto a nosotros.">
     <!--Parte principal del landing-->
     <Menu class="z-40" design="landing-page"/>
     <section
