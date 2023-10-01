@@ -5,6 +5,7 @@ autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/en-el-corazon-de-un-copo-de-nieve/portada.webp
 portadaAlt: Fotografía de un hombre bebiendo agua en la playa.
+descripcion: Explora el sorprendente mundo de las matemáticas en los copos de nieve en este artículo.
 ciencia: matemáticas
 fechaMostrar: 9 enero, 2022
 fechaOrdenar: Jan 9, 2022

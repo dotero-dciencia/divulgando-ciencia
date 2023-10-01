@@ -5,6 +5,7 @@ autor: abgomez
 fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/la-cartografia-arte-o-ciencia/portada.webp
 portadaAlt: Fotografía del mapa más antiguo, el de Mesopotamia.
+descripcion: Descubre las razones por las cuales la cartografía puede considerarse tanto arte como ciencia en este artículo.
 ciencia: matemáticas
 fechaMostrar: 25 octubre, 2022
 fechaOrdenar: Oct 25, 2022

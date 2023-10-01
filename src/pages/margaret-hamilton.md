@@ -5,6 +5,7 @@ autor: El taller de Ada
 fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/margaret-hamilton/portada.webp
 portadaAlt: Fotografía de Margaret Hamilton.
+descripcion: Margaret Hamilton fue una de las programadores clave en el primer viaje a la Luna. Descubre su inspiradora vida a través de este artículo.
 ciencia: científicos
 fechaMostrar: 11 febrero, 2023
 fechaOrdenar: Feb 11, 2023

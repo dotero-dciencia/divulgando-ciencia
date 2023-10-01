@@ -5,6 +5,7 @@ autor: Darío
 fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/calculadora-con-python/portada.webp
 portadaAlt: Fotografía de código en Python.
+descripcion: Enfréntate al reto de crear tu propia calculadora hoy mismo usando el famoso lenguaje de programación Python paso a paso.
 ciencia: programación
 fechaMostrar: 1 octubre, 2022
 fechaOrdenar: Oct 1, 2022
