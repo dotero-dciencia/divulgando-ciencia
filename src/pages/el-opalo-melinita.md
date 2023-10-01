@@ -5,6 +5,7 @@ autor: Biologramer
 fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/el-opalo-melinita/portada.webp
 portadaAlt: Ópalo melinita.
+descripcion: Explora las propiedades únicas del ópalo melinita, una variedad del cuarzo, en este artículo.
 ciencia: geología
 fechaOrdenar: Dec 24, 2022
 fechaMostrar: 24 diciembre, 2022
@@ -32,7 +33,7 @@ El ópalo es la única gema conocida capaz de reflectar los rayos de la luz y de
 
 ## El ópalo melinita
 
-Vamos a hablar ahora de una variedad de ópalo un tanto singular y poco conocido; el ópalo melinita. Son piedras blanquecinas de formas caprichosas, esféricas o aplanadas producidas por la precipitación de gravas y arenas en material silíceo soliendo estar muy asociados a las diatomitas o tierra de diatomeas que son rocas sedimentarias silíceas formadas por microfósiles de diatomeas las cuales son algas unicelulares con un esqueleto siliceo denominado frústula. Este material suele presentarse en sedimentos marinos o lacustres de aguas poco profundas siendo habituales en sedimentos del mioceno superior.
+Vamos a hablar ahora de una variedad de ópalo un tanto singular y poco conocido: el ópalo melinita. Son piedras blanquecinas de formas caprichosas, esféricas o aplanadas producidas por la precipitación de gravas y arenas en material silíceo soliendo estar muy asociados a las diatomitas o tierra de diatomeas que son rocas sedimentarias silíceas formadas por microfósiles de diatomeas las cuales son algas unicelulares con un esqueleto siliceo denominado frústula. Este material suele presentarse en sedimentos marinos o lacustres de aguas poco profundas siendo habituales en sedimentos del mioceno superior.
 
 El ópalo melinita suele estar formado por un núcleo opalino recubierto que esta recubierto por la tierra de diatomeas. Si se elimina dicha capa exterior nos quedaremos con el ópalo, el cual tiene un color parecido al sílex, el cual es “primo hermano” del ópalo.
 

@@ -4,6 +4,7 @@ titulo: Rosalin Yalow
 ciencia: científicos
 portada: /images/contenido/rosalyn-yalow/portada.webp
 portadaAlt: Fotografía de Rosalyn Yalow.
+descripcion: Rosalyn Yalow fue una física con grandes aportaciones a la Medicina. Descúbrelos ahora mismo. 
 autor: Carolina A.
 fotoDelAutor: /images/autores/anonimo.svg
 fechaMostrar: 11 febrero, 2023

@@ -5,6 +5,7 @@ autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/el-arbol-de-diana/portada.webp
 portadaAlt: Fotografía del resultado del experimento del Árbol de Diana.
+descripcion: El árbol de Diana es un experimento químico con un resultado espectacular. Descubre cómo hacerlo a través de este artículo.
 ciencia: química
 fechaMostrar: 1 octubre, 2022
 fechaOrdenar: Oct 1, 2022

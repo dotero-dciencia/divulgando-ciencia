@@ -12,15 +12,14 @@ export default function jsonLDGenerator({ type, post, url }) {
           "@type": "WebPage",
           "@id": "${url}"
         },
-        "headline": "${post.title}",
+        "headline": "${post.titulo}",
         "description": "${post.description}",
-        "image": "${post.image.src}",
+        "image": "${post.portada}",
         "author": {
           "@type": "Person",
-          "name": "${post.author}",
-          "url": "/author/${slugify(post.author)}"
+          "name": "${post.autor}",
         },
-        "datePublished": "${post.date}"
+        "datePublished": "${post.fechaOrdenar}"
       }
     </script>`;
   }
