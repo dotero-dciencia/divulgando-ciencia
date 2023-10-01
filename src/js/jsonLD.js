@@ -1,5 +1,5 @@
 import siteData from "../data/siteData.json"
-import { slugify } from "./utils";
+//import { slugify } from "./utils";
 
 
 export default function jsonLDGenerator({ type, post, url }) {
