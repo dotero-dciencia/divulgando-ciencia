@@ -4,6 +4,7 @@ titulo: Marianne Grunberg-Manago
 ciencia: científicos
 portada: /images/contenido/marianne-grunberg-manago/portada.webp
 portadaAlt: Fotografía de Marianne Grunberg-Manago.
+descripcion: Explora y descubre la increíble carrera y contribuciones de Marianne Grunberg-Manago.
 autor: Guillermo M.
 fotoDelAutor: /images/autores/anonimo.svg
 fechaMostrar: 11 febrero, 2023

@@ -5,6 +5,7 @@ autor: neplod
 fotoDelAutor: /images/autores/neplod.webp
 portada: /images/contenido/la-cuarta-dimension-introduccion/portada.webp
 portadaAlt: Imagen con varios hipercubos.
+descripcion: Introdúcete de lleno en la cuarta dimensión, una nueva dimensión, leyendo este artículo.
 ciencia: física
 fechaMostrar: 10 febrero, 2023
 fechaOrdenar: Feb 10, 2023

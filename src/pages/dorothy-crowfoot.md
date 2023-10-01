@@ -5,6 +5,7 @@ autor: Lucas P.
 fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/dorothy-crowfoot/portada.webp
 portadaAlt: Fotografía de Dorothy Crowfoot.
+descripcion: Lee sobre la vida inspiradora de Dorothy Crowfoot, quien dedicó su vida a la Química, logrando grandes hallazgos.
 ciencia: científicos
 fechaMostrar: 11 febrero, 2023
 fechaOrdenar: Feb 11, 2023

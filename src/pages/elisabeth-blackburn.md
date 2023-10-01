@@ -5,6 +5,7 @@ autor: Denise R.
 fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/elizabeth-blackburn/portada.webp
 portadaAlt: Fotografía de Elizabeth Blackburn.
+descripcion: Elizabeth Blackburn fue una bióloga molecular con grandes hallazgos sobre las telomasas. Lee sobre su vida y contribuciones aquí.
 ciencia: científicos
 fechaMostrar: 11 febrero, 2023
 fechaOrdenar: Feb 11, 2023

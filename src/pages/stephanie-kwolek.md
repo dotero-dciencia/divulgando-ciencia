@@ -5,6 +5,7 @@ autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/stephanie-kwolek/portada.webp
 portadaAlt: Fotografía de Stephanie Kwolek.
+descripcion: Descubre el kevlar, una sustancia creada por Stephanie Kwolek, una química que salvó vidas.
 ciencia: científicos
 fechaMostrar: 11 febrero, 2023
 fechaOrdenar: Feb 11, 2023

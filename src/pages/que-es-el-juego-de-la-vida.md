@@ -5,6 +5,7 @@ autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/que-es-el-juego-de-la-vida/portada.webp
 portadaAlt: Imagen del Juego de la Vida de [divulgandociencia.com](https://divulgandociencia.com).
+descripcion: John Conway creó el Juego de la Vida hace decenas de año. Hoy puedes aprender sobre este gran juego matemático y programarlo tú mismo.
 ciencia: programación
 fechaMostrar: 11 abril, 2023
 fechaOrdenar: Apr 11, 2023

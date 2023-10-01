@@ -5,6 +5,7 @@ autor: Biologramer
 fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/la-estructura-molecular-del-adn-leyes-de-chargaff/portada.webp
 portadaAlt: Chargaff.
+descripcion: Descubre las leyes esenciales de Chargaff que revolucionaron nuestra comprensión del ADN.
 ciencia: biología
 fechaOrdenar: May 10, 2023
 fechaMostrar: 10 mayo, 2023

@@ -5,6 +5,7 @@ autor: Biologramer
 fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/el-duelo-de-las-urracas/portada.webp
 portadaAlt: Fotografía de una urraca.
+descripcion: ¿Sabías que los córvidos son mucho más inteligentes que el resto de aves? Descubre todo eso y más en este artículo.
 ciencia: geología
 fechaOrdenar: Nov 4, 2022
 fechaMostrar: 4 noviembre, 2022

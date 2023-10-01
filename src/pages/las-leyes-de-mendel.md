@@ -5,6 +5,7 @@ autor: Biologramer
 fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/las-leyes-de-mendel/portada.webp
 portadaAlt: Gregor Mendel.
+descripcion: Aprende sobre las leyes de Mendel que sentaron las bases de la genética moderna.
 ciencia: biología
 fechaMostrar: 12 julio, 2023
 fechaOrdenar: Jul 12, 2023

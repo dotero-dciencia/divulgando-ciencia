@@ -5,6 +5,7 @@ autor: BorealMantis
 fotoDelAutor: /images/autores/anonimo.svg
 portada: /images/contenido/las-aranas/portada.webp
 portadaAlt: Fotografía de una araña.
+descripcion: Las arañas forman un grupo muy amplio dentro de los arácnidos. Explora la diversidad y características de estos fascinantes animales.
 ciencia: biología
 fechaMostrar: 31 octubre, 2022
 fechaOrdenar: Oct 31, 2022
