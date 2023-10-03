@@ -15,11 +15,11 @@ export default function jsonLDGenerator({ type, post, url }) {
         "headline": "${post.titulo}",
         "description": "${post.description}",
         "image": "${post.portada}",
+        "datePublished": "${post.fechaOrdenar}",
         "author": {
           "@type": "Person",
           "name": "${post.autor}",
-        },
-        "datePublished": "${post.fechaOrdenar}"
+        }
       }
     </script>`;
   }
