@@ -1,8 +1,8 @@
 ---
 const {title, description, image, frontmatter, robots} = Astro.props;
 const titulo = title + " | Divulgando Ciencia"
-import Footer from "../components/Footer.astro";
-import Seo from "../components/Seo.astro";
+import Footer from "../../components/en/Footer.astro";
+import Seo from "../../components/Seo.astro";
 ---
 
 <html lang="es">
@@ -39,15 +39,8 @@ import Seo from "../components/Seo.astro";
 		  font-display: swap;
 		}
 		@font-face {
-		  font-family: 'Halloween Semititles';
-		  src: url('/fonts/halloween-semititles.otf') format('woff2');
-		  font-weight: normal;
-		  font-style: normal;
-		  font-display: swap;
-		}
-		@font-face {
-		  font-family: 'Halloween Titles';
-		  src: url('/fonts/halloween-titles.ttf') format('woff2');
+		  font-family: 'Halloween';
+		  src: url('/fonts/halloween.ttf') format('ttf');
 		  font-weight: normal;
 		  font-style: normal;
 		  font-display: swap;

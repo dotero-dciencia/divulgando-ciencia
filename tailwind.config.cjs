@@ -12,7 +12,9 @@ module.exports = {
 		fontFamily: {
 			'generalsans': ['General Sans Regular', 'sans-serif'],
 			'generalsans-semibold': ['General Sans Semibold', 'sans-serif'],
-			'generalsans-medium': ['General Sans Medium', 'sans-serif']
+			'generalsans-medium': ['General Sans Medium', 'sans-serif'],
+			'halloween-titles':['Halloween Titles'],
+			'halloween-semititles':['Halloween Semititles']
 		},
 		colors: {
 			'principal-white': '#F5F5F5',
