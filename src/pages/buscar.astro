@@ -32,8 +32,8 @@
         <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
         <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
 	</head>
-	<body class="bg-principal-white dark:bg-principal-black transition-all mr-8 ml-8 mt-6 mb-6 flex gap-x-2" id="buscador">
-        <a class="hover:scale-110 transition-all w-fit" href="/">
+	<body class="bg-principal-white dark:bg-principal-black transition-all mr-8 ml-8 mt-6 mb-6 gap-x-2 flex" id="buscador">
+        <a class="hover:scale-110 transition-all w-fit hidden sm:flex" href="/">
             <img alt="Logo de divulgandociencia.com" src="/images/logo-modo-oscuro.webp" class="modo-oscuro"/>
             <img src="/images/logo-modo-claro.webp" alt="Logo de divulgandociencia.com" class="modo-claro"/>
         </a>
@@ -58,6 +58,13 @@
             .modo-claro{
                 display:none;
                 height: calc(64px * var(--pagefind-ui-scale));
+            }
+        }
+
+        .pagefind-ui__filter-panel{
+            display:flex;
+            @media only screen and (max-width: 640px){
+                width: display:none;;
             }
         }
 	  </style> 
