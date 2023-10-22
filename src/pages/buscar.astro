@@ -34,8 +34,8 @@
 	</head>
 	<body class="bg-principal-white dark:bg-principal-black transition-all mr-8 ml-8 mt-6 mb-6 flex gap-x-2" id="buscador">
         <a class="hover:scale-110 transition-all w-fit" href="/">
-            <img alt="Logo de divulgandociencia.com" src="/images/logo-modo-oscuro.webp" class="h-8 2xl:h-10 modo-oscuro"/>
-            <img src="/images/logo-modo-claro.webp" alt="Logo de divulgandociencia.com" class="h-8 2xl:h-10 modo-claro"/>
+            <img alt="Logo de divulgandociencia.com" src="/images/logo-modo-oscuro.webp" class="modo-oscuro"/>
+            <img src="/images/logo-modo-claro.webp" alt="Logo de divulgandociencia.com" class="modo-claro"/>
         </a>
         <div class="w-full" id="search"></div>
 	</body>
@@ -43,17 +43,21 @@
         #buscador{
             .modo-claro{
                 display:flex;
+                height: calc(64px * var(--pagefind-ui-scale));
             }
             .modo-oscuro{
                 display:none;
+                height: calc(64px * var(--pagefind-ui-scale));
             }
         }
 		:is(.dark #buscador){
             .modo-oscuro{
                 display: flex;
+                height: calc(64px * var(--pagefind-ui-scale));
             }
             .modo-claro{
                 display:none;
+                height: calc(64px * var(--pagefind-ui-scale));
             }
         }
 	  </style> 
