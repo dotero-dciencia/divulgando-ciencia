@@ -26,48 +26,48 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
 
 <script>
     let lista;
-    const url = "/json/q-bot.json";
+    const url = "../../public/json/q-bot.json";
     jQuery.getJSON(url, function(data) {
-      lista = data;
+        lista = data;
     });
     function quitarAcentos(cadena){
         const acentos = {'á':'a','é':'e','í':'i','ó':'o','ú':'u','Á':'A','É':'E','Í':'I','Ó':'O','Ú':'U'};
         return cadena.split('').map( letra => acentos[letra] || letra).join('').toString();	
     }
     function quitarEspacios(word){
-    let cE = 0;
-    for(let i = word.length;i>0;i--){
-        if (word[i-1] == " "){
-            switch(cE){
-                case 0:
-                    word = word.slice(0, i - 1) + word.slice(i, word.length);
-                    break;
-                case 1:
-                    cE--;
-                    break;
+        let cE = 0;
+        for(let i = word.length;i>0;i--){
+            if (word[i-1] == " "){
+                switch(cE){
+                    case 0:
+                        word = word.slice(0, i - 1) + word.slice(i, word.length);
+                        break;
+                    case 1:
+                        cE--;
+                        break;
+                }
+            }
+            else{
+                if (cE != 1){
+                    cE++;
+                }
             }
         }
-        else{
-            if (cE != 1){
-                cE++;
-            }
-        }
-    }
-    return word;
+        return word;
     }
     function sub(){
-      var objetivo = document.getElementById('cont');
-      let producto = document.getElementsByName("prod")[0].value;
-      console.log(producto);
-      console.log(typeof(producto));
-      producto = producto.replace("\n"," ");
-      producto = quitarAcentos(producto);
-      producto = quitarEspacios(producto);
-      let contenedor = lista.filter(e => e.objetos.includes(producto.toLowerCase()))[0]?.contenedor;
-      if (contenedor) {
-         objetivo.innerHTML=contenedor;
-      } else { 
-         objetivo.innerHTML = "Sin contenedor";
-      }
+        var objetivo = document.getElementById('cont');
+        let producto = document.getElementsByName("prod")[0].value;
+        console.log(producto);
+        console.log(typeof(producto));
+        producto = producto.replace("\n"," ");
+        producto = quitarAcentos(producto);
+        producto = quitarEspacios(producto);
+        let contenedor = lista.filter(e => e.objetos.includes(producto.toLowerCase()))[0]?.contenedor;
+        if (contenedor) {
+            objetivo.innerHTML=contenedor;
+        } else { 
+            objetivo.innerHTML = "Sin contenedor";
+        }
     }
 </script>
