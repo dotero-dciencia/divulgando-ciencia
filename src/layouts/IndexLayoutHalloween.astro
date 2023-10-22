@@ -1,11 +1,11 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "./Layout.astro";
 import Menu from "../components/Menu.astro";
 import FilaBotones from "../components/FilaBotonesDifuminados.astro";
 import SeccionArticulosPequenos from "../components/SeccionArticulosPequenos.astro";
 const title = "Inicio";
 
-const articles = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
+const articles = (await Astro.glob('../pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
 
 <Layout title={title} id="layout" description="Descubre el poder de la divulgación científica abierta junto a nosotros.">
