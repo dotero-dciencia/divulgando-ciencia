@@ -1,5 +1,5 @@
 ---
-const {title, description, image, frontmatter, robots} = Astro.props;
+const {title, description, image, frontmatter, robots, footer} = Astro.props;
 const titulo = title + " | Divulgando Ciencia"
 import Footer from "../components/Footer.astro";
 import Seo from "../components/Seo.astro";
@@ -12,6 +12,7 @@ import Seo from "../components/Seo.astro";
 		<link rel="icon" type="image/svg+xml" href="/images/logo-modo-claro.webp" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="google-adsense-account" content="ca-pub-5669798174045459">
 		<title>{titulo}</title>
 		<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
     	id="pirschextendedjs"
@@ -68,5 +69,3 @@ import Seo from "../components/Seo.astro";
 		}
 	  </style> 
 </html>
-
-
