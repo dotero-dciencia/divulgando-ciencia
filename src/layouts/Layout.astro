@@ -1,5 +1,5 @@
 ---
-const {title, description, image, frontmatter, robots} = Astro.props;
+const {title, description, image, frontmatter, robots, footer} = Astro.props;
 const titulo = title + " | Divulgando Ciencia"
 import Footer from "../components/Footer.astro";
 import Seo from "../components/Seo.astro";
@@ -29,7 +29,7 @@ import Seo from "../components/Seo.astro";
 	</head>
 	<body class="bg-principal-white dark:bg-principal-black transition-all">
         <slot/>
-		<Footer/>
+		<Footer id={footer}/>
 	</body>
 	<style is:global>
 		@font-face {
@@ -54,7 +54,8 @@ import Seo from "../components/Seo.astro";
 		  font-display: swap;
 		}
 		--pagefind-ui-scale: 10;
+		#false{
+			display:none;
+		}
 	  </style> 
 </html>
-
-
