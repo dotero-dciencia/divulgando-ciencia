@@ -56,9 +56,11 @@
         if (theme === 'light') {
           document.documentElement.classList.remove('dark');
           document.documentElement.style.setProperty('--pagefind-ui-text', '#222222');
+          document.documentElement.style.setProperty('--pagefind-ui-background', '#F2F2F2');
         } else {
           document.documentElement.classList.add('dark');
           document.documentElement.style.setProperty('--pagefind-ui-text', '#F2F2F2');
+          document.documentElement.style.setProperty('--pagefind-ui-background', '#222222');
         }
       
         window.localStorage.setItem('theme', theme);
