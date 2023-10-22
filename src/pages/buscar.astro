@@ -32,12 +32,13 @@
         <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
         <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
 	</head>
-	<body class="bg-principal-white dark:bg-principal-black transition-all mr-8 ml-8 mt-6 mb-6 gap-x-2 flex" id="buscador">
+	<body class="bg-principal-white bg-[#152028] dark:bg-principal-black transition-all mr-8 ml-8 mt-6 mb-6 gap-x-2 flex" id="buscador">
         <a class="hover:scale-110 transition-all w-fit hidden sm:flex" href="/">
             <img alt="Logo de divulgandociencia.com" src="/images/logo-modo-oscuro.webp" class="modo-oscuro"/>
             <img src="/images/logo-modo-claro.webp" alt="Logo de divulgandociencia.com" class="modo-claro"/>
         </a>
         <div class="w-full" id="search"></div>
+    
 	</body>      
     <script is:inline>
         const theme = (() => {
@@ -68,6 +69,10 @@
 		}
         :root{
             --pagefind-ui-font: 'General Sans Medium', sans-serif;
+        }
+
+        :is(.dark :root){
+            --pagefind-ui-text: #f2f2f2;
         }
         #buscador{
             .modo-claro{
