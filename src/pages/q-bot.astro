@@ -26,9 +26,30 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
 
 <script>
     function quitarAcentos(cadena){
-        return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        const acentos = {'á':'a','é':'e','í':'i','ó':'o','ú':'u','Á':'A','É':'E','Í':'I','Ó':'O','Ú':'U'};
+        return cadena.split('').map( letra => acentos[letra] || letra).join('').toString();	
     }
-
+    function quitarEspacios(word){
+        let cE = 0;
+        for(let i = word.length;i>0;i--){
+            if (word[i-1] == " "){
+                switch(cE){
+                    case 0:
+                        word = word.slice(0, i - 1) + word.slice(i, word.length);
+                        break;
+                    case 1:
+                        cE--;
+                        break;
+                }
+            }
+            else{
+                if (cE != 1){
+                    cE++;
+                }
+            }
+        }
+        return word;
+    }
     function sub(lista){
         var objetivo = document.getElementById('cont');
         let producto = document.getElementsByName("prod")[0].value;
@@ -36,7 +57,7 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
         //console.log(typeof(producto));
         producto = producto.replace("\n"," ");
         producto = quitarAcentos(producto);
-        producto = producto.trim();
+        producto = quitarEspacios(producto);
         let contenedor = lista.filter(e => e.objetos.includes(producto.toLowerCase()))[0]?.contenedor;
         if (contenedor) {
             objetivo.innerHTML=contenedor;
