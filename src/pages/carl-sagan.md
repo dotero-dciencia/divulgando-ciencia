@@ -142,7 +142,7 @@ Random House.
 
 [21] https://es.findagrave.com/memorial/1347/carl-sagan, visitada el 01/05/2020.
 
-### Sobre la autora: Inés Pellón Gonzálezz
+### Sobre la autora: Inés Pellón González
 
 Doctora en Ciencias Químicas.
 
