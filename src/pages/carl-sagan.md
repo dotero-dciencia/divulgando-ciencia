@@ -149,3 +149,5 @@ Doctora en Ciencias Químicas.
 Profesora Titular de Universidad, Departamento de Ingeniería Química y del Medio Ambiente.
 
 Escuela de Ingeniería de Bilbao, Universidad del País Vasco (UPV- EHU), Bilbao.
+
+Este artículo es parte del libro *CIENCIA y el "Cosmos" del siglo XXI*.
