@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: ../../../layouts/ArticleLayout.astro
 titulo: Carl Sagan
 autor: Inés Pellón Glez.
 fotoDelAutor: /images/autores/ines-pellon-gonzalez.webp
