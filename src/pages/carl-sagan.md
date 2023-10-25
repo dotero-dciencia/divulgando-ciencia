@@ -150,4 +150,6 @@ Profesora Titular de Universidad, Departamento de Ingeniería Química y del Med
 
 Escuela de Ingeniería de Bilbao, Universidad del País Vasco (UPV- EHU), Bilbao.
 
-Este artículo es parte del libro *CIENCIA y el "Cosmos" del siglo XXI*.
+Este artículo es parte del libro [*CIENCIA y el "Cosmos" del siglo XXI*](https://cienciayelcosmosdelsigloxxi.blogspot.com/).
+
+![Portada "CIENCIA y el "Cosmos" del siglo XXI.](/images/contenido/carl-sagan/portada-libro.webp)
