@@ -1,8 +1,8 @@
 ---
-const {title, description, image, frontmatter, robots, footer} = Astro.props;
+const {title, description, image, frontmatter, robots} = Astro.props;
 const titulo = title + " | Divulgando Ciencia"
-import Footer from "../components/Footer.astro";
-import Seo from "../components/Seo.astro";
+import Footer from "../../components/en/Footer.astro";
+import Seo from "../../components/Seo.astro";
 ---
 
 <html lang="es">
@@ -12,7 +12,6 @@ import Seo from "../components/Seo.astro";
 		<link rel="icon" type="image/svg+xml" href="/images/logo-modo-claro.webp" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="google-adsense-account" content="ca-pub-5669798174045459">
 		<title>{titulo}</title>
 		<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
     	id="pirschextendedjs"
@@ -40,15 +39,8 @@ import Seo from "../components/Seo.astro";
 		  font-display: swap;
 		}
 		@font-face {
-		  font-family: 'Halloween Semititles';
-		  src: url('/fonts/halloween-semititles.otf') format('woff2');
-		  font-weight: normal;
-		  font-style: normal;
-		  font-display: swap;
-		}
-		@font-face {
-		  font-family: 'Halloween Titles';
-		  src: url('/fonts/halloween-titles.ttf') format('woff2');
+		  font-family: 'Halloween';
+		  src: url('/fonts/halloween.ttf') format('ttf');
 		  font-weight: normal;
 		  font-style: normal;
 		  font-display: swap;
@@ -69,3 +61,5 @@ import Seo from "../components/Seo.astro";
 		}
 	  </style> 
 </html>
+
+
