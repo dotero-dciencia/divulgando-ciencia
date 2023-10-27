@@ -110,11 +110,11 @@ Intelligence*. New York, Random House.
 
 [6] SAGAN, Carl (1995) *The Demon-Haunted World: Science as a Candle in the Dark*. New York, Random House. Fue continuado por SAGAN, Carl (1997) *Billions and Billions: Thoughts on Life and Death at the Brink of the Millennium*. New York, Random House.
 
-[7] http://www.famousscientists.org/carl-sagan/, visitada el 12/01/2020.
+[7] https://acortar.link/8PtKkD, visitada el 12/01/2020.
 
 [8] https://astro.uchicago.edu/RAS/, visitada el 12/01/2020.
 
-[9] http://chronicle.uchicago.edu/931111/sagan.shtml, visitada el 12/01/2020. Su memoria de tesis se puede consultar en https://search.proquest.com/docview/301918122, visitada el 28/04/2020.
+[9] https://acortar.link/ckChf5, visitada el 12/01/2020. Su memoria de tesis se puede consultar en https://acortar.link/6cXcuq, visitada el 28/04/2020.
 
 [10] “Christmas Lectures 1977: The Planets: RI Channel”, https://acortar.link/oVYCQs. No podemos citar aquí los numerosos premios que recibió, que se pueden consultar en cualquiera de las biografías aquí citadas.
 
@@ -122,7 +122,7 @@ Intelligence*. New York, Random House.
 
 [12] https://charlierose.com/videos/18982, visitada el 12/01/2020.
 
-[13] https://www.sciencedirect.com/journal/icarus, visitada el 12/01/2020.
+[13] https://acortar.link/FszWIp, visitada el 12/01/2020.
 
 [14] The Planetary Society, https://www.planetary.org/, visitada el 12/01/2020.
 
