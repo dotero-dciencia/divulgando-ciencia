@@ -46,7 +46,7 @@ Una vez que se graduó en la *Rahway High School* de Rahway (Nueva Jersey) en 19
 
 ![Carl Sagan en 1951](/images/contenido/carl-sagan/1951.webp)
 
-*Carl Sagan en 1951, año de su graduación en la Rahway High School donde cursó su enseñanza preuniversitaria. Fotografía del anuario de la Rahway High School, obtenida de: https://futurism.com/know-your-scientist-carl-sagan, visitada el 25/04/2020.*
+*Carl Sagan en 1951, año de su graduación en la Rahway High School donde cursó su enseñanza preuniversitaria. Fotografía del anuario de la Rahway High School, obtenida de: https://acortar.link/mFnPCu, visitada el 25/04/2020.*
 
 En esta universidad se graduó en *Artes* en 1954; en 1955 se graduó en *Ciencias*, en 1956 aprobó un máster en *Física*, y en 1960 se doctoró en *Astronomía* y *Astrofísica* con la tesis titulada “Physical studies of planets” [9]. Gracias a su brillante currículum, ese mismo año obtuvo una beca Miller para trabajar en la Universidad de California (Berkeley) que duró hasta 1962, cuando se trasladó al *Smithsonian Astrophysical Observatory* de Cambridge (Massachusetts). Allí impartió clases e investigó hasta que en 1968 se incorporó a la Universidad Cornell en Ithaca (Nueva York), donde fue nombrado profesor titular y director del *Laboratorio de Estudios Planetarios* en 1971. Al año siguiente (1972) y hasta 1981 fue Director Asociado del Centro de Radiofísica e Investigación Espacial de Cornell, siendo el primer titular de la *Cátedra David Duncan de Astronomía y Ciencias del Espacio* en 1976, donde también ofreció un curso de pensamiento crítico hasta su muerte en 1996. Su prestigio traspasó fronteras y entre otros honores impartió la edición de 1977 de las *Royal Institution Christmas Lectures* en Londres [10].
 
