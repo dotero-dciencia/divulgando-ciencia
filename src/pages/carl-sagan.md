@@ -81,7 +81,7 @@ Carl Sagan estuvo interesado en una gran cantidad de temas que siempre abordaba 
 
 ![Carl Sagan y su primogénito Dorion](/images/contenido/carl-sagan/carl-sagan-y-dorion.webp)
 
-*Carl y su primogénito Dorion. Cortesía de su primera esposa y madre de Dorion, Lynn Margulis. (http://www.librosmaravillosos.com/carlsaganunavidaenelcosmos/index.html, visitada el 25/04/2020).*
+*Carl y su primogénito Dorion. Cortesía de su primera esposa y madre de Dorion, Lynn Margulis. (http://www.librosmaravillosos.com, visitada el 25/04/2020).*
 
 Sus biógrafos le definen como una persona escéptica y librepensadora, agnóstico declarado, cuya vida privada fue un reflejo de dicha época. Contrajo matrimonio tres veces: En 1957 con la bióloga Lynn Margulis, en 1968 con la artista y guionista Linda Salzman, y 1981 con la escritora y activista Ann Druyan, unión que duraría hasta la muerte del científico en 1996. Con ellas tuvo cinco hijos: Dorion S. Sagan Margulis (1959), Jeremy E. Sagan Margulis (1960), Nicholas J. Z. Sagan Salzman (1970), Alexandra R. Sagan Druyan (1982) y Samuel D. Sagan Druyan (1991).
 
@@ -128,7 +128,7 @@ Intelligence*. New York, Random House.
 
 [15] https://aas.org/about-aas, www.agu.org, y https://www.aaas.org/, visitadas el 12/01/2020.
 
-[16] POUNDSTONE, William (1999) Carl Sagan: *A Life in the Cosmos*. New York, Henry Holt. Puede leerse on-line en: http://www.librosmaravillosos.com/carlsaganunavidaenelcosmos/index.html, visitada el 25/04/2020.
+[16] POUNDSTONE, William (1999) Carl Sagan: *A Life in the Cosmos*. New York, Henry Holt. Puede leerse on-line en: http://www.librosmaravillosos.com, visitada el 25/04/2020.
 
 [17] SAGAN, Carl (1966) *Planets*. Nederland, Time-Life International.
 
