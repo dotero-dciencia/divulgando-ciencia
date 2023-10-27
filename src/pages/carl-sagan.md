@@ -116,7 +116,7 @@ Intelligence*. New York, Random House.
 
 [9] http://chronicle.uchicago.edu/931111/sagan.shtml, visitada el 12/01/2020. Su memoria de tesis se puede consultar en https://search.proquest.com/docview/301918122, visitada el 28/04/2020.
 
-[10] “Christmas Lectures 1977: The Planets: RI Channel”, https://www.rigb.org/christmas-lectures/watch/1977/the-planets, visitada el 12/01/2020. No podemos citar aquí los numerosos premios que recibió, que se pueden consultar en cualquiera de las biografías aquí citadas.
+[10] “Christmas Lectures 1977: The Planets: RI Channel”, https://acortar.link/oVYCQs. No podemos citar aquí los numerosos premios que recibió, que se pueden consultar en cualquiera de las biografías aquí citadas.
 
 [11] https://acortar.link/3QEU6Y, visitada el 25/04/2020.
 
