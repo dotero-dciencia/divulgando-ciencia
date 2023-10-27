@@ -13,7 +13,7 @@ duracion: 12
 url: /carl-sagan
 ---
 
-*Imagen de portada de http://www.librosmaravillosos.com/carlsaganunavidaenelcosmos/index.html, Carl Sagan en 1976.*
+*Imagen de portada de http://www.librosmaravillosos.com, Carl Sagan en 1976.*
 
 Nombrar a Carl Sagan (1934-1996) es citar a ese conocido científico y escritor cuya amplia sonrisa iluminaba el espacio en el que se encontraba, y cuya labor divulgativa ha generado una profunda huella en varias generaciones. Entre sus muchas y muy variadas contribuciones se pueden destacar la serie documental de televisión *Cosmos: Un viaje personal* (1980) de la que fue coautor y narrador; la novela *Contact* [1] en la que se basa la película homónima de 1997 dirigida por Robert Zemeckis y protagonizada por Jodie Foster, y el haber ganado en 1978 el Premio Pulitzer de Literatura General de No Ficción por su libro *Los dragones del Edén* [2].
 
