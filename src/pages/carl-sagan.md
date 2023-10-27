@@ -132,7 +132,7 @@ Intelligence*. New York, Random House.
 
 [17] SAGAN, Carl (1966) *Planets*. Nederland, Time-Life International.
 
-[18] https://web.archive.org/web/20071011220013/, http://bartelby.com/65/sa/Sagan-Ca.html,
+[18] https://acortar.link/SzqNYN, https://acortar.link/fa5Pt9,
 visitada el 26/04/2020.
 
 [19] SAGAN, Carl (1980) *Cosmos*. New York, Random House.
@@ -140,7 +140,7 @@ visitada el 26/04/2020.
 [20] SAGAN, Carl (1994) *Pale Blue Dot: A Vision of the Human Future in Space*. New York,
 Random House.
 
-[21] https://es.findagrave.com/memorial/1347/carl-sagan, visitada el 01/05/2020.
+[21] https://acortar.link/eJfIux, visitada el 01/05/2020.
 
 ### Sobre la autora: Inés Pellón González
 
