@@ -118,7 +118,7 @@ Intelligence*. New York, Random House.
 
 [10] “Christmas Lectures 1977: The Planets: RI Channel”, https://www.rigb.org/christmas-lectures/watch/1977/the-planets, visitada el 12/01/2020. No podemos citar aquí los numerosos premios que recibió, que se pueden consultar en cualquiera de las biografías aquí citadas.
 
-[11] https://docs.google.com/file/d/0B7q4isbMzJa6SVJoU3Q3RG5KZ2s/view, visitada el 25/04/2020.
+[11] https://acortar.link/3QEU6Y, visitada el 25/04/2020.
 
 [12] https://charlierose.com/videos/18982, visitada el 12/01/2020.
 
