@@ -13,7 +13,7 @@ duracion: 12
 url: /carl-sagan
 ---
 
-*Imagen de portada de http://www.librosmaravillosos.com/carlsaganunavidaenelcosmos/index.html, Carl Sagan en 1976.*
+*Imagen de portada de http://www.librosmaravillosos.com, Carl Sagan en 1976.*
 
 Nombrar a Carl Sagan (1934-1996) es citar a ese conocido científico y escritor cuya amplia sonrisa iluminaba el espacio en el que se encontraba, y cuya labor divulgativa ha generado una profunda huella en varias generaciones. Entre sus muchas y muy variadas contribuciones se pueden destacar la serie documental de televisión *Cosmos: Un viaje personal* (1980) de la que fue coautor y narrador; la novela *Contact* [1] en la que se basa la película homónima de 1997 dirigida por Robert Zemeckis y protagonizada por Jodie Foster, y el haber ganado en 1978 el Premio Pulitzer de Literatura General de No Ficción por su libro *Los dragones del Edén* [2].
 
@@ -46,7 +46,7 @@ Una vez que se graduó en la *Rahway High School* de Rahway (Nueva Jersey) en 19
 
 ![Carl Sagan en 1951](/images/contenido/carl-sagan/1951.webp)
 
-*Carl Sagan en 1951, año de su graduación en la Rahway High School donde cursó su enseñanza preuniversitaria. Fotografía del anuario de la Rahway High School, obtenida de: https://futurism.com/know-your-scientist-carl-sagan, visitada el 25/04/2020.*
+*Carl Sagan en 1951, año de su graduación en la Rahway High School donde cursó su enseñanza preuniversitaria. Fotografía del anuario de la Rahway High School, obtenida de: https://acortar.link/mFnPCu, visitada el 25/04/2020.*
 
 En esta universidad se graduó en *Artes* en 1954; en 1955 se graduó en *Ciencias*, en 1956 aprobó un máster en *Física*, y en 1960 se doctoró en *Astronomía* y *Astrofísica* con la tesis titulada “Physical studies of planets” [9]. Gracias a su brillante currículum, ese mismo año obtuvo una beca Miller para trabajar en la Universidad de California (Berkeley) que duró hasta 1962, cuando se trasladó al *Smithsonian Astrophysical Observatory* de Cambridge (Massachusetts). Allí impartió clases e investigó hasta que en 1968 se incorporó a la Universidad Cornell en Ithaca (Nueva York), donde fue nombrado profesor titular y director del *Laboratorio de Estudios Planetarios* en 1971. Al año siguiente (1972) y hasta 1981 fue Director Asociado del Centro de Radiofísica e Investigación Espacial de Cornell, siendo el primer titular de la *Cátedra David Duncan de Astronomía y Ciencias del Espacio* en 1976, donde también ofreció un curso de pensamiento crítico hasta su muerte en 1996. Su prestigio traspasó fronteras y entre otros honores impartió la edición de 1977 de las *Royal Institution Christmas Lectures* en Londres [10].
 
@@ -81,7 +81,7 @@ Carl Sagan estuvo interesado en una gran cantidad de temas que siempre abordaba 
 
 ![Carl Sagan y su primogénito Dorion](/images/contenido/carl-sagan/carl-sagan-y-dorion.webp)
 
-*Carl y su primogénito Dorion. Cortesía de su primera esposa y madre de Dorion, Lynn Margulis. (http://www.librosmaravillosos.com/carlsaganunavidaenelcosmos/index.html, visitada el 25/04/2020).*
+*Carl y su primogénito Dorion. Cortesía de su primera esposa y madre de Dorion, Lynn Margulis. (http://www.librosmaravillosos.com, visitada el 25/04/2020).*
 
 Sus biógrafos le definen como una persona escéptica y librepensadora, agnóstico declarado, cuya vida privada fue un reflejo de dicha época. Contrajo matrimonio tres veces: En 1957 con la bióloga Lynn Margulis, en 1968 con la artista y guionista Linda Salzman, y 1981 con la escritora y activista Ann Druyan, unión que duraría hasta la muerte del científico en 1996. Con ellas tuvo cinco hijos: Dorion S. Sagan Margulis (1959), Jeremy E. Sagan Margulis (1960), Nicholas J. Z. Sagan Salzman (1970), Alexandra R. Sagan Druyan (1982) y Samuel D. Sagan Druyan (1991).
 
@@ -110,29 +110,29 @@ Intelligence*. New York, Random House.
 
 [6] SAGAN, Carl (1995) *The Demon-Haunted World: Science as a Candle in the Dark*. New York, Random House. Fue continuado por SAGAN, Carl (1997) *Billions and Billions: Thoughts on Life and Death at the Brink of the Millennium*. New York, Random House.
 
-[7] http://www.famousscientists.org/carl-sagan/, visitada el 12/01/2020.
+[7] https://acortar.link/8PtKkD, visitada el 12/01/2020.
 
 [8] https://astro.uchicago.edu/RAS/, visitada el 12/01/2020.
 
-[9] http://chronicle.uchicago.edu/931111/sagan.shtml, visitada el 12/01/2020. Su memoria de tesis se puede consultar en https://search.proquest.com/docview/301918122, visitada el 28/04/2020.
+[9] https://acortar.link/ckChf5, visitada el 12/01/2020. Su memoria de tesis se puede consultar en https://acortar.link/6cXcuq, visitada el 28/04/2020.
 
-[10] “Christmas Lectures 1977: The Planets: RI Channel”, https://www.rigb.org/christmas-lectures/watch/1977/the-planets, visitada el 12/01/2020. No podemos citar aquí los numerosos premios que recibió, que se pueden consultar en cualquiera de las biografías aquí citadas.
+[10] “Christmas Lectures 1977: The Planets: RI Channel”, https://acortar.link/oVYCQs. No podemos citar aquí los numerosos premios que recibió, que se pueden consultar en cualquiera de las biografías aquí citadas.
 
-[11] https://docs.google.com/file/d/0B7q4isbMzJa6SVJoU3Q3RG5KZ2s/view, visitada el 25/04/2020.
+[11] https://acortar.link/3QEU6Y, visitada el 25/04/2020.
 
 [12] https://charlierose.com/videos/18982, visitada el 12/01/2020.
 
-[13] https://www.sciencedirect.com/journal/icarus, visitada el 12/01/2020.
+[13] https://acortar.link/FszWIp, visitada el 12/01/2020.
 
 [14] The Planetary Society, https://www.planetary.org/, visitada el 12/01/2020.
 
 [15] https://aas.org/about-aas, www.agu.org, y https://www.aaas.org/, visitadas el 12/01/2020.
 
-[16] POUNDSTONE, William (1999) Carl Sagan: *A Life in the Cosmos*. New York, Henry Holt. Puede leerse on-line en: http://www.librosmaravillosos.com/carlsaganunavidaenelcosmos/index.html, visitada el 25/04/2020.
+[16] POUNDSTONE, William (1999) Carl Sagan: *A Life in the Cosmos*. New York, Henry Holt. Puede leerse on-line en: http://www.librosmaravillosos.com, visitada el 25/04/2020.
 
 [17] SAGAN, Carl (1966) *Planets*. Nederland, Time-Life International.
 
-[18] https://web.archive.org/web/20071011220013/, http://bartelby.com/65/sa/Sagan-Ca.html,
+[18] https://acortar.link/SzqNYN, https://acortar.link/fa5Pt9,
 visitada el 26/04/2020.
 
 [19] SAGAN, Carl (1980) *Cosmos*. New York, Random House.
@@ -140,7 +140,7 @@ visitada el 26/04/2020.
 [20] SAGAN, Carl (1994) *Pale Blue Dot: A Vision of the Human Future in Space*. New York,
 Random House.
 
-[21] https://es.findagrave.com/memorial/1347/carl-sagan, visitada el 01/05/2020.
+[21] https://acortar.link/eJfIux, visitada el 01/05/2020.
 
 ### Sobre la autora: Inés Pellón González
 
