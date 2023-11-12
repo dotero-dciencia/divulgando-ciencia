@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/ArticleLayout.astro
+layout: ../layouts/ArticleLayout.astro
 titulo: Indicador de pH con lombarda
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
