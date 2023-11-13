@@ -61,7 +61,7 @@ La medusa huevo frito es una especie de medusa de la clase de los escifozoos. Se
 
 La medusa de fuegos artificiales es una especie de medusa hidrozoa de aguas profundas. Aunque no hay mucha información disponible sobre esta especie, las investigaciones muestran que Halitrephes maasi puede vivir en ambientes marinos diversos. Este tipo de hidromedusa ha sido vista tanto en aguas templadas como tropicales, y se ha encontrado en océanos Atlántico, Indo-Pacífico, en la Antártida, el Mediterráneo y el Pacífico oriental.
 
-![Fotografía de la especia Halitrephes maasi](/images/contenido/las-medusas/cotylorhiza-tuberculata.webp)
+![Fotografía de la especia Halitrephes maasi](/images/contenido/las-medusas/halitrephes-maasi.webp)
 
 #### *Stygiomedusa gigantea*
 
