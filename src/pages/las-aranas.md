@@ -2,7 +2,7 @@
 layout: ../layouts/ArticleLayout.astro
 titulo: Las arañas
 autor: BorealMantis
-fotoDelAutor: /images/autores/anonimo.svg
+fotoDelAutor: /images/autores/boreal-mantis.webp
 portada: /images/contenido/las-aranas/portada.webp
 portadaAlt: Fotografía de una araña.
 descripcion: Las arañas forman un grupo muy amplio dentro de los arácnidos. Explora la diversidad y características de estos fascinantes animales.
