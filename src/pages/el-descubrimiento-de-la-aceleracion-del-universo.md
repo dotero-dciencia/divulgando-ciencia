@@ -7,9 +7,9 @@ portada: /images/contenido/el-descubrimiento-de-la-aceleracion-del-universo/port
 portadaAlt: Fotografía de Carl Sagan en 1976.
 descripcion: Carl Sagan fue un científico que ha dejado huella con su gran labor divulgativa, conoce todo sobre él en este artículo.
 ciencia: geología
-fechaMostrar: 15 noviembre, 2023
-fechaOrdenar: Nov 15, 2023
-duracion: 12
+fechaMostrar: 16 noviembre, 2023
+fechaOrdenar: Nov 16, 2023
+duracion: 19
 url: /el-descubrimiento-de-la-aceleracion-del-universo
 ---
 
