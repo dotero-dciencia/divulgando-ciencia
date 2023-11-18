@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: ../../../layouts/ArticleLayout.astro
 titulo: Iniciación a Python
 autor: Neplod
 fotoDelAutor: /images/autores/neplod.webp
