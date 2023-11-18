@@ -138,3 +138,4 @@ Profesora visitante en el ICCUB.
 
 Este artículo pertenece al proyecto [https://cienciayelazarrelativo.blogspot.com](*CIENCIA, y el "azar relativo"*).
 
+![Portada del libro CIENCIA, y el "azar relativo"](/images/contenido/el-descubrimiento-de-la-aceleracion-del-universo/LIBRO.webp)
