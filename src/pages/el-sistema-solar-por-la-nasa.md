@@ -102,4 +102,4 @@ Hoy viajaremos a través de todos los planetas del sistema solar con la NASA y s
 
 *29 de enero, 1996. Créditos: NASA/JPL-Caltech*
 
-***Todas las fotografías presentes en este artículo, pertenecientes a [https://nasa.gov](nasa.gov), han sido usadas con un propósito educativo.***
+***Todas las fotografías presentes en este artículo, pertenecientes a [nasa.gov](https://nasa.gov), han sido usadas con un propósito educativo.***
