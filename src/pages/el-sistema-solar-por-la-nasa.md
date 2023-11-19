@@ -4,7 +4,7 @@ titulo: El sistema solar por la NASA
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/el-sistema-solar-por-la-nasa/portada.webp
-portadaAlt: Fotografía de todos los planetas del sistema solar por la NASA
+portadaAlt: Fotografía del sol por la NASA, NASA/SDO/AIA
 descripcion: La NASA publica fotografía realmente alucinantes en el espacio, viaja con sus fotografías a través del sistema solar.
 ciencia: geología
 fechaMostrar: 19 noviembre, 2023
@@ -16,6 +16,8 @@ instagram: https://instagram.com/tecnomagia_es
 github: https://github.com/dotero-dev
 rrss: x instagram github
 ---
+
+*Imagen de portada: 11 de febrero de 2014. Créditos: NASA/SDO/AIA*
 
 Hoy viajaremos a través de todos los planetas del sistema solar con la NASA y sus fotografías alucinantes en el espacio. Iremos viendo fotografías de cada planeta, ¡abróchense los cinturones que vamos a partir!
 
