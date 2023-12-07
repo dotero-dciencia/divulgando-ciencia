@@ -11,8 +11,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.0.0",
-    "astro": "^3.0.2",
+    "@astrojs/tailwind": "^5.0.3",
+    "astro": "^4.0.3",
     "insights-js": "^1.2.11",
     "jquery": "^3.7.1",
     "pagefind": "^0.12.0",
