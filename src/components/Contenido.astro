@@ -1,5 +1,9 @@
 ---
-const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imagen, design, fotoAutor, alt} = Astro.props
+var {contenido = 'article', url, autor, titulo, ciencia, fecha, imagen, design, fotoAutor, alt} = Astro.props
+
+if (imagen == undefined){
+    imagen = "/images/portada-por-defecto.webp"
+}
 ---
 <div class="my-6 md:my-4 2xl:my-8" id={design}>
     <a class="group" href={url}>

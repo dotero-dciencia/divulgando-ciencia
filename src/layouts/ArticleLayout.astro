@@ -4,6 +4,10 @@ import Contenido from "../components/Contenido.astro";
 import DatosAutor from "../components/DatosAutor.astro";
 const{frontmatter} = Astro.props;
 const articulos = (await Astro.glob('../pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
+
+if (frontmatter.portada == undefined){
+    frontmatter.portada= "/images/portada-por-defecto.webp"
+}
 ---
 
 <PrincipalLayout title={frontmatter.titulo} description={frontmatter.descripcion} image={frontmatter.portada} {frontmatter} robots={frontmatter.robots}>

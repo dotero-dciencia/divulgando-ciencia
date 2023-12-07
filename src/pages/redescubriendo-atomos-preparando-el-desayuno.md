@@ -3,7 +3,6 @@ layout: ../layouts/ArticleLayout.astro
 titulo: (Re)descubriendo átomos preparando el desayuno
 autor: Doctor Berti
 fotoDelAutor: /images/autores/doctor-berti.webp
-portada: /images/contenido/redescubriendo-atomos-preparando-el-desayuno/portada.webp
 portadaAlt: Fotografía de una taza de café
 descripcion: Redescubre junto a nosotros los átomos mientras te preparas el desayuno. ¡Seguro que ya no ves tu café igual!
 ciencia: química
