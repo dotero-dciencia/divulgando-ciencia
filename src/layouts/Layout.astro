@@ -3,6 +3,8 @@ const {title, description, image, frontmatter, robots, footer} = Astro.props;
 const titulo = title + " | Divulgando Ciencia"
 import Footer from "../components/Footer.astro";
 import Seo from "../components/Seo.astro";
+
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <html lang="es">
@@ -26,6 +28,8 @@ import Seo from "../components/Seo.astro";
 			{frontmatter}
 			{robots}
 		/>
+
+		<ViewTransitions/>
 	</head>
 	<body class="bg-principal-white dark:bg-principal-black transition-all">
         <slot/>
