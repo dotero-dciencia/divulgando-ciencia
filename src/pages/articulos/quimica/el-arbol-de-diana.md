@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/ArticleLayout.astro
+layout: "@/article"
 titulo: El árbol de Diana
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

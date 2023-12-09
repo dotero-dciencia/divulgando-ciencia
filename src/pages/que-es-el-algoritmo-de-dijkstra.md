@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: "@/article"
 titulo: Qué es el algoritmo de Dijkstra
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

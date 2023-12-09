@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: "@/article"
 titulo: La estructura molecular del ADN. Leyes de Chargaff
 autor: Biologramer
 fotoDelAutor: /images/autores/anonimo.svg

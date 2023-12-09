@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: "@/article"
 titulo: Conociendo a nuestros planetas
 autor: Biologramer
 fotoDelAutor: /images/autores/anonimo.svg

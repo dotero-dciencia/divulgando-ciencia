@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: "@/article"
 titulo: Las leyes de Mendel
 autor: Biologramer
 fotoDelAutor: /images/autores/anonimo.svg

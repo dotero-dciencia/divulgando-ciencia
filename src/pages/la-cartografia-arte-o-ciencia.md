@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: "@/article"
 titulo: La cartografía, ¿arte o ciencia?
 autor: abgomez
 fotoDelAutor: /images/autores/anonimo.svg

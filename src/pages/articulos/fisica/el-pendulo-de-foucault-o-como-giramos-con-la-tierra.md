@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/ArticleLayout.astro
+layout: "@/article"
 titulo: El péndulo de Foucault o cómo giramos con la Tierra
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

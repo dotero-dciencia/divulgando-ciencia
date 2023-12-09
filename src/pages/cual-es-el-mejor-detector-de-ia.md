@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: "@/article"
 titulo: ¿Cuál es el mejor detector de IA?
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

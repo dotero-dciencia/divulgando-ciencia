@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/ArticleLayout.astro
+layout: "@/article"
 titulo: El descubrimiento de la aceleración del Universo
 autor: Pilar Ruiz-Lapuente
 fotoDelAutor: /images/autores/pilar-ruiz-lapuente.webp
