@@ -4,12 +4,19 @@ var {contenido = 'article', url, autor, titulo, ciencia, fecha, imagen, design, 
 if (imagen == undefined){
     imagen = "/images/portada-por-defecto.webp"
 }
+
+let id
+
+id = fecha.replace(/\s+/g, '')
+id = id.replace(/,/g, '')
+
+console.log(id)
 ---
-<div class="my-6 md:my-4 2xl:my-8" id={design}>
+<card class="my-6 md:my-4 2xl:my-8" id={design}>
     <a class="group" href={url}>
         <main id={contenido}>
             <div class="bg-principal-black group-hover:scale-[1.045] rounded-lg transition-all relative w-full">
-                <img src={imagen} class="bg-principal-white w-full rounded-lg image object-cover text-principal-white text-sm" alt={alt}>
+                <img transition:name={`avatar ${url} image`} src={imagen} class="bg-principal-white w-full rounded-lg image object-cover text-principal-white text-sm" alt={alt}>
             </div>
             <div id={ciencia}>
                 <h6 class="uppercase mt-4 min-[1800px]:text-xl font-generalsans-medium">
@@ -37,7 +44,7 @@ if (imagen == undefined){
             </div>
         </main>
     </a>
-</div>
+</card>
 
 <style>
     #matemáticas{

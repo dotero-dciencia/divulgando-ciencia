@@ -8,6 +8,13 @@ const articulos = (await Astro.glob('../pages/*.md')).sort((a, b) => Date.parse(
 if (frontmatter.portada == undefined){
     frontmatter.portada= "/images/portada-por-defecto.webp"
 }
+
+let id
+
+id = frontmatter.fechaMostrar.replace(/\s+/g, '')
+id = id.replace(/,/g, '')
+
+console.log(id)
 ---
 
 <PrincipalLayout title={frontmatter.titulo} description={frontmatter.descripcion} image={frontmatter.portada} {frontmatter} robots={frontmatter.robots}>
@@ -15,8 +22,8 @@ if (frontmatter.portada == undefined){
         <h4 class="font-generalsans-medium uppercase text-base min-[1800px]:text-xl" id={frontmatter.ciencia} data-pagefind-filter="Ciencia">{frontmatter.ciencia}</h4>
         <h1 class="font-generalsans-semibold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-4">{frontmatter.titulo}</h1>
         <DatosAutor fotoDelAutor={frontmatter.fotoDelAutor} autor={frontmatter.autor} fechaMostrar={frontmatter.fechaMostrar} duracion={frontmatter.duracion} rrss={frontmatter.rrss} x={frontmatter.x} instagram={frontmatter.instagram} github={frontmatter.github} discord={frontmatter.discord} youtube={frontmatter.youtube} twitch={frontmatter.twitch} tiktok={frontmatter.tiktok}/>
-        <section class="w-full justify-center flex">
-            <img data-pagefind-meta="image[src], image_alt[alt]" alt={frontmatter.portadaAlt} class="bg-principal-white w-full text-center justify-center object-cover rounded-lg mt-3 mb-2 h-[12rem] sm:h-[16rem] md:h-96 lg:h-[22rem] xl:h-[25rem] min-[1800px]:h-[32rem] min-[1800px]:w-1/2" src={frontmatter.portada}/>
+        <section class="w-full justify-center flex" >
+            <img transition:name={`avatar ${frontmatter.url} image`}c/>
         </section>
     </section>
         <section data-pagefind-body class="w-full justify-center flex mt-5">
