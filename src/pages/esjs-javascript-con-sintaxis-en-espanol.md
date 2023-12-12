@@ -16,8 +16,6 @@ x: x.com/enzonotario_
 github: github.com/enzonotario
 ---
 
-# EsJS: JavaScript con sintaxis en Español
-
 EsJS es un lenguaje de programación en español que compila a JavaScript, pensado para facilitar el aprendizaje de programación a personas que no hablan inglés, aprovechando la potencia y versatilidad de JavaScript.
 
 ```esjs
