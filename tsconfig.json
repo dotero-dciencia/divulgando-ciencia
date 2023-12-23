@@ -5,6 +5,9 @@
     "paths": {
       "@/article": [
         "src/layouts/ArticleLayout.astro"
+      ],
+      "@/components/*": [
+        "src/components/*"
       ]
     }
   }

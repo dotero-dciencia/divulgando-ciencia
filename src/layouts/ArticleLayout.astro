@@ -1,7 +1,7 @@
 ---
 import PrincipalLayout from "./PrincipalLayout.astro";
-import Contenido from "../components/Contenido.astro";
-import DatosAutor from "../components/DatosAutor.astro";
+import Contenido from "@/components/Contenido.astro";
+import DatosAutor from "@/components/DatosAutor.astro";
 const{frontmatter} = Astro.props;
 const articulos = (await Astro.glob('../pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 
