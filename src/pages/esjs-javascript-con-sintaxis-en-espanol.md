@@ -1,16 +1,19 @@
 ---
 layout: "@/article"
 titulo: "EsJS: JavaScript con sintaxis en Español"
-autor: Darío O.
-fotoDelAutor: /images/autores/dario-o.webp
+autor: Enzo Notario
+fotoDelAutor: /images/autores/enzo.webp
 portada: /images/contenido/esjs-javascript-con-sintaxis-en-espanol/portada.webp
 portadaAlt: Portada de la página web de EsJS.
 descripcion: EsJS es un lenguaje de programación que usa la misma sintaxis que JavaScript pero en español. ¡Lánzate a descubrirlo!
 ciencia: programación
-fechaMostrar: 11 diciembre, 2023
-fechaOrdenar: Dec 11, 2023
+fechaMostrar: 12 diciembre, 2023
+fechaOrdenar: Dec 12, 2023
 duracion: 1
 url: /esjs-javascript-con-sintaxis-en-espanol
+rrss: x github
+x: x.com/enzonotario_
+github: github.com/enzonotario
 ---
 
 # EsJS: JavaScript con sintaxis en Español
