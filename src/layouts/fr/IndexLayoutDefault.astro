@@ -1,0 +1,48 @@
+---
+import Layout from "@/layouts/fr/Layout.astro";
+import Menu from "@/components/fr/Menu.astro";
+import FilaBotones from "@/components/fr/FilaBotonesDifuminados.astro";
+import SeccionArticulosPequenos from "@/components/SeccionArticulosPequenos.astro";
+const title = "Inicio";
+
+const articles = (await Astro.glob('../../pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
+---
+
+<Layout title={title} id="layout" description="Descubre el poder de la divulgación científica abierta junto a nosotros.">
+    <!--Parte principal del landing-->
+    <Menu class="z-40" design="landing-page"/>
+    <section
+	class="landing-section bg-black h-screen w-full text-center overflow-hidden relative"
+	>
+		<div class="z-30 h-full flex flex-col text-principal-white absolute top-[30%] md:top-[39%] lg:top-[41%] xl:top-[35%] 2xl:top-[38%] w-full my-auto items-center">
+			<header>
+			<h2 class="text-[1.8rem] sm:text-5xl lg:text-7xl xl:text-8xl min-[1800px]:text-9xl min-[2250px]:text-[10rem] mb-4 md:mb-8 font-generalsans-semibold">
+				divulgandociencia.com
+			</h2>
+			<p class="text-base sm:text-lg lg:text-xl xl:text-2xl min-[1800px]:text-3xl min-[2250px]:text-4xl mb-8 md:mb-12 font-generalsans">
+				Découvrez le pouvoir de la vulgarisation scientifique ouverte
+			</p>
+            
+        <FilaBotones id="botones" class="z-30 relative h-full flex flex-col text-principal-white "/>
+			</header>
+		</div>
+
+
+		<div class="absolute top-0 bottom-0 h-full w-full z-10 bg-principal-black">
+			<img alt="Dos chicos jóvenes mirando por microscopios. " class="h-full w-full object-cover opacity-50 blur-md" src="/images/landing-page/portada.webp">
+		</div>
+	</section>
+    <!--Zona de los artículos-->
+    <main class="w-full min-[1800px]:py-8">
+        <SeccionArticulosPequenos num1="0" num2="2" num3="4" articulos={articles}/>
+        <SeccionArticulosPequenos num1="4" num2="6" num3="8" articulos={articles}/>
+        <section class="flex w-full justify-center lg:justify-end gap-x-3 px-36 font-generalsans-medium">
+            <a href="/articulos" class="bg-faded-black w-48 py-2 px-4 sm:px-0 rounded-lg flex gap-x-1 h-full items-center hover:scale-105 transition-all justify-center dark:bg-faded-white dark:text-principal-white text-base min-[1800px]:text-2xl min-[1800px]:w-64">
+                <span class="hidden md:inline">Tous les </span><span class="capitalize md:lowercase">articles</span>
+                <svg class="hidden sm:inline w-5 h-5 min-[1800px]:w-7 min-[1800px]:h-7" width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3zm0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5zm-1 5v5h-5v2h5v5h2v-5h5v-2h-5v-5h-2z"/>
+                </svg>
+            </a>
+        </section>
+    </main>
+</Layout>

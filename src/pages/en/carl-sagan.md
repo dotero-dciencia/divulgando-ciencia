@@ -10,5 +10,5 @@ ciencia: scientifics
 fechaMostrar: 24 October, 2023
 fechaOrdenar: Oct 24, 2023
 duracion: 12
-url: /carl-sagan
+url: /en/carl-sagan
 ---

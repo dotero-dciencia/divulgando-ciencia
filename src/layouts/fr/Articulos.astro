@@ -1,0 +1,20 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Menu from "@/components/Menu.astro";
+import FilaBotones from "@/components/FilaBotones.astro";
+import SeccionArticulosPequenos from "@/components/SeccionArticulosPequenos.astro";
+import SeccionArticulosGrandes from "@/components/SeccionArticulosGrandes.astro";
+const {title, articulos, inicial} = Astro.props;
+---
+
+<Layout title={title}>
+	<Menu design="articles"/>
+	<SeccionArticulosGrandes articulos={articulos}/>
+	<FilaBotones inicial={inicial}/>
+	<SeccionArticulosPequenos num1="2" num2="4" num3="6" articulos={articulos}/>
+	<SeccionArticulosPequenos num1="6" num2="8" num3="10" articulos={articulos}/>
+	<SeccionArticulosPequenos num1="10" num2="12" num3="14" articulos={articulos}/>
+	<SeccionArticulosPequenos num1="14" num2="16" num3="18" articulos={articulos}/>
+	<SeccionArticulosPequenos num1="18" num2="20" num3="22" articulos={articulos}/>
+	<SeccionArticulosPequenos num1="22" num2="24" num3="26" articulos={articulos}/>
+</Layout>

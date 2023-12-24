@@ -1,78 +1,78 @@
 ---
-import Boton from "@/components/BotonDifuminado.astro";
+import Boton from "../BotonDifuminado.astro";
 const {inicial} = Astro.props
 ---
 
 <ul class="lg:flex lg:gap-x-2 w-full justify-center my-4 py-2" id={inicial}>
     <div class="md:flex gap-x-2 md:w-full lg:w-fit justify-center">
         <div class="flex gap-x-2 md:w-fit w-full justify-center">
-            <div id="maths">
+            <div id="mathématiques">
                 <div class="none">
-                    <Boton ciencia="maths" direccion="/articulos/maths" inicial={inicial} id="maths"/>
+                    <Boton ciencia="mathématiques" direccion="/articulos/mathematiques" inicial={inicial} id="mathématiques"/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="maths" direccion="/articulos" inicial={inicial} id="maths"/>
+                    <Boton ciencia="mathématiques" direccion="/articulos" inicial={inicial} id="mathématiques"/>
                 </div>
             </div>
-            <div id="biology">
+            <div id="biologie">
                 <div class="none">
-                    <Boton ciencia="biology" direccion="/articulos/biology" inicial={inicial} id="biology"/>
+                    <Boton ciencia="biologie" direccion="/articulos/biologie" inicial={inicial} id="biologie"/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="biology" direccion="/articulos" inicial={inicial} id="biology"/>
+                    <Boton ciencia="biologie" direccion="/articulos" inicial={inicial} id="biologie"/>
                 </div>
             </div>
-            <div id="geology">
+            <div id="géologie">
                 <div class="none">
-                    <Boton ciencia="geology" direccion="/articulos/geology" inicial={inicial} id="geology"/>
+                    <Boton ciencia="géologie" direccion="/articulos/geologie" inicial={inicial} id="géologie"/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="geology" direccion="/articulos" inicial={inicial} id="geology"/>
+                    <Boton ciencia="géologie" direccion="/articulos" inicial={inicial} id="géologie"/>
                 </div>
             </div>
         </div>
         <div class="flex gap-x-2 md:w-fit w-full justify-center my-3 md:m-0">
-            <div id="physics">
+            <div id="physique">
                 <div class="none">
-                    <Boton ciencia="physics" direccion="/articulos/physics" inicial={inicial} id="physics"/>
+                    <Boton ciencia="physique" direccion="/articulos/physique" inicial={inicial} id="physique"/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="physics" direccion="/articulos" inicial={inicial} id="physics"/>
+                    <Boton ciencia="physique" direccion="/articulos" inicial={inicial} id="physique"/>
                 </div>
             </div>
-            <div id="chemistry">
+            <div id="chimie">
                 <div class="none">
-                    <Boton ciencia="chemistry" direccion="/articulos/chemistry" inicial={inicial} id="chemistry"/>
+                    <Boton ciencia="chimie" direccion="/articulos/chimie" inicial={inicial} id="chimie"/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="chemistry" direccion="/articulos" inicial={inicial} id="chemistry"/>
+                    <Boton ciencia="chimie" direccion="/articulos" inicial={inicial} id="chimie"/>
                 </div>
             </div>
-            <div id="technology">
+            <div id="technologie">
                 <div class="none">
-                    <Boton ciencia="technology" direccion="/articulos/technology" inicial={inicial} id="technology"/>
+                    <Boton ciencia="technologie" direccion="/articulos/technologie" inicial={inicial} id="technologie"/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="technology" direccion="/articulos" inicial={inicial} id="technology"/>
+                    <Boton ciencia="technologie" direccion="/articulos" inicial={inicial} id="technologie"/>
                 </div>
             </div>
         </div>
     </div>
     <div class="flex gap-x-2 w-full lg:w-fit justify-center md:mt-3 lg:m-0">
-        <div id="coding">
+        <div id="programmation">
             <div class="none">
-                <Boton ciencia="coding" direccion="/articulos/coding" inicial={inicial} id="coding"/>
+                <Boton ciencia="programmation" direccion="/articulos/programmation" inicial={inicial} id="programmation"/>
             </div>
             <div class="clic">
-                <Boton ciencia="coding" direccion="/articulos" inicial={inicial} id="coding"/>
+                <Boton ciencia="programmation" direccion="/articulos" inicial={inicial} id="programmation"/>
             </div>
         </div>
-        <div id="geology">
+        <div id="géologie">
             <div class="none">
-                <Boton ciencia="scientifics" direccion="/articulos/scientifics" inicial={inicial} id="scientifics"/>
+                <Boton ciencia="scientifiques" direccion="/articulos/scientifiques" inicial={inicial} id="scientifiques"/>
             </div>
             <div class="clic">
-                <Boton ciencia="scientifics" direccion="/articulos" inicial={inicial} id="scientifics"/>
+                <Boton ciencia="scientifiques" direccion="/articulos" inicial={inicial} id="scientifiques"/>
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@ const {inicial} = Astro.props
     .clic{
         display:none;
     }
-    #m #maths{
+    #m #mathématiques{
         .clic{
             display:block;
         }
@@ -91,7 +91,7 @@ const {inicial} = Astro.props
         }
     }
 
-    #b #biology{
+    #b #biologie{
         .clic{
             display:block;
         }
@@ -100,7 +100,7 @@ const {inicial} = Astro.props
         }
     }
 
-    #g #geology{
+    #g #géologie{
         .clic{
             display:block;
         }
@@ -109,7 +109,7 @@ const {inicial} = Astro.props
         }
     }
     
-    #f #physics{
+    #f #physique{
         .clic{
             display:block;
         }
@@ -118,7 +118,7 @@ const {inicial} = Astro.props
         }
     }
 
-    #q #chemistry{
+    #q #chimie{
         .clic{
             display:block;
         }
@@ -127,7 +127,7 @@ const {inicial} = Astro.props
         }
     }
 
-    #t #technology{
+    #t #technologie{
         .clic{
             display:block;
         }
@@ -136,7 +136,7 @@ const {inicial} = Astro.props
         }
     }
 
-    #p #coding{
+    #p #programmation{
         .clic{
             display:block;
         }
@@ -145,7 +145,7 @@ const {inicial} = Astro.props
         }
     }
 
-    #c #scientifics{
+    #c #scientifiques{
         .clic{
             display:block;
         }

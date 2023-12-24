@@ -10,7 +10,7 @@ ciencia: technology
 fechaMostrar: 16 January, 2022
 fechaOrdenar: Jan 16, 2022
 duracion: 8
-url: /learn-arduino-step-by-step
+url: /en/learn-arduino-step-by-step
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es
 github: https://github.com/dotero-dev

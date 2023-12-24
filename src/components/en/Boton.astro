@@ -1,0 +1,99 @@
+---
+const {ciencia,direccion,inicial} = Astro.props
+---
+
+<div id={inicial}>
+    <a href={direccion} id={ciencia} class="gap-x-1 flex capitalize font-generalsans-medium w-fit py-2 sm:px-4 px-3 rounded-full text-principal-white min-[1800px]:text-xl text-sm hover:scale-110 transition-all">
+        {ciencia}
+        <svg class="svg my-auto h-full" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 0 0 9-9a9 9 0 0 0-9-9a9 9 0 0 0-9 9a9 9 0 0 0 9 9zM9 8l6 8m0-8l-6 8"/>
+        </svg>
+    </a>
+</div>
+
+<style>
+    #maths{
+        background-color:#004193;
+    }
+    #biology{
+        background-color:#005100;
+    }
+    #geology{
+        background-color:#6E3400;
+    }
+    #physics{
+        background-color:#950000;
+    }
+    #chemistry{
+        background-color:#820083;
+    }
+    #technology{
+        background-color:#623B00;
+    }
+    #coding{
+        background-color:#5a12b0;
+    }
+    #scientifics{
+        background-color:#004f3e;
+    }
+
+    svg{
+        display:none;
+    }
+
+    #m #maths{
+        background-color: #003470;
+        .svg{
+            display: block;
+        }
+    }
+
+    #b #biology{
+        background-color: #003300;
+        .svg{
+            display: block;
+        }
+    }
+
+    #g #geology{
+        background-color: #512600;
+        .svg{
+            display: block;
+        }
+    }
+
+    #f #physics{
+        background-color: #7A0000;
+        .svg{
+            display: block;
+        }
+    }
+
+    #q #chemistry{
+        background-color: #640066;
+        .svg{
+            display: block;
+        }
+    }
+
+    #t #technology{
+        background-color: #472A00;
+        .svg{
+            display: block;
+        }
+    }
+
+    #p #coding{
+        background-color: #4D0F98;
+        .svg{
+            display: block;
+        }
+    }
+
+    #c #scientifics{
+        background-color: #003327;
+        .svg{
+            display: block;
+        }
+    }
+</style>
