@@ -1,5 +1,5 @@
 ---
-import PrincipalLayout from "./PrincipalLayout.astro";
+import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
 import Contenido from "@/components/Contenido.astro";
 import DatosAutor from "@/components/DatosAutor.astro";
 const{frontmatter} = Astro.props;
@@ -23,7 +23,7 @@ console.log(id)
         <h1 class="font-generalsans-semibold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-4">{frontmatter.titulo}</h1>
         <DatosAutor fotoDelAutor={frontmatter.fotoDelAutor} autor={frontmatter.autor} fechaMostrar={frontmatter.fechaMostrar} duracion={frontmatter.duracion} rrss={frontmatter.rrss} x={frontmatter.x} instagram={frontmatter.instagram} github={frontmatter.github} discord={frontmatter.discord} youtube={frontmatter.youtube} twitch={frontmatter.twitch} tiktok={frontmatter.tiktok}/>
         <section class="w-full justify-center flex" >
-            <img transition:name={`avatar ${frontmatter.url} image`}c/>
+            <img transition:name={`avatar ${frontmatter.url} image`}/>
         </section>
     </section>
         <section data-pagefind-body class="w-full justify-center flex mt-5">
