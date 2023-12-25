@@ -9,7 +9,7 @@ descripcion: Lee el artículo completo para conocer la sorprendente historia de 
 ciencia: matemáticas
 fechaMostrar: 1 mayo, 2022
 fechaOrdenar: May 1, 2022
-duracion: 5
+duracion: 5 
 url: /el-problema-del-ajedrez-y-el-trigo
 ---
 

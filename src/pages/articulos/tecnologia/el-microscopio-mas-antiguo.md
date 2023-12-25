@@ -9,7 +9,7 @@ descripcion: Todos conocemos cómo es un microscopio moderno, pero, ¿sabes cóm
 ciencia: tecnología
 fechaMostrar: 14 noviembre, 2023
 fechaOrdenar: Nov 14, 2023
-duracion: 2
+duracion: 2 
 url: /el-microscopio-mas-antiguo
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

@@ -1,0 +1,39 @@
+---
+import Bandera from "@/components/Bandera.astro";
+import Layout from "@/layouts/LayoutNoFooter.astro";
+import ModoClaroOscuro from "@/components/ModoClaroOscuro.astro";
+const {texto} = Astro.props
+---
+
+<Layout title={texto}>
+    <header class="justify-between items-center px-24 py-8 flex gap-x-2">
+        <a class="hover:scale-110 transition-all" href="/">
+            <img alt="Logo de divulgandociencia.com" src="/images/logo-modo-oscuro.webp" class="h-12 2xl:h-16 modo-oscuro"/>
+            <img src="/images/logo-modo-claro.webp" alt="Logo de divulgandociencia.com" class="h-12 2xl:h-16 modo-claro"/>
+        </a>
+        <h1 class="text-principal-black dark:text-principal-white font-generalsans-semibold text-5xl">{texto}</h1>
+        <ModoClaroOscuro class="flex flex-grow basis-0"/>
+    </header>
+    <main class="px-24 grid gap-12 grid-cols-3 grid-rows-2">
+        <Bandera url="/" src="/public/images/banderas/espana.webp"/>
+        <Bandera url="/" src="/public/images/banderas/reino-unido.webp"/>
+        <Bandera url="/" src="/public/images/banderas/francia.webp"/>
+        <Bandera url="/" src="/public/images/banderas/cataluna.webp"/>
+        <Bandera url="/" src="/public/images/banderas/pais-vasco.webp"/>
+        <Bandera url="/" src="/public/images/banderas/galicia.webp"/>
+    </main>
+</Layout>
+
+<style>
+    .modo-oscuro{
+        display:none;
+    }
+    :is(.dark header){
+        .modo-oscuro{
+            display:block;
+        }
+        .modo-claro{
+            display: none;
+        }
+    }
+</style>

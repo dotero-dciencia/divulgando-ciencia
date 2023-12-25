@@ -1,19 +1,13 @@
 ---
-import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
-import Contenido from "@/components/Contenido.astro";
+import PrincipalLayout from "@/layouts/en/PrincipalLayout.astro";
+import Contenido from "@/components/en/Contenido.astro";
 import DatosAutor from "@/components/DatosAutor.astro";
 const{frontmatter} = Astro.props;
-const articulos = (await Astro.glob('../pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
+const articulos = (await Astro.glob("../../pages/en/*.md")).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 
 if (frontmatter.portada == undefined){
     frontmatter.portada= "/images/portada-por-defecto.webp"
 }
-
-let id
-
-id = frontmatter.fechaMostrar.replace(/\s+/g, '')
-id = id.replace(/,/g, '')
-
 
 ---
 

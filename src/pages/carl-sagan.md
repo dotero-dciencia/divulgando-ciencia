@@ -9,7 +9,7 @@ descripcion: Carl Sagan fue un científico que ha dejado huella con su gran labo
 ciencia: científicos
 fechaMostrar: 24 octubre, 2023
 fechaOrdenar: Oct 24, 2023
-duracion: 12
+duracion: 1 2
 url: /carl-sagan
 ---
 

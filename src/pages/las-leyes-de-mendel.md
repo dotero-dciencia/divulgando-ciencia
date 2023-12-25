@@ -9,7 +9,7 @@ descripcion: Aprende sobre las leyes de Mendel que sentaron las bases de la gen√
 ciencia: biolog√≠a
 fechaMostrar: 12 julio, 2023
 fechaOrdenar: Jul 12, 2023
-duracion: 7
+duracion: 7 
 url: /las-leyes-de-mendel
 ---
 

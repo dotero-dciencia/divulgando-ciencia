@@ -9,7 +9,7 @@ autor: Marcos G.
 fotoDelAutor: /images/autores/anonimo.svg
 fechaMostrar: 11 febrero, 2023
 fechaOrdenar: Feb 11, 2023
-duracion: 1
+duracion: 1 
 url: /rosalind-franklin
 ---
 

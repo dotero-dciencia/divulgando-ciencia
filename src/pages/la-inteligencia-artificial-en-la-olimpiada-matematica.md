@@ -9,7 +9,7 @@ descripcion: La inteligencia artificial está en continuo auge. Descubre su pode
 ciencia: matemáticas
 fechaMostrar: 12 junio, 2023
 fechaOrdenar: Jun 12, 2023
-duracion: 12
+duracion: 1 2
 url: /la-inteligencia-artificial-en-la-olimpiada-matematica
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

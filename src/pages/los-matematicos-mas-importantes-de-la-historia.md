@@ -9,7 +9,7 @@ descripcion: Descubre cómo las contribuciones de los matemáticos más famosos 
 ciencia: matemáticas
 fechaMostrar: 14 marzo, 2023
 fechaOrdenar: Mar 14, 2023
-duracion: 5
+duracion: 5 
 url: /los-matematicos-mas-importantes-de-la-historia
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

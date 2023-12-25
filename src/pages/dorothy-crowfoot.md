@@ -9,7 +9,7 @@ descripcion: Lee sobre la vida inspiradora de Dorothy Crowfoot, quien dedicó su
 ciencia: científicos
 fechaMostrar: 11 febrero, 2023
 fechaOrdenar: Feb 11, 2023
-duracion: 1
+duracion: 1 
 url: /dorothy-crowfoot
 ---
 

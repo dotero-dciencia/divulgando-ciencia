@@ -9,7 +9,7 @@ descripcion: Aprende el incipiente lenguaje de programación Python desde cero p
 ciencia: programación
 fechaOrdenar: Nov 15, 2023
 fechaMostrar: 15 noviembre, 2023
-duracion: 10
+duracion: 1 0
 url: /iniciacion-a-python
 ---
 

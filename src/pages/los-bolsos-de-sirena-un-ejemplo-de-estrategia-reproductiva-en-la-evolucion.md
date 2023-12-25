@@ -9,7 +9,7 @@ descripcion: Aprende cómo los bolsos de sirena demuestran un gran ejemplo de es
 ciencia: biología
 fechaOrdenar: Oct 5, 2022
 fechaMostrar: 5 octubre, 2022
-duracion: 4
+duracion: 4 
 url: /los-bolsos-de-sirena-un-ejemplo-de-estrategia-reproductiva-en-la-evolucion
 ---
 

@@ -9,7 +9,7 @@ descripcion: En la cuarta dimensión decimos que nos movemos en dirección W. ¿
 ciencia: física
 fechaOrdenar: Mar 25, 2023
 fechaMostrar: 25 marzo, 2023
-duracion: 1
+duracion: 1 
 url: /la-cuarta-dimension-movimiento-en-direccion-w
 ---
 

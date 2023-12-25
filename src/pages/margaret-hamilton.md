@@ -9,7 +9,7 @@ descripcion: Margaret Hamilton fue una de las programadores clave en el primer v
 ciencia: científicos
 fechaMostrar: 11 febrero, 2023
 fechaOrdenar: Feb 11, 2023
-duracion: 2
+duracion: 2 
 url: /margaret-hamilton
 ---
 

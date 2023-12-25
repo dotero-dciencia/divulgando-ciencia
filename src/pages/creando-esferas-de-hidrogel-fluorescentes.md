@@ -9,7 +9,7 @@ descripcion: Crea tus propias esferas de hidrogel fluorescentes hidratándolas c
 ciencia: química
 fechaMostrar: 10 octubre, 2023
 fechaOrdenar: Oct 10, 2023
-duracion: 2
+duracion: 2 
 url: /creando-esferas-de-hidrogel-fluorescentes
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

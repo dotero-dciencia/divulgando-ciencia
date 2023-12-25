@@ -9,7 +9,7 @@ descripcion: Enfréntate al reto de crear tu propia calculadora hoy mismo usando
 ciencia: programación
 fechaMostrar: 1 octubre, 2022
 fechaOrdenar: Oct 1, 2022
-duracion: 5
+duracion: 5 
 url: /calculadora-con-python
 ---
 

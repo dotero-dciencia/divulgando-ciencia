@@ -9,7 +9,7 @@ descripcion: Las arañas forman un grupo muy amplio dentro de los arácnidos. Ex
 ciencia: biología
 fechaMostrar: 31 octubre, 2022
 fechaOrdenar: Oct 31, 2022
-duracion: 4
+duracion: 4 
 url: /las-aranas
 ---
 

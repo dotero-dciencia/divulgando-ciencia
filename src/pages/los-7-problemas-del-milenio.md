@@ -9,7 +9,7 @@ descripcion: Descubre de primera mano cómo se descubrió la aceleración del Un
 ciencia: matemáticas
 fechaMostrar: 17 noviembre, 2023
 fechaOrdenar: Nov 17, 2023
-duracion: 6
+duracion: 6 
 url: /los-7-problemas-del-milenio
 ---
 

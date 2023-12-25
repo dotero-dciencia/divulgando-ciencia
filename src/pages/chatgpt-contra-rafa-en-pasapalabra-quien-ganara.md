@@ -9,7 +9,7 @@ descripcion: Descubre si la inteligencia artificial ChatGPT habría ganado a Raf
 ciencia: matemáticas
 fechaMostrar: 29 mayo, 2023
 fechaOrdenar: May 29, 2023
-duracion: 7
+duracion: 7 
 url: /chatgpt-contra-rafa-en-pasapalabra-quien-ganara
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

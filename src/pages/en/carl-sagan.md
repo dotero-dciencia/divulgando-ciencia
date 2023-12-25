@@ -1,5 +1,5 @@
 ---
-layout: "@/article"
+layout: "@/article-en"
 titulo: Carl Sagan
 autor: Inés Pellón Glez.
 fotoDelAutor: /images/autores/ines-pellon-gonzalez.webp
@@ -9,6 +9,6 @@ descripcion: Carl Sagan was a scientist who left a significant impact through hi
 ciencia: scientifics
 fechaMostrar: 24 October, 2023
 fechaOrdenar: Oct 24, 2023
-duracion: 12
+duracion: 1 2
 url: /en/carl-sagan
 ---

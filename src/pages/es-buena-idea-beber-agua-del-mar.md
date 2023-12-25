@@ -9,7 +9,7 @@ descripcion: Descubre las consecuencias de beber agua del mar según la Biologí
 ciencia: biología
 fechaMostrar: 3 octubre, 2023
 fechaOrdenar: Oct 3, 2023
-duracion: 6
+duracion: 6 
 url: /es-buena-idea-beber-agua-del-mar
 ---
 

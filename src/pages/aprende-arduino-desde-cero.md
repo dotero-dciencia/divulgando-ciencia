@@ -9,7 +9,7 @@ descripcion: Aprende a usar la placa Arduino desde cero sin ningún conocimiento
 ciencia: tecnología
 fechaMostrar: 16 enero, 2022
 fechaOrdenar: Jan 16, 2022
-duracion: 8
+duracion: 8 
 url: /aprende-arduino-desde-cero
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

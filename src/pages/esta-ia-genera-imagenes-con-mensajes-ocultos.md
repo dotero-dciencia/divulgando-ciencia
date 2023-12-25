@@ -9,7 +9,7 @@ descripcion: Con esta inteligencia artificial puedes crear grandes imágenes con
 ciencia: tecnología
 fechaMostrar: 27 septiembre, 2023
 fechaOrdenar: Sep 27, 2023
-duracion: 1
+duracion: 1 
 url: /esta-ia-genera-imagenes-con-mensajes-ocultos
 ---
 

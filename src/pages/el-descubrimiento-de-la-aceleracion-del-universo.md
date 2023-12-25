@@ -9,7 +9,7 @@ descripcion: Descubre de primera mano cómo se descubrió la aceleración del Un
 ciencia: física
 fechaMostrar: 16 noviembre, 2023
 fechaOrdenar: Nov 16, 2023
-duracion: 19
+duracion: 1 9
 url: /el-descubrimiento-de-la-aceleracion-del-universo
 ---
 

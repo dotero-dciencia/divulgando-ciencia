@@ -9,7 +9,7 @@ descripcion: Descubre cómo los climogramas pueden ayudarte a comprender y preve
 ciencia: geología
 fechaMostrar: 30 octubre, 2022
 fechaOrdenar: Oct 30, 2022
-duracion: 3
+duracion: 3 
 url: /los-climogramas
 ---
 

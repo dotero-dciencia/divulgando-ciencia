@@ -9,7 +9,7 @@ descripcion: Conocer el algoritmo de Dijkstra te permitirá hallar el camino óp
 ciencia: matemáticas
 fechaMostrar: 31 octubre, 2023
 fechaOrdenar: Oct 31, 2023
-duracion: 2
+duracion: 2 
 url: /que-es-el-algoritmo-de-dijkstra
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

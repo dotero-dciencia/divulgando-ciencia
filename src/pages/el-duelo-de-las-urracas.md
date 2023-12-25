@@ -9,7 +9,7 @@ descripcion: ¿Sabías que los córvidos son mucho más inteligentes que el rest
 ciencia: geología
 fechaOrdenar: Nov 4, 2022
 fechaMostrar: 4 noviembre, 2022
-duracion: 5
+duracion: 5 
 url: /el-duelo-de-las-urracas
 ---
 

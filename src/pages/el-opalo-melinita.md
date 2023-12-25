@@ -9,7 +9,7 @@ descripcion: Explora las propiedades únicas del ópalo melinita, una variedad d
 ciencia: geología
 fechaOrdenar: Dec 24, 2022
 fechaMostrar: 24 diciembre, 2022
-duracion: 3
+duracion: 3 
 url: /el-opalo-melinita
 ---
 

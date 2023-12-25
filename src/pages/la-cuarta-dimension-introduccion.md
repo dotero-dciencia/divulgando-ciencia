@@ -9,7 +9,7 @@ descripcion: Introdúcete de lleno en la cuarta dimensión, una nueva dimensión
 ciencia: física
 fechaMostrar: 10 febrero, 2023
 fechaOrdenar: Feb 10, 2023
-duracion: 3
+duracion: 3 
 url: /la-cuarta-dimension-introduccion
 ---
 

@@ -9,7 +9,7 @@ descripcion: Explora el sorprendente mundo de las matemáticas en los copos de n
 ciencia: matemáticas
 fechaMostrar: 9 enero, 2022
 fechaOrdenar: Jan 9, 2022
-duracion: 6
+duracion: 6 
 url: /en-el-corazon-de-un-copo-de-nieve
 ---
 

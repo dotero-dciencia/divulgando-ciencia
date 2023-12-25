@@ -9,7 +9,7 @@ descripcion: Elizabeth Blackburn fue una bióloga molecular con grandes hallazgo
 ciencia: científicos
 fechaMostrar: 11 febrero, 2023
 fechaOrdenar: Feb 11, 2023
-duracion: 1
+duracion: 1 
 url: /elisabeth-blackburn
 ---
 

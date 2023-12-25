@@ -9,7 +9,7 @@ descripcion: Redescubre junto a nosotros los átomos mientras te preparas el des
 ciencia: química
 fechaOrdenar: Nov 18, 2023
 fechaMostrar: 18 noviembre, 2023
-duracion: 4
+duracion: 4 
 url: /redescubriendo-atomos-preparando-el-desayuno
 x: https://x.com/mp_ciencia
 instagram: https://instagram.com/mpciencia

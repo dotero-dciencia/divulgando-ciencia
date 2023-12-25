@@ -9,7 +9,7 @@ autor: Guillermo M.
 fotoDelAutor: /images/autores/anonimo.svg
 fechaMostrar: 11 febrero, 2023
 fechaOrdenar: Feb 11, 2023
-duracion: 1
+duracion: 1 
 url: /marianne-grunberg-manago
 ---
 Marianne Grunberg-Manago era una **bioquímica** que descubrió la **polinucleótido fosforilasa**.

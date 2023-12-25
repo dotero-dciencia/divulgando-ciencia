@@ -9,7 +9,7 @@ descripcion: Descubre cómo hacer un indicador de pH usando una lombarda. Te lo 
 ciencia: química
 fechaMostrar: 12 noviembre, 2023
 fechaOrdenar: Nov 12, 2023
-duracion: 2
+duracion: 2 
 url: /indicador-de-ph-con-lombarda
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

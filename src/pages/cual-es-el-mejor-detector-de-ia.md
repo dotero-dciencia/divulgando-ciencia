@@ -9,7 +9,7 @@ descripcion: Lee nuestro artículo para descubrir cuál es el mejor detector de 
 ciencia: tecnología
 fechaMostrar: 9 julio, 2023
 fechaOrdenar: Jul 9, 2023
-duracion: 5
+duracion: 5 
 url: /cual-es-el-mejor-detector-de-ia
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

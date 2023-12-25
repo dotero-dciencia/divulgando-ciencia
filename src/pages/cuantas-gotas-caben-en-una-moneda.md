@@ -9,7 +9,7 @@ descripcion: ¿Has probado alguna vez a echar gotas en una moneda? ¡Entrarán m
 ciencia: física
 fechaMostrar: 28 octubre, 2023
 fechaOrdenar: Oct 28, 2023
-duracion: 1
+duracion: 1 
 url: /cuantas-gotas-caben-en-una-moneda
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

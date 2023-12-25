@@ -9,7 +9,7 @@ descripcion: La NASA publica fotografía realmente alucinantes en el espacio, vi
 ciencia: geología
 fechaMostrar: 19 noviembre, 2023
 fechaOrdenar: Nov 19, 2023
-duracion: 2
+duracion: 2 
 url: /el-sistema-solar-por-la-nasa
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

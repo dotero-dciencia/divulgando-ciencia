@@ -9,7 +9,7 @@ descripcion: Aprende paso a paso a hacer magia transformando una moneda de cobre
 ciencia: química
 fechaMostrar: 9 noviembre, 2022
 fechaOrdenar: Nov 9, 2022
-duracion: 2
+duracion: 2 
 url: /convertir-una-moneda-de-cobre-en-plata
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

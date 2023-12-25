@@ -9,7 +9,7 @@ descripcion: ¿Sabías que no hace falta calor para freír un huevo? ¡También 
 ciencia: química
 fechaMostrar: 22 octubre, 2023
 fechaOrdenar: Oct 22, 2023
-duracion: 5
+duracion: 5 
 url: /freimos-un-huevo-frito-usando-alcohol
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

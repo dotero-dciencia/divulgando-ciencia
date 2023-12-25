@@ -9,7 +9,7 @@ descripcion: La inteligencia artificial está en continuo auge. Descubre su pode
 ciencia: programación
 fechaMostrar: 22 marzo, 2023
 fechaOrdenar: Mar 22, 2023
-duracion: 5
+duracion: 5 
 url: /la-inteligencia-artificial-amiga-o-enemiga
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

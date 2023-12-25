@@ -9,7 +9,7 @@ descripcion: Descubre cómo midió el matemático griego Eratóstenes la longitu
 ciencia: matemáticas
 fechaMostrar: 20 junio, 2022
 fechaOrdenar: Jun 20, 2022
-duracion: 3
+duracion: 3 
 url: /como-midio-eratostenes-la-tierra-con-un-palo
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

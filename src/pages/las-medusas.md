@@ -9,7 +9,7 @@ descripcion: Las medusas, un grupo muy variado de cnidarios formado por múltipl
 ciencia: biología
 fechaMostrar: 13 noviembre, 2023
 fechaOrdenar: Nov 13, 2023
-duracion: 5
+duracion: 5 
 url: /las-medusas
 ---
 

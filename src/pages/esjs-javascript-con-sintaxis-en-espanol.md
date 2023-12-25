@@ -9,7 +9,7 @@ descripcion: EsJS es un lenguaje de programación que usa la misma sintaxis que 
 ciencia: programación
 fechaMostrar: 12 diciembre, 2023
 fechaOrdenar: Dec 12, 2023
-duracion: 1
+duracion: 1 
 url: /esjs-javascript-con-sintaxis-en-espanol
 rrss: x github
 x: x.com/enzonotario_

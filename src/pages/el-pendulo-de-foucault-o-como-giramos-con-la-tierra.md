@@ -9,7 +9,7 @@ descripcion: Aprende cómo funciona el péndulo de Foucault, un experimento fís
 ciencia: física
 fechaMostrar: 30 septiembre, 2023
 fechaOrdenar: Sep 30, 2023
-duracion: 2
+duracion: 2 
 url: /el-pendulo-de-foucault-o-como-giramos-con-la-tierra
 ---
 

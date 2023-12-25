@@ -9,7 +9,7 @@ descripcion: ¿Crees conocer todo sobre los planetas del sistema solar? Aprende 
 ciencia: geología
 fechaOrdenar: Mar 19, 2023
 fechaMostrar: 19 marzo, 2023
-duracion: 8
+duracion: 8 
 url: /conociendo-a-nuestros-planetas
 ---
 

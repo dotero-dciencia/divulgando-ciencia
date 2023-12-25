@@ -8,7 +8,7 @@ portadaAlt: Huella.
 ciencia: geología
 fechaMostrar: 10 diciembre, 2022
 fechaOrdenar: Dec 10, 2022
-duracion: 5
+duracion: 5 
 url: /fosiles-las-huellas-del-pasado
 ---
 

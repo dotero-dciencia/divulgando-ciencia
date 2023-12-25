@@ -9,7 +9,7 @@ descripcion: Descubre el kevlar, una sustancia creada por Stephanie Kwolek, una 
 ciencia: científicos
 fechaMostrar: 11 febrero, 2023
 fechaOrdenar: Feb 11, 2023
-duracion: 1
+duracion: 1 
 url: /stephanie-kwolek
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

@@ -9,7 +9,7 @@ descripcion: Descubre las razones por las cuales la cartografía puede considera
 ciencia: matemáticas
 fechaMostrar: 25 octubre, 2022
 fechaOrdenar: Oct 25, 2022
-duracion: 3
+duracion: 3 
 url: /la-cartografia-arte-o-ciencia
 ---
 

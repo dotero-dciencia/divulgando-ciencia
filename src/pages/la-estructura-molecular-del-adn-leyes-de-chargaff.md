@@ -9,7 +9,7 @@ descripcion: Descubre las leyes esenciales de Chargaff que revolucionaron nuestr
 ciencia: biología
 fechaOrdenar: May 10, 2023
 fechaMostrar: 10 mayo, 2023
-duracion: 5
+duracion: 5 
 url: /la-estructura-molecular-del-adn-leyes-de-chargaff
 ---
 

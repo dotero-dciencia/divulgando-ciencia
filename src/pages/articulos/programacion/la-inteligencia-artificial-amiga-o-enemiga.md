@@ -8,6 +8,6 @@ portadaAlt: Imagen de la cabeza de un robot generada por la inteligencia artific
 ciencia: programación
 fechaMostrar: 22 marzo, 2023
 fechaOrdenar: Mar 22, 2023
-duracion: 5
+duracion: 5 
 url: /la-inteligencia-artificial-amiga-o-enemiga
 ---

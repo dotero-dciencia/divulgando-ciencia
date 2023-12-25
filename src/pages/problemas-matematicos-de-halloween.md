@@ -9,7 +9,7 @@ descripcion: En Halloween también hay matemáticas. Descúbrelas en este artíc
 ciencia: matemáticas
 fechaMostrar: 31 octubre, 2022
 fechaOrdenar: Oct 31, 2022
-duracion: 6
+duracion: 6 
 url: /problemas-matematicos-de-halloween
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

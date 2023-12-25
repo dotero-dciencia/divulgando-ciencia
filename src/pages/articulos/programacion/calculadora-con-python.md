@@ -8,6 +8,6 @@ portadaAlt: ALT
 ciencia: programación
 fechaMostrar: 1 octubre, 2022
 fechaOrdenar: Oct 1, 2022
-duracion: 6
+duracion: 6 
 url: /calculadora-con-python
 ---

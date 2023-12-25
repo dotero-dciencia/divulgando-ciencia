@@ -9,7 +9,7 @@ descripcion: Lee el artículo completo para conocer el origen de Googol y su rel
 ciencia: matemáticas
 fechaMostrar: 18 diciembre, 2022
 fechaOrdenar: Dec 18, 2022
-duracion: 1
+duracion: 1 
 url: /que-es-el-numero-googol
 ---
 

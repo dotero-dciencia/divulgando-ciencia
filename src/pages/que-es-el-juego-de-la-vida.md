@@ -9,7 +9,7 @@ descripcion: John Conway creó el Juego de la Vida hace decenas de año. Hoy pue
 ciencia: programación
 fechaMostrar: 11 abril, 2023
 fechaOrdenar: Apr 11, 2023
-duracion: 2
+duracion: 2 
 url: /que-es-el-juego-de-la-vida
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

@@ -9,7 +9,7 @@ descripcion: Descubre el fascinante mundo matemático de las telarañas leyendo 
 ciencia: matemáticas
 fechaMostrar: 31 octubre, 2022
 fechaOrdenar: Oct 31, 2022
-duracion: 4
+duracion: 4 
 url: /las-matematicas-en-una-telarana
 x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es

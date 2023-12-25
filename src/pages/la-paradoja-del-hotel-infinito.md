@@ -9,7 +9,7 @@ descripcion: La paradoja del hotel infinito de David Hilbert es famosa por trata
 ciencia: matemáticas
 fechaMostrar: 15 octubre, 2023
 fechaOrdenar: Oct 15, 2023
-duracion: 4
+duracion: 4 
 url: /la-paradoja-del-hotel-infinito
 ---
 
