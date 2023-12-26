@@ -1,12 +1,11 @@
 ---
-import IndexLayoutDefault from "@/layouts/IndexLayoutDefault.astro";
-
+import Articulos from "@/layouts/Articulos.astro";
+const articulos = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
-
-<IndexLayoutDefault
-    subtitulo = "Descobreix el poder de la divulgació científica oberta"
-    boton1 = "Tots els"
-    boton2 = "articles"
+<Articulos 
+    articulos={articulos} 
+    title="Geologia" 
+    inicial="g"
     enlaceMenu1 = "/ca"
     textoMenu1 = "Inici"
     enlaceMenu2 = "/ca/articles"

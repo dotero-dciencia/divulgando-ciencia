@@ -1,12 +1,11 @@
 ---
-import IndexLayoutDefault from "@/layouts/IndexLayoutDefault.astro";
-
+import Articulos from "@/layouts/Articulos.astro";
+const articulos = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
-
-<IndexLayoutDefault
-    subtitulo = "Descobre o poder da divulgación científica aberta"
-    boton1 = "Todos os"
-    boton2 = "artigos"
+<Articulos 
+    articulos={articulos} 
+    title="Física" 
+    inicial="f"
     enlaceMenu1 = "/gl"
     textoMenu1 = "Inicio"
     enlaceMenu2 = "/gl/artigos"
@@ -23,7 +22,8 @@ import IndexLayoutDefault from "@/layouts/IndexLayoutDefault.astro";
     textoFooter4 = "O teu artigo"
     urlFooter5 = "/adivino-tu-carta"
     textoFooter5 = "Adiviño a túa carta"
-    urlArticulos = '../pages/*.md'
+    lan = "gl"
+    urlArticulos = "/gl/articles"
     urlBoton1 = "/gl/artigos/matematicas"
     textoBoton1 = "matemáticas"
     urlBoton2 = "/gl/artigos/bioloxia"
@@ -40,5 +40,4 @@ import IndexLayoutDefault from "@/layouts/IndexLayoutDefault.astro";
     textoBoton7 = "programación"
     urlBoton8 = "/gl/artigos/cientificos"
     textoBoton8 = "científicos"
-    lan = "gl"
 />
