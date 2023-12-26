@@ -6,7 +6,7 @@ fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/la-inteligencia-artificial-amiga-o-enemiga/portada.webp
 portadaAlt: Imagen de la cabeza de un robot generada por la inteligencia artificial Dall·E 2.
 descripcion: La inteligencia artificial está en continuo auge. Descubre su poder en este artículo.
-ciencia: programación
+ciencia: programmationç
 fechaMostrar: 22 marzo, 2023
 fechaOrdenar: Mar 22, 2023
 duracion: 5 
@@ -15,6 +15,7 @@ x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es
 github: https://github.com/dotero-dev
 rrss: x instagram github
+lan: fr
 ---
 
 Seguro que si estás leyendo esto, en los últimos días, en las últimas semanas o incluso meses has oído hablar sobre la inteligencia artificial. Pues este es un tema muy interesante que en los últimos tiempos ha ido cobrando cada vez más importancia. En este artículo haremos un recorrido a través de la inteligencia artificial, hablaremos de su historia, de la actualidad y de lo que nos deparará en un futuro.

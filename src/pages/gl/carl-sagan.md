@@ -11,6 +11,7 @@ fechaMostrar: 24 octubre, 2023
 fechaOrdenar: Oct 24, 2023
 duracion: 1 2
 url: /carl-sagan
+lan: gl
 ---
 
 *Imagen de portada de http://www.librosmaravillosos.com, Carl Sagan en 1976.*

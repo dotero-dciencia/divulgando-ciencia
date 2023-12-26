@@ -6,7 +6,7 @@ fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/convertir-una-moneda-de-cobre-en-plata/portada.webp
 portadaAlt: Fotografía de varias monedas de cobre.
 descripcion: Aprende paso a paso a hacer magia transformando una moneda de cobre en plata usando la Química.
-ciencia: química
+ciencia: kímika
 fechaMostrar: 9 noviembre, 2022
 fechaOrdenar: Nov 9, 2022
 duracion: 2 

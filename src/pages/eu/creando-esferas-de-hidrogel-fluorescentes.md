@@ -6,7 +6,7 @@ fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/creando-esferas-de-hidrogel-fluorescentes/portada.webp
 portadaAlt: Fotografía de esferas de hidrogel fluorescentes iluminadas con luz ultravioleta.
 descripcion: Crea tus propias esferas de hidrogel fluorescentes hidratándolas con una disolución de agua y fluoresceína. Paso a paso.
-ciencia: química
+ciencia: kímika
 fechaMostrar: 10 octubre, 2023
 fechaOrdenar: Oct 10, 2023
 duracion: 2 
@@ -15,6 +15,7 @@ x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es
 github: https://github.com/dotero-dev
 rrss: x instagram github
+lan: eu
 ---
 
 Hoy aprenderemos a realizar **esferas de hidrogel fluorescentes**. Explicaremos todos los pasos a seguir para hacer de forma correcta esta sencilla práctica.

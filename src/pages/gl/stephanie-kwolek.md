@@ -15,6 +15,7 @@ x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es
 github: https://github.com/dotero-dev
 rrss: x instagram github
+lan: gl
 ---
 
 Fue una científica de familia polaca, nacida en EE. UU. y que dedicó su vida a la **Química**, llevando a cabo un descubrimiento que salvó la vida de muchas personas: el **kevlar**.

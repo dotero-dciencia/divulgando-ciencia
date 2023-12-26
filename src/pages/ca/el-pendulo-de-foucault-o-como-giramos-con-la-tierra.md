@@ -11,6 +11,7 @@ fechaMostrar: 30 septiembre, 2023
 fechaOrdenar: Sep 30, 2023
 duracion: 2 
 url: /el-pendulo-de-foucault-o-como-giramos-con-la-tierra
+lan: ca
 ---
 
 El péndulo de Foucault es considerado uno de los experimentos más elegantes del mundo de la Física, pues demuestra el **movimiento de rotación terrestre**.

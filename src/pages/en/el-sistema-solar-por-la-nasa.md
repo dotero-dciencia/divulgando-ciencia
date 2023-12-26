@@ -6,7 +6,7 @@ fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/el-sistema-solar-por-la-nasa/portada.webp
 portadaAlt: Fotografía del sol por la NASA, NASA/SDO/AIA
 descripcion: La NASA publica fotografía realmente alucinantes en el espacio, viaja con sus fotografías a través del sistema solar.
-ciencia: geología
+ciencia: geology
 fechaMostrar: 19 noviembre, 2023
 fechaOrdenar: Nov 19, 2023
 duracion: 2 
@@ -15,6 +15,7 @@ x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es
 github: https://github.com/dotero-dev
 rrss: x instagram github
+lan: en
 ---
 
 *Imagen de portada: 11 de febrero de 2014. Créditos: NASA/SDO/AIA*

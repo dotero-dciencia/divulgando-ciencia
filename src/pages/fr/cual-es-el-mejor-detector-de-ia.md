@@ -6,7 +6,7 @@ fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/cual-es-el-mejor-detector-de-ia/portada.webp
 portadaAlt: Imagen de la página del detector de IA Copyleaks mostrando sus características principales.
 descripcion: Lee nuestro artículo para descubrir cuál es el mejor detector de inteligencia artificial para textos escritos.
-ciencia: tecnología
+ciencia: technologie
 fechaMostrar: 9 julio, 2023
 fechaOrdenar: Jul 9, 2023
 duracion: 5 
@@ -15,6 +15,7 @@ x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es
 github: https://github.com/dotero-dev
 rrss: x instagram github
+lan: fr
 ---
 
 La irrupción de la inteligencia artificial en la sociedad está provocando que no podamos creernos nada de lo que veamos. Es por esto que se han desarrollado últimamente detectores de inteligencia artificial para poder dictaminar si un texto ha sido escrito por una de ellas o por un ser humano. En este artículo veremos distintos detectores de textos escritos por IA y los compararemos, con el fin de conocer cuál es el mejor detector de inteligencia artificial.

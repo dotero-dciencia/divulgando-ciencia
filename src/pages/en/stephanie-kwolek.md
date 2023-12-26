@@ -6,7 +6,7 @@ fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/stephanie-kwolek/portada.webp
 portadaAlt: Fotografía de Stephanie Kwolek.
 descripcion: Descubre el kevlar, una sustancia creada por Stephanie Kwolek, una química que salvó vidas.
-ciencia: científicos
+ciencia: scientifics
 fechaMostrar: 11 febrero, 2023
 fechaOrdenar: Feb 11, 2023
 duracion: 1 
@@ -15,6 +15,7 @@ x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es
 github: https://github.com/dotero-dev
 rrss: x instagram github
+lan: en
 ---
 
 Fue una científica de familia polaca, nacida en EE. UU. y que dedicó su vida a la **Química**, llevando a cabo un descubrimiento que salvó la vida de muchas personas: el **kevlar**.

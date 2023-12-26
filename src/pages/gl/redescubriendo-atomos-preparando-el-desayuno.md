@@ -16,6 +16,7 @@ instagram: https://instagram.com/mpciencia
 tiktok: https://www.tiktok.com/@mpciencia
 youtube: https://www.youtube.com/channel/UCJbUjAyqjIa7D8FL-M32JSQ
 rrss: x instagram tiktok youtube
+lan: gl
 ---
 
 Cuando estudiaba en el colegio, me pregunté muchas veces cómo sería posible saber que la materia que nos rodea está formada por esas “pelotitas” minúsculas tan extrañas llamados átomos y las moléculas de las que tanto me hablaban en clase. Pero esta duda solía durarme poco. Tras pensarlo un rato, siempre acababa llegando a la misma conclusión: “lo sabrán porque lo habrán visto con un microscopio”. Lo que no supe hasta varios años después era que esta respuesta que tan tranquilo me dejaba estaba totalmente equivocada.

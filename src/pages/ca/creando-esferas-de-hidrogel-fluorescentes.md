@@ -15,6 +15,7 @@ x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es
 github: https://github.com/dotero-dev
 rrss: x instagram github
+lan: ca
 ---
 
 Hoy aprenderemos a realizar **esferas de hidrogel fluorescentes**. Explicaremos todos los pasos a seguir para hacer de forma correcta esta sencilla práctica.

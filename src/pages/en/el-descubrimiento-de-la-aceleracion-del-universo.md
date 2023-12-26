@@ -6,11 +6,12 @@ fotoDelAutor: /images/autores/pilar-ruiz-lapuente.webp
 portada: /images/contenido/el-descubrimiento-de-la-aceleracion-del-universo/portada.webp
 portadaAlt: Fotografía del Universo.
 descripcion: Descubre de primera mano cómo se descubrió la aceleración del Universo.
-ciencia: física
+ciencia: physics
 fechaMostrar: 16 noviembre, 2023
 fechaOrdenar: Nov 16, 2023
 duracion: 1 9
 url: /el-descubrimiento-de-la-aceleracion-del-universo
+lan: en
 ---
 
 En los años veinte, el descubrimiento de la expansión del Universo era un debate crucial en el establecimiento del modelo del Big Bang que más tarde sería confirmado con otras pruebas. En los años noventa, la discusión sobre el ritmo de expansión en el momento actual, también conocido como *H<sub>0</sub>* (siendo *H(t)* el parámetro de expansión del Universo), era un debate con puntos de vista opuestos y agitadas discusiones en congresos. Son años cuyo recuerdo nunca deja de traerme una sonrisa al revivir en la memoria las divertidas contiendas dialécticas entre los partidarios de un valor y otro, los ataques a degüello entre eminencias científicas. Algo que, para una estudiante que entraba en el campo, suponía un acicate más para examinar la cuestión por cuenta propia aportando un método distinto.

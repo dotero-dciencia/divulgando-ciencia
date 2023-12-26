@@ -15,7 +15,7 @@ x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es
 github: https://github.com/dotero-dev
 rrss: x instagram github
-lan: fr
+lan: ca
 ---
 
 Descobre como mediu o matemático grego, Eratóstenes, a Terra usando só un pau no solsticio de verán.
