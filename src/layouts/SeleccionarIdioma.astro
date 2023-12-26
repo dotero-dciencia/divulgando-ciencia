@@ -3,11 +3,15 @@ import Bandera from "@/components/Bandera.astro";
 import Layout from "@/layouts/LayoutNoFooter.astro";
 import ModoClaroOscuro from "@/components/ModoClaroOscuro.astro";
 const {texto, idioma} = Astro.props
+let inicio = "/"
+if (idioma != "es"){
+    inicio = "/" + idioma
+}
 ---
 
 <Layout title={texto}>
     <header class="justify-between items-center px-24 py-8 flex gap-x-2">
-        <a class="hover:scale-110 transition-all" href="/${idioma}">
+        <a class="hover:scale-110 transition-all" href={inicio}>
             <img alt="Logo de divulgandociencia.com" src="/images/logo-modo-oscuro.webp" class="h-12 2xl:h-16 modo-oscuro"/>
             <img src="/images/logo-modo-claro.webp" alt="Logo de divulgandociencia.com" class="h-12 2xl:h-16 modo-claro"/>
         </a>
