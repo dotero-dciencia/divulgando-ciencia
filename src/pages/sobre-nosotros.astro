@@ -1,25 +1,24 @@
 ---
-import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
+import SobreNosotros from "@/layouts/SobreNosotros.astro";
 ---
 
-<PrincipalLayout 
-    title="Sobre nosotros | Divulgando Ciencia" 
-    description="Somos dos estudiantes apasionados por la ciencia. Descubre el poder de la divulgación científica abierta con la misma pasión que nosotros."
-    image="/images/landing-page/portada.webp"
->
-    <section class="mt-20 w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white">
-        <h1 class="font-generalsans-semibold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-4">Sobre nosotros</h1>
-        <section class="w-full justify-center flex">
-            <img alt="Fotografía" class="bg-principal-white w-full text-center justify-center object-cover rounded-lg mt-3 mb-2 h-[12rem] sm:h-[16rem] md:h-96 lg:h-[22rem] xl:h-[25rem] min-[1800px]:h-[32rem] min-[1800px]:w-1/2" src="/images/landing-page/portada.webp"/>
-        </section>
-    </section>
-    <section class="w-full justify-center flex mt-5">
-        <article class="prose font-generalsans dark:prose-invert prose-img:my-3 prose-img:rounded mb-4 text-normal  px-8 sm:px-0 sm:max-w-lg min-[1800px]:text-xl min-[1800px]:max-w-4xl">
-            ¡Hola! Somos Darío y Dorian, dos estudiantes apasionados por la ciencia y, en concreto, por la divulgación científica.
-
-            Empezamos esta web como un modo de hacer lo que nos gustaba: divulgar la ciencia y enseñar al resto del mundo conocimientos de carácter científico.
-            
-            Lo que empezó siendo un *hobbie* hoy se convierte en una web donde queremos que nuestro público sienta la misma pasión que nosotros por la divulgación científica y la ciencia; donde queremos que adquieras conocimientos nuevos cada vez que nos visites; donde queremos que encuentres todos los conocimientos científicos que quieras encontrar; donde queremos que navegues libre en busca de artículos de tu ciencia favorita; donde queremos...
-        </article>
-    </section>
-</PrincipalLayout>
+<SobreNosotros 
+    texto="¡Hola! Somos Darío y Dorian, dos estudiantes apasionados por la ciencia y, en concreto, por la divulgación científica. Empezamos esta web como un modo de hacer lo que nos gustaba: divulgar la ciencia y enseñar al resto del mundo conocimientos de carácter científico. Lo que empezó siendo un *hobbie* hoy se convierte en una web donde queremos que nuestro público sienta la misma pasión que nosotros por la divulgación científica y la ciencia; donde queremos que adquieras conocimientos nuevos cada vez que nos visites; donde queremos que encuentres todos los conocimientos científicos que quieras encontrar; donde queremos que navegues libre en busca de artículos de tu ciencia favorita; donde queremos..."
+    titulo = "Sobre nosotros"
+    enlaceMenu1 = "/"
+    textoMenu1 = "Inicio"
+    enlaceMenu2 = "/articulos"
+    textoMenu2 = "Artículos"
+    urlBuscador = "/buscar"
+    textoBuscador = "¿Qué quieres aprender hoy?"
+    urlFooter1 = "/q-bot"
+    textoFooter1 = "Q-Bot"
+    urlFooter2 = "/sobre-nosotros"
+    textoFooter2 = "Sobre nosotros"
+    urlFooter3 = "/mi-idioma"
+    textoFooter3 = "Selecciona tu idioma"
+    urlFooter4 = "/publicamos-tu-articulo"
+    textoFooter4 = "Publicamos tu artículo"
+    urlFooter5 = "/adivino-tu-carta"
+    textoFooter5 = "Adivino tu carta"
+/>
