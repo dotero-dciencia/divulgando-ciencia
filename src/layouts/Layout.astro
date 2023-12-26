@@ -1,5 +1,5 @@
 ---
-const {title, description, image, frontmatter, robots, urlFooter1, textoFooter1, urlFooter2, textoFooter2, urlFooter3, textoFooter3, urlFooter4, textoFooter4, urlFooter5, textoFooter5} = Astro.props;
+const {lan, title, description, image, frontmatter, robots, urlFooter1, textoFooter1, urlFooter2, textoFooter2, urlFooter3, textoFooter3, urlFooter4, textoFooter4, urlFooter5, textoFooter5} = Astro.props;
 const titulo = title + " | Divulgando Ciencia"
 import Footer from "@/components/Footer.astro";
 import Seo from "@/components/Seo.astro";
@@ -12,6 +12,7 @@ import { ViewTransitions } from "astro:transitions";
 	<head>
 		<meta name="description" content={description}>
 		<meta charset="utf-8" />
+		<html lang={lan}></html>
 		<link rel="icon" type="image/svg+xml" href="/images/logo-modo-claro.webp" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />

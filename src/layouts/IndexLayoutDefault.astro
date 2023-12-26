@@ -32,7 +32,7 @@ if (lan == "en"){
 articulos = articulos.sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
 
-<Layout title={title} id="layout" description="Descubre el poder de la divulgación científica abierta junto a nosotros." {urlFooter1} {textoFooter1} {urlFooter2} {textoFooter2} {urlFooter3} {textoFooter3} {urlFooter4} {textoFooter4} {urlFooter5} {textoFooter5}>
+<Layout title={title} id="layout" description="Descubre el poder de la divulgación científica abierta junto a nosotros." {urlFooter1} {textoFooter1} {urlFooter2} {textoFooter2} {urlFooter3} {textoFooter3} {urlFooter4} {textoFooter4} {urlFooter5} {textoFooter5} {lan}>
     <!--Parte principal del landing-->
     <Menu class="z-40" design="landing-page" {enlaceMenu1} {enlaceMenu2} {textoMenu1} {textoMenu2} {urlBuscador} {textoBuscador}/>
     <section

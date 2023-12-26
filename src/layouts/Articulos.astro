@@ -7,7 +7,7 @@ import SeccionArticulosGrandes from "@/components/SeccionArticulosGrandes.astro"
 const {title, articulos, inicial, enlaceMenu1, textoMenu1, enlaceMenu2, textoMenu2, urlBuscador, textoBuscador, lan, urlFooter1, textoFooter1, urlFooter2, textoFooter2, urlFooter3, textoFooter3, urlFooter4, textoFooter4, urlFooter5, textoFooter5, urlArticulos, urlBoton1, urlBoton2, urlBoton3, urlBoton4, urlBoton5, urlBoton6, urlBoton7, urlBoton8, textoBoton1, textoBoton2, textoBoton3, textoBoton4, textoBoton5, textoBoton6, textoBoton7, textoBoton8} = Astro.props;
 ---
 
-<Layout title={title} {urlFooter1} {textoFooter1} {urlFooter2} {textoFooter2} {urlFooter3} {textoFooter3} {urlFooter4} {textoFooter4} {urlFooter5} {textoFooter5}>
+<Layout title={title} {urlFooter1} {textoFooter1} {urlFooter2} {textoFooter2} {urlFooter3} {textoFooter3} {urlFooter4} {textoFooter4} {urlFooter5} {textoFooter5} {lan}>
 	<Menu design="articles" {enlaceMenu1} {enlaceMenu2} {textoMenu1} {textoMenu2} {urlBuscador} {textoBuscador}/>
 	<SeccionArticulosGrandes articulos={articulos} {lan}/>
 	<FilaBotones inicial={inicial} {urlArticulos} {textoBoton1} {urlBoton1} {textoBoton2} {urlBoton2} {textoBoton3} {urlBoton3} {textoBoton4} {urlBoton4} {textoBoton5} {urlBoton5} {textoBoton6} {urlBoton6} {textoBoton7} {urlBoton7} {textoBoton8} {urlBoton8}/>
