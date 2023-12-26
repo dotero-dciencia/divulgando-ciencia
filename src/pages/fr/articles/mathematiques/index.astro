@@ -1,19 +1,29 @@
 ---
-import IndexLayoutDefault from "@/layouts/IndexLayoutDefault.astro";
-
+import Articulos from "@/layouts/Articulos.astro";
+const articulos = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
-
-<IndexLayoutDefault
-    subtitulo = "Découvrez la puissance de la science ouverte"
-    boton1 = "Tous les"
-    boton2 = "articles"
+<Articulos 
+    articulos={articulos} 
+    title="Mathématiques" 
+    inicial="m"
     enlaceMenu1 = "/fr"
     textoMenu1 = "Page d'accueil"
     enlaceMenu2 = "/fr/articles"
     textoMenu2 = "Articles"
     urlBuscador = "/fr/chercher"
     textoBuscador = "Qu'apprendre aujourd'hui?"
-    urlArticulos = '../pages/*.md'
+    urlFooter1 = "/q-bot"
+    textoFooter1 = "Q-bot"
+    urlFooter2 = "/fr/a-propos-de-nous"
+    textoFooter2 = "À propos de nous"
+    urlFooter3 = "/fr/ma-langue"
+    textoFooter3 = "Sélectionnez votre langue"
+    urlFooter4 = "/"
+    textoFooter4 = "Votre article"
+    urlFooter5 = "/adivino-tu-carta"
+    textoFooter5 = "Je devine ta carte"
+    lan = "fr"
+    urlArticulos = "/fr/articles"
     urlBoton1 = "/fr/articles/mathematiques"
     textoBoton1 = "mathématiques"
     urlBoton2 = "/fr/articles/biologie"
@@ -30,15 +40,4 @@ import IndexLayoutDefault from "@/layouts/IndexLayoutDefault.astro";
     textoBoton7 = "programmation"
     urlBoton8 = "/fr/articles/scientifiques"
     textoBoton8 = "scientifiques"
-    urlFooter1 = "/q-bot"
-    textoFooter1 = "Q-bot"
-    urlFooter2 = "/fr/a-propos-de-nous"
-    textoFooter2 = "À propos de nous"
-    urlFooter3 = "/fr/ma-langue"
-    textoFooter3 = "Sélectionnez votre langue"
-    urlFooter4 = "/"
-    textoFooter4 = "Votre article"
-    urlFooter5 = "/adivino-tu-carta"
-    textoFooter5 = "Je devine ta carte"
-    lan="fr"
 />
