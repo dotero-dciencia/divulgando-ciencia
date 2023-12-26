@@ -1,10 +1,10 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Menu from "@/components/Menu.astro";
-const {title, description, image, frontmatter, robots, enlaceMenu1, textoMenu1, enlaceMenu2, textoMenu2, urlBuscador, textoBuscador, urlFooter1, textoFooter1, urlFooter2, textoFooter2, urlFooter3, textoFooter3, urlFooter4, textoFooter4, urlFooter5, textoFooter5} = Astro.props
+const {title, description, image, frontmatter, robots, enlaceMenu1, textoMenu1, enlaceMenu2, textoMenu2, urlBuscador, textoBuscador, urlFooter1, textoFooter1, urlFooter2, textoFooter2, urlFooter3, textoFooter3, urlFooter4, textoFooter4, urlFooter5, textoFooter5, lan} = Astro.props
 ---
 
-<Layout {title} {description} {image} {frontmatter} {robots} {urlFooter1} {textoFooter1} {urlFooter2} {textoFooter2} {urlFooter3} {textoFooter3} {urlFooter4} {textoFooter4} {urlFooter5} {textoFooter5}>
+<Layout {title} {description} {image} {frontmatter} {robots} {urlFooter1} {textoFooter1} {urlFooter2} {textoFooter2} {urlFooter3} {textoFooter3} {urlFooter4} {textoFooter4} {urlFooter5} {textoFooter5} {lan}>
     <Menu design="articles" {enlaceMenu1} {textoMenu1} {enlaceMenu2} {textoMenu2} {urlBuscador} {textoBuscador}></Menu>
     <slot></slot>
 </Layout>
