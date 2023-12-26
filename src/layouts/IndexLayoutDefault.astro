@@ -15,9 +15,7 @@ const {subtitulo,
     } = Astro.props
 
 let articulos
-if (lan == "es"){
-    articulos = (await Astro.glob('../pages/*.md'))
-} else if (lan == "en"){
+if (lan == "en"){
     articulos = (await Astro.glob('../pages/en/*.md'))
 } else if (lan == "fr"){
     articulos = (await Astro.glob('../pages/fr/*.md'))
@@ -27,6 +25,8 @@ if (lan == "es"){
     articulos = (await Astro.glob('../pages/ca/*.md'))
 } else if (lan == "eu"){
     articulos = (await Astro.glob('../pages/eu/*.md'))
+} else{
+    articulos = (await Astro.glob('../pages/*.md'))
 }
 
 articulos = articulos.sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
@@ -58,8 +58,8 @@ articulos = articulos.sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Da
 	</section>
     <!--Zona de los artículos-->
     <main class="w-full min-[1800px]:py-8">
-        <SeccionArticulosPequenos num1="0" num2="2" num3="4" articulos={articulos}/>
-        <SeccionArticulosPequenos num1="4" num2="6" num3="8" articulos={articulos}/>
+        <SeccionArticulosPequenos num1="0" num2="2" num3="4" articulos={articulos} {lan}/>
+        <SeccionArticulosPequenos num1="4" num2="6" num3="8" articulos={articulos} {lan}/>
         <section class="flex w-full justify-center lg:justify-end gap-x-3 px-36 font-generalsans-medium">
             <a href="/articulos" class="bg-faded-black w-48 py-2 px-4 sm:px-0 rounded-lg flex gap-x-1 h-full items-center hover:scale-105 transition-all justify-center dark:bg-faded-white dark:text-principal-white text-base min-[1800px]:text-2xl min-[1800px]:w-64">
                 <span class="hidden md:inline">{boton1}</span><span class="capitalize md:lowercase">{boton2}</span>

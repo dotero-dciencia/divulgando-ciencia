@@ -1,11 +1,11 @@
 ---
 import Articulos from "@/layouts/Articulos.astro";
-const articulos = (await Astro.glob('../*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
+const articulos = (await Astro.glob('./*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
 <Articulos 
     articulos={articulos} 
-    title="Articles" 
-    inicial="a"
+    title="biology" 
+    inicial="b"
     enlaceMenu1 = "/en"
     textoMenu1 = "Home"
     enlaceMenu2 = "/en/articles"

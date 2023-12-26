@@ -1,16 +1,33 @@
 ---
-var {contenido = 'article', url, autor, titulo, ciencia, fecha, imagen, design, fotoAutor, alt} = Astro.props
+var {contenido = 'article', url, autor, titulo, ciencia, fecha, imagen, design, fotoAutor, alt, lan} = Astro.props
 
 if (imagen == undefined){
     imagen = "/images/portada-por-defecto.webp"
 }
 
-let id
+let inicial
 
-id = fecha.replace(/\s+/g, '')
-id = id.replace(/,/g, '')
+const iniciales = ["m", "b", "g", "f", "q", "t", "p", "c"]
+const es = ["matemáticas", "biología", "geología", "física", "química", "tecnología", "programación", "científicos"]
+const en = ["maths", "biology", "geology", "physics", "chemistry", "technology", "coding", "scientifics"]
+const fr = ["mathématiques", "biologie", "géologie", "physique", "chimie", "technologie", "programmation", "scientifiques"]
+const gl = ["matemáticas", "bioloxía", "xeoloxía", "física", "química", "tecnoloxía", "programación", "científicos"]
+const ca = ["matemàtiques", "biologia", "geologia", "física", "química", "tecnologia", "programació", "científics"]
+const eu = ["matematika", "biologia", "geologia", "fisika", "kimika", "teknologia", "programazioa", "zientzialariak"]
 
-
+if (lan == "es"){
+    inicial = iniciales[es.indexOf(ciencia)]
+} else if (lan == "en"){
+    inicial = iniciales[en.indexOf(ciencia)]
+} else if (lan == "fr"){
+    inicial = iniciales[fr.indexOf(ciencia)]
+} else if (lan == "gl"){
+    inicial = iniciales[gl.indexOf(ciencia)]
+} else if (lan == "ca"){
+    inicial = iniciales[ca.indexOf(ciencia)]
+} else if (lan == "eu"){
+    inicial = iniciales[eu.indexOf(ciencia)]
+}
 ---
 <card class="my-6 md:my-4 2xl:my-8" id={design}>
     <a class="group" href={url}>
@@ -18,8 +35,8 @@ id = id.replace(/,/g, '')
             <div class="bg-principal-black group-hover:scale-[1.045] rounded-lg transition-all relative w-full">
                 <img  src={imagen} class="bg-principal-white w-full rounded-lg image object-cover text-principal-white text-sm" alt={alt}>
             </div>
-            <div id={ciencia}>
-                <h6 class="uppercase mt-4 min-[1800px]:text-xl font-generalsans-medium">
+            <div id={inicial}>
+                <h6 class="uppercase mt-4 min-[1800px]:text-xl font-generalsans-medium" id={inicial}>
                     {ciencia}
                 </h6>
                 <div class="svg-wrap">
@@ -47,112 +64,112 @@ id = id.replace(/,/g, '')
 </card>
 
 <style>
-    #matemáticas{
+    #m{
         color:#004193;
         .link-svgline h2 svg.link-svgline {
             stroke: #004193;
         }
     }
-    #biología{
+    #b{
         color:#005100;
         .link-svgline h2 svg.link-svgline {
             stroke: #005100;
         }
     }
-    #geología{
+    #g{
         color:#6E3400;
         .link-svgline h2 svg.link-svgline {
             stroke: #6E3400;
         }
     }
-    #física{
+    #f{
         color:#950000;
         .link-svgline h2 svg.link-svgline {
         stroke: #950000;
         }
     }
-    #química{
+    #q{
         color:#820083;
         .link-svgline h2 svg.link-svgline {
             stroke: #820083;
         }
     }
-    #tecnología{
+    #t{
         color:#623B00;
         .link-svgline h2 svg.link-svgline {
             stroke: #623B00;
         }
     }
-    #programación{
+    #p{
         color:#5a12b0;
         .link-svgline h2 svg.link-svgline {
             stroke: #5a12b0;
         }
     }
-    #científicos{
+    #c{
         color:#004f3e;
         .link-svgline h2 svg.link-svgline {
             stroke: #004f3e;
         }
     }
 
-    #información{
+    #i{
         color:#313131;
         .link-svgline h2 svg.link-svgline {
             stroke: #313131;
         }
     }
-    :is(.dark #matemáticas) {
+    :is(.dark #m) {
         color:#a8c6e3;
         .link-svgline h2 svg.link-svgline {
         stroke: #a8c6e3;
         }
     }
 
-    :is(.dark #información) {
+    :is(.dark #i) {
         color:#b6b6b6;
         .link-svgline h2 svg.link-svgline {
         stroke: #b6b6b6;
         }
     }
 
-    :is(.dark #biología) {
+    :is(.dark #b) {
         color:#64db62;
         .link-svgline h2 svg.link-svgline {
         stroke: #64db62;
     }
     }
-    :is(.dark #geología) {
+    :is(.dark #g) {
         color:#e2bba5;
         .link-svgline h2 svg.link-svgline {
         stroke: #e2bba5;
         }
     }
-    :is(.dark #física) {
+    :is(.dark #f) {
         color:#ffaaa2;
         .link-svgline h2 svg.link-svgline {
         stroke: #ffaaa2;
         }
     }
-    :is(.dark #química) {
+    :is(.dark #q) {
         color:#ff99ff;
         .link-svgline h2 svg.link-svgline {
         stroke: #ff99ff;
         }
     }
-    :is(.dark #tecnología) {
+    :is(.dark #t) {
         color:#f2ba48;
         .link-svgline h2 svg.link-svgline {
         stroke: #f2ba48;
         }
     }
-    :is(.dark #programación) {
+    :is(.dark #p) {
         color:#e9aaff;
         .link-svgline h2 svg.link-svgline {
         stroke: #e9aaff;
         }
     }
-    :is(.dark #científicos) {
+    :is(.dark #c) {
         color:#16dac0;
         .link-svgline h2 svg.link-svgline {
         stroke: #16dac0;

@@ -2,4 +2,42 @@
 import Articulos from "@/layouts/Articulos.astro";
 const articulos = (await Astro.glob('../*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
-<Articulos articulos={articulos} title="Artículos" inicial="a"/>
+<Articulos 
+    articulos={articulos} 
+    title="Artículos" 
+    inicial="a"
+    enlaceMenu1 = "/"
+    textoMenu1 = "Inicio"
+    enlaceMenu2 = "/articulos"
+    textoMenu2 = "Artículos"
+    urlBuscador = "/buscar"
+    textoBuscador = "¿Qué quieres aprender hoy?"
+    lan = "es"
+    urlFooter1 = "/q-bot"
+    textoFooter1 = "Q-bot"
+    urlFooter2 = "/sobre-nosotros"
+    textoFooter2 = "Sobre nosotros"
+    urlFooter3 = "/mi-idioma"
+    textoFooter3 = "Selecciona tu idioma"
+    urlFooter4 = "/"
+    textoFooter4 = "Publicamos tu artículo"
+    urlFooter5 = "/adivino-tu-carta"
+    textoFooter5 = "Adivino tu carta"
+    urlArticulos = "/articulos"
+    urlBoton1 = "/articulos/matematicas"
+    textoBoton1 = "matemáticas"
+    urlBoton2 = "/articulos/biologia"
+    textoBoton2 = "biología"
+    urlBoton3 = "/articulos/geologia"
+    textoBoton3 = "geología"
+    urlBoton4 = "/articulos/fisica"
+    textoBoton4 = "física"
+    urlBoton5 = "/articulos/quimica"
+    textoBoton5 = "química"
+    urlBoton6 = "/articulos/tecnologia"
+    textoBoton6 = "tecnología"
+    urlBoton7 = "/articulos/programacion"
+    textoBoton7 = "programación"
+    urlBoton8 = "/articulos/cientificos"
+    textoBoton8 = "científicos"
+/>

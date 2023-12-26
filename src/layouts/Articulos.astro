@@ -4,17 +4,17 @@ import Menu from "@/components/Menu.astro";
 import FilaBotones from "@/components/FilaBotones.astro";
 import SeccionArticulosPequenos from "@/components/SeccionArticulosPequenos.astro";
 import SeccionArticulosGrandes from "@/components/SeccionArticulosGrandes.astro";
-const {title, articulos, inicial} = Astro.props;
+const {title, articulos, inicial, enlaceMenu1, textoMenu1, enlaceMenu2, textoMenu2, urlBuscador, textoBuscador, lan, urlFooter1, textoFooter1, urlFooter2, textoFooter2, urlFooter3, textoFooter3, urlFooter4, textoFooter4, urlFooter5, textoFooter5, urlArticulos, urlBoton1, urlBoton2, urlBoton3, urlBoton4, urlBoton5, urlBoton6, urlBoton7, urlBoton8, textoBoton1, textoBoton2, textoBoton3, textoBoton4, textoBoton5, textoBoton6, textoBoton7, textoBoton8} = Astro.props;
 ---
 
-<Layout title={title}>
-	<Menu design="articles"/>
-	<SeccionArticulosGrandes articulos={articulos}/>
-	<FilaBotones inicial={inicial}/>
-	<SeccionArticulosPequenos num1="2" num2="4" num3="6" articulos={articulos}/>
-	<SeccionArticulosPequenos num1="6" num2="8" num3="10" articulos={articulos}/>
-	<SeccionArticulosPequenos num1="10" num2="12" num3="14" articulos={articulos}/>
-	<SeccionArticulosPequenos num1="14" num2="16" num3="18" articulos={articulos}/>
-	<SeccionArticulosPequenos num1="18" num2="20" num3="22" articulos={articulos}/>
-	<SeccionArticulosPequenos num1="22" num2="24" num3="26" articulos={articulos}/>
+<Layout title={title} {urlFooter1} {textoFooter1} {urlFooter2} {textoFooter2} {urlFooter3} {textoFooter3} {urlFooter4} {textoFooter4} {urlFooter5} {textoFooter5}>
+	<Menu design="articles" {enlaceMenu1} {enlaceMenu2} {textoMenu1} {textoMenu2} {urlBuscador} {textoBuscador}/>
+	<SeccionArticulosGrandes articulos={articulos} {lan}/>
+	<FilaBotones inicial={inicial} {urlArticulos} {textoBoton1} {urlBoton1} {textoBoton2} {urlBoton2} {textoBoton3} {urlBoton3} {textoBoton4} {urlBoton4} {textoBoton5} {urlBoton5} {textoBoton6} {urlBoton6} {textoBoton7} {urlBoton7} {textoBoton8} {urlBoton8}/>
+	<SeccionArticulosPequenos num1="2" num2="4" num3="6" articulos={articulos} {lan}/>
+	<SeccionArticulosPequenos num1="6" num2="8" num3="10" articulos={articulos} {lan}/>
+	<SeccionArticulosPequenos num1="10" num2="12" num3="14" articulos={articulos}{lan}/>
+	<SeccionArticulosPequenos num1="14" num2="16" num3="18" articulos={articulos}{lan}/>
+	<SeccionArticulosPequenos num1="18" num2="20" num3="22" articulos={articulos} {lan}/>
+	<SeccionArticulosPequenos num1="22" num2="24" num3="26" articulos={articulos} {lan}/>
 </Layout>

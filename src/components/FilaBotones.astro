@@ -1,6 +1,6 @@
 ---
 import Boton from "./Boton.astro";
-const {inicial} = Astro.props
+const {inicial, urlArticulos, urlBoton1, urlBoton2, urlBoton3, urlBoton4, urlBoton5, urlBoton6, urlBoton7, urlBoton8, textoBoton1, textoBoton2, textoBoton3, textoBoton4, textoBoton5, textoBoton6, textoBoton7, textoBoton8} = Astro.props
 ---
 
 <ul class="lg:flex lg:gap-x-2 w-full justify-center my-4 py-2" id={inicial}>
@@ -8,52 +8,52 @@ const {inicial} = Astro.props
         <div class="flex gap-x-2 md:w-fit w-full justify-center">
             <div id="matemáticas">
                 <div class="none">
-                    <Boton ciencia="matemáticas" direccion="/articulos/matematicas" inicial={inicial} id="matemáticas"/>
+                    <Boton ciencia="matemáticas" direccion={urlBoton1} inicial={inicial} id="matemáticas" texto={textoBoton1}/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="matemáticas" direccion="/articulos" inicial={inicial} id="matemáticas"/>
+                    <Boton ciencia="matemáticas" direccion={urlArticulos} inicial={inicial} id="matemáticas" texto={textoBoton1}/>
                 </div>
             </div>
             <div id="biología">
                 <div class="none">
-                    <Boton ciencia="biología" direccion="/articulos/biologia" inicial={inicial} id="biología"/>
+                    <Boton ciencia="biología" direccion={urlBoton2} inicial={inicial} id="biología" texto={textoBoton2}/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="biología" direccion="/articulos" inicial={inicial} id="biología"/>
+                    <Boton ciencia="biología" direccion="/articulos" inicial={inicial} id="biología" texto={textoBoton2}/>
                 </div>
             </div>
             <div id="geología">
                 <div class="none">
-                    <Boton ciencia="geología" direccion="/articulos/geologia" inicial={inicial} id="geología"/>
+                    <Boton ciencia="geología" direccion={urlBoton3} inicial={inicial} id="geología" texto={textoBoton3}/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="geología" direccion="/articulos" inicial={inicial} id="geología"/>
+                    <Boton ciencia="geología" direccion={urlArticulos} inicial={inicial} id="geología" texto={textoBoton3}/>
                 </div>
             </div>
         </div>
         <div class="flex gap-x-2 md:w-fit w-full justify-center my-3 md:m-0">
             <div id="física">
                 <div class="none">
-                    <Boton ciencia="física" direccion="/articulos/fisica" inicial={inicial} id="física"/>
+                    <Boton ciencia="física" direccion={urlBoton4} inicial={inicial} id="física" texto={textoBoton4}/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="física" direccion="/articulos" inicial={inicial} id="física"/>
+                    <Boton ciencia="física" direccion={urlArticulos} inicial={inicial} id="física"  texto={textoBoton4}/>
                 </div>
             </div>
             <div id="química">
                 <div class="none">
-                    <Boton ciencia="química" direccion="/articulos/quimica" inicial={inicial} id="química"/>
+                    <Boton ciencia="química" direccion={urlBoton5} inicial={inicial} id="química" texto={textoBoton5}/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="química" direccion="/articulos" inicial={inicial} id="química"/>
+                    <Boton ciencia="química" direccion={urlArticulos} inicial={inicial} id="química"  texto={textoBoton5}/>
                 </div>
             </div>
             <div id="tecnología">
                 <div class="none">
-                    <Boton ciencia="tecnología" direccion="/articulos/tecnologia" inicial={inicial} id="tecnología"/>
+                    <Boton ciencia="tecnología" direccion={urlBoton6} inicial={inicial} id="tecnología" texto={textoBoton6}/>
                 </div>
                 <div class="clic">
-                    <Boton ciencia="tecnología" direccion="/articulos" inicial={inicial} id="tecnología"/>
+                    <Boton ciencia="tecnología" direccion={urlArticulos} inicial={inicial} id="tecnología" texto={textoBoton6}/>
                 </div>
             </div>
         </div>
@@ -61,18 +61,18 @@ const {inicial} = Astro.props
     <div class="flex gap-x-2 w-full lg:w-fit justify-center md:mt-3 lg:m-0">
         <div id="programación">
             <div class="none">
-                <Boton ciencia="programación" direccion="/articulos/programacion" inicial={inicial} id="programación"/>
+                <Boton ciencia="programación" direccion={urlBoton7} inicial={inicial} id="programación" texto={textoBoton7}/>
             </div>
             <div class="clic">
-                <Boton ciencia="programación" direccion="/articulos" inicial={inicial} id="programación"/>
+                <Boton ciencia="programación" direccion={urlArticulos} inicial={inicial} id="programación" texto={textoBoton7}/>
             </div>
         </div>
         <div id="científicos">
             <div class="none">
-                <Boton ciencia="científicos" direccion="/articulos/cientificos" inicial={inicial} id="científicos"/>
+                <Boton ciencia="científicos" direccion={urlBoton8} inicial={inicial} id="científicos" texto={textoBoton8}/>
             </div>
             <div class="clic">
-                <Boton ciencia="científicos" direccion="/articulos" inicial={inicial} id="científicos"/>
+                <Boton ciencia="científicos" direccion={urlArticulos} inicial={inicial} id="científicos" texto={textoBoton8}/>
             </div>
         </div>
     </div>
