@@ -1,9 +1,9 @@
 ---
-const {ciencia,direccion,inicial} = Astro.props
+const {ciencia,direccion,inicial,texto} = Astro.props
 ---
 
 <div id={inicial}>
     <a href={direccion} id={ciencia} class="gap-x-1 flex capitalize font-generalsans-medium w-fit py-2 sm:px-4 px-3 rounded-full text-principal-white min-[1800px]:text-xl text-sm lg:text-md hover:scale-110 transition-all bg-faded-white">
-        {ciencia}
+        {texto}
     </a>
 </div>

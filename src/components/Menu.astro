@@ -1,6 +1,9 @@
 ---
-const {design} = Astro.props;
-import Buscador from "./Buscador.astro";
+const {design,
+    enlaceMenu1, textoMenu1, enlaceMenu2, textoMenu2,
+    urlBuscador, textoBuscador
+} = Astro.props;
+import Buscador from "@/components/Buscador.astro";
 ---
 
 <header
@@ -8,7 +11,7 @@ import Buscador from "./Buscador.astro";
 	>
     <div id={design} class="absolute py-4 px-10 2xl:py-8 flex items-center top-0 w-full justify-between z-40">
         <div class="flex flex-grow basis-0">
-            <a class="hover:scale-110 transition-all" href="/">
+            <a class="hover:scale-110 transition-all" href={enlaceMenu1}>
                 <img alt="Logo de divulgandociencia.com" src="/images/logo-modo-oscuro.webp" class="h-8 2xl:h-10 modo-oscuro"/>
                 <img src="/images/logo-modo-claro.webp" alt="Logo de divulgandociencia.com" class="h-8 2xl:h-10 modo-claro"/>
             </a>
@@ -17,13 +20,13 @@ import Buscador from "./Buscador.astro";
             <ul
             class="[&>li>a]:min-[1800px]:text-xl flex text-sm font-generalsans-medium [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
             >
-            <li><a class="index" href="/">Inicio</a></li>
-            <li><a class="articles" href="/articulos">Artículos</a></li>
+            <li><a class="index" href={enlaceMenu1}>{textoMenu1}</a></li>
+            <li><a class="articles" href={enlaceMenu2}>{textoMenu2}</a></li>
             </ul>
         </nav>
         
         <div class="flex flex-grow basis-0">
-            <Buscador design={design}/>
+            <Buscador {design} {urlBuscador} {textoBuscador}/>
         </div>
 
         <div

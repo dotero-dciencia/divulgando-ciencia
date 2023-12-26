@@ -1,5 +1,6 @@
 ---
 import ThemeIcon from "./ModoClaroOscuro.astro";
+const {urlFooter1, textoFooter1, urlFooter2, textoFooter2, urlFooter3, textoFooter3, urlFooter4, textoFooter4, urlFooter5, textoFooter5} = Astro.props
 ---
 
 <footer class="w-full items-center py-6 px-4 sm:px-6 h-full flex dark:text-principal-white">
@@ -30,32 +31,28 @@ import ThemeIcon from "./ModoClaroOscuro.astro";
     </ul>
     <ul class="font-generalsans w-full justify-center items-center flex gap-4 [&>li]:min-[1800px]:text-2xl [&>span]:min-[1800px]:text-2xl">
         <li class="text-sm sm:text-base">
-            <a href="/q-bot">Q-Bot</a>
+            <a href={urlFooter1}>{textoFooter1}</a>
         <span>
             ·
         </span>
         <li class="text-sm sm:text-base">
-            <a href="/sobre-nosotros">Sobre nosotros</a>
+            <a href={urlFooter2}>{textoFooter2}</a>
         <span class="hidden md:inline">
             ·
         </span>
         <li class="text-sm sm:text-base">
-            <a href="/mi-idioma">Selecciona tu idioma</a>
+            <a href={urlFooter3}>{textoFooter3}</a>
         <span class="hidden md:inline">
             ·
         </span>
         <li class="hidden md:inline text-sm sm:text-base">
-            <a href="https://egm147anfot.typeform.com/to/snOxRfOe">
-                Publicamos tu artículo
-            </a>
+            <a href={urlFooter4}>{textoFooter4}</a>
         </li>
         <span class="hidden md:inline">
             ·
         </span>
         <li class="hidden md:inline text-sm sm:text-base">
-            <a href="/adivino-tu-carta">
-                Adivino tu carta
-            </a>
+            <a href={urlFooter5}>{textoFooter5}</a>
         </li>
     </ul>
     <ThemeIcon/>
