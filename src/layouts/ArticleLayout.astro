@@ -3,21 +3,125 @@ import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
 import Contenido from "@/components/Contenido.astro";
 import DatosAutor from "@/components/DatosAutor.astro";
 const{frontmatter} = Astro.props;
-const articulos = (await Astro.glob('../pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
+let articulos, enlaceMenu1, textoMenu1, enlaceMenu2, textoMenu2, urlBuscador, textoBuscador, urlFooter1, textoFooter1, urlFooter2, textoFooter2, urlFooter3, textoFooter3, urlFooter4, textoFooter4, urlFooter5, textoFooter5
+if (frontmatter.lan == "es"){
+    articulos = (await Astro.glob('../pages/*.md'))
+    enlaceMenu1 = "/"
+    textoMenu1 = "Inicio"
+    enlaceMenu2 = "/articulos"
+    textoMenu2 = "Artículos"
+    urlBuscador = "/buscar"
+    textoBuscador = "¿Qué quieres aprender hoy?"
+    urlFooter1 = "/q-bot"
+    textoFooter1 = "Q-bot"
+    urlFooter2 = "/sobre-nosotros"
+    textoFooter2 = "Sobre nosotros"
+    urlFooter3 = "/mi-idioma"
+    textoFooter3 = "Selecciona tu idioma"
+    urlFooter4 = "/"
+    textoFooter4 = "Publicamos tu artículo"
+    urlFooter5 = "/adivino-tu-carta"
+    textoFooter5 = "Adivino tu carta"
+} else if (frontmatter.lan == "en"){
+    articulos = (await Astro.glob('../pages/en/*.md'))
+    enlaceMenu1 = "/en"
+    textoMenu1 = "Home"
+    enlaceMenu2 = "/en/articles"
+    textoMenu2 = "Articles"
+    urlBuscador = "/en/search"
+    textoBuscador = "What to learn today?"
+    urlFooter1 = "/q-bot"
+    textoFooter1 = "Q-bot"
+    urlFooter2 = "/en/about-us"
+    textoFooter2 = "About us"
+    urlFooter3 = "/en/my-language"
+    textoFooter3 = "Choose your language"
+    urlFooter4 = "/"
+    textoFooter4 = "Send us your article"
+    urlFooter5 = "/adivino-tu-carta"
+    textoFooter5 = "I guess your card"
+} else if (frontmatter.lan == "fr"){
+    articulos = (await Astro.glob('../pages/fr/*.md'))
+    enlaceMenu1 = "/fr"
+    textoMenu1 = "Page d'accueil"
+    enlaceMenu2 = "/fr/articles"
+    textoMenu2 = "Articles"
+    urlBuscador = "/fr/chercher"
+    textoBuscador = "Qu'apprendre aujourd'hui?"
+    urlFooter1 = "/q-bot"
+    textoFooter1 = "Q-bot"
+    urlFooter2 = "/fr/a-propos-de-nous"
+    textoFooter2 = "À propos de nous"
+    urlFooter3 = "/fr/ma-langue"
+    textoFooter3 = "Sélectionnez votre langue"
+    urlFooter4 = "/"
+    textoFooter4 = "Votre article"
+    urlFooter5 = "/adivino-tu-carta"
+    textoFooter5 = "Je devine ta carte"
+} else if (frontmatter.lan == "gl"){
+    articulos = (await Astro.glob('../pages/gl/*.md'))
+    enlaceMenu1 = "/gl"
+    textoMenu1 = "Inicio"
+    enlaceMenu2 = "/gl/artigos"
+    textoMenu2 = "Artigos"
+    urlBuscador = "/gl/buscar"
+    textoBuscador = "¿Que aprender hoxe?"
+    urlFooter1 = "/q-bot"
+    textoFooter1 = "Q-bot"
+    urlFooter2 = "/gl/sobre-nos"
+    textoFooter2 = "Sobre nós"
+    urlFooter3 = "/gl/o-meu-idioma"
+    textoFooter3 = "O meu idioma"
+    urlFooter4 = "/"
+    textoFooter4 = "O teu artigo"
+    urlFooter5 = "/adivino-tu-carta"
+    textoFooter5 = "Adiviño a túa carta"
+} else if (frontmatter.lan == "ca"){
+    articulos = (await Astro.glob('../pages/ca/*.md'))
+    enlaceMenu1 = "/ca"
+    textoMenu1 = "Inici"
+    enlaceMenu2 = "/ca/articles"
+    textoMenu2 = "Articles"
+    urlBuscador = "/ca/cercar"
+    textoBuscador = "Què aprendre avui?"
+    urlFooter1 = "/q-bot"
+    textoFooter1 = "Q-bot"
+    urlFooter2 = "/ca/sobre-nosaltres"
+    textoFooter2 = "Sobre nosaltres"
+    urlFooter3 = "/ca/la-meva-llengua"
+    textoFooter3 = "La meva llengua"
+    urlFooter4 = "/"
+    textoFooter4 = "El teu article"
+    urlFooter5 = "/adivino-tu-carta"
+    textoFooter5 = "Endevino la teva carta"
+} else if (frontmatter.lan == "eu"){
+    articulos = (await Astro.glob('../pages/eu/*.md'))
+    enlaceMenu1 = "/eu"
+    textoMenu1 = "Hasi"
+    enlaceMenu2 = "/eu/artikuluak"
+    textoMenu2 = "Artikuluak"
+    urlBuscador = "/eu/bilatu"
+    textoBuscador = "Zein ikasi gaur?"
+    urlFooter1 = "/q-bot"
+    textoFooter1 = "Q-bot"
+    urlFooter2 = "/eu/guri-buruz"
+    textoFooter2 = "Guri buruz"
+    urlFooter3 = "/eu/nire-hizkuntza"
+    textoFooter3 = "Nire hizkuntza"
+    urlFooter4 = "/"
+    textoFooter4 = "Zure artikulua"
+    urlFooter5 = "/adivino-tu-carta"
+    textoFooter5 = "Zure gutuna asmatzen dut"
+}
+
+articulos = articulos.sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 
 if (frontmatter.portada == undefined){
     frontmatter.portada= "/images/portada-por-defecto.webp"
 }
-
-let id
-
-id = frontmatter.fechaMostrar.replace(/\s+/g, '')
-id = id.replace(/,/g, '')
-
-
 ---
 
-<PrincipalLayout title={frontmatter.titulo} description={frontmatter.descripcion} image={frontmatter.portada} {frontmatter} robots={frontmatter.robots}>
+<PrincipalLayout title={frontmatter.titulo} description={frontmatter.descripcion} image={frontmatter.portada} {frontmatter} robots={frontmatter.robots} {enlaceMenu1} {textoMenu1} {enlaceMenu2} {textoMenu2} {urlBuscador} {textoBuscador} {urlFooter1} {textoFooter1} {urlFooter2} {textoFooter2} {urlFooter3} {textoFooter3} {urlFooter4} {textoFooter4} {urlFooter5} {textoFooter5}>
     <section class="mt-20 w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white">
         <h4 class="font-generalsans-medium uppercase text-base min-[1800px]:text-xl" id={frontmatter.ciencia} data-pagefind-filter="Ciencia">{frontmatter.ciencia}</h4>
         <h1 class="font-generalsans-semibold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-4">{frontmatter.titulo}</h1>

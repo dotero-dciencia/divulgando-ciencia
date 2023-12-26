@@ -1,5 +1,5 @@
 ---
-layout: "@/article-en"
+layout: "@/article"
 titulo: Carl Sagan
 autor: Inés Pellón Glez.
 fotoDelAutor: /images/autores/ines-pellon-gonzalez.webp
@@ -11,4 +11,5 @@ fechaMostrar: 24 October, 2023
 fechaOrdenar: Oct 24, 2023
 duracion: 1 2
 url: /en/carl-sagan
+lan: en
 ---

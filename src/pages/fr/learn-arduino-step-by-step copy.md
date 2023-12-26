@@ -1,5 +1,5 @@
 ---
-layout: "@/article-en"
+layout: "@/article"
 titulo: Learn Arduino step by step
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

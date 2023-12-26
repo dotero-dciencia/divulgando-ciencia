@@ -14,23 +14,22 @@ const {subtitulo,
     lan
     } = Astro.props
 
-let articles
+let articulos
 if (lan == "es"){
-    articles = (await Astro.glob('../pages/*.md'))
+    articulos = (await Astro.glob('../pages/*.md'))
 } else if (lan == "en"){
-    articles = (await Astro.glob('../pages/en/*.md'))
+    articulos = (await Astro.glob('../pages/en/*.md'))
 } else if (lan == "fr"){
-    articles = (await Astro.glob('../pages/fr/*.md'))
+    articulos = (await Astro.glob('../pages/fr/*.md'))
 } else if (lan == "gl"){
-    articles = (await Astro.glob('../pages/gl/*.md'))
+    articulos = (await Astro.glob('../pages/gl/*.md'))
 } else if (lan == "ca"){
-    articles = (await Astro.glob('../pages/ca/*.md'))
+    articulos = (await Astro.glob('../pages/ca/*.md'))
 } else if (lan == "eu"){
-    articles = (await Astro.glob('../pages/eu/*.md'))
+    articulos = (await Astro.glob('../pages/eu/*.md'))
 }
 
-
-articles = articles.sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
+articulos = articulos.sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
 
 <Layout title={title} id="layout" description="Descubre el poder de la divulgación científica abierta junto a nosotros." {urlFooter1} {textoFooter1} {urlFooter2} {textoFooter2} {urlFooter3} {textoFooter3} {urlFooter4} {textoFooter4} {urlFooter5} {textoFooter5}>
@@ -59,8 +58,8 @@ articles = articles.sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date
 	</section>
     <!--Zona de los artículos-->
     <main class="w-full min-[1800px]:py-8">
-        <SeccionArticulosPequenos num1="0" num2="2" num3="4" articulos={articles}/>
-        <SeccionArticulosPequenos num1="4" num2="6" num3="8" articulos={articles}/>
+        <SeccionArticulosPequenos num1="0" num2="2" num3="4" articulos={articulos}/>
+        <SeccionArticulosPequenos num1="4" num2="6" num3="8" articulos={articulos}/>
         <section class="flex w-full justify-center lg:justify-end gap-x-3 px-36 font-generalsans-medium">
             <a href="/articulos" class="bg-faded-black w-48 py-2 px-4 sm:px-0 rounded-lg flex gap-x-1 h-full items-center hover:scale-105 transition-all justify-center dark:bg-faded-white dark:text-principal-white text-base min-[1800px]:text-2xl min-[1800px]:w-64">
                 <span class="hidden md:inline">{boton1}</span><span class="capitalize md:lowercase">{boton2}</span>

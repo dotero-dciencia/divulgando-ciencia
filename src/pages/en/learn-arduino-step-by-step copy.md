@@ -1,5 +1,5 @@
 ---
-layout: "@/article-en"
+layout: "@/article"
 titulo: Learn Arduino step by step
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
@@ -15,6 +15,7 @@ x: https://x.com/tecnomagia_es
 instagram: https://instagram.com/tecnomagia_es
 github: https://github.com/dotero-dev
 rrss: x instagram github
+lan: en
 ---
 
 ## Introduction
