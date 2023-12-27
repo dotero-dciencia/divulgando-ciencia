@@ -3,7 +3,7 @@ import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
 import Contenido from "@/components/Contenido.astro";
 import DatosAutor from "@/components/DatosAutor.astro";
 const{frontmatter} = Astro.props;
-let articulos, enlaceMenu1, textoMenu1, enlaceMenu2, textoMenu2, urlBuscador, textoBuscador, urlFooter1, textoFooter1, urlFooter2, textoFooter2, urlFooter3, textoFooter3, urlFooter4, textoFooter4, urlFooter5, textoFooter5, inicial
+let articulos, enlaceMenu1, textoMenu1, enlaceMenu2, textoMenu2, urlBuscador, textoBuscador, urlFooter1, textoFooter1, urlFooter2, textoFooter2, urlFooter3, textoFooter3, urlFooter4, textoFooter4, urlFooter5, textoFooter5, inicial, filtroCiencia, filtroAutor
 
 const iniciales = ["m", "b", "g", "f", "q", "t", "p", "c"]
 const es = ["matemáticas", "biología", "geología", "física", "química", "tecnología", "programación", "científicos"]
@@ -14,6 +14,8 @@ const ca = ["matemàtiques", "biologia", "geologia", "física", "química", "tec
 const eu = ["matematika", "biologia", "geologia", "fisika", "kimika", "teknologia", "programazioa", "zientzialariak"]
 
 if (frontmatter.lan == "en"){
+    filtroCiencia = "Science"
+    filtroAutor = "Author"
     articulos = (await Astro.glob('../pages/en/*.md'))
     enlaceMenu1 = "/en"
     textoMenu1 = "Home"
@@ -33,6 +35,8 @@ if (frontmatter.lan == "en"){
     textoFooter5 = "I guess your card"
     inicial = iniciales[en.indexOf(frontmatter.ciencia)]
 } else if (frontmatter.lan == "fr"){
+    filtroCiencia = "Science"
+    filtroAutor = "Auteur"
     articulos = (await Astro.glob('../pages/fr/*.md'))
     enlaceMenu1 = "/fr"
     textoMenu1 = "Page d'accueil"
@@ -52,6 +56,8 @@ if (frontmatter.lan == "en"){
     textoFooter5 = "Je devine ta carte"
     inicial = iniciales[fr.indexOf(frontmatter.ciencia)]
 } else if (frontmatter.lan == "gl"){
+    filtroCiencia = "Ciencia"
+    filtroAutor = "Autor"
     articulos = (await Astro.glob('../pages/gl/*.md'))
     enlaceMenu1 = "/gl"
     textoMenu1 = "Inicio"
@@ -71,6 +77,8 @@ if (frontmatter.lan == "en"){
     textoFooter5 = "Adiviño a túa carta"
     inicial = iniciales[gl.indexOf(frontmatter.ciencia)]
 } else if (frontmatter.lan == "ca"){
+    filtroCiencia = "Ciència"
+    filtroAutor = "Autor"
     articulos = (await Astro.glob('../pages/ca/*.md'))
     enlaceMenu1 = "/ca"
     textoMenu1 = "Inici"
@@ -90,6 +98,8 @@ if (frontmatter.lan == "en"){
     textoFooter5 = "Endevino la teva carta"
     inicial = iniciales[ca.indexOf(frontmatter.ciencia)]
 } else if (frontmatter.lan == "eu"){
+    filtroCiencia = "Zientzia"
+    filtroAutor = "Egilea"
     articulos = (await Astro.glob('../pages/eu/*.md'))
     enlaceMenu1 = "/eu"
     textoMenu1 = "Hasi"
@@ -109,6 +119,8 @@ if (frontmatter.lan == "en"){
     textoFooter5 = "Zure gutuna asmatzen dut"
     inicial = iniciales[eu.indexOf(frontmatter.ciencia)]
 } else{
+    filtroCiencia = "Ciencia"
+    filtroAutor = "Autor"
     frontmatter.lan="es"
     articulos = (await Astro.glob('../pages/*.md'))
     enlaceMenu1 = "/"
@@ -139,11 +151,11 @@ if (frontmatter.portada == undefined){
 
 <PrincipalLayout title={frontmatter.titulo} description={frontmatter.descripcion} image={frontmatter.portada} {frontmatter} robots={frontmatter.robots} {enlaceMenu1} {textoMenu1} {enlaceMenu2} {textoMenu2} {urlBuscador} {textoBuscador} {urlFooter1} {textoFooter1} {urlFooter2} {textoFooter2} {urlFooter3} {textoFooter3} {urlFooter4} {textoFooter4} {urlFooter5} {textoFooter5} lan={frontmatter.lan}>
     <section class="mt-20 w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white">
-        <h4 class="font-generalsans-medium uppercase text-base min-[1800px]:text-xl" id={inicial} data-pagefind-filter="Ciencia">{frontmatter.ciencia}</h4>
+        <h4 class="font-generalsans-medium uppercase text-base min-[1800px]:text-xl" id={inicial} data-pagefind-filter={filtroCiencia}>{frontmatter.ciencia}</h4>
         <h1 class="font-generalsans-semibold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-4">{frontmatter.titulo}</h1>
-        <DatosAutor fotoDelAutor={frontmatter.fotoDelAutor} autor={frontmatter.autor} fechaMostrar={frontmatter.fechaMostrar} duracion={frontmatter.duracion} rrss={frontmatter.rrss} x={frontmatter.x} instagram={frontmatter.instagram} github={frontmatter.github} discord={frontmatter.discord} youtube={frontmatter.youtube} twitch={frontmatter.twitch} tiktok={frontmatter.tiktok}/>
+        <DatosAutor {filtroAutor} fotoDelAutor={frontmatter.fotoDelAutor} autor={frontmatter.autor} fechaMostrar={frontmatter.fechaMostrar} duracion={frontmatter.duracion} rrss={frontmatter.rrss} x={frontmatter.x} instagram={frontmatter.instagram} github={frontmatter.github} discord={frontmatter.discord} youtube={frontmatter.youtube} twitch={frontmatter.twitch} tiktok={frontmatter.tiktok}/>
         <section class="w-full justify-center flex" >
-            <img src={frontmatter.portada} alt={frontmatter.portadaAlt}/>
+            <img data-pagefind-meta="image[src], image_alt[alt]" src={frontmatter.portada} alt={frontmatter.portadaAlt}/>
         </section>
     </section>
         <section data-pagefind-body class="w-full justify-center flex mt-5">
