@@ -20,19 +20,55 @@ Tratamos de que en nuestra web haya artículos de varios autores, por eso decimo
 
 # Estructura para publicar en Markdown
 
-<code>
+```
 ---
-layout: @/layout --> NO MODIFICAR
-titulo: Aprende Arduino desde cero --> TÍTULO DEL ARTÍCULO. MODIFICAR
-autor: Darío O. --> NOMBRE DEL AUTOR, EVITAR NOMBRES + APELLIDOS. MODIFICAR
-fotoDelAutor: /images/autores/dario-o.webp --> DIRECCIÓN DE LA FOTO DEL AUTOR. MODIFICAR "dario-o" POR NOMBRE DEL AUTOR
-portada: /images/contenido/aprende-arduino-desde-cero/portada.webp --> DIRECCIÓN DE LA PORTADA. MODIFICAR "aprende-arduino-desde-cero" POR NOMBRE DEL ARTÍCULO
-portadaAlt: Imagen de una mano sosteniendo una placa Arduino Uno. --> TÍTULO ALTERNATIVO DE LA PORTADA. MODIFICAR
-descripcion: Aprende a usar la placa Arduino desde cero sin ningún conocimiento previo siguiendo esta guía paso a paso. --> DESCRIPCIÓN SEO DEL ARTÍCULO. MODIFICAR
-ciencia: tecnología --> CIENCIA DEL ARTÍCULO. EN MINÚSCULAS Y CON TILDES. MODIFICAR
-fechaMostrar: 16 enero, 2022 --> FECHA DEL ARTÍCULO, EN FORMATO DÍA MES, AÑO. MODIFICAR
-fechaOrdenar: Jan 16, 2022 --> FECHA DEL ARTÍCULO EN FORMATO MES DÍA, AÑO. SIENDO EL MES LAS 3 INICIALES. MODIFICAR
-duracion: 8 --> DURACIÓN DE LECTURA APROXIMADA DEL ARTÍCULO. MODIFICAR
-url: /aprende-arduino-desde-cero --> URL DEL ARTÍCULO. MODIFICAR. EVITAR MAYÚSCULAS, TILDES Y OTROS CARACTERES. TIENE QUE COINCIDIR CON EL NOMBRE DEL ARCHIVO.
+layout: @/layout
+titulo:
+autor:
+fotoDelAutor:
+portada:
+portadaAlt:
+descripcion:
+ciencia:
+fechaMostrar:
+fechaOrdenar:
+duracion:
+url:
 ---
-</code>
+```
+
+## Título a URL
+
+"¿Es buena idea beber agua del mar?" $\rightarrow$ "es-buena-idea-beber-agua-del-mar"
+
+"(Re)descubriendo átomos preparando el desayuno" $\rightarrow$ "redescubriendo-atomos-preparando-el-desayuno"
+
+## Autor a URL
+
+Sin foto de autor $\rightarrow$ "anonimo.svg"
+
+"Darío O." $\rightarrow$ "dario-o.webp"
+
+"BorealMantis" $\rightarrow$ "boreal-mantis.webp"
+
+"Doctor Berti" $\rightarrow$ "doctor-berti.webp"
+
+"Enzo Notario" $\rightarrow$ "enzo.webp"
+
+"Inés Pellón Glez." $\rightarrow$ "ines-pellon-gonzalez.webp"
+
+"Neplod" $\rightarrow$ "neplod.webp"
+
+"Nerea A." $\rightarrow$ "nerea-a.webp"
+
+"Pilar Ruiz-Lapuente" $\rightarrow$ "pilar-ruiz-lapuente.webp"
+
+## Ciencias
+
+matemáticas, biología, geología, física, química, tecnología, programación, científicos
+
+## fechaMostrar y fechaOrdenar (respectivamente)
+
+"29 de septiembre de 2023" $\rightarrow$ "29 septiembre, 2023" y "Sep 29, 2023"
+
+"13 de enero de 2024" $\rightarrow$ "13 enero, 2024" y "Jan 13, 2024"
