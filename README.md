@@ -72,3 +72,5 @@ matemáticas, biología, geología, física, química, tecnología, programació
 "29 de septiembre de 2023" $\rightarrow$ "29 septiembre, 2023" y "Sep 29, 2023"
 
 "13 de enero de 2024" $\rightarrow$ "13 enero, 2024" y "Jan 13, 2024"
+
+"25 de febrero de 2022" $\rightarrow$ "25 febrero, 2022" y "Feb 25, 2022"
