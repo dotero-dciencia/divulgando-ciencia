@@ -7,7 +7,7 @@ portada: /images/contenido/stephanie-kwolek/portada.webp
 portadaAlt: Fotografía de Stephanie Kwolek.
 descripcion: Descobreix el kevlar, una substància creada per Stephanie Kwolek, una química que va salvar vides.
 ciencia: científics
-fechaMostrar: 11 febrero, 2023
+fechaMostrar: 11 febrer, 2023
 fechaOrdenar: Feb 11, 2023
 duracion: 1 
 url: /stephanie-kwolek

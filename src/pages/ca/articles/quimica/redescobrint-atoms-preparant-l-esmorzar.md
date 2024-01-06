@@ -1,16 +1,16 @@
 ---
 layout: "@/article"
-titulo: (Re)descubriendo átomos preparando el desayuno
+titulo: (Re)descobrint àtoms preparant l'esmorzar
 autor: Doctor Berti
 fotoDelAutor: /images/autores/doctor-berti.webp
 portada: /images/contenido/redescubriendo-atomos-preparando-el-desayuno/portada.webp
-portadaAlt: Fotografía de una taza de café
-descripcion: Redescubre junto a nosotros los átomos mientras te preparas el desayuno. ¡Seguro que ya no ves tu café igual!
+portadaAlt: Fotografia d'una tassa de cafè
+descripcion: Redescobreix amb nosaltres els àtoms mentre et prepares l'esmorzar. Segur que ja no veus el teu cafè igual!
 ciencia: química
 fechaOrdenar: Nov 18, 2023
-fechaMostrar: 18 noviembre, 2023
+fechaMostrar: 18 novembre, 2023
 duracion: 4 
-url: /redescubriendo-atomos-preparando-el-desayuno
+url: /ca/redescobrint-atoms-preparant-l-esmorzar
 x: https://x.com/mp_ciencia
 instagram: https://instagram.com/mpciencia
 tiktok: https://www.tiktok.com/@mpciencia
