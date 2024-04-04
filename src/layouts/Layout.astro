@@ -1,5 +1,5 @@
 ---
-const {title, description, image, frontmatter, robots, footer} = Astro.props;
+const {title, description, image, frontmatter, robots, reloj} = Astro.props;
 const titulo = title + " | Divulgando Ciencia"
 import Footer from "../components/Footer.astro";
 import Seo from "../components/Seo.astro";
@@ -29,7 +29,8 @@ import Seo from "../components/Seo.astro";
 	</head>
 	<body class="bg-principal-white dark:bg-principal-black transition-all">
         <slot/>
-		<Footer/>
+		
+		<Footer id={reloj}/>
 	</body>
 	<style is:global>
 		@font-face {

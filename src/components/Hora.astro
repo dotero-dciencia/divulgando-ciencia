@@ -1,0 +1,38 @@
+
+<section class="font-generalsans-medium flex h-full my-auto items-center w-full justify-center text-principal-black dark:text-principal-white">
+    <span class="horas">00</span>
+    :
+    <span class="minutos">00</span>
+    :
+    <span class="segundos">00</span>
+</section>
+
+<script>
+    let horas = document.getElementsByClassName("horas")
+    let minutos = document.getElementsByClassName("minutos")
+    let segundos = document.getElementsByClassName("segundos")
+    function mueveReloj(){
+        let momentoActual = new Date()
+        let nHoras = momentoActual.getHours().toString()
+        let nMinutos = momentoActual.getMinutes().toString()
+        let nSegundos = momentoActual.getSeconds().toString()
+        if (nHoras.length == 1){
+            nHoras = "0" + nHoras[0]
+        }
+        if (nMinutos.length == 1){
+            nMinutos = "0" + nMinutos[0]
+        }
+        if (nSegundos.length == 1){
+            nSegundos = "0" + nSegundos[0]
+        }
+        for (let i = 0; i < horas.length; i++){
+            horas[i].innerHTML = nHoras
+            minutos[i].innerHTML = nMinutos
+            segundos[i].innerHTML = nSegundos
+        }
+
+        setTimeout(mueveReloj,1000)
+    }
+
+    mueveReloj()
+</script>

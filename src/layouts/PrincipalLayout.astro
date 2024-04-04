@@ -1,10 +1,11 @@
 ---
 import Layout from "./Layout.astro";
 import Menu from "../components/Menu.astro";
-const {title, description, image, frontmatter, robots} = Astro.props
+const {title, description, image, frontmatter, robots, reloj} = Astro.props
 ---
 
-<Layout {title} {description} {image} {frontmatter} {robots}>
+<Layout {title} {description} {image} {frontmatter} {robots} {reloj}>
     <Menu design="articles"></Menu>
     <slot></slot>
+    
 </Layout>
