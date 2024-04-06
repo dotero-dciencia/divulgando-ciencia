@@ -13,7 +13,7 @@
     let segundos = document.getElementsByClassName("segundos");
     function mueveReloj(){
         let momentoActual = new Date()
-        let timedifference = momentoActual.getTimezoneOffset();
+        let timedifference = 2;
         let nUTCHoras = momentoActual.getUTCHours(); //Gets global Hour
         let nHoras = (nUTCHoras + timedifference);   //Converts to Spain Hour
         if (nHoras > 24)
