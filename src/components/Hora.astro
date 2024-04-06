@@ -8,31 +8,38 @@
 </section>
 
 <script>
-    let horas = document.getElementsByClassName("horas")
-    let minutos = document.getElementsByClassName("minutos")
-    let segundos = document.getElementsByClassName("segundos")
+    let horas = document.getElementsByClassName("horas");
+    let minutos = document.getElementsByClassName("minutos");
+    let segundos = document.getElementsByClassName("segundos");
     function mueveReloj(){
         let momentoActual = new Date()
-        let nHoras = momentoActual.getHours().toString()
-        let nMinutos = momentoActual.getMinutes().toString()
-        let nSegundos = momentoActual.getSeconds().toString()
+        let timedifference = 2;
+        let nUTCHoras = momentoActual.getUTCHours(); //Gets global Hour
+        let nHoras = (nUTCHoras + timedifference);   //Converts to Spain Hour
+        if (nHoras > 24)
+        {
+            nHoras = nHoras - 24;
+        }
+        nHoras = nHoras.toString();
+        let nMinutos = momentoActual.getUTCMinutes().toString();
+        let nSegundos = momentoActual.getUTCSeconds().toString();
         if (nHoras.length == 1){
-            nHoras = "0" + nHoras[0]
+            nHoras = "0" + nHoras[0];
         }
         if (nMinutos.length == 1){
-            nMinutos = "0" + nMinutos[0]
+            nMinutos = "0" + nMinutos[0];
         }
         if (nSegundos.length == 1){
-            nSegundos = "0" + nSegundos[0]
+            nSegundos = "0" + nSegundos[0];
         }
         for (let i = 0; i < horas.length; i++){
-            horas[i].innerHTML = nHoras
-            minutos[i].innerHTML = nMinutos
-            segundos[i].innerHTML = nSegundos
+            horas[i].innerHTML = nHoras;
+            minutos[i].innerHTML = nMinutos;
+            segundos[i].innerHTML = nSegundos;
         }
 
-        setTimeout(mueveReloj,1000)
+        setTimeout(mueveReloj,1000);
     }
 
-    mueveReloj()
+    mueveReloj();
 </script>
