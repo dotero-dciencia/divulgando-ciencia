@@ -11,18 +11,20 @@
     let horas = document.getElementsByClassName("horas");
     let minutos = document.getElementsByClassName("minutos");
     let segundos = document.getElementsByClassName("segundos");
-    function mueveReloj(){
-        let momentoActual = new Date()
-        let timedifference = 2;
-        let nUTCHoras = momentoActual.getUTCHours(); //Gets global Hour
-        let nHoras = (nUTCHoras + timedifference);   //Converts to Spain Hour
-        if (nHoras > 24)
+    async function mueveReloj(){
+        let url = 'http://worldtimeapi.org/api/timezone/Europe/Madrid';
+        let obj = "";
+        let momentoActual = "";
+        try
         {
-            nHoras = nHoras - 24;
+             obj = await( await fetch(url) ).json();
+             momentoActual = new Date( Date.parse(obj["datetime"]) );
+        } catch(e) {
+            momentoActual = new Date();
         }
-        nHoras = nHoras.toString();
-        let nMinutos = momentoActual.getUTCMinutes().toString();
-        let nSegundos = momentoActual.getUTCSeconds().toString();
+        let nHoras = momentoActual.getHours().toString();
+        let nMinutos = momentoActual.getMinutes().toString();
+        let nSegundos = momentoActual.getSeconds().toString();
         if (nHoras.length == 1){
             nHoras = "0" + nHoras[0];
         }
