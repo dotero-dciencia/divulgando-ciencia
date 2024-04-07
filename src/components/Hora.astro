@@ -18,7 +18,7 @@
         try
         {
              obj = await( await fetch(url) ).json();
-             momentoActual = new Date( Date.parse(obj["dateTime"]) );
+             momentoActual = new Date( Date.parse(obj["datetime"]) );
         } catch(e) {
             momentoActual = new Date();
             console.log(e);
