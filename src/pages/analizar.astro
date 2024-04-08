@@ -23,7 +23,7 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
                     <input type="number" id="input3" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md"/>
                 </div>
                 <div>
-                    <button onclick="recogerDatos()" class="h-10 px-2 text-principal-black bg-principal-white rounded-md">
+                    <button id="buta"class="h-10 px-2 text-principal-black bg-principal-white rounded-md">
                         ¡Analizar!
                     </button>
                 </div>
@@ -292,6 +292,7 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
             </div>
         </section>
     </main>
+</PrincipalLayout>
 <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
 <script>
     function draw() {
@@ -312,6 +313,10 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
       }
     
     draw();
+
+    document.getElementById('buta').addEventListener('click', function () {
+        recogerDatos();
+    });
 
     async function recogerDatos() {
         let a;
@@ -500,4 +505,4 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
     }
         
 </script>
-</PrincipalLayout>
+
