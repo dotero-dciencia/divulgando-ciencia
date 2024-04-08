@@ -16,11 +16,11 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
             <div class="flex flex-col xl:flex-row justify-between mt-4 text-base md:text-xl gap-y-4">
                 <div class="flex">
                     y = 
-                    <textarea type="number" id="input1" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md"/>
+                    <input type="number" id="input1" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md" required minlength="1" value = "1"/>
                     x<sup class="mt-2">2</sup> + 
-                    <textarea type="number" id="input2" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md"/>
+                    <input type="number" id="input2" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md" required minlength="1" value = "0"/>
                     x + 
-                    <textarea type="number" id="input3" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md"/>
+                    <input type="number" id="input3" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md" required minlength="1" value = "0"/>
                 </div>
                 <div>
                     <button id="buta"class="h-10 px-2 text-principal-black bg-principal-white rounded-md">
