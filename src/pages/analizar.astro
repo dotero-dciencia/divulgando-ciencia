@@ -318,15 +318,14 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
         recogerDatos();
     });
 
-    async function recogerDatos() {
+    function recogerDatos() {
         let a;
         let b;
         let c;
         try {
-            const data = await Astro.request.formData();
-            a = parseFloat(data.get("input1").toString());
-            b = parseFloat(data.get("input2").toString());
-            c = parseFloat(data.get("input3").toString());
+            a = parseFloat(document.getElementsById("input1"));
+            b = parseFloat(document.getElementsById("input2"));
+            c = parseFloat(document.getElementsById("input3"));
         } catch(e){
             window.alert("An error ocurred.")
         }
