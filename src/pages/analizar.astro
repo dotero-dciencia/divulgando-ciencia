@@ -16,11 +16,11 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
             <div class="flex flex-col xl:flex-row justify-between mt-4 text-base md:text-xl gap-y-4">
                 <div class="flex">
                     y = 
-                    <input type="number" id="input1" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md"/>
+                    <input type="number" id="input1" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md" required minlength="1"/>
                     x<sup class="mt-2">2</sup> + 
-                    <input type="number" id="input2" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md"/>
+                    <input type="number" id="input2" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md" required minlength="1"/>
                     x + 
-                    <input type="number" id="input3" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md"/>
+                    <input type="number" id="input3" class="mx-2 h-6 w-8 md:h-8 md:w-10 px-1 text-principal-black bg-principal-white rounded-md" required minlength="6"/>
                 </div>
                 <div>
                     <button id="buta"class="h-10 px-2 text-principal-black bg-principal-white rounded-md">
@@ -319,17 +319,9 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
     });
 
     function recogerDatos() {
-        let a;
-        let b;
-        let c;
-        try {
-            a = parseFloat(document.getElementsById("input1"));
-            b = parseFloat(document.getElementsById("input2"));
-            c = parseFloat(document.getElementsById("input3"));
-        } catch(e){
-            window.alert("An error ocurred.")
-        }
-        
+        let a = parseFloat(document.getElementsById("input1"));
+        let b = parseFloat(document.getElementsById("input2"));
+        let c = parseFloat(document.getElementsById("input3"));
 
         if (a == 0){
             window.alert("Introduce un valor distinto de 0 para el coeficiente 'a'.")
