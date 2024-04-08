@@ -319,9 +319,9 @@ import PrincipalLayout from "../layouts/PrincipalLayout.astro";
     });
 
     function recogerDatos() {
-        let a = parseFloat(document.getElementsById("input1"));
-        let b = parseFloat(document.getElementsById("input2"));
-        let c = parseFloat(document.getElementsById("input3"));
+        let a = parseFloat(document.getElementsById("input1").value);
+        let b = parseFloat(document.getElementsById("input2").value);
+        let c = parseFloat(document.getElementsById("input3").value);
 
         if (a == 0){
             window.alert("Introduce un valor distinto de 0 para el coeficiente 'a'.")
