@@ -2,15 +2,15 @@
 layout: ../layouts/ArticleLayout.astro
 titulo: Física en la ciencia-ficción
 autor: Physics League
-fotoDelAutor: /images/autores/.webp
-portada: /images/contenido/
-portadaAlt: Imagen generada por Quick QR Art, donde se ve un bosque con la palabra CIENCIA oculta.
+fotoDelAutor: /images/autores/physics-league.webp
+portada: /images/contenido/fisica-en-la-ciencia-ficcion/portada.webp
+portadaAlt: Imagen de la electricidad.
 descripcion: Cómo la ciencia-ficción altera las leyes de la física.
 ciencia: física
-fechaMostrar: 24 mayo, 2024
-fechaOrdenar: May 1, 2024
-duracion: 1
-url: /fisica-en-la-ciencia-ficción
+fechaMostrar: 3 mayo, 2024
+fechaOrdenar: May 3, 2024
+duracion: 2
+url: /fisica-en-la-ciencia-ficcion
 ---
 # Física en la ciencia-ficción
 
@@ -25,12 +25,10 @@ común podemos pensar que son reales pero la física nos dice que es imposible.
 
 Un ejercicio interesante es, en vez de regirnos por los parámetros que nos da el mundo en el
 que vivimos, coger otros que inicialmente son inamovibles. Es el caso de Doña Valentín de One
-Piece, ([**Vídeo - Youtube**](https://youtu.be/BWcN6CzoTbA?si=tnVDBjI1CiPgH6ww)) un personaje que tiene la capacidad de
-cambiar su masa, que no su peso, a voluntad entre 1 kg y 10000 kg. El uso de sus habilidades
-en un mundo que toma muchos elementos del real hace que sea difícil distinguir qué es
-puramente ficción y qué lo es de manera inintencionada. En este caso podemos ver dos
+Piece, ([**Vídeo - Youtube**](https://youtu.be/BWcN6CzoTbA?si=tnVDBjI1CiPgH6ww)) un personaje que tiene la capacidad de cambiar su masa, que no su peso, a voluntad entre 1 kg y 10000 kg. El uso de sus habilidades en un mundo que toma muchos elementos del real hace que sea difícil distinguir qué es puramente ficción y qué lo es de manera inintencionada. En este caso podemos ver dos
 ejemplos distintos: un elemento claro de ciencia-ficción que ya esperábamos que no fuera real
 y otro que por sentido común podría parecer real pero no es el caso.
+
 Debemos partir de que violamos la ley de conservación de la materia, pero veremos que aún
 en este supuesto debemos ignorar otras tantas leyes. Una de las primeras habilidades que
 utiliza es reducir su peso a 1 kg para poder flotar. Con unas pocas cuentas podemos ver qué
@@ -41,6 +39,7 @@ densidad de 16,96 kg/m 3 que en comparación con la densidad del aire de 1.2 kg/
 siendo mucho mayor. Sin entrar en física de fluidos con su parámetro para la viscosidad, sólo
 por el principio de Arquímedes sería imposible que flotara, un resultado muy diferente al
 fantasioso, pero no pasa nada, esto ya nos lo esperábamos.
+
 Además, al reducir tanto su peso gracias a la segunda ley de Newton, , podemos deducir qué
 otras cosas también resultarían imposibles. Sin entrar en las fuerzas necesarias para poder
 moverse por sí misma, supondremos que se puede mover de la misma manera que antes,
@@ -51,18 +50,18 @@ ejercer son mucho menores. Sujetar el paraguas pasa a ser una tarea imposible en
 situación. Esto se puede entender todavía de manera intuitiva, cuanto menor masa tenga un
 objeto más fácil es moverlo. Este caso es el inverso, si no tenemos la masa suficiente para
 ejercer la misma fuerza necesitamos una aceleración mayor.
+
 En lo que ya empieza a fallar el sentido común es la velocidad de la caída. Si la forma y el
 volumen son siempre los mismos el rozamiento que se ejerce al descender es el mismo, la
 aceleración del campo gravitatorio es la misma para todos los cuerpos, solo cambia la fuerza
 que se ejerce. Con esto tenemos que si en un principio el empuje del aire no era suficiente
-para mantenerla a flote cuando pesaba 1 kg al aumentar su peso la caída no cambiaría de
-
-aceleración. En el momento que después de flotar empieza a pasar a los 10000 kg ya
+para mantenerla a flote cuando pesaba 1 kg al aumentar su peso la caída no cambiaría de aceleración. En el momento que después de flotar empieza a pasar a los 10000 kg ya
 mencionados gradualmente se ve cómo va acelerando cada vez más. Con todos los supuestos
 que hemos tomado esto obviamente no pasaría, el cuerpo al caer aceleraría, pero al mismo
 ritmo desde el instante en el que está en su punto más alto hasta que toque el suelo. Es más,
 con el rozamiento del aire los cuerpos en caída tienen una velocidad límite, entonces, una vez
 alcanzada, daría igual el cambio de la masa, sería imposible ir más rápido sin cambiar la forma.
+
 En este caso se ve claramente que poder cambiar la masa de una persona a voluntad es irreal.
 Además, haciendo las cuentas vemos que ni siquiera sería posible volar de esta manera pero
 ninguna de estas cosas es algo que nos sorprenda. En cambio, que al cambiar la masa del
@@ -76,7 +75,7 @@ entra en juego a la hora de ver cómo cae y a qué ritmo. También se puede ver 
 manera más amplia utilizando una cámara de vacío. En estas circunstancias se ve que dos
 objetos de masa muy dispares como una pluma y un martillo caen al mismo ritmo.
 
-![Manzana y pluma cayendo a la vez..](/images/contenido/)
+![Manzana y pluma cayendo a la vez..](/images/contenido/fisica-en-la-ciencia-ficcion/manzana-y-pluma.webp)
 
 *Figura 1: En una cámara de vacío se ve que bajo la acción de la gravedad todos los cuerpos
 sufren la misma aceleración.*
