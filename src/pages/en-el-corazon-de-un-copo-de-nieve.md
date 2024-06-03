@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: En el corazón de un copo de nieve
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

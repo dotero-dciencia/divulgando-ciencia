@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: Elizabeth Blackburn
 autor: Denise R.
 fotoDelAutor: /images/autores/anonimo.svg

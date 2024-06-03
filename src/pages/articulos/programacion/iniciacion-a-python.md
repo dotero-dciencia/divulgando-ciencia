@@ -1,5 +1,5 @@
 ---
-layout: ../../@/article
+layout: "@/article"
 titulo: Iniciación a Python
 autor: Neplod
 fotoDelAutor: /images/autores/neplod.webp

@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: Aprende Arduino desde cero
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

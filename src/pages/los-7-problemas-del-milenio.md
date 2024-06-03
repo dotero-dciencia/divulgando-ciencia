@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: Los 7 problemas del milenio
 autor: Nerea A.
 fotoDelAutor: /images/autores/nerea-a.webp

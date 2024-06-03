@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: (Re)descubriendo átomos preparando el desayuno
 autor: Doctor Berti
 fotoDelAutor: /images/autores/doctor-berti.webp

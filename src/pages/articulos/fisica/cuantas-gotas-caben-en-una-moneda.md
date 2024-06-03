@@ -1,5 +1,5 @@
 ---
-layout: ../../@/article
+layout: "@/article"
 titulo: ¿Cuántas gotas caben en una moneda?
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

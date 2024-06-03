@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: ¿La materia desaparece? Disolvemos poliestireno
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

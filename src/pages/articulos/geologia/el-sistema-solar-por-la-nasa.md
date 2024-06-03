@@ -1,5 +1,5 @@
 ---
-layout: ../../@/article
+layout: "@/article"
 titulo: El sistema solar por la NASA
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: "Creando esferas de hidrogel fluorescentes"
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

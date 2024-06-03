@@ -1,5 +1,5 @@
 ---
-layout: ../../@/article
+layout: "@/article"
 titulo: Los climogramas
 autor: abgomez
 fotoDelAutor: /images/autores/anonimo.svg

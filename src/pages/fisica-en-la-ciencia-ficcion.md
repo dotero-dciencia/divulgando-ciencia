@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: Física en la ciencia-ficción
 autor: Physics League
 fotoDelAutor: /images/autores/physics-league.webp

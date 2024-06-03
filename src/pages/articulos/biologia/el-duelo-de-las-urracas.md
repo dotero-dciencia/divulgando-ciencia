@@ -1,5 +1,5 @@
 ---
-layout: ../../@/article
+layout: "@/article"
 titulo: El duelo de las urracas
 autor: Biologramer
 fotoDelAutor: /images/autores/anonimo.svg

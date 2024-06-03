@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: 'La Cuarta Dimensión: Movimiento en dirección W'
 autor: Neplod
 fotoDelAutor: /images/autores/neplod.webp

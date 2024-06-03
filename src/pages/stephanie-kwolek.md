@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: Stephanie Kwolek
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

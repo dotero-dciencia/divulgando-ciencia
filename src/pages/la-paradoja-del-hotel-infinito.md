@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: La paradoja del hotel infinito
 autor: Nerea A.
 fotoDelAutor: /images/autores/nerea-a.webp

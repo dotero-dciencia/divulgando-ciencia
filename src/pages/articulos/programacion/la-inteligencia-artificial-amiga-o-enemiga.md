@@ -1,5 +1,5 @@
 ---
-layout: ../../@/article
+layout: "@/article"
 titulo: La inteligencia artificial, ¿amiga o enemiga?
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

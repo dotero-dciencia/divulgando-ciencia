@@ -1,5 +1,5 @@
 ---
-layout: ../../@/article
+layout: "@/article"
 titulo: El ópalo melinita
 autor: Biologramer
 fotoDelAutor: /images/autores/anonimo.svg

@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: El microscopio más antiguo
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: Margaret Hamilton
 autor: El taller de Ada
 fotoDelAutor: /images/autores/anonimo.svg

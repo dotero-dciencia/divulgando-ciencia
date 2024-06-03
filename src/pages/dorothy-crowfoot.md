@@ -1,5 +1,5 @@
 ---
-layout: @/article
+layout: "@/article"
 titulo: Dorothy Crowfoot
 autor: Lucas P.
 fotoDelAutor: /images/autores/anonimo.svg

@@ -1,5 +1,5 @@
 ---
-layout: ../../@/article
+layout: "@/article"
 titulo: Las matemáticas en una telaraña
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

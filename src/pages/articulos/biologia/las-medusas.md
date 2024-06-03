@@ -1,5 +1,5 @@
 ---
-layout: ../../@/article
+layout: "@/article"
 titulo: Las medusas
 autor: BorealMantis
 fotoDelAutor: /images/autores/boreal-mantis.webp

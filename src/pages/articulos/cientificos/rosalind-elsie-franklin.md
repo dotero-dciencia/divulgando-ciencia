@@ -1,5 +1,5 @@
 ---
-layout: ../../@/article
+layout: "@/article"
 titulo: Rosalind Franklin
 ciencia: científicos
 portada: /images/contenido/rosalind-franklin/portada.webp
