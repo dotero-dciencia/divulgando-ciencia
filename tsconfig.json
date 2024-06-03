@@ -6,9 +6,6 @@
       "@/article": [
         "src/layouts/ArticleLayout.astro"
       ],
-      "@/article-en": [
-        "src/layouts/en/ArticleLayout.astro"
-      ],
       "@/components/*": [
         "src/components/*"
       ],
