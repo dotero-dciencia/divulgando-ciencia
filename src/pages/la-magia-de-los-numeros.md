@@ -19,7 +19,7 @@ rrss: x instagram github
 
 En este artículo trataré de demostrar de forma breve cómo los números no son tan solo números, cómo no son taaaan aburridos como puedes creer que son: en muchos casos, todo lo contrario, como en los casos que te voy a enseñar ahora.
 
-# 054298673
+# 0542986731
 
 Este número tiene todas las cifras (del 0 al 9) y están ordenadas alfabéticamente según cómo nombramos a cada número en español.
 
