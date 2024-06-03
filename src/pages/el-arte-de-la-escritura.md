@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: @/article
 titulo: El arte de la escritura
 autor: abgomez
 fotoDelAutor: /images/autores/anonimo.svg

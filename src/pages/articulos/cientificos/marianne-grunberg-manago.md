@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/ArticleLayout.astro
+layout: ../../@/article
 titulo: Marianne Grunberg-Manago
 ciencia: científicos
 portada: /images/contenido/marianne-grunberg-manago/portada.webp

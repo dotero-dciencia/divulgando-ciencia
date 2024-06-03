@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: @/article
 titulo: La magia de los números
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

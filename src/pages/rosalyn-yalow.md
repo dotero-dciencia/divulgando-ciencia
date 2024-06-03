@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: @/article
 titulo: Rosalin Yalow
 ciencia: científicos
 portada: /images/contenido/rosalyn-yalow/portada.webp

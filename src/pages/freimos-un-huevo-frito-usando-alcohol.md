@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: @/article
 titulo: Freímos un huevo frito usando alcohol
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp

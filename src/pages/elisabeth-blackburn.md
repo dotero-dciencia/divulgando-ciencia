@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/ArticleLayout.astro
+layout: @/article
 titulo: Elizabeth Blackburn
 autor: Denise R.
 fotoDelAutor: /images/autores/anonimo.svg

@@ -1,5 +1,5 @@
 ---
-layout: "../../../layouts/ArticleLayout.astro"
+layout: "../../@/article"
 titulo: "EsJS: JavaScript con sintaxis en Español"
 autor: Enzo Notario
 fotoDelAutor: /images/autores/enzo.webp
