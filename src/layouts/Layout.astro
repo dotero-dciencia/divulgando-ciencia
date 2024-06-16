@@ -1,5 +1,5 @@
 ---
-const {title, description, image, frontmatter, robots, reloj} = Astro.props;
+const {title, description, image, frontmatter, robots, reloj, altIMG} = Astro.props;
 const titulo = title + " | Divulgando Ciencia"
 import Footer from "@/components/Footer.astro";
 import Seo from "@/components/Seo.astro";
@@ -25,6 +25,7 @@ import Seo from "@/components/Seo.astro";
 			{image}
 			{frontmatter}
 			{robots}
+			{altIMG}
 		/>
 	</head>
 	<body class="bg-principal-white dark:bg-principal-black transition-all">

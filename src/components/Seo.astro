@@ -9,7 +9,13 @@ const {
   image,
   frontmatter,
   robots,
+  altIMG
 } = Astro.props;
+
+console.log(image, typeof(image))
+const actualIMG = "https://www.divulgandociencia.com" + image
+const actualURL = "https://www.divulgandociencia.com" + (url.pathname)
+console.log(actualIMG)
 
 const jsonLD = jsonLDGenerator({
   type: frontmatter ? "post" : "website",
@@ -19,29 +25,29 @@ const jsonLD = jsonLDGenerator({
 ---
 
 <!-- SEO -->
-<link rel="canonical" href={url} />
+<link rel="canonical" href={actualURL} />
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="Divulgando Ciencia" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:url" content={url} />
-<meta property="og:image" content={image?.src || siteData.image.src} />
-<meta property="og:image:url" content={image?.src || siteData.image.src} />
+<meta property="og:url" content={actualURL} />
+<meta property="og:image" content={actualIMG} />
+<meta property="og:image:url" content={actualIMG} />
 <meta
   property="og:image:secure_url"
-  content={image?.src || siteData.image.src}
+  content={actualIMG}
 />
-<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:type" content="image/webp" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image:alt" content={image?.alt || siteData.image.alt} />
+<meta property="og:image:alt" content={altIMG} />
 
 <!-- Twitter -->
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content={image?.src || siteData.image.src} />
+<meta name="twitter:image" content={actualIMG} />
 <meta name="twitter:image:alt" content={title} />
 <meta name="twitter:domain" content={import.meta.env.SITE} />
 
