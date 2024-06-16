@@ -8,41 +8,41 @@
 </section>
 
 <script>
-    // let horas = document.getElementsByClassName("horas");
-    // let minutos = document.getElementsByClassName("minutos");
-    // let segundos = document.getElementsByClassName("segundos");
-    // async function mueveReloj(){
-    //     let url = 'https://worldtimeapi.org/api/timezone/Europe/Madrid';
-    //     let obj = "";
-    //     let momentoActual = "";
-    //     try
-    //     {
-    //          obj = await( await fetch(url) ).json();
-    //          momentoActual = new Date( Date.parse(obj["datetime"]) );
-    //     } catch(e) {
-    //         momentoActual = new Date();
-    //         console.log(e);
-    //     }
-    //     let nHoras = momentoActual.getHours().toString();
-    //     let nMinutos = momentoActual.getMinutes().toString();
-    //     let nSegundos = momentoActual.getSeconds().toString();
-    //     if (nHoras.length == 1){
-    //         nHoras = "0" + nHoras[0];
-    //     }
-    //     if (nMinutos.length == 1){
-    //         nMinutos = "0" + nMinutos[0];
-    //     }
-    //     if (nSegundos.length == 1){
-    //         nSegundos = "0" + nSegundos[0];
-    //     }
-    //     for (let i = 0; i < horas.length; i++){
-    //         horas[i].innerHTML = nHoras;
-    //         minutos[i].innerHTML = nMinutos;
-    //         segundos[i].innerHTML = nSegundos;
-    //     }
+    let horas = document.getElementsByClassName("horas");
+    let minutos = document.getElementsByClassName("minutos");
+    let segundos = document.getElementsByClassName("segundos");
+    async function mueveReloj(){
+        let url = 'https://worldtimeapi.org/api/timezone/Europe/Madrid';
+        let obj = "";
+        let momentoActual = "";
+        try
+        {
+             obj = await( await fetch(url) ).json();
+             momentoActual = new Date( Date.parse(obj["datetime"]) );
+        } catch(e) {
+            momentoActual = new Date();
+            console.log(e);
+        }
+        let nHoras = momentoActual.getHours().toString();
+        let nMinutos = momentoActual.getMinutes().toString();
+        let nSegundos = momentoActual.getSeconds().toString();
+        if (nHoras.length == 1){
+            nHoras = "0" + nHoras[0];
+        }
+        if (nMinutos.length == 1){
+            nMinutos = "0" + nMinutos[0];
+        }
+        if (nSegundos.length == 1){
+            nSegundos = "0" + nSegundos[0];
+        }
+        for (let i = 0; i < horas.length; i++){
+            horas[i].innerHTML = nHoras;
+            minutos[i].innerHTML = nMinutos;
+            segundos[i].innerHTML = nSegundos;
+        }
 
-    //     setTimeout(mueveReloj,1000);
-    // }
+        setTimeout(mueveReloj,1000);
+    }
 
-    // mueveReloj();
+    mueveReloj();
 </script>
