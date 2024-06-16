@@ -12,8 +12,6 @@ const articles = (await Astro.glob('@/pages/*.md')).sort((a, b) => Date.parse(b.
 title={title} 
 id="layout" 
 description="Descubre el poder de la divulgación científica abierta junto a nosotros."
-image = "https://www.divulgandociencia.com/images/landing-page/portada.webp"
-altIMG = "Dos chicos jóvenes mirando por el microscopio."
 >
     <!--Parte principal del landing-->
     <Menu class="z-40" design="landing-page"/>

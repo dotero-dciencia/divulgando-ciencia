@@ -13,7 +13,7 @@ const {
 } = Astro.props;
 
 console.log(image, typeof(image))
-const actualIMG = "https://www.divulgandociencia.com" + image
+const actualIMG = image ? "https://www.divulgandociencia.com" + image : "https:/www.divulgandociencia.com/images/portada.webp"
 const actualURL = "https://www.divulgandociencia.com" + (url.pathname)
 console.log(actualIMG)
 
@@ -41,14 +41,14 @@ const jsonLD = jsonLDGenerator({
 <meta property="og:image:type" content="image/webp" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image:alt" content={altIMG} />
+<meta property="og:image:alt" content={altIMG ? altIMG :"Dos chicos jóvenes mirando por el microscopio."} />
 
 <!-- Twitter -->
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content={actualIMG} />
-<meta name="twitter:image:alt" content={title} />
+<meta name="twitter:image:alt" content={altIMG ? altIMG :"Dos chicos jóvenes mirando por el microscopio."} />
 <meta name="twitter:domain" content={import.meta.env.SITE} />
 
 {robots && <meta name="robots" content="noindex, nofollow" />}
