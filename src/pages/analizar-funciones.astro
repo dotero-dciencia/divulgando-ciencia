@@ -307,7 +307,6 @@ import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
           });
         }
         catch (err) {
-          console.log(err);
           alert(err);
         }
       }
@@ -334,9 +333,7 @@ import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
         
     
         const funcion = `${a}x^2 + ${b}x + ${c}`
-    
-        console.log(`Mostrando resultados para la función ${funcion}.`)
-        
+            
         let valorA = document.getElementsByClassName("valorA")
         for (let i = 0; i < valorA.length; i++){
             if (a<0){
@@ -369,22 +366,16 @@ import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
         let campoA = document.getElementById("campoA")
         
     
-        console.log("\nIdentificación de a:")
         if (a > 0) {
-        console.log(`El valor de a es ${a}, mayor que 0, por lo que la parábola está abierta hacia arriba.`)
         campoA.innerHTML=`El valor de a es ${a}, mayor que 0, por lo que la parábola está abierta hacia arriba.`
         } else {
-        console.log(`El valor de a es ${a}, menor que 0, por lo que la parábola está abierta hacia abajo.`)
         campoA.innerHTML=`El valor de a es ${a}, menor que 0, por lo que la parábola está abierta hacia abajo.`
         }
     
         // Cálculo del vértice
 
-        console.log("\nCálculo del vértice:")
-        console.log(-b / (2 * a))
         const x_v = Math.round(-b / (2 * a)*100)/100
         const y_v = Math.round((a * x_v * x_v + b * x_v + c)*100)/100
-        console.log(`El vértice se encuentra en el punto (${x_v}, ${y_v}).`)
 
         let valorVerticeX1 = document.getElementsByClassName("valorVerticeX1")
         for (let i = 0; i < valorVerticeX1.length; i++){
@@ -412,7 +403,6 @@ import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
         let campoCorteXAux = document.getElementById("campoCorteXAux")
         let campoCorteX = document.getElementById("campoCorteX")
 
-        console.log("\nPunto(s) de corte con el eje x:")
         let discriminante = b * b - 4 * a * c
         if (discriminante > 0) {
             const x1 = Math.round(((-b + discriminante) / (2 * a))*100)/100
@@ -434,19 +424,15 @@ import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
             campoCorteX.innerHTML = `El punto de corte con el eje x es (${x}, 0)`
         }
         
-        console.log("\nPunto de corte con el eje y:")
         const y = c
-        console.log(`El punto de corte con el eje y es (0,${y})`)
     
         // Tabla de valores
         
-        console.log("\nTabla de valores:")
         let valores = []
         for (let i = 0; i < 5; i++){
             let x_i = Math.round((x_v + i - 2)*100)/100
             let y_i = Math.round((a * x_i *x_i + b * x_i + c)*100)/100
             valores.push([x_i, y_i])
-            console.log(`(${x_i}, ${y_i})`)
         }
 
         let campoX1 = document.getElementById("campoX1")
@@ -472,9 +458,6 @@ import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
         campoY4.innerHTML = valores[3][1]
         campoY5.innerHTML = valores[4][1]
 
-        console.log(valores)
-        console.log(valores[0])
-    
         function draw() {
         try {
           functionPlot({
@@ -487,7 +470,6 @@ import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
           });
         }
         catch (err) {
-          console.log(err);
           alert(err);
         }
       }

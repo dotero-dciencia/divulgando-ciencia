@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.3",
-    "astro": "^4.0.3",
+    "astro": "^4.11.3",
     "function-plot": "^1.24.4",
     "insights-js": "^1.2.11",
     "jquery": "^3.7.1",

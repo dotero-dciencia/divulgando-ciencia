@@ -12,10 +12,8 @@ const {
   altIMG
 } = Astro.props;
 
-console.log(image, typeof(image))
 const actualIMG = image ? "https://www.divulgandociencia.com" + image : "https:/www.divulgandociencia.com/images/portada.webp"
 const actualURL = "https://www.divulgandociencia.com" + (url.pathname)
-console.log(actualIMG)
 
 const jsonLD = jsonLDGenerator({
   type: frontmatter ? "post" : "website",

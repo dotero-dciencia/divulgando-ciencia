@@ -55,7 +55,6 @@ import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
     }
     function sub(){
     var lista = crearListaNumeros();
-    console.log("true");
             var objetivo = document.getElementById('output');
             let resultado = parseInt(document.getElementsByName("input")[0].value);
             if (lista.includes(parseInt(resultado))){
@@ -83,7 +82,6 @@ import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
                 }
                 let numero = parseInt(resultado.slice(0, -2));
                 numero = parseInt(Math.sqrt(numero));
-                console.log("Tu carta es " + numero + " de " + palo + " y tienes " + hermanos + " hermano(s).");
                 objetivo.innerHTML = "Tu carta es " + numero + " de " + palo + " y tienes " + hermanos + " hermano(s).";
             }
             else{

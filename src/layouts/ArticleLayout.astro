@@ -7,7 +7,7 @@ const articulos = (await Astro.glob('@/pages/*.md')).sort((a, b) => Date.parse(b
 ---
 
 <PrincipalLayout title={frontmatter.titulo} description={frontmatter.descripcion} image={frontmatter.portada} {frontmatter} robots={frontmatter.robots} altIMG = {frontmatter.portadaAlt}>
-    <section class="mt-20 w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white">
+    <section class="mt-24 w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white">
         <h4 class="font-generalsans-medium uppercase text-base min-[1800px]:text-xl" id={frontmatter.ciencia} data-pagefind-filter="Ciencia">{frontmatter.ciencia}</h4>
         <h1 class="font-generalsans-semibold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-4">{frontmatter.titulo}</h1>
         <DatosAutor fotoDelAutor={frontmatter.fotoDelAutor} autor={frontmatter.autor} fechaMostrar={frontmatter.fechaMostrar} duracion={frontmatter.duracion} rrss={frontmatter.rrss} x={frontmatter.x} instagram={frontmatter.instagram} github={frontmatter.github} discord={frontmatter.discord} youtube={frontmatter.youtube} twitch={frontmatter.twitch} tiktok={frontmatter.tiktok}/>
