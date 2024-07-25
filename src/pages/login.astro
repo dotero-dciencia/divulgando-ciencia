@@ -1,0 +1,24 @@
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/images/logo-modo-claro.webp" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="google-adsense-account" content="ca-pub-5669798174045459">
+		<title>Login (Test Page)</title>
+	</head>
+	<body class="bg-principal-white  dark:bg-principal-black transition-all mr-8 ml-8 mt-6 mb-6 gap-x-2 flex" id="buscador">
+        <div id="login">
+            <input id="email" type="text" value="example@example.com"/>
+            <input id="password" type="password" value="Password"/>
+            <but id="submit">Enviar</but>
+        </div>
+	</body>
+    <script>
+        import { login } from 'src/backend/auth';
+        document.getElementById('submit').addEventListener('click', async() => {
+            const res = await login(document.getElementById('email').value, document.getElementById('password').value);
+            console.log(res);
+        });
+    </script>
+</html>

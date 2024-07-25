@@ -1,4 +1,4 @@
-const { request } = require('./request')
+import { request_server } from './request';
 
 const check_password_security = (password = '') => {
     var strength = 0;
@@ -9,25 +9,33 @@ const check_password_security = (password = '') => {
     return strength;
 }
 
-const login = (email = '', password = '') => {
+const login = async (email = '', password = '') => {
+    return new Promise( (resolve, reject) => {
+        console.log(email, password)
+        if (email == "") reject('E-Mail is required.');
+        if (password == "") reject('Password is required.');
 
-    if (email = "") return 'E-Mail is required.';
-    if (password = "") return 'Password is required.';
+        if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) reject('Not valid E-Mail.');
+        if (password.length < 6) reject('Password must have at least 6 characters.');
+        if (password.length > 50) reject('Password can\'t have more than 50 characters.');
+        request_server('api/login', 'POST', {'Content-Type': 'application/json'}, JSON.stringify({'email':email, 'password': password})).then(( res ) => {
 
-    if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) return 'Not valid E-Mail.';
-    if (password.length < 6) return 'Password must have at least 6 characters.';
-    if (password.length > 50) return 'Password can\'t have more than 50 characters.';
+            try { if (!'ok' in res) reject('Server didn\'t answer.'); } catch(e) { }
 
-    const response = request('/api/login', 'POST', {}, {'email':email, 'password': password});
+            if (res['ok'] == false){
+                if ('ierr' in res) reject(res['ierr']);
+                if ('msg' in res) reject(res['msg']);
+                if ('errors' in res) reject(res['errors']);
+            }
 
-    if (!'ok' in response) return 'Server didn\'t answer.';
+            document.cookie = `token=${res['token']}`
 
-    if (!response['ok']){
-        if ('msg' in response) return response['msg'];
-        if ('errors' in response) return response['errors'].join (' ');
-    }
+            resolve(res);
+        });
+    });
+}
 
-    document.cookie(`token=${response['token']}`)
-    
-    return true;
+export {
+    login,
+    check_password_security,
 }

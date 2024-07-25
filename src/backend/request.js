@@ -1,30 +1,49 @@
-const request = async(path = '', method = 'GET', headers = {}, body = {}) => {
-    try {
+const SVURL = "http://localhost:3000/"
+const request_server = async(path = '', method = 'GET', headers = {}, body = {}) => {
+
+    return new Promise( async (resolve, reject) => {
+
         if (!['GET', 'POST', 'PUT', 'DEL'].includes(method)) {
-            return {ok: false,
+            reject({ok: false,
                 msg: 'Not Valid Method.'
+            });
+        }
+        try{
+            if (method == 'GET'){
+                fetch(SVURL + path,{
+                    method: method,
+                    headers: headers
+                }).then((serverPromise) => { 
+                    serverPromise.json().then((data) => { resolve(data); }).catch((err) => {reject({ok: false,msg: 'Internal Error.', ierr: err});});
+                }).catch((err) => {
+                    reject({ok: false,
+                        msg: 'Internal Error.',
+                        ierr: err
+                    });
+                });
+            } else {
+                fetch(SVURL + path,{
+                    method: method,
+                    headers: headers,
+                    body: body
+                }).then((serverPromise) => { 
+                    serverPromise.json().then((data) => { resolve(data); }).catch((err) => {reject({ok: false,msg: 'Internal Error.', ierr: err});});
+                }).catch((err) => {
+                    reject({ok: false,
+                        msg: 'Internal Error.',
+                        ierr: err
+                    });
+                });
             }
-        }
-
-        let response
-
-        if (method == 'GET'){
-            response = await fetch(url = "http://localhost:3000/" + path,{
-                method: method,
-                headers: headers
-            });
-        } else {
-            response = await fetch(url = "http://localhost:3000/" + path,{
-                method: method,
-                headers: headers,
-                body: JSON.stringify(body)
+        } catch (err) {
+            reject({ok: false,
+                msg: 'Internal Error.',
+                ierr: err
             });
         }
-        return response.json();
-    } catch (err) {
-        return {ok: false,
-            msg: 'Internal Error.',
-            ierr: err
-        }
-    }
+    });
+}
+
+export {
+    request_server
 }
