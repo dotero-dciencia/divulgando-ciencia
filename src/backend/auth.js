@@ -1,4 +1,5 @@
 import { request_server } from './request';
+import { setCookie } from './cookie_handler';
 
 const check_password_security = (password = '') => {
     var strength = 0;
@@ -28,7 +29,8 @@ const login = async (email = '', password = '') => {
                 if ('errors' in res) reject(res['errors']);
             }
 
-            document.cookie = `token=${res['token']}`
+            sessionStorage.setItem('token', res['access_token']);
+            setCookie('token', res['refresh_token'], 15*24*60*60);
 
             resolve(res);
         });
