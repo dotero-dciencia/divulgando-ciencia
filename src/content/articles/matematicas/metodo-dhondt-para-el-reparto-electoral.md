@@ -4,7 +4,7 @@ autor: dario-otero
 portadaAlt: Señor depositando su voto en una urna. Imagen generada con inteligencia artificial.
 descripcion: El método de reparto electoral d'Hondt es uno de los más populares, de hecho es el que se usa en España. Entra para descubrir en qué consiste.
 ciencia: matemáticas
-fecha: 2023-06-29
+fecha: 2024-06-29
 duracion: 10
 url: /metodo-dhondt-para-el-reparto-electoral
 ---
