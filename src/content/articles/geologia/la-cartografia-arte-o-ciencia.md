@@ -3,9 +3,7 @@ titulo: La cartografía, ¿arte o ciencia?
 autor: abgomez
 portadaAlt: Fotografía del mapa más antiguo, el de Mesopotamia.
 descripcion: Descubre las razones por las cuales la cartografía puede considerarse tanto arte como ciencia en este artículo.
-ciencia: matemáticas
 fecha: 2022-10-25
-url: /la-cartografia-arte-o-ciencia
 ---
 
 Según el Diccionario de la Real Academia Española de la Lengua, “cartografía” es el arte de trazar mapas geográficos o la ciencia que estudia los mapas.

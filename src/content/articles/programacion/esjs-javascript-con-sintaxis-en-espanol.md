@@ -3,9 +3,7 @@ titulo: "EsJS: JavaScript con sintaxis en Español"
 autor: enzo-notario
 portadaAlt: Portada de la página web de EsJS.
 descripcion: EsJS es un lenguaje de programación que usa la misma sintaxis que JavaScript pero en español. ¡Lánzate a descubrirlo!
-ciencia: programación
 fecha: 2023-12-12
-url: /esjs-javascript-con-sintaxis-en-espanol
 ---
 
 EsJS es un lenguaje de programación en español que compila a JavaScript, pensado para facilitar el aprendizaje de programación a personas que no hablan inglés, aprovechando la potencia y versatilidad de JavaScript.

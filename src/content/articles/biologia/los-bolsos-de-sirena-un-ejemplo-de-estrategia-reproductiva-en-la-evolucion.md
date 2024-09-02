@@ -3,10 +3,7 @@ titulo: Los bolsos de sirena. Un ejemplo de estrategia reproductiva en la evoluc
 autor: biologramer
 portadaAlt: Bolsos de sirena. Fotografía
 descripcion: Aprende cómo los bolsos de sirena demuestran un gran ejemplo de estrategia reproductiva en la evolución.
-ciencia: biología
 fecha: 2022-10-05
-fechaMostrar: 5 octubre, 2022
-url: /los-bolsos-de-sirena-un-ejemplo-de-estrategia-reproductiva-en-la-evolucion
 ---
 
 Los bolsos de sirena son un ejemplo de estrategia reproductiva en la evolución, en este artículo explicaremos todo sobre ellos. ¡Vamos allá!

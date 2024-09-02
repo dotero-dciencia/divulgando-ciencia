@@ -3,9 +3,7 @@ titulo: Cómo midió Eratóstenes la Tierra con un palo
 autor: dario-otero
 portadaAlt: Fotografía de la Tierra.
 descripcion: Descubre cómo midió el matemático griego Eratóstenes la longitud de la Tierra usando solamente un palo.
-ciencia: matemáticas
 fecha: 2022-06-20
-url: /como-midio-eratostenes-la-tierra-con-un-palo
 ---
 
 Descubre cómo midió el matemático griego, Eratóstenes, la Tierra usando tan solo un palo en el solsticio de verano.

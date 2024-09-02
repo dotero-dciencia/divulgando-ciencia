@@ -3,9 +3,7 @@ titulo: ¿La materia desaparece? Disolvemos poliestireno
 autor: dario-otero
 portadaAlt: Fotografía de un bloque de poliestireno que parece ser disuelto en acetona.
 descripcion: Descubre el increíble efecto que genera el poliestireno al introducirlo en acetona, ¡parece que desaparece!
-ciencia: química
 fecha: 2023-11-12
-url: /la-materia-desaparece-disolvemos-poliestireno
 ---
 
 ## Introducción

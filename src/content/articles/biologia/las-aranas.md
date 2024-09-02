@@ -3,9 +3,7 @@ titulo: Las arañas
 autor: borealmantis
 portadaAlt: Fotografía de una araña.
 descripcion: Las arañas forman un grupo muy amplio dentro de los arácnidos. Explora la diversidad y características de estos fascinantes animales.
-ciencia: biología
 fecha: 2022-10-31
-url: /las-aranas
 ---
 
 Las arañas son un grupo muy amplio dentro de los arácnidos y este artículo va sobre estas mismas, pero antes voy a resolver la siguiente duda: ¿Qué son los arácnidos?

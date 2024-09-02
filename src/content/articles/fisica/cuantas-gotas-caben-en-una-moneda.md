@@ -3,9 +3,7 @@ titulo: ¿Cuántas gotas caben en una moneda?
 autor: dario-otero
 portadaAlt: Cuentagotas echando gotas de agua sobre una moneda.
 descripcion: ¿Has probado alguna vez a echar gotas en una moneda? ¡Entrarán muchas más de las que piensas! Pruébalo.
-ciencia: física
 fecha: 2023-10-28
-url: /cuantas-gotas-caben-en-una-moneda
 ---
 
 ¿Has probado alguna vez a echar gotas de agua en la cara de una moneda? ¿Cuántas crees que entrarían? Muchas más de las que piensas, seguro. En este artículo te enseñaremos los resultados con varias monedas.

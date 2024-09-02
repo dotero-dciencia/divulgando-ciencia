@@ -3,9 +3,7 @@ titulo: Los climogramas
 autor: abgomez
 portadaAlt: Climograma completo con los datos de Valladolid.
 descripcion: Descubre cómo los climogramas pueden ayudarte a comprender y prever el clima
-ciencia: geología
 fecha: 2022-10-30
-url: /los-climogramas
 ---
 
 En este artículo nos apoyaremos en los climogramas para explicar este tiempo tan loco que nos rodea.

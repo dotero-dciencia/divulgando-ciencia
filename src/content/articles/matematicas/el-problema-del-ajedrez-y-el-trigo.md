@@ -3,9 +3,7 @@ titulo: El problema del ajedrez y el trigo
 autor: dario-otero
 portadaAlt: Fotografía de un ajedrez.
 descripcion: Lee el artículo completo para conocer la sorprendente historia de Sessa y el rey de la India.
-ciencia: matemáticas
 fecha: 2022-05-01
-url: /el-problema-del-ajedrez-y-el-trigo
 ---
 
 Hoy vamos a ver cómo resolver el problema de los granos de trigo que pidió el creador del ajedrez, Sessa, al rey de la India.

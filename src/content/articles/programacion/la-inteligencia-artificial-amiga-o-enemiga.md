@@ -3,9 +3,7 @@ titulo: La inteligencia artificial, ¿amiga o enemiga?
 autor: dario-otero
 portadaAlt: Imagen de la cabeza de un robot generada por la inteligencia artificial Dall·E 2.
 descripcion: La inteligencia artificial está en continuo auge. Descubre su poder en este artículo.
-ciencia: programación
 fecha: 2023-03-22
-url: /la-inteligencia-artificial-amiga-o-enemiga
 ---
 
 Seguro que si estás leyendo esto, en los últimos días, en las últimas semanas o incluso meses has oído hablar sobre la inteligencia artificial. Pues este es un tema muy interesante que en los últimos tiempos ha ido cobrando cada vez más importancia. En este artículo haremos un recorrido a través de la inteligencia artificial, hablaremos de su historia, de la actualidad y de lo que nos deparará en un futuro.

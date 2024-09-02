@@ -3,9 +3,7 @@ titulo: La paradoja del hotel infinito
 autor: nerea-a
 portadaAlt: Dibujo del hotel infinito.
 descripcion: La paradoja del hotel infinito de David Hilbert es famosa por tratar de hacernos comprender qué es el infinito. Descúbrela ahora mismo.
-ciencia: matemáticas
 fecha: 2023-10-15
-url: /la-paradoja-del-hotel-infinito
 ---
 
 Esta paradoja fue propuesta por el matemático alemán **David Hilbert** para explicar el concepto del infinito.

@@ -3,9 +3,7 @@ titulo: ChatGPT contra Rafa en Pasapalabra, ¿quién ganará?
 autor: dario-otero
 portadaAlt: El concursante de Pasapalabra, Rafa, con las manos en la cabeza tras ganar el bote de Pasapalabra.
 descripcion: Descubre si la inteligencia artificial ChatGPT habría ganado a Rafa en el Rosco de Pasapalabra.
-ciencia: matemáticas
 fecha: 2023-05-29
-url: /chatgpt-contra-rafa-en-pasapalabra-quien-ganara
 ---
 
 En este artículo trataremos de juntar dos grandes temas del momento: ChatGPT y la victoria de Rafa en Pasapalabra, para ello, los enfrentaremos: ChatGPT contra Rafa, ¿quién ganará?

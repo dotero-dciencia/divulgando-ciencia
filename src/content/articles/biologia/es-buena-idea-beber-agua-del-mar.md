@@ -3,9 +3,7 @@ titulo: ¿Es buena idea beber agua del mar?
 autor: dario-otero
 portadaAlt: Fotografía de un hombre bebiendo agua en la playa.
 descripcion: Descubre las consecuencias de beber agua del mar según la Biología en este artículo.
-ciencia: biología
 fecha: 2023-10-03
-url: /es-buena-idea-beber-agua-del-mar
 ---
 
 Imaginémonos lo siguiente: 

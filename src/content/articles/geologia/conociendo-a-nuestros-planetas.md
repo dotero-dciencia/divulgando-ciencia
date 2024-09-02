@@ -3,10 +3,7 @@ titulo: Conociendo a nuestros planetas
 autor: biologramer
 portadaAlt: Imagen del Sistema Solar.
 descripcion: ¿Crees conocer todo sobre los planetas del sistema solar? Aprende todo sobre ellos en este artículo.
-ciencia: geología
 fecha: 2023-03-19
-fechaMostrar: 19 marzo
-url: /conociendo-a-nuestros-planetas
 ---
 
 ## El Sistema Solar. Nuestro hogar en el Universo

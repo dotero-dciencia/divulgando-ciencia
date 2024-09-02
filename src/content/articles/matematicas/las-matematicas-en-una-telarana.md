@@ -3,9 +3,7 @@ titulo: Las matemáticas en una telaraña
 autor: dario-otero
 portadaAlt: Dibujo de una telaraña con una araña en ella.
 descripcion: Descubre el fascinante mundo matemático de las telarañas leyendo este artículo.
-ciencia: matemáticas
 fecha: 2022-10-31
-url: /las-matematicas-en-una-telarana
 ---
 
 Hoy veremos todas las matemáticas en una telaraña, que parecen muy simples, pero allí donde las ves, contienen muuuuuchas matemáticas.

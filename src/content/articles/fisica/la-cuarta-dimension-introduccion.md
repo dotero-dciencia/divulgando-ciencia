@@ -3,9 +3,7 @@ titulo: 'La cuarta dimensión: introducción'
 autor: neplod
 portadaAlt: Imagen con varios hipercubos.
 descripcion: Introdúcete de lleno en la cuarta dimensión, una nueva dimensión, leyendo este artículo.
-ciencia: física
 fecha: 2023-02-10
-url: /la-cuarta-dimension-introduccion
 ---
 
 Antes de empezar me gustaría aclarar que este artículo solo es una pequeña porción de la **Cuarta Dimensión**, una introducción para meteros en una nueva dimensión a la que llamamos la cuarta dimensión. En este artículo no nos meteremos mucho en la cuarta dimensión sino que hablaremos más de qué son las dimensiones y cómo cambiar entre ellas.

@@ -3,10 +3,7 @@ titulo: Carl Sagan
 autor: ines-pellon-glez
 portadaAlt: Fotografía de Carl Sagan en 1976.
 descripcion: Carl Sagan fue un científico que ha dejado huella con su gran labor divulgativa, conoce todo sobre él en este artículo.
-ciencia: científicos
 fecha: 2023-10-24
-duracion: 12
-url: /carl-sagan
 ---
 
 *Imagen de portada de http://www.librosmaravillosos.com, Carl Sagan en 1976.*

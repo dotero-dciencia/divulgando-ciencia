@@ -3,9 +3,7 @@ titulo: La magia de los números
 autor: dario-otero
 portadaAlt: Números de goma eva.
 descripcion: Descubre el fascinante mundo mágico de los números.
-ciencia: matemáticas
 fecha: 2024-05-03
-url: /la-magia-de-los-numeros
 ---
 
 En este artículo trataré de demostrar de forma breve cómo los números no son tan solo números, cómo no son t2023n aburridos como puedes creer que son: en muchos casos, todo lo contrario, como en los casos que te voy a enseñar ahora.

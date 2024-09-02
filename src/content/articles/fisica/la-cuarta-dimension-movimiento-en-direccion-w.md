@@ -3,10 +3,7 @@ titulo: 'La Cuarta Dimensión: Movimiento en dirección W'
 autor: neplod
 portadaAlt: Imagen de un cubo realizado por muchos cubos más pequeños.
 descripcion: En la cuarta dimensión decimos que nos movemos en dirección W. ¿Quieres saber por qué? ¡Hoy te lo contamos!
-ciencia: física
 fecha: 2023-03-25
-fechaMostrar: 25 marzo
-url: /la-cuarta-dimension-movimiento-en-direccion-w
 ---
 
 Antes de empezar, esta es la segunda parte de un artículo ya escrito anteriormente ([**La Cuarta Dimensión: Introducción**](/la-cuarta-dimension-introduccion)), si no lo has leído, ve a leerlo para comprender este artículo mucho mejor. Como ya habéis leído en el título, vamos a hablar sobre el movimiento en dirección W, como funciona, y como podría estar entre nosotros.

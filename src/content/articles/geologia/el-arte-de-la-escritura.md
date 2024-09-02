@@ -3,15 +3,13 @@ titulo: El arte de la escritura
 autor: abgomez
 portadaAlt: Jeroglífico
 descripcion: 
-ciencia: geología
 fecha: 2024-05-02
-url: /el-arte-de-la-escritura
 ---
 
 ***"Los únicos antídotos contra la estupidez y la barbarie son la educación y la cultura"***
 
 **Arturo Pérez-Reverte**
-
+Z
 El hombre, como ser social, siempre ha sentido la necesidad de comunicarse; por ello, surgen las lenguas y los textos escritos. Así, la escritura acompaña al ser humano, evolucionando en su técnica e instrumentos.
 
 Para llevar a cabo el arte de la escritura son necesarios: un soporte, un instrumento para escribir y, en algunas ocasiones, la tinta.

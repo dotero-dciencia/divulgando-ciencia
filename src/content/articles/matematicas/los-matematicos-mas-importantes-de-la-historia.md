@@ -3,9 +3,7 @@ titulo: Los matemáticos más importantes de la historia
 autor: dario-otero
 portadaAlt: Cuadro de Leonhard Euler.
 descripcion: Descubre cómo las contribuciones de los matemáticos más famosos de la historia revolucionaron la sociedad.
-ciencia: matemáticas
 fecha: 2023-03-14
-url: /los-matematicos-mas-importantes-de-la-historia
 ---
 
 A lo largo de la historia ha habido mucha gente que se ha decidido dedicar a esa disciplina que tanto odio y miedo genera a una gran parte de la población: las matemáticas. Como en todas las disciplinas, ha habido gente que, gracias a su esfuerzo y dedicación, además de a su talento, ha destacado por encima de los demás, sobresaliendo. Hoy, 14 de marzo, Día Internacional de las Matemáticas, rendiremos homenaje a varios de los matemáticos más importantes, dejándonos a muchos en el camino, ya que haría falta un blog entero para hablar de todos ellos.

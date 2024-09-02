@@ -3,9 +3,7 @@ titulo: Qué es el Juego de la Vida
 autor: dario-otero
 portadaAlt: Imagen del Juego de la Vida de [divulgandociencia.com](https://divulgandociencia.com).
 descripcion: John Conway creó el Juego de la Vida hace decenas de año. Hoy puedes aprender sobre este gran juego matemático y programarlo tú mismo.
-ciencia: programación
 fecha: 2023-04-11
-url: /que-es-el-juego-de-la-vida
 ---
 
 El Juego de la Vida fue una invención del matemático John Horton Conway, fallecido el 11 de abril de 2020, más conocido como Conway. En su vida consiguió grandes logros matemáticos, pero si hay uno que destaca por encima de todo es el ya mencionado Juego de la Vida.

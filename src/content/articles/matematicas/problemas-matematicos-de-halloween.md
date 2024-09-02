@@ -3,9 +3,7 @@ titulo: Problemas matemáticos de Halloween
 autor: dario-otero
 portadaAlt: Una calabaza con ojos, nariz y boca entre humo.
 descripcion: En Halloween también hay matemáticas. Descúbrelas en este artículo con varios problemas matemáticos en Halloween.
-ciencia: matemáticas
 fecha: 2022-10-31
-url: /problemas-matematicos-de-halloween
 ---
 
 Vamos a aprovechar el día de hoy, Halloween, para disfrutar de las matemáticas gracias a estos problemas matemáticos, iremos de menor a mayor dificultad, en ascendente. ¡Agarraos fuerte porque vienen curvas!

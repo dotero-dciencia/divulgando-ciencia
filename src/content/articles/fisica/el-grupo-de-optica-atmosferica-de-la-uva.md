@@ -3,9 +3,7 @@ titulo: El Grupo de Óptica Atmosférica de la UVa
 autor: dario-otero
 portadaAlt: Visitando las instalaciones del grupo. En concreto, sus fotómetros.
 descripcion: El Grupo de Óptica Atmosférica de la UVa se basa en el estudio de la atmósfera y en concreto en el estudio de aerosoles.
-ciencia: física
 fecha: 2024-08-28
-url: /el-grupo-de-optica-atmosferica-de-la-uva
 ---
 
 El pasado viernes 28 de junio tuvimos la suerte de visitar las instalaciones del Grupo Óptica Atmósferica de la UVa (GOA-UVa) de la mano de Roberto Román.

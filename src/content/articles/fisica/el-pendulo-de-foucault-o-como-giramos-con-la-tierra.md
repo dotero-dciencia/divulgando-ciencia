@@ -3,9 +3,7 @@ titulo: El péndulo de Foucault o cómo giramos con la Tierra
 autor: dario-otero
 portadaAlt: Fotografía del péndulo de Foucault del Museo de la Ciencia de Valladolid.
 descripcion: Aprende cómo funciona el péndulo de Foucault, un experimento físico realmente interesante para demostrar el movimiento terrestre.
-ciencia: física
 fecha: 2023-09-30
-url: /el-pendulo-de-foucault-o-como-giramos-con-la-tierra
 ---
 
 El péndulo de Foucault es considerado uno de los experimentos más elegantes del mundo de la Física, pues demuestra el **movimiento de rotación terrestre**.

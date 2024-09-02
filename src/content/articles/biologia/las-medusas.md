@@ -3,9 +3,7 @@ titulo: Las medusas
 autor: borealmantis
 portadaAlt: Fotografía de una medusa.
 descripcion: Las medusas, un grupo muy variado de cnidarios formado por múltiples especies, todas con tentáculos, un umbrela y colores variados.
-ciencia: biología
 fecha: 2023-11-13
-url: /las-medusas
 ---
 
 Las medusas, un grupo muy variado de cnidarios formado por múltiples especies, todas con tentáculos, un umbrela y colores variados. Pero basta de hablar de cosas que ya sabemos todos, probablemente te estes preguntando “¿Qué es una medusa?” o “¿Qué peligro suponen estos animales para mí?”. Pues todas esas preguntas serán resueltas a lo largo de este artículo, así que, sin más dilación, empecemos.

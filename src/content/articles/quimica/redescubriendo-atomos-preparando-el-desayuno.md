@@ -3,10 +3,7 @@ titulo: (Re)descubriendo átomos preparando el desayuno
 autor: doctor-berti
 portadaAlt: Fotografía de una taza de café
 descripcion: Redescubre junto a nosotros los átomos mientras te preparas el desayuno. ¡Seguro que ya no ves tu café igual!
-ciencia: química
 fecha: 2023-11-18
-fechaMostrar: 18 noviembre
-url: /redescubriendo-atomos-preparando-el-desayuno
 ---
 
 Cuando estudiaba en el colegio, me pregunté muchas veces cómo sería posible saber que la materia que nos rodea está formada por esas “pelotitas” minúsculas tan extrañas llamados átomos y las moléculas de las que tanto me hablaban en clase. Pero esta duda solía durarme poco. Tras pensarlo un rato, siempre acababa llegando a la misma conclusión: “lo sabrán porque lo habrán visto con un microscopio”. Lo que no supe hasta varios años después era que esta respuesta que tan tranquilo me dejaba estaba totalmente equivocada.

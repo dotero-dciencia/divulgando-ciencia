@@ -3,9 +3,7 @@ titulo: Qué es el número Googol
 autor: neplod
 portadaAlt: Imagen mostrando muchos unos y ceros.
 descripcion: Lee el artículo completo para conocer el origen de Googol y su relación con Google.
-ciencia: matemáticas
 fecha: 2022-12-18
-url: /que-es-el-numero-googol
 ---
 
 Dirás que lo he escrito mal porque se pone Google, pero no, no estoy hablando de la tan conocida web Google, estoy hablando de Googol, el número que equivale a 10^100, es decir, un 1 seguido de cien 0.

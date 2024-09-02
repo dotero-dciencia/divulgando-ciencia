@@ -3,9 +3,7 @@ titulo: Física en la ciencia-ficción
 autor: physics-league
 portadaAlt: Imagen de la electricidad.
 descripcion: Cómo la ciencia-ficción altera las leyes de la física.
-ciencia: física
 fecha: 2024-05-03
-url: /fisica-en-la-ciencia-ficcion
 ---
 # Física en la ciencia-ficción
 

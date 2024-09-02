@@ -3,9 +3,7 @@ titulo: Convertir una moneda de cobre en plata
 autor: dario-otero
 portadaAlt: Fotografía de varias monedas de cobre.
 descripcion: Aprende paso a paso a hacer magia transformando una moneda de cobre en plata usando la Química.
-ciencia: química
 fecha: 2022-11-09
-url: /convertir-una-moneda-de-cobre-en-plata
 ---
 
 Las monedas, como toda la materia que te rodea, están formadas por sustancias químicas. Podemos hacerlas reaccionar y cambiarán de apariencia. Con un poco de suerte (y la reacción química adecuada) conseguiremos que una moneda de cobre de cinco céntimos parezca ser de plata o de oro.

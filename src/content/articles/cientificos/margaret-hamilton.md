@@ -3,9 +3,7 @@ titulo: Margaret Hamilton
 autor: el-taller-de-ada
 portadaAlt: Fotografía de Margaret Hamilton.
 descripcion: Margaret Hamilton fue una de las programadores clave en el primer viaje a la Luna. Descubre su inspiradora vida a través de este artículo.
-ciencia: científicos
 fecha: 2023-02-11
-url: /margaret-hamilton
 ---
 
 Margaret Hamilton fue una de las programadoras clave en el **desarrollo del software que llevó** (y trajo) **a los primeros seres humanos a la luna**. Es una de las pioneras en el campo de la **ingeniería de software** y su trabajo sentó las bases del diseño de software ultraconfiable.

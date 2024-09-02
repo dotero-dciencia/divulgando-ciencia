@@ -3,10 +3,7 @@ titulo: El ópalo melinita
 autor: biologramer
 portadaAlt: Ópalo melinita.
 descripcion: Explora las propiedades únicas del ópalo melinita, una variedad del cuarzo, en este artículo.
-ciencia: geología
 fecha: 2022-12-24
-fechaMostrar: 24 diciembre, 2022
-url: /el-opalo-melinita
 ---
 
 En este artículo explicaremos lo que es el ópalo melinita. ¡Vamos allá!

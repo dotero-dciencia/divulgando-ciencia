@@ -3,9 +3,7 @@ titulo: Esta IA genera imágenes con mensajes ocultos
 autor: dario-otero
 portadaAlt: Imagen generada por Quick QR Art, donde se ve un bosque con la palabra CIENCIA oculta.
 descripcion: Con esta inteligencia artificial puedes crear grandes imágenes con mensajes ocultos. Sigue nuestra guía paso a paso.
-ciencia: tecnología
 fecha: 2023-09-27
-url: /esta-ia-genera-imagenes-con-mensajes-ocultos
 ---
 
 Cada vez nos encontramos con más y más herramientas de inteligencia artificial. Hoy, en concreto, hablaremos de una que nos permite generar imágenes con palabras ocultas. De hecho, la imagen de portada de este artículo está generada por dicha IA, ¿serías capaz de descifrar la palabra que está escondida?

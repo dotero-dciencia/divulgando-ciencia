@@ -3,9 +3,7 @@ titulo: Aprende Arduino desde cero
 autor: dario-otero
 portadaAlt: Imagen de una mano sosteniendo una placa Arduino Uno.
 descripcion: Aprende a usar la placa Arduino desde cero sin ningún conocimiento previo siguiendo esta guía paso a paso.
-ciencia: tecnología
 fecha: 2021-01-16
-url: /aprende-arduino-desde-cero
 ---
 
 ## Introducción

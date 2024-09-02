@@ -3,9 +3,7 @@ titulo: Las leyes de Mendel
 autor: biologramer
 portadaAlt: Gregor Mendel.
 descripcion: Aprende sobre las leyes de Mendel que sentaron las bases de la genética moderna.
-ciencia: biología
 fecha: 2023-07-12
-url: /las-leyes-de-mendel
 ---
 
 ## La genética

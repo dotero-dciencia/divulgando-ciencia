@@ -3,10 +3,7 @@ titulo: La estructura molecular del ADN. Leyes de Chargaff
 autor: biologramer
 portadaAlt: Chargaff.
 descripcion: Descubre las leyes esenciales de Chargaff que revolucionaron nuestra comprensión del ADN.
-ciencia: biología
 fecha: 2023-05-10
-fechaMostrar: 10 mayo
-url: /la-estructura-molecular-del-adn-leyes-de-chargaff
 ---
 
 ## El ADN. Una molécula sorprendente

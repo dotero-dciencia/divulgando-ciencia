@@ -3,9 +3,7 @@ titulo: Freímos un huevo frito usando alcohol
 autor: dario-otero
 portadaAlt: Fotografía de un huevo frito.
 descripcion: ¿Sabías que no hace falta calor para freír un huevo? ¡También se puede hacer con alcohol! Hoy te enseñamos cómo paso a paso.
-ciencia: química
 fecha: 2023-10-22
-url: /freimos-un-huevo-frito-usando-alcohol
 ---
 
 ## Objetivo

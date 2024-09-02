@@ -25,7 +25,7 @@ fecha = fecha.replace(' de ', ' ').replace(' de ', ', ');
 ---
 
 <!-- <PrincipalLayout title={article.data.titulo} description={article.data.descripcion} image={portada} {article.data} robots={article.data.robots} altIMG = {article.data.portadaAlt}> -->
- <PrincipalLayout title={article.data.titulo} image={portada} altIMG = {article.data.portadaAlt}>
+ <PrincipalLayout title={article.data.titulo} image={portada} altIMG = {article.data.portadaAlt} image={portada}>
   <section class="mt-24 w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white">
       <h4 class="font-generalsans-medium uppercase text-base min-[1800px]:text-xl" id={article.data.ciencia} data-pagefind-filter="Ciencia">{article.data.ciencia}</h4>
       <h1 class="font-generalsans-semibold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-4">{article.data.titulo}</h1>

@@ -3,9 +3,7 @@ titulo: Calculadora con Python
 autor: dario-otero
 portadaAlt: Fotografía de código en Python.
 descripcion: Enfréntate al reto de crear tu propia calculadora hoy mismo usando el famoso lenguaje de programación Python paso a paso.
-ciencia: programación
 fecha: 2022-10-01
-url: /calculadora-con-python
 ---
 
 En este reto realizaremos una calculadora con [Python](https://python.org/). La dificultad de este reto es **baja**.

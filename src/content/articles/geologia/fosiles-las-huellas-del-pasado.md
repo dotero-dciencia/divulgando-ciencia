@@ -2,9 +2,7 @@
 titulo: Fósiles. Las huellas del pasado
 autor: biologramer
 portadaAlt: Huella.
-ciencia: geología
 fecha: 2022-12-10
-url: /fosiles-las-huellas-del-pasado
 ---
 
 ## La estratigrafía y el descubrimiento de los fósiles

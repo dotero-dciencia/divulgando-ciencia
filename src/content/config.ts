@@ -7,7 +7,6 @@ const articles = defineCollection({
   schema: z.object({
     borrador: z.boolean().optional(),
     titulo: z.string(),
-    ciencia: z.string(),
     portadaAlt: z.string(),
     // descripcion: z.string().optional(),
     autor: reference('authors'),

@@ -3,9 +3,7 @@ titulo: El árbol de Diana
 autor: dario-otero
 portadaAlt: Fotografía del resultado del experimento del Árbol de Diana.
 descripcion: El árbol de Diana es un experimento químico con un resultado espectacular. Descubre cómo hacerlo a través de este artículo.
-ciencia: química
 fecha: 2022-10-01
-url: /el-arbol-de-diana
 ---
 
 En esta práctica haremos un árbol de Diana.

@@ -3,10 +3,7 @@ titulo: El duelo de las urracas
 autor: biologramer
 portadaAlt: Fotografía de una urraca.
 descripcion: ¿Sabías que los córvidos son mucho más inteligentes que el resto de aves? Descubre todo eso y más en este artículo.
-ciencia: geología
 fecha: 2022-11-04
-fechaMostrar: 4 noviembre, 2022
-url: /el-duelo-de-las-urracas
 ---
 
 ## La inteligencia de las aves

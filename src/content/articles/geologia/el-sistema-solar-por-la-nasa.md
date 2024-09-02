@@ -3,9 +3,7 @@ titulo: El sistema solar por la NASA
 autor: dario-otero
 portadaAlt: Fotografía del sol por la NASA, NASA/SDO/AIA
 descripcion: La NASA publica fotografía realmente alucinantes en el espacio, viaja con sus fotografías a través del sistema solar.
-ciencia: geología
 fecha: 2023-11-19
-url: /el-sistema-solar-por-la-nasa
 ---
 
 *Imagen de portada: 11 de febrero de 2014. Créditos: NASA/SDO/AIA*

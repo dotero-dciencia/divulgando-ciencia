@@ -3,9 +3,7 @@ titulo: Qué es el algoritmo de Dijkstra
 autor: dario-otero
 portadaAlt: Grafo representando las casas de varias personas y la distancia entre ellas.
 descripcion: Conocer el algoritmo de Dijkstra te permitirá hallar el camino óptimo en un grafo. Hoy te lo explicamos paso a paso.
-ciencia: matemáticas
 fecha: 2023-10-31
-url: /que-es-el-algoritmo-de-dijkstra
 ---
 
 Hoy veremos qué es el **algoritmo de Dijkstra** y para qué sirve en Teoría de Grafos. Pero antes, vamos a recordar qué es un grafo.

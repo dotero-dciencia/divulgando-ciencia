@@ -3,9 +3,7 @@ titulo: Los 7 problemas del milenio
 autor: nerea-a
 portadaAlt: Ecuaciones matemáticas.
 descripcion: Descubre de primera mano cómo se descubrió la aceleración del Universo.
-ciencia: matemáticas
 fecha: 2023-11-17
-url: /los-7-problemas-del-milenio
 ---
 
 ## ¿Qué son?

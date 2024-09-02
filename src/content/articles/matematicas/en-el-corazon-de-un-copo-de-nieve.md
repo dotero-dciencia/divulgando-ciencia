@@ -3,9 +3,7 @@ titulo: En el corazón de un copo de nieve
 autor: dario-otero
 portadaAlt: Fotografía de un hombre bebiendo agua en la playa.
 descripcion: Explora el sorprendente mundo de las matemáticas en los copos de nieve en este artículo.
-ciencia: matemáticas
 fecha: 2022-01-09
-url: /en-el-corazon-de-un-copo-de-nieve
 ---
 
 Un copo de nieve, tan básico como frío y como rápido se deshace al tocarlo, está **lleno de matemáticas**, aunque no lo parezca. Hoy nos adentraremos en el corazón de un copo de nieve para explicar las matemáticas que contiene, haremos un programilla de Python para automatizar la parte matemática y una representación interactiva en Geogebra. ¡Vamos allá con las matemáticas de un copo de nieve!

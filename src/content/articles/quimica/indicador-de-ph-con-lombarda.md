@@ -3,9 +3,7 @@ titulo: Indicador de pH con lombarda
 autor: dario-otero
 portadaAlt: Fotografía de un arcoíris con diferentes niveles de pH.
 descripcion: Descubre cómo hacer un indicador de pH usando una lombarda. Te lo explicamos paso a paso en este fascinante artículo.
-ciencia: química
 fecha: 2023-11-12
-url: /indicador-de-ph-con-lombarda
 ---
 
 ## Introducción

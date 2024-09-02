@@ -3,11 +3,7 @@ titulo: Iniciación a Python
 autor: neplod
 portadaAlt: Fragmento de código en Python.
 descripcion: Aprende el incipiente lenguaje de programación Python desde cero paso a paso.
-ciencia: programación
 fecha: 2023-11-15
-fechaMostrar: 15 noviembre
-duracion: 10
-url: /iniciacion-a-python
 ---
 
 # Iniciación a Python
