@@ -1,14 +1,13 @@
 ---
-layout: "@/article"
 titulo: El microscopio más antiguo
-autor: Darío O.
+autor: dario-otero
 fotoDelAutor: /images/autores/dario-o.webp
 portada: /images/contenido/el-microscopio-mas-antiguo/portada.webp
 portadaAlt: Fotografía del microscopio de Zacharias Janssen
 descripcion: Todos conocemos cómo es un microscopio moderno, pero, ¿sabes cómo era uno antiguo? ¿Y el primer microscopio de la historia?
 ciencia: tecnología
 fechaMostrar: 14 noviembre, 2023
-fechaOrdenar: Nov 14, 2023
+fecha: Nov 14, 2023
 duracion: 2
 url: /el-microscopio-mas-antiguo
 x: https://x.com/tecnomagia_es

@@ -1,5 +1,5 @@
 ---
-const {fotoDelAutor, autor, fechaMostrar, duracion, rrss, x, instagram, github, discord, youtube, twitch, tiktok} = Astro.props;
+const {fotoDelAutor, autor, fecha, rrss, x, instagram, github, discord, youtube, twitch, tiktok} = Astro.props;
 ---
 
 <section class="flex w-fit m-auto mb-4 gap-x-3">
@@ -7,9 +7,11 @@ const {fotoDelAutor, autor, fechaMostrar, duracion, rrss, x, instagram, github, 
     <div class="flex-col text-left font-normal my-auto h-full items-center">
         <h4 class="font-generalsans-medium text-base 2xl:text-xl" data-pagefind-filter="Autor">{autor}</h4>
         <ul class="flex gap-x-1 font-generalsans text-sm 2xl:text-lg">
-            <li>{fechaMostrar}</li>
+            <li><time datetime={fecha}>
+                {fecha}
+              </time></li>
             ·
-            <li>{duracion} min de lectura</li>
+            <li id="tiempo-de-lectura"></li>
         </ul>
         <div class={rrss}>
             <ul class="gap-x-1 flex font-generalsans mt-[0.3rem] rs">
