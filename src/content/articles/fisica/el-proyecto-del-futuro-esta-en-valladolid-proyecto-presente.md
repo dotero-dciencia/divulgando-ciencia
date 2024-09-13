@@ -1,19 +1,9 @@
 ---
 titulo: "El proyecto del futuro está en Valladolid: Proyecto Presente"
 autor: dario-otero
-fotoDelAutor: /images/autores/dario-o.webp
-portada: /images/contenido/el-proyecto-del-futuro-esta-en-valladolid-proyecto-presente/portada.webp
-portadaAlt: Señor depositando su voto en una urna. Imagen generada con inteligencia artificial.
-descripcion: El método de reparto electoral d'Hondt es uno de los más populares, de hecho es el que se usa en España. Entra para descubrir en qué consiste.
-ciencia: física
-fechaMostrar: 29 junio, 2024
-fecha: Jun 29, 2024
-duracion: 4
-url: /el-proyecto-del-futuro-esta-en-valladolid-proyecto-presente
-x: https://x.com/tecnomagia_es
-instagram: https://instagram.com/tecnomagia_es
-github: https://github.com/dotero-dev
-rrss: x instagram github
+portadaAlt: Roberto mostrando el funcionamiento de una cámara de cielo.
+descripcion: "El GOA-UVa ha desarrollado un proyecto pionero: el proyecto Presente. Roberto nos cuenta en qué consiste."
+fecha: 2024-09-13
 ---
 
 En el [anterior artículo](/el-grupo-optica-atmosferica-de-la-uva) hablamos sobre el GOA-UVa, el Grupo de Óptica Atmosférica de la Universidad de Valladolid, cuyas instalaciones tuvimos el placer de visitar el pasado viernes 28 de junio de la mano de Roberto Román.
