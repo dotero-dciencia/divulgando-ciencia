@@ -3,7 +3,7 @@ layout: "@/article"
 titulo: El Grupo de Óptica Atmosférica de la UVa
 autor: Darío O.
 fotoDelAutor: /images/autores/dario-o.webp
-portada: /images/contenido/el-grupo-optica-atmosferica-de-la-uva/portada.webp
+portada: /images/contenido/el-grupo-de-optica-atmosferica-de-la-uva/portada.webp
 portadaAlt: Visitando las instalaciones del grupo. En concreto, sus fotómetros.
 descripcion: El Grupo de Óptica Atmosférica de la UVa se basa en el estudio de la atmósfera y en concreto en el estudio de aerosoles.
 ciencia: física
@@ -21,7 +21,7 @@ El pasado viernes 28 de junio tuvimos la suerte de visitar las instalaciones del
 
 Este grupo universitario se basa en el estudio de la atmósfera (compuesta por gases, aerosoles, y nubes). En concreto, ellos se centran en el estudio de los aerosoles y, para ello, utilizan diferentes herramientas y métodos. En este artículo hablaremos de cuatro instrumentos que el GOA usa en su día a día para desempeñar su labor.
 
-![Entrando en la Facultad de Ciencias de la Universidad de Valladolid. En la fotografía aparece la entrada de la Facultad, con dos mujeres y un hombre.](/images/contenido/el-grupo-optica-atmosferica-de-la-uva/entrando.webp)
+![Entrando en la Facultad de Ciencias de la Universidad de Valladolid. En la fotografía aparece la entrada de la Facultad, con dos mujeres y un hombre.](/images/contenido/el-grupo-de-optica-atmosferica-de-la-uva/entrando.webp)
 
 *Entrada de la Facultad de Ciencias de la UVa. Fotografía de Lucas Pérez.*
 
@@ -29,7 +29,7 @@ Este grupo universitario se basa en el estudio de la atmósfera (compuesta por g
 
 Los fotómetros solares (*sun photometers*) se usan para medir la intensidad con la que llega la radiación solar a la Tierra en un punto exacto (donde se encuentre situado el sol). Comparando los valores recibidos con la radiación que debería llegar pueden calcular cuánta radiación se ha perdido por el camino. Cuanto mayor sea esta cantidad, significa que hay un mayor número de partículas (aerosoles), que se encuentran entre el Sol y el fotómetro, y obstaculizan la llegada de esta radiación.
 
-![Un fotómetro de cerca.](/images/contenido/el-grupo-optica-atmosferica-de-la-uva/fotometro.webp)
+![Un fotómetro de cerca.](/images/contenido/el-grupo-de-optica-atmosferica-de-la-uva/fotometro.webp)
 
 *Fotómetro. Fotografía de Lucas Pérez.*
 
@@ -44,7 +44,7 @@ También han intentado realizar los mismos estudios pero con la luz de la Luna e
 
 ## Piranómetro
 
-![Un piranómetro de cerca.](/images/contenido/el-grupo-optica-atmosferica-de-la-uva/piranometro.webp)
+![Un piranómetro de cerca.](/images/contenido/el-grupo-de-optica-atmosferica-de-la-uva/piranometro.webp)
 
 *Piranómetro. Fotografía de Lucas Pérez.*
 
@@ -54,7 +54,7 @@ El piranómetro también mide la radiación que llega del Sol, pero a diferencia
 
 En inglés "*ceil*" significa "techo" y no está nada mal traido, pues este instrumento mide la altura de las nubes. De hecho, los últimos modelos también son capaces de medir aerosoles.
 
-![Un ceilómetro de marca JENOPTIK.](/images/contenido/el-grupo-optica-atmosferica-de-la-uva/ceilometro.webp)
+![Un ceilómetro de marca JENOPTIK.](/images/contenido/el-grupo-de-optica-atmosferica-de-la-uva/ceilometro.webp)
 
 *Exterior de un ceilómetro. Fotografía de Lucas Pérez.*
 
@@ -75,7 +75,7 @@ Conocer la altura a la que se encuentra una nube nos permite:
 
 ## Cámaras de cielo
 
-![Una cámara de cielo de cerca.](/images/contenido/el-grupo-optica-atmosferica-de-la-uva/camara-de-cielo.webp)
+![Una cámara de cielo de cerca.](/images/contenido/el-grupo-de-optica-atmosferica-de-la-uva/camara-de-cielo.webp)
 
 *Cámara de cielo. Fotografía de Lucas Pérez.*
 
@@ -84,7 +84,7 @@ Estos instrumentos sirven para hacer, literalmente, fotos hacia el cielo. Tambi�
 - Una lente ojo de pez con cúpula, precisamente para proteger a la lente de la lluvia y otros reveses meteorológicos.
 - Un sistema de calefacción en la caja para evitar gotas de agua y hielo sobre la cúpula, con sensor de humedad y temperatura.
 
-![Una cámara de cielo por dentro donde se pueden distinguir sus partes anteriormente mencionadas.](/images/contenido/el-grupo-optica-atmosferica-de-la-uva/camara-de-cielo-por-dentro.webp)
+![Una cámara de cielo por dentro donde se pueden distinguir sus partes anteriormente mencionadas.](/images/contenido/el-grupo-de-optica-atmosferica-de-la-uva/camara-de-cielo-por-dentro.webp)
 
 *Cámara de cielo abierta. Fotografía de Lucas Pérez.*
 
