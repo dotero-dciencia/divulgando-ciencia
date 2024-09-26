@@ -5,7 +5,7 @@ import FilaBotones from "@/components/FilaBotonesDifuminados.astro";
 import SeccionArticulosPequenos from "@/components/SeccionArticulosPequenos.astro";
 const title = "Inicio";
 
-const articles = (await Astro.glob('@/pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fecha) - Date.parse(a.frontmatter.fecha));
+const articles = (await Astro.glob('@/pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
 
 <Layout title={title} id="layout" description="Descubre el poder de la divulgación científica abierta junto a nosotros.">

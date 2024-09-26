@@ -1,22 +1,156 @@
 ---
-import BotonCiencia from "./BotonCiencia.astro";
+import Boton from "./Boton.astro";
+const {inicial} = Astro.props
 ---
 
-<nav class="flex flex-col lg:flex-row lg:gap-x-2 gap-y-2 w-full mx-auto justify-center mt-36 xl:mt-44 mb-8" id="fila-botones">
-    <div class="flex gap-x-2 w-full justify-center lg:justify-end">
-        <BotonCiencia ciencia="matemáticas" fondo="bg-dark-math"/>
-        <BotonCiencia ciencia="biología" fondo="bg-dark-biology"/>
-        <BotonCiencia ciencia="geología" fondo="bg-dark-geology"/>
+<ul class="lg:flex lg:gap-x-2 w-full justify-center my-4 py-2" id={inicial}>
+    <div class="md:flex gap-x-2 md:w-full lg:w-fit justify-center">
+        <div class="flex gap-x-2 md:w-fit w-full justify-center">
+            <div id="matemáticas">
+                <div class="none">
+                    <Boton ciencia="matemáticas" direccion="/articulos/matematicas" inicial={inicial} id="matemáticas"/>
+                </div>
+                <div class="clic">
+                    <Boton ciencia="matemáticas" direccion="/articulos" inicial={inicial} id="matemáticas"/>
+                </div>
+            </div>
+            <div id="biología">
+                <div class="none">
+                    <Boton ciencia="biología" direccion="/articulos/biologia" inicial={inicial} id="biología"/>
+                </div>
+                <div class="clic">
+                    <Boton ciencia="biología" direccion="/articulos" inicial={inicial} id="biología"/>
+                </div>
+            </div>
+            <div id="geología">
+                <div class="none">
+                    <Boton ciencia="geología" direccion="/articulos/geologia" inicial={inicial} id="geología"/>
+                </div>
+                <div class="clic">
+                    <Boton ciencia="geología" direccion="/articulos" inicial={inicial} id="geología"/>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-x-2 md:w-fit w-full justify-center my-3 md:m-0">
+            <div id="física">
+                <div class="none">
+                    <Boton ciencia="física" direccion="/articulos/fisica" inicial={inicial} id="física"/>
+                </div>
+                <div class="clic">
+                    <Boton ciencia="física" direccion="/articulos" inicial={inicial} id="física"/>
+                </div>
+            </div>
+            <div id="química">
+                <div class="none">
+                    <Boton ciencia="química" direccion="/articulos/quimica" inicial={inicial} id="química"/>
+                </div>
+                <div class="clic">
+                    <Boton ciencia="química" direccion="/articulos" inicial={inicial} id="química"/>
+                </div>
+            </div>
+            <div id="tecnología">
+                <div class="none">
+                    <Boton ciencia="tecnología" direccion="/articulos/tecnologia" inicial={inicial} id="tecnología"/>
+                </div>
+                <div class="clic">
+                    <Boton ciencia="tecnología" direccion="/articulos" inicial={inicial} id="tecnología"/>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="flex gap-x-2 w-full lg:w-fit justify-center">
-        <BotonCiencia ciencia="física" fondo="bg-dark-physics"/>
-        <BotonCiencia ciencia="química" fondo="bg-dark-chemistry"/>
-        <BotonCiencia ciencia="tecnología" fondo="bg-dark-technology"/>
+    <div class="flex gap-x-2 w-full lg:w-fit justify-center md:mt-3 lg:m-0">
+        <div id="programación">
+            <div class="none">
+                <Boton ciencia="programación" direccion="/articulos/programacion" inicial={inicial} id="programación"/>
+            </div>
+            <div class="clic">
+                <Boton ciencia="programación" direccion="/articulos" inicial={inicial} id="programación"/>
+            </div>
+        </div>
+        <div id="científicos">
+            <div class="none">
+                <Boton ciencia="científicos" direccion="/articulos/cientificos" inicial={inicial} id="científicos"/>
+            </div>
+            <div class="clic">
+                <Boton ciencia="científicos" direccion="/articulos" inicial={inicial} id="científicos"/>
+            </div>
+        </div>
     </div>
-    <div class="flex gap-x-2 w-full justify-center lg:justify-start">
-        <BotonCiencia ciencia="programación" fondo="bg-dark-coding"/>
-        <BotonCiencia ciencia="científicos" fondo="bg-dark-scientifics"/>
-    </div>
+</ul>
+
+<style>
+    .clic{
+        display:none;
+    }
+    #m #matemáticas{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #b #biología{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #g #geología{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
     
-    
-</nav>
+    #f #física{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #q #química{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #t #tecnología{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #p #programación{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+
+    #c #científicos{
+        .clic{
+            display:block;
+        }
+        .none{
+            display:none;
+        }
+    }
+</style>

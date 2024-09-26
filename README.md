@@ -31,7 +31,7 @@ portadaAlt:
 descripcion:
 ciencia:
 fechaMostrar:
-fecha:
+fechaOrdenar:
 duracion:
 url:
 ---
@@ -67,7 +67,7 @@ Sin foto de autor $\rightarrow$ "anonimo.svg"
 
 matemáticas, biología, geología, física, química, tecnología, programación, científicos
 
-## fechaMostrar y fecha (respectivamente)
+## fechaMostrar y fechaOrdenar (respectivamente)
 
 "29 de septiembre de 2023" $\rightarrow$ "29 septiembre, 2023" y "Sep 29, 2023"
 

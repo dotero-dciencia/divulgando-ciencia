@@ -3,7 +3,7 @@ import PrincipalLayout from "./PrincipalLayout.astro";
 import Contenido from "@/components/Contenido.astro";
 import DatosAutor from "@/components/DatosAutor.astro";
 const{frontmatter} = Astro.props;
-// const articulos = (await Astro.glob('@/pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fecha) - Date.parse(a.frontmatter.fecha));
+const articulos = (await Astro.glob('@/pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
 
 <PrincipalLayout title={frontmatter.titulo} description={frontmatter.descripcion} image={frontmatter.portada} {frontmatter} robots={frontmatter.robots} altIMG = {frontmatter.portadaAlt}>
@@ -21,7 +21,7 @@ const{frontmatter} = Astro.props;
             </article>
         </section>
     </main>
-    <!-- <section class="flex gap-x-7 w-full justify-center h-full mt-7 px-8 md:px-32 lg:px-60 xl:px-72 min-[1800px]:px-96">
+    <section class="flex gap-x-7 w-full justify-center h-full mt-7 px-8 md:px-32 lg:px-60 xl:px-72 min-[1800px]:px-96">
         <div class="w-full">
 		    <Contenido contenido="article" url={articulos[0].frontmatter.url} ciencia={articulos[0].frontmatter.ciencia} titulo={articulos[0].frontmatter.titulo} autor={articulos[0].frontmatter.autor} fecha={articulos[0].frontmatter.fechaMostrar} imagen={articulos[0].frontmatter.portada} design="xs" fotoAutor={articulos[0].frontmatter.fotoDelAutor} alt={articulos[0].frontmatter.portadaAlt}/>
         </div>
@@ -31,7 +31,7 @@ const{frontmatter} = Astro.props;
         <div class="hidden sm:block w-full"> 
             <Contenido contenido="article" url={articulos[2].frontmatter.url} ciencia={articulos[2].frontmatter.ciencia} titulo={articulos[2].frontmatter.titulo} autor={articulos[2].frontmatter.autor} fecha={articulos[2].frontmatter.fechaMostrar} imagen={articulos[2].frontmatter.portada} design="xs" fotoAutor={articulos[2].frontmatter.fotoDelAutor} alt={articulos[2].frontmatter.portadaAlt}/>
         </div>
-	</section> -->
+	</section>
 </PrincipalLayout>
 <style>
     #matemáticas{

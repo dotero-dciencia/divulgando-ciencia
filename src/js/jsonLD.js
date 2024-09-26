@@ -15,7 +15,7 @@ export default function jsonLDGenerator({ type, post, url }) {
         "headline": "${post.titulo}",
         "description": "${post.description}",
         "image": "${post.portada}",
-        "datePublished": "${post.fecha}",
+        "datePublished": "${post.fechaOrdenar}",
         "author": {
           "@type": "Person",
           "name": "${post.autor}",

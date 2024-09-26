@@ -5,15 +5,13 @@ import Contenido from "./Contenido.astro";
 
 <section class="px-16 lg:px-0 lg:flex lg:gap-x-7 w-full justify-center h-fit">
     <div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-end h-fit">
-        {articulos.slice(num1, num2).map((data) => (
-                    <Contenido ciencia = {data.ciencia} titulo = {data.titulo} autor={data.autor} fecha={data.fecha} portadaAlt={data.portadaAlt} id={data.id}/>
-
+        {articulos.slice(num1, num2).map((post) => (
+            <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} alt={post.frontmatter.portadaAlt} design="sm"/>
         ))}
     </div>
     <div class="lg:px-0 sm:px-12 px-2 md:flex md:gap-x-7 w-full justify-center lg:justify-start h-fit">
-        {articulos.slice(num2, num3).map((data) => (
-                    <Contenido ciencia = {data.ciencia} titulo = {data.titulo} autor={data.autor} fecha={data.fecha} portadaAlt={data.portadaAlt} id={data.id}/>
-
+        {articulos.slice(num2, num3).map((post) => (
+            <Contenido contenido="article" url={post.frontmatter.url} ciencia={post.frontmatter.ciencia} titulo={post.frontmatter.titulo} autor={post.frontmatter.autor} fecha={post.frontmatter.fechaMostrar} imagen={post.frontmatter.portada} fotoAutor={post.frontmatter.fotoDelAutor} alt={post.frontmatter.portadaAlt} design="sm"/>
         ))}
     </div>
 </section>

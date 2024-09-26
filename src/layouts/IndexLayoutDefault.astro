@@ -5,50 +5,7 @@ import FilaBotones from "@/components/FilaBotonesDifuminados.astro";
 import SeccionArticulosPequenos from "@/components/SeccionArticulosPequenos.astro";
 const title = "Inicio";
 
-import { getCollection } from 'astro:content';
-const articles = await getCollection('articles');
-// const articles = (await Astro.glob('@/pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fecha) - Date.parse(a.frontmatter.fecha));
-
-import Contenido from "@/components/Contenido.astro";
-
-interface Article {
-    titulo: string;
-    // descripcion: string;
-    autor: object;
-    portadaAlt: string;
-    fecha: Date|undefined;
-    ciencia: string;
-    id: string;
-    borrador: boolean|undefined; // O el tipo correcto, según tu necesidad
-}
-
-const ciencias = {
-    "matematicas": "matemáticas",
-    "biologia": "biología",
-    "geologia": "geología",
-    "fisica": "física",
-    "quimica": "química",
-    "tecnologia": "tecnología",
-    "programacion": "programación",
-    "cientificos": "científicos"
-}
-
-articles.sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
-
-let lstArticles: Article[] = []
-articles.slice(0,8).map(({data, slug}) => {
-    const ciencia = slug.split('/')[0]
-    const id = slug.split('/')[1]
-    lstArticles.push({
-        titulo: data.titulo,
-        autor: data.autor,
-        portadaAlt: data.portadaAlt,
-        fecha: data.fecha,
-        ciencia: ciencias[ciencia],
-        id: id,
-        borrador: data.borrador
-    })
-})
+const articles = (await Astro.glob('@/pages/*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
 ---
 
 <Layout 
@@ -81,11 +38,8 @@ description="Descubre el poder de la divulgación científica abierta junto a no
 	</section>
     <!--Zona de los artículos-->
     <main class="w-full min-[1800px]:py-8">
-        <ul class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-x-12 mx-40 gap-y-8 my-8">
-            {lstArticles.map(({ titulo, autor, portadaAlt, fecha, ciencia, id, borrador }) => (
-                <Contenido clases={'[&>a>main>div>img]:aspect-video text-lg'}{ciencia} {titulo} {autor} {fecha} {portadaAlt} {id}/>
-                 ))}
-        </ul>
+        <SeccionArticulosPequenos num1="0" num2="2" num3="4" articulos={articles}/>
+        <SeccionArticulosPequenos num1="4" num2="6" num3="8" articulos={articles}/>
         <section class="flex w-full justify-center lg:justify-end gap-x-3 px-36 font-generalsans-medium">
             <a href="/articulos" class="bg-faded-black w-48 py-2 px-4 sm:px-0 rounded-lg flex gap-x-1 h-full items-center hover:scale-105 transition-all justify-center dark:bg-faded-white dark:text-principal-white text-base min-[1800px]:text-2xl min-[1800px]:w-64">
                 <span class="hidden md:inline">Todos los </span><span class="capitalize md:lowercase">artículos</span>
@@ -96,17 +50,3 @@ description="Descubre el poder de la divulgación científica abierta junto a no
         </section>
     </main>
 </Layout>
-
-<script>
-    // Seleccionamos todos los botones
-    const botones = document.querySelectorAll('.boton');
-
-    botones.forEach(boton => {
-        boton.addEventListener('click', function() {
-            // Obtenemos el parámetro desde el atributo data-param
-            const param = this.getAttribute('data-param');
-            // Redirigimos a la página 2 con el parámetro en la URL
-            window.location.href = `articulos?param=${param}`;
-        });
-    });
-</script>
