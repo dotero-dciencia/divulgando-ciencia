@@ -1,0 +1,383 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Menu from "@/components/Menu.astro";
+import FilaBotones from "@/components/FilaBotones.astro";
+---
+
+<Layout title="Artículos">
+	<Menu design="articles"/>
+	<ul class="grid grid-cols-1 [&>li]:col-span-1 xl:[&>li:first-child]:col-span-2 xl:grid-cols-3 gap-x-12 mx-40 mt-32 gap-y-56 justify-center" id="cabecera">
+        
+    </ul>
+    <FilaBotones/>
+    <ul class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-x-12 mx-40 gap-y-8" id="contenido">
+    </ul>
+</Layout>
+
+<script>
+    import { getCollection } from 'astro:content';
+
+    async function getArticles(){
+        
+        const articles = await getCollection('articles');
+        interface Article {
+            titulo: string;
+            // descripcion: string;
+            autor: object;
+            portadaAlt: string;
+            fecha: Date|undefined;
+            ciencia: string;
+            id: string;
+            borrador: boolean|undefined; // O el tipo correcto, según tu necesidad
+        }
+
+        const ciencias = {
+            "matematicas": "matemáticas",
+            "biologia": "biología",
+            "geologia": "geología",
+            "fisica": "física",
+            "quimica": "química",
+            "tecnologia": "tecnología",
+            "programacion": "programación",
+            "cientificos": "científicos"
+        }
+
+        articles.sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
+
+        let lstArticles: Article[] = []
+        articles.map(({data, slug}) => {
+            const ciencia = slug.split('/')[0]
+            const id = slug.split('/')[1]
+            lstArticles.push({
+                titulo: data.titulo,
+                autor: data.autor,
+                portadaAlt: data.portadaAlt,
+                fecha: data.fecha,
+                ciencia: ciencias[ciencia],
+                id: id,
+                borrador: data.borrador
+            })
+        })
+
+        return lstArticles
+    }
+
+    async function getAuthors(){
+        const autores = await getCollection('authors')
+        let dictAutores = {}
+        autores.forEach (({ id, data }) => {
+            dictAutores[id] = data
+        })
+        return dictAutores
+    }
+
+    function articulo(url, portada, portadaAlt, ciencia, titulo, autorFotoUrl, autorData, date) {
+    return `
+        <a href="${url}" class="group h-full block">
+            <main>
+                <div class="bg-principal-black group-hover:scale-[1.045] rounded-lg transition-all relative w-full h-full">
+                    <img src="${portada}" class="h-full bg-principal-white w-full rounded-lg image object-cover text-principal-white text-sm aspect-[4]" alt="${portadaAlt}">
+                </div>
+                <div id="${ciencia}">
+                    <h6 class="uppercase mt-4 text-base min-[1800px]:text-xl font-generalsans-medium">
+                        ${ciencia}
+                    </h6>
+                    <div class="svg-wrap">
+                        <svg viewBox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
+                            <path id="svg_line" d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571"></path>
+                        </svg>
+                    </div>
+                    <section class="link-svgline">
+                        <h2 class="font-generalsans-semibold my-1 min-[1800px]:my-2 text-principal-black dark:text-principal-white title">
+                            ${titulo}
+                            <svg class="link-svgline"><use xlink:href="#svg_line"></use></svg>
+                        </h2>
+                        <footer>
+                            <div class="z-0 flex gap-x-1 min-[1800px]:gap-x-2 text-dark-gray dark:text-light-gray metadata-article text-[0.75rem] [&>p]:my-auto h-fit min-[1800px]:text-xl font-generalsans-medium">
+                                <img alt="Foto de perfil del autor" src="${autorFotoUrl}" class="bg-principal-white h-4 w-4 min-[1800px]:h-6 min-[1800px]:w-6 rounded-full object-contain my-auto">
+                                <p>${autorData.nombre}</p>
+                                <p>·</p>
+                                <p>${date}</p>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+            </main>
+        </a>
+    `;
+    }
+
+    function crearArticulo(titulo, autor, portadaAlt, fecha, ciencia, id, clases){
+        const nuevoArticulo = document.createElement('LI')
+        nuevoArticulo.className = 'articulo ' + clases
+        const autorData = dictAutores[autor.id]
+        const autorFotoUrl = "/images/autores/" + autor.id + ".webp"
+
+        const url = "/" + id
+        const portada = "/images/contenido/" + id + "/portada.webp"
+
+        const opciones = { year: 'numeric', month: 'long', day: 'numeric' }
+        let date = fecha.toLocaleDateString('es-ES', opciones)
+        date = date.replace(' de ', ' ').replace(' de ', ', ');
+
+        nuevoArticulo.innerHTML = articulo(url, portada, portadaAlt, ciencia, titulo, autorFotoUrl, autorData, date)
+        return nuevoArticulo
+    }
+
+    const lstArticles = await getArticles()
+    const dictAutores = await getAuthors()
+    console.log(lstArticles)
+    function mostrarArticulos(lstArticles, dictAutores){
+        const cabecera = document.getElementById("cabecera")
+        cabecera.innerHTML = ''
+        const articuloPrincipal = lstArticles[0]
+        cabecera?.appendChild(crearArticulo(articuloPrincipal.titulo, articuloPrincipal.autor, articuloPrincipal.portadaAlt, articuloPrincipal.fecha, articuloPrincipal.ciencia, articuloPrincipal.id, "col-span-2 text-4xl [&>a>main]:h-full"))
+        const articuloSecundario = lstArticles[1]
+        cabecera?.appendChild(crearArticulo(articuloSecundario.titulo, articuloSecundario.autor, articuloSecundario.portadaAlt, articuloSecundario.fecha, articuloSecundario.ciencia, articuloSecundario.id, "h-full text-2xl [&>a>main]:h-full"))
+        const contenido = document.getElementById("contenido")
+        contenido.innerHTML = ''
+        lstArticles.slice(2).forEach(({titulo, autor, portadaAlt, fecha, ciencia, id}) => {
+            contenido?.appendChild(crearArticulo(titulo, autor, portadaAlt, fecha, ciencia, id, "[&>a>main>div>img]:aspect-video text-lg"))
+        })
+        const estilos = document.createElement("style")
+        estilos.innerHTML = `
+        <style>
+            #matemáticas{
+                color:#004193;
+                .link-svgline h2 svg.link-svgline {
+                    stroke: #004193;
+                }
+            }
+            #biología{
+                color:#005100;
+                .link-svgline h2 svg.link-svgline {
+                    stroke: #005100;
+                }
+            }
+            #geología{
+                color:#6E3400;
+                .link-svgline h2 svg.link-svgline {
+                    stroke: #6E3400;
+                }
+            }
+            #física{
+                color:#950000;
+                .link-svgline h2 svg.link-svgline {
+                stroke: #950000;
+                }
+            }
+            #química{
+                color:#820083;
+                .link-svgline h2 svg.link-svgline {
+                    stroke: #820083;
+                }
+            }
+            #tecnología{
+                color:#623B00;
+                .link-svgline h2 svg.link-svgline {
+                    stroke: #623B00;
+                }
+            }
+            #programación{
+                color:#5a12b0;
+                .link-svgline h2 svg.link-svgline {
+                    stroke: #5a12b0;
+                }
+            }
+            #científicos{
+                color:#004f3e;
+                .link-svgline h2 svg.link-svgline {
+                    stroke: #004f3e;
+                }
+            }
+
+            #información{
+                color:#313131;
+                .link-svgline h2 svg.link-svgline {
+                    stroke: #313131;
+                }
+            }
+            :is(.dark #matemáticas) {
+                color:#a8c6e3;
+                .link-svgline h2 svg.link-svgline {
+                stroke: #a8c6e3;
+                }
+            }
+
+            :is(.dark #información) {
+                color:#b6b6b6;
+                .link-svgline h2 svg.link-svgline {
+                stroke: #b6b6b6;
+                }
+            }
+
+            :is(.dark #biología) {
+                color:#64db62;
+                .link-svgline h2 svg.link-svgline {
+                stroke: #64db62;
+            }
+            }
+            :is(.dark #geología) {
+                color:#e2bba5;
+                .link-svgline h2 svg.link-svgline {
+                stroke: #e2bba5;
+                }
+            }
+            :is(.dark #física) {
+                color:#ffaaa2;
+                .link-svgline h2 svg.link-svgline {
+                stroke: #ffaaa2;
+                }
+            }
+            :is(.dark #química) {
+                color:#ff99ff;
+                .link-svgline h2 svg.link-svgline {
+                stroke: #ff99ff;
+                }
+            }
+            :is(.dark #tecnología) {
+                color:#f2ba48;
+                .link-svgline h2 svg.link-svgline {
+                stroke: #f2ba48;
+                }
+            }
+            :is(.dark #programación) {
+                color:#e9aaff;
+                .link-svgline h2 svg.link-svgline {
+                stroke: #e9aaff;
+                }
+            }
+            :is(.dark #científicos) {
+                color:#16dac0;
+                .link-svgline h2 svg.link-svgline {
+                stroke: #16dac0;
+                }
+            }
+            .svg-wrap {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            overflow: hidden;
+            }
+
+            h2 {
+            text-decoration: none;
+            outline: none;
+            }
+
+            section {
+            position: relative;
+            z-index: 1; /* needed for setting pseudo-element z-index */
+            overflow: hidden;
+            backface-visibility: hidden;
+            }
+
+            section h2 {
+            position: relative;
+            display: inline-block;
+            outline: none;
+            vertical-align: bottom;
+            text-decoration: none;
+            }
+
+            section h2::before,
+            section h2::after {
+            pointer-events: none;
+            backface-visibility: hidden;
+            font-smoothing: antialiased;
+            }
+
+            .link-svgline h2 svg.link-svgline {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                overflow: hidden;
+                margin: 0;
+                width: 100%;
+                height: 20px;
+                margin-top: 10px; 
+                transition: stroke-dashoffset 0.3s ease-in-out;
+                transform: translateY(-90%);
+                fill: none;
+                stroke-width: 5;
+                stroke-dasharray: 400px; 
+                stroke-dashoffset: 400px;
+                z-index:10;
+            }
+
+            .group:hover .link-svgline svg.link-svgline {
+                stroke-dashoffset: 0px; 
+            }
+        </style>
+        `
+        
+        cabecera?.appendChild(estilos)
+    }
+
+    function filtrarArticulosPorCiencia(lstArticles, ciencia) {
+        return lstArticles.filter(articulo => articulo.ciencia === ciencia);
+    }
+
+    mostrarArticulos(lstArticles, dictAutores)
+
+    const nav = document.getElementById('fila-botones');
+    let isSelected = "no"
+    nav?.addEventListener('click', function(event) {
+        actualizar(event.target.id.split(":")[1])        
+    });
+
+    function actualizar (ciencia){
+        console.log(ciencia)
+        if(ciencia){
+            if (isSelected != "no"){
+            const idSelected = "svg:" + isSelected
+            const svgSelected = document.getElementById(idSelected)
+            svgSelected?.classList.toggle("hidden")
+            svgSelected?.classList.toggle("block")
+            if (isSelected != ciencia){
+                isSelected = ciencia
+                const id = "svg:" + ciencia
+                const svg = document.getElementById(id)
+                svg?.classList.toggle("hidden")
+                svg?.classList.toggle("block")
+                const filtrados = filtrarArticulosPorCiencia(lstArticles, ciencia)
+                mostrarArticulos(filtrados, dictAutores)
+            } else {
+                isSelected = "no"
+                mostrarArticulos(lstArticles, dictAutores)
+            }
+        } else {
+            isSelected = ciencia
+            const id = "svg:" + ciencia
+            const svg = document.getElementById(id)
+            svg?.classList.toggle("hidden")
+            svg?.classList.toggle("block")
+            const filtrados = filtrarArticulosPorCiencia(lstArticles, ciencia)
+            mostrarArticulos(filtrados, dictAutores)
+        }            
+        }
+    }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const param = urlParams.get('param');
+    console.log(param)
+    const ciencias = ["matemáticas", "biología", "geología", "física", "química", "tecnología", "programación", "científicos"]
+
+    if (ciencias.includes(param)){
+        actualizar (param)
+    }
+
+</script>
+
+<script is:inline>
+    const lstArticles = await getArticles()
+    const dictAutores = await getAuthors()
+    
+</script>
+
+
+<!-- ---  -->
+
+
+
+<!-- clases={`${index === 0 ? 'col-span-2 text-4xl [&>a>main]:h-full articulo' : 'h-full text-2xl [&>a>main]:h-full articulo'} ${ciencia}`}  -->

@@ -1,6 +1,7 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
+    "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
       "@/article": [
@@ -14,6 +15,9 @@
       ],
       "@/pages/*": [
         "src/pages/*"
+      ],
+      "@/*": [
+        "src/*"
       ]
     }
   }

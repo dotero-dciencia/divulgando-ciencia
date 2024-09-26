@@ -1,0 +1,14 @@
+---
+const {ciencia, fondo} = Astro.props
+const botonId = "boton:" + ciencia
+const svgId = "svg:" + ciencia
+
+const clases = "gap-x-1 flex capitalize font-generalsans-medium w-fit py-2 sm:px-4 px-3 rounded-full text-principal-white min-[1800px]:text-xl text-sm hover:scale-110 transition-all boton " + fondo
+---
+
+<button id={botonId} class={clases} data-param={ciencia}>
+  {ciencia}
+  <svg id={svgId} class="svg my-auto h-full transition-all hidden" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 0 0 9-9a9 9 0 0 0-9-9a9 9 0 0 0-9 9a9 9 0 0 0 9 9zM9 8l6 8m0-8l-6 8"/>
+  </svg>
+</button>
