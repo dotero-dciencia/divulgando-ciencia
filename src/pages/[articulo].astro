@@ -1,0 +1,68 @@
+---
+import PrincipalLayout from '@/layouts/PrincipalLayout.astro';
+import DatosAutor from '@/components/DatosAutor.astro';
+import { getCollection } from 'astro:content';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('articles')
+  return blogEntries.map(article => ({
+    params: { articulo: article.slug.split('/')[1] }, props: { article },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { article } = Astro.props;
+const { Content } = await article.render();
+const portada = "/images/contenido/" + article.slug.split('/')[1] + "/portada.webp"
+
+import { getEntry } from "astro:content"
+const autor = article.data.autor
+const autorData = await getEntry('authors', autor.id)
+const autorFotoUrl = "/images/autores/" + autor.id + ".webp"
+
+const opciones = { year: 'numeric', month: 'long', day: 'numeric' }
+let fecha = article.data.fecha.toLocaleDateString('es-ES', opciones)
+fecha = fecha.replace(' de ', ' ').replace(' de ', ', ');
+---
+
+<!-- <PrincipalLayout title={article.data.titulo} description={article.data.descripcion} image={portada} {article.data} robots={article.data.robots} altIMG = {article.data.portadaAlt}> -->
+ <PrincipalLayout title={article.data.titulo} image={portada} altIMG = {article.data.portadaAlt} image={portada}>
+  <section class="mt-24 w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white">
+      <h4 class="font-generalsans-medium uppercase text-base min-[1800px]:text-xl" id={article.data.ciencia} data-pagefind-filter="Ciencia">{article.data.ciencia}</h4>
+      <h1 class="font-generalsans-semibold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-4">{article.data.titulo}</h1>
+      <DatosAutor fotoDelAutor={autorFotoUrl} autor={autorData.data.nombre} {fecha}/>
+      <section class="w-full justify-center flex">
+          <img data-pagefind-meta="image[src], image_alt[alt]" alt={article.data.portadaAlt} class="bg-principal-white w-full text-center justify-center object-cover rounded-lg mt-3 mb-2 h-[12rem] sm:h-[16rem] md:h-96 lg:h-[22rem] xl:h-[25rem] min-[1800px]:h-[32rem] min-[1800px]:w-1/2" src={portada}/>
+      </section>
+  </section>
+      <section data-pagefind-body class="w-full justify-center flex mt-5">
+          <article id="content" class="prose font-generalsans dark:prose-invert prose-img:my-3 prose-img:rounded mb-4 text-normal  px-8 sm:px-0 sm:max-w-lg min-[1800px]:text-xl min-[1800px]:max-w-4xl">
+              <Content/>
+          </article>
+      </section>
+  </main>
+  <!-- <section class="flex gap-x-7 w-full justify-center h-full mt-7 px-8 md:px-32 lg:px-60 xl:px-72 min-[1800px]:px-96">
+      <div class="w-full">
+      <Contenido contenido="article" url={articulos[0].frontmatter.url} ciencia={articulos[0].frontmatter.ciencia} titulo={articulos[0].frontmatter.titulo} autor={articulos[0].frontmatter.autor} fecha={articulos[0].frontmatter.fechaMostrar} imagen={articulos[0].frontmatter.portada} design="xs" fotoAutor={articulos[0].frontmatter.fotoDelAutor} alt={articulos[0].frontmatter.portadaAlt}/>
+      </div>
+      <div class="hidden sm:block w-full">
+      <Contenido contenido="article" url={articulos[1].frontmatter.url} ciencia={articulos[1].frontmatter.ciencia} titulo={articulos[1].frontmatter.titulo} autor={articulos[1].frontmatter.autor} fecha={articulos[1].frontmatter.fechaMostrar} imagen={articulos[1].frontmatter.portada} design="xs" fotoAutor={articulos[1].frontmatter.fotoDelAutor} alt={articulos[1].frontmatter.portadaAlt}/>
+      </div>
+      <div class="hidden sm:block w-full"> 
+          <Contenido contenido="article" url={articulos[2].frontmatter.url} ciencia={articulos[2].frontmatter.ciencia} titulo={articulos[2].frontmatter.titulo} autor={articulos[2].frontmatter.autor} fecha={articulos[2].frontmatter.fechaMostrar} imagen={articulos[2].frontmatter.portada} design="xs" fotoAutor={articulos[2].frontmatter.fotoDelAutor} alt={articulos[2].frontmatter.portadaAlt}/>
+      </div>
+</section> -->
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const contentElement = document.getElementById('content');
+    if (contentElement) {
+      const textContent = contentElement.textContent || '';
+      const wordsPerMinute = 225; // Ajusta este valor si es necesario
+      const textLength = textContent.trim().split(/\s+/).length;
+      const minutes = Math.ceil(textLength / wordsPerMinute);
+      document.getElementById('reading-time').textContent = `${minutes} min de lectura`;
+    }
+  });
+</script>
+</PrincipalLayout>
