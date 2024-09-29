@@ -6,6 +6,7 @@ import SeccionArticulosPequenos from "@/components/SeccionArticulosPequenos.astr
 const title = "Inicio";
 
 import { getCollection } from 'astro:content';
+import TarjetaSlider from "@/components/TarjetaSlider.astro";
 const articles = await getCollection('articles');
 interface Article {
     titulo: string;
@@ -45,6 +46,10 @@ articles.slice(0,8).map(({data, slug}) => {
         borrador: data.borrador
     })
 })
+
+import {razones} from "@/json/razones-para-saber-ciencia.json"
+console.log(razones)
+
 ---
 
 <Layout 
@@ -57,16 +62,26 @@ description="Descubre el poder de la divulgación científica abierta junto a no
     <section
 	class="landing-section bg-black h-screen w-full text-center overflow-hidden relative"
 	>
-		<div class="z-30 flex flex-col text-principal-white absolute h-full justify-center w-full items-center">
-			<header>
-			<h2 class="text-[1.8rem] sm:text-5xl lg:text-7xl xl:text-8xl min-[1800px]:text-9xl min-[2250px]:text-[10rem] mb-4 md:mb-8 font-generalsans-semibold">
-				divulgandociencia.com
-			</h2>
-			<p class="text-base sm:text-lg lg:text-xl xl:text-2xl min-[1800px]:text-3xl min-[2250px]:text-4xl mb-8 md:mb-12 font-generalsans">
-				Descubre el poder de la divulgación científica abierta
-			</p>
-            
-        <FilaBotones id="botones" class="z-30 relative h-full flex flex-col text-principal-white "/>
+		<div class="z-30 flex flex-col text-principal-white absolute h-full justify-center lg:justify-start lg:top-[20%] w-full">
+			<header class="w-full px-8">
+                <h2 class="text-[1.8rem] sm:text-5xl lg:text-7xl xl:text-8xl min-[1800px]:text-9xl min-[2250px]:text-[10rem] font-generalsans-semibold">
+                    divulgandociencia.com
+                </h2>
+                <p class="text-base sm:text-lg lg:text-xl xl:text-2xl min-[1800px]:text-3xl min-[2250px]:text-4xl my-3 md:my-6 font-generalsans">
+                    Descubre el poder de la divulgación científica abierta
+                </p>
+                <FilaBotones id="botones" class="z-30 relative h-full flex flex-col text-principal-white"/>
+                <div class="w-full slider pt-4 hidden lg:block">
+                    <div class="slide-track flex w-full gap-x-6">
+                        { razones.map(({texto, autor}) => {
+                            return(
+                            <div class="slide">
+                                <TarjetaSlider {texto} {autor}/>
+                            </div>
+                            )
+                        })}
+                    </div>
+                </div>
 			</header>
 		</div>
 
@@ -89,3 +104,33 @@ description="Descubre el poder de la divulgación científica abierta junto a no
         </section>
     </main>
 </Layout>
+
+<style>
+    .slider{
+        width: 75vw;
+        height:auto;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slider .slide-track{
+        animation: scroll 300s linear infinite;
+        -webkit-animation: scroll 200s linear infinite;
+        width: calc(650px * 9);
+    }
+
+    .slider .slide{
+        width: 650px;
+    }
+
+    @keyframes scroll{
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform: translateX(calc(-650px * 9));
+            transform: translateX(calc(-650px*9));
+        }
+    }
+</style>
