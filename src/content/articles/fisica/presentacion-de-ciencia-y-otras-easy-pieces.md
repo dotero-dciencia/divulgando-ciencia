@@ -54,3 +54,6 @@ Madrid, Mayo de 2024.
 <br>
 Quintín Garrido
 </p>
+
+Este artículo es parte del libro ***CIENCIA y otras "Easy Pieces"***.
+![Portada del libro CIENCIA y otras "Easy Pieces"](/images/contenido/presentacion-de-ciencia-y-otras-easy-pieces/portada.webp)
