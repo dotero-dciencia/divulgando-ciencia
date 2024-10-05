@@ -1,7 +1,6 @@
 ---
 import Contenido from "./Contenido.astro";
 const {articulos} = Astro.props
-console.log(articulos[0].titulo)
 ---
 <section class="md:flex px-12 sm:px-24 md:px-0 gap-x-7 w-full justify-center h-full mt-16 2xl:mt-24">
     <Contenido contenido="article" ciencia={articulos[0].ciencia} titulo={articulos[0].titulo} autor={articulos[0].autor} fecha={articulos[0].fecha} portadaAlt={articulos[0].portadaAlt} id={articulos[0].id} design="xl"/>
