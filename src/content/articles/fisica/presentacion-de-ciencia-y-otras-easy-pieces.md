@@ -55,5 +55,5 @@ Madrid, Mayo de 2024.
 Quintín Garrido
 </p>
 
-Este artículo es parte del libro [https://cienciayotraseasypieces.blogspot.com/](***CIENCIA y otras "Easy Pieces"***).
+Este artículo es parte del libro [***CIENCIA y otras "Easy Pieces"***](https://cienciayotraseasypieces.blogspot.com/).
 ![Portada del libro CIENCIA y otras "Easy Pieces"](/images/contenido/presentacion-de-ciencia-y-otras-easy-pieces/portada.webp)
