@@ -6,8 +6,8 @@
       "@/article": [
         "src/layouts/ArticleLayout.astro"
       ],
-      "@/components/*": [
-        "src/components/*"
+      "@/*": [
+        "src/*"
       ],
       "@/layouts/*": [
         "src/layouts/*"

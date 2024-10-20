@@ -1,5 +1,45 @@
 ---
 import Articulos from "@/layouts/Articulos.astro";
-const articulos = (await Astro.glob('../*.md')).sort((a, b) => Date.parse(b.frontmatter.fechaOrdenar) - Date.parse(a.frontmatter.fechaOrdenar));
+
+import { getCollection } from 'astro:content';
+const articles = await getCollection('articles');
+interface Article {
+    titulo: string;
+    // descripcion: string;
+    autor: object;
+    portadaAlt: string;
+    fecha: Date|undefined;
+    ciencia: string;
+    id: string;
+    borrador: boolean|undefined; // O el tipo correcto, según tu necesidad
+}
+
+const ciencias = {
+    "matematicas": "matemáticas",
+    "biologia": "biología",
+    "geologia": "geología",
+    "fisica": "física",
+    "quimica": "química",
+    "tecnologia": "tecnología",
+    "programacion": "programación",
+    "cientificos": "científicos"
+}
+
+articles.sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
+
+let lstArticles: Article[] = []
+articles.map(({data, slug}) => {
+    const ciencia = slug.split('/')[0]
+    const id = slug.split('/')[1]
+    lstArticles.push({
+        titulo: data.titulo,
+        autor: data.autor,
+        portadaAlt: data.portadaAlt,
+        fecha: data.fecha,
+        ciencia: ciencias[ciencia],
+        id: id,
+        borrador: data.borrador
+    })
+})
 ---
-<Articulos articulos={articulos} title="Artículos" inicial="a"/>
+<Articulos articulos={lstArticles} title="Artículos" inicial="a"/>

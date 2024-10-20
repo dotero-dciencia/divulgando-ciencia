@@ -1,11 +1,22 @@
 ---
-const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imagen, design, fotoAutor, alt} = Astro.props
+const {contenido = 'article', id, autor, titulo, ciencia, fecha, design, portadaAlt} = Astro.props
+
+import { getEntry } from "astro:content"
+const autorData = await getEntry('authors', autor.id)
+const autorFotoUrl = "/images/autores/" + autor.id + ".webp"
+
+const url = "/" + id
+const portada = "/images/contenido/" + id + "/portada.webp"
+
+const opciones = { year: 'numeric', month: 'long', day: 'numeric' }
+let date = fecha.toLocaleDateString('es-ES', opciones)
+date = date.replace(' de ', ' ').replace(' de ', ', ');
 ---
 <div class="my-6 md:my-4 2xl:my-8" id={design}>
     <a class="group" href={url}>
         <main id={contenido}>
             <div class="bg-principal-black group-hover:scale-[1.045] rounded-lg transition-all relative w-full">
-                <img src={imagen} class="bg-principal-white w-full rounded-lg image object-cover text-principal-white text-sm" alt={alt}>
+                <img src={portada} class="bg-principal-white w-full rounded-lg image object-cover text-principal-white text-sm" alt={portadaAlt}>
             </div>
             <div id={ciencia}>
                 <h6 class="uppercase mt-4 min-[1800px]:text-xl font-generalsans-medium">
@@ -23,10 +34,10 @@ const {contenido = 'article', url, autor, titulo, ciencia, fecha, duracion, imag
                     </h2>
                     <footer>
                         <div class="z-0 flex gap-x-1 min-[1800px]:gap-x-2 text-dark-gray dark:text-light-gray metadata-article text-[0.75rem] [&>p]:my-auto h-fit min-[1800px]:text-xl font-generalsans-medium">
-                            <img alt="Foto de perfil del autor" src={fotoAutor} class="bg-principal-white h-4 w-4 min-[1800px]:h-6 min-[1800px]:w-6 rounded-full object-contain my-auto">
-                            <p>{autor}</p>
+                            <img alt="Foto de perfil del autor" src={autorFotoUrl} class="bg-principal-white h-4 w-4 min-[1800px]:h-6 min-[1800px]:w-6 rounded-full object-contain my-auto">
+                            <p>{autorData.data.nombre}</p>
                             <p>·</p>
-                            <p>{fecha}</p>
+                            <p>{date}</p>
                         </div>
                     </footer>
                 </section>

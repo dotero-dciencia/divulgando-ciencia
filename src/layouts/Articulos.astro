@@ -4,17 +4,62 @@ import Menu from "@/components/Menu.astro";
 import FilaBotones from "@/components/FilaBotones.astro";
 import SeccionArticulosPequenos from "@/components/SeccionArticulosPequenos.astro";
 import SeccionArticulosGrandes from "@/components/SeccionArticulosGrandes.astro";
-const {title, articulos, inicial} = Astro.props;
+const {title, articulos, inicial, ciencia} = Astro.props;
+
+import { getCollection } from 'astro:content';
+const articles = await getCollection('articles');
+interface Article {
+    titulo: string;
+    // descripcion: string;
+    autor: object;
+    portadaAlt: string;
+    fecha: Date|undefined;
+    ciencia: string;
+    id: string;
+    borrador: boolean|undefined; // O el tipo correcto, según tu necesidad
+}
+
+const ciencias = {
+    "matematicas": "matemáticas",
+    "biologia": "biología",
+    "geologia": "geología",
+    "fisica": "física",
+    "quimica": "química",
+    "tecnologia": "tecnología",
+    "programacion": "programación",
+    "cientificos": "científicos"
+}
+
+articles.sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
+
+let lstArticles: Article[] = []
+articles.map(({data, slug}) => {
+    const ciencia = slug.split('/')[0]
+    const id = slug.split('/')[1]
+    lstArticles.push({
+        titulo: data.titulo,
+        autor: data.autor,
+        portadaAlt: data.portadaAlt,
+        fecha: data.fecha,
+        ciencia: ciencias[ciencia],
+        id: id,
+        borrador: data.borrador
+    })
+})
+
+if (ciencia != undefined){
+	lstArticles = lstArticles.filter(articulo => articulo.ciencia === ciencia);
+}
 ---
 
 <Layout title={title}>
 	<Menu design="articles"/>
-	<SeccionArticulosGrandes articulos={articulos}/>
+	<SeccionArticulosGrandes articulos={lstArticles}/>
 	<FilaBotones inicial={inicial}/>
-	<SeccionArticulosPequenos num1="2" num2="4" num3="6" articulos={articulos}/>
-	<SeccionArticulosPequenos num1="6" num2="8" num3="10" articulos={articulos}/>
-	<SeccionArticulosPequenos num1="10" num2="12" num3="14" articulos={articulos}/>
-	<SeccionArticulosPequenos num1="14" num2="16" num3="18" articulos={articulos}/>
-	<SeccionArticulosPequenos num1="18" num2="20" num3="22" articulos={articulos}/>
-	<SeccionArticulosPequenos num1="22" num2="24" num3="26" articulos={articulos}/>
+	<SeccionArticulosPequenos num1="2" num2="4" num3="6" articulos={lstArticles}/>
+	<SeccionArticulosPequenos num1="6" num2="8" num3="10" articulos={lstArticles}/>
+	<SeccionArticulosPequenos num1="10" num2="12" num3="14" articulos={lstArticles}/>
+	<SeccionArticulosPequenos num1="14" num2="16" num3="18" articulos={lstArticles}/>
+	<SeccionArticulosPequenos num1="18" num2="20" num3="22" articulos={lstArticles}/>
+	<SeccionArticulosPequenos num1="22" num2="24" num3="26" articulos={lstArticles}/>
 </Layout>
