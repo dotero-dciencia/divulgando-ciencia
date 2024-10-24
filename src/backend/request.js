@@ -1,4 +1,4 @@
-const SVURL = "http://localhost:3000/"
+const SVURL = "https://api.divulgandociencia.com/"
 const request_server = async(path = '', method = 'GET', headers = {}, body = {}) => {
 
     return new Promise( async (resolve, reject) => {
