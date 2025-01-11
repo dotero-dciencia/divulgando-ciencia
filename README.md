@@ -25,15 +25,10 @@ Tratamos de que en nuestra web haya artículos de varios autores, por eso decimo
 layout: @/layout
 titulo:
 autor: 
-fotoDelAutor: /images/autores/-
-portada: /images/contenido/-/portada.webp
 portadaAlt:
 descripcion:
 ciencia:
-fechaMostrar:
-fechaOrdenar:
-duracion:
-url:
+fecha:
 ---
 ```
 
