@@ -1,0 +1,34 @@
+---
+import PrincipalLayout from "@/layouts/PrincipalLayout.astro"
+import {jovenes_cientificos} from "@/json/jovenes-cientificos.json"
+
+jovenes_cientificos.sort((a, b) => a.nombre.localeCompare(b.nombre))
+---
+
+<PrincipalLayout 
+    title="Quiénes somos | Divulgando Ciencia" 
+    description="Somos dos estudiantes apasionados por la ciencia. Descubre el poder de la divulgación científica abierta con la misma pasión que nosotros."
+    image="/images/landing-page/portada.webp"
+>
+    <section class="mt-20 w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white font-generalsans">
+        <h2 class="text-4xl font-generalsans-medium">
+            Jóvenes apasionados por la ciencia
+        </h2>
+        <p class="text-lg my-4 text-wrap">Somos un grupo de 20 jóvenes apasionados por la ciencia que queremos hacer llegar la ciencia a la gente a través de nuestras iniciativas.</p>
+
+        <nav class="grid grid-cols-5 gap-x-8 gap-y-6">
+            {
+                jovenes_cientificos.map(({nombre, descripcion, slug}) => (
+                    <a href={"/jovenes-cientificos/" + slug} class="bg-principal-black dark:bg-principal-white rounded shadow-faded-black dark:shadow-faded-white shadow-lg text-principal-white dark:text-principal-black text-left">
+                        <img src={"/images/jovenes-cientificos/" + slug + ".webp"} class="rounded-t"/>
+                        <div class="px-4 py-2">
+                            <h4 class="font-generalsans-medium text-lg">{nombre}</h4>
+                            <p>{descripcion}</p>
+                        </div>
+                    </a>
+                ))
+            }
+            
+        </nav>
+    </section>
+</PrincipalLayout>

@@ -1,0 +1,15 @@
+{
+  "jovenes_cientificos":[
+  {
+    "nombre": "Darío Otero",
+    "descripcion": "Coordinador",
+    "slug": "dario-otero",
+    "biografia": "",
+    "email": "dotero@divulgandociencia.com",
+    "redes": {
+      "x": "https://x.com/dotero_dciencia",
+      "instagram": "https://x.com/dotero_dciencia"
+    }
+  }
+  ]
+}
