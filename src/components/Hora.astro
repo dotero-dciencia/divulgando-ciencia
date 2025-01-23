@@ -27,7 +27,6 @@
             if (!response.ok) throw new Error("Error al obtener la hora.");
 
             const data = await response.json();
-            console.log(data); // Diagnóstico
 
             const initialDate = new Date(data.dateTime); // Usamos 'dateTime' aquí
             if (isNaN(initialDate)) throw new Error("Fecha inicial inválida");
