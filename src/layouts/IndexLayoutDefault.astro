@@ -128,12 +128,17 @@ description="Descubre el poder de la divulgación científica abierta junto a no
 
     @keyframes scroll{
         0% {
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-        }
-        50% {
-            transform: translateX(0);
-        }
+    	    transform: translateX(0);
+    	}
+    	50% {
+    	    transform: translateX(calc(-650px * 9)); /* Primer set completo */
+    	}
+    	50.01% {
+    	    transform: translateX(0); /* Teletransporte */
+    	}
+    	100% {
+    	    transform: translateX(calc(-650px * 9));
+    	}
     }
 
 
