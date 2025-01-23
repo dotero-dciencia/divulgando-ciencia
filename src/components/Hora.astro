@@ -1,14 +1,14 @@
 <section class="font-generalsans-medium flex h-full my-auto items-center w-full justify-center text-principal-black dark:text-principal-white">
-    <span class="horas">00</span>:
-    <span class="minutos">00</span>:
-    <span class="segundos">00</span>
+    <span id="horas">00</span>:
+    <span id="minutos">00</span>:
+    <span id="segundos">00</span>
 </section>
 
 <script>
     async function initializeClock() {
-        const horas = document.querySelectorAll(".horas");
-        const minutos = document.querySelectorAll(".minutos");
-        const segundos = document.querySelectorAll(".segundos");
+        const horas = document.getElementById("horas");
+        const minutos = document.getElementById("minutos");
+        const segundos = document.getElementById("segundos");
 
         try {
             const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -21,13 +21,9 @@
 
             function updateClock() {
                 const now = new Date(initialDate.getTime() + (Date.now() - initialLocalDate));
-                const nHoras = now.getHours().toString().padStart(2, "0");
-                const nMinutos = now.getMinutes().toString().padStart(2, "0");
-                const nSegundos = now.getSeconds().toString().padStart(2, "0");
-
-                horas.forEach(el => (el.innerHTML = nHoras));
-                minutos.forEach(el => (el.innerHTML = nMinutos));
-                segundos.forEach(el => (el.innerHTML = nSegundos));
+                horas.textContent = now.getHours().toString().padStart(2, "0");
+                minutos.textContent = now.getMinutes().toString().padStart(2, "0");
+                segundos.textContent = now.getSeconds().toString().padStart(2, "0");
             }
 
             setInterval(updateClock, 1000);
@@ -37,13 +33,9 @@
 
             function fallbackClock() {
                 const now = new Date();
-                const nHoras = now.getHours().toString().padStart(2, "0");
-                const nMinutos = now.getMinutes().toString().padStart(2, "0");
-                const nSegundos = now.getSeconds().toString().padStart(2, "0");
-
-                horas.forEach(el => (el.innerHTML = nHoras));
-                minutos.forEach(el => (el.innerHTML = nMinutos));
-                segundos.forEach(el => (el.innerHTML = nSegundos));
+                horas.textContent = now.getHours().toString().padStart(2, "0");
+                minutos.textContent = now.getMinutes().toString().padStart(2, "0");
+                segundos.textContent = now.getSeconds().toString().padStart(2, "0");
             }
 
             setInterval(fallbackClock, 1000);
