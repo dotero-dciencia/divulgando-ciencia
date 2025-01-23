@@ -12,7 +12,7 @@
 
         try {
             const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-            const response = await fetch(`https://timeapi.io/api/Time/current/zone?timeZone=${timeZone}`);
+            const response = await fetch(`https://timeapi.io/api/time/current/zone?timeZone=${timeZone}`);
             if (!response.ok) throw new Error("Error al obtener la hora.");
 
             const data = await response.json();
