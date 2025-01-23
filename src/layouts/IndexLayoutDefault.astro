@@ -71,7 +71,7 @@ description="Descubre el poder de la divulgación científica abierta junto a no
                 <FilaBotones id="botones" class="z-30 relative h-full flex flex-col text-principal-white"/>
                 <div class="w-full slider pt-4 hidden lg:block">
                     <div class="slide-track flex w-full gap-x-6">
-                        { razones.map(({texto, autor}) => {
+                        { [...razones, ...razones].map(({texto, autor}) => {
                             return(
                             <div class="slide">
                                 <TarjetaSlider {texto} {autor}/>
@@ -131,9 +131,11 @@ description="Descubre el poder de la divulgación científica abierta junto a no
             -webkit-transform: translateX(0);
             transform: translateX(0);
         }
-        100% {
+        50% {
             -webkit-transform: translateX(calc(-650px * 9));
             transform: translateX(calc(-650px*9));
         }
     }
+
+
 </style>
