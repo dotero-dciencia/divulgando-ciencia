@@ -1,47 +1,55 @@
-
 <section class="font-generalsans-medium flex h-full my-auto items-center w-full justify-center text-principal-black dark:text-principal-white">
-    <span class="horas">00</span>
-    :
-    <span class="minutos">00</span>
-    :
+    <span class="horas">00</span>:
+    <span class="minutos">00</span>:
     <span class="segundos">00</span>
 </section>
 
 <script>
-    let horas = document.getElementsByClassName("horas");
-    let minutos = document.getElementsByClassName("minutos");
-    let segundos = document.getElementsByClassName("segundos");
-    async function mueveReloj(){
-        let url = 'https://worldtimeapi.org/api/timezone/Europe/Madrid';
-        let obj = "";
-        let momentoActual = "";
-        try
-        {
-             obj = await( await fetch(url) ).json();
-             momentoActual = new Date( Date.parse(obj["datetime"]) );
-        } catch(e) {
-            momentoActual = new Date();
-        }
-        let nHoras = momentoActual.getHours().toString();
-        let nMinutos = momentoActual.getMinutes().toString();
-        let nSegundos = momentoActual.getSeconds().toString();
-        if (nHoras.length == 1){
-            nHoras = "0" + nHoras[0];
-        }
-        if (nMinutos.length == 1){
-            nMinutos = "0" + nMinutos[0];
-        }
-        if (nSegundos.length == 1){
-            nSegundos = "0" + nSegundos[0];
-        }
-        for (let i = 0; i < horas.length; i++){
-            horas[i].innerHTML = nHoras;
-            minutos[i].innerHTML = nMinutos;
-            segundos[i].innerHTML = nSegundos;
-        }
+    async function initializeClock() {
+        const horas = document.querySelectorAll(".horas");
+        const minutos = document.querySelectorAll(".minutos");
+        const segundos = document.querySelectorAll(".segundos");
 
-        setTimeout(mueveReloj,1000);
+        try {
+            const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            const response = await fetch(`https://timeapi.io/api/Time/current/zone?timeZone=${timeZone}`);
+            if (!response.ok) throw new Error("Error al obtener la hora.");
+
+            const data = await response.json();
+            const initialDate = new Date(`${data.date}T${data.time}`);
+            const initialLocalDate = Date.now();
+
+            function updateClock() {
+                const now = new Date(initialDate.getTime() + (Date.now() - initialLocalDate));
+                const nHoras = now.getHours().toString().padStart(2, "0");
+                const nMinutos = now.getMinutes().toString().padStart(2, "0");
+                const nSegundos = now.getSeconds().toString().padStart(2, "0");
+
+                horas.forEach(el => (el.innerHTML = nHoras));
+                minutos.forEach(el => (el.innerHTML = nMinutos));
+                segundos.forEach(el => (el.innerHTML = nSegundos));
+            }
+
+            setInterval(updateClock, 1000);
+            updateClock();
+        } catch (error) {
+            console.error("Error:", error);
+
+            function fallbackClock() {
+                const now = new Date();
+                const nHoras = now.getHours().toString().padStart(2, "0");
+                const nMinutos = now.getMinutes().toString().padStart(2, "0");
+                const nSegundos = now.getSeconds().toString().padStart(2, "0");
+
+                horas.forEach(el => (el.innerHTML = nHoras));
+                minutos.forEach(el => (el.innerHTML = nMinutos));
+                segundos.forEach(el => (el.innerHTML = nSegundos));
+            }
+
+            setInterval(fallbackClock, 1000);
+            fallbackClock();
+        }
     }
 
-    mueveReloj();
+    initializeClock();
 </script>
