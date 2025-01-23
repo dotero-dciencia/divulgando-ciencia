@@ -21,6 +21,7 @@
 
             function updateClock() {
                 const now = new Date(initialDate.getTime() + (Date.now() - initialLocalDate));
+                console.log(now);
                 horas.textContent = now.getHours().toString().padStart(2, "0");
                 minutos.textContent = now.getMinutes().toString().padStart(2, "0");
                 segundos.textContent = now.getSeconds().toString().padStart(2, "0");
