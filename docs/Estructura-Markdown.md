@@ -25,14 +25,18 @@ Contenido del Artículo
 #### Encabezado (H4)
 ```
 ### Texto
-| Estilo | Sintaxis | Ejemplo |
-|--|--|--|
-| Bold | `**TEXTO**` | **Negrita** |
-| Cursiva | `*TEXTO*` | *Cursiva* |
-| Negrita y Cursiva | `***TEXTO***` | ***Negrita y Cursiva*** |
-| Vínculo | `[TEXTO](URL)` | [Divulgando Ciencia](www.divulgandociencia.com) |
-| Código de cita | ``` `TEXTO` ``` | `Código de cita` |
-| Código en varias líneas | ` ```TEXTO &#13; TEXTO``` ` | ```Código &#13; en &#13; varias &#13; líneas``` |
+<table>
+  
+</table>
+
+| Estilo                  | Sintaxis                   | Ejemplo                                         |
+|-------------------------|----------------------------|-------------------------------------------------|
+| Bold                    | `**TEXTO**`                | **Negrita**                                     |
+| Cursiva                 | `*TEXTO*`                  | *Cursiva*                                       |
+| Negrita y Cursiva       | `***TEXTO***`              | ***Negrita y Cursiva***                         |
+| Vínculo                 | `[TEXTO](URL)`             | [Divulgando Ciencia](www.divulgandociencia.com) |
+| Código de cita          | ``` `TEXTO` ```            | `Código de cita`                                |
+| Código en varias líneas | ` ```TEXTO <br> TEXTO``` ` | ```Código <br> en <br> varias <br> líneas```    |
 
 
 ## Título a URL
