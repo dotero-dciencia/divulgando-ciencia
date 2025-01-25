@@ -25,18 +25,31 @@ Contenido del Artículo
 #### Encabezado (H4)
 ```
 ### Texto
-<table>
-  
+<table><thead>
+  <tr>
+    <th>Estilo</th> <th>Sintaxis</th> <th>Ejemplo</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Bold</td> <td>`**TEXTO**`</td> <td>**Negrita**</td>
+  </tr>
+  <tr>
+    <td>Cursiva</td> <td>`*TEXTO*`</td> <td>*Cursiva*</td>
+  </tr>
+  <tr>
+    <td>Negrita y Cursiva</td> <td>`***TEXTO***`</td> <td>***Negrita y Cursiva***</td>
+  </tr>
+  <tr>
+    <td>Vínculo</td> <td>`[TEXTO](URL)`</td> <td><a href="www.divulgandociencia.com">[Divulgando Ciencia](www.divulgandociencia.com)</a></td>
+  </tr>
+  <tr>
+    <td>Código de cita</td> <td>``` `TEXTO` ```</td> <td>`Código de cita`</td>
+  </tr>
+  <tr>
+    <td>Código en varias líneas</td> <td>` ```TEXTO <br> TEXTO``` `</td> <td>```Código <br> en <br> varias <br> líneas```</td>
+  </tr>
+</tbody>
 </table>
-
-| Estilo                  | Sintaxis                   | Ejemplo                                         |
-|-------------------------|----------------------------|-------------------------------------------------|
-| Bold                    | `**TEXTO**`                | **Negrita**                                     |
-| Cursiva                 | `*TEXTO*`                  | *Cursiva*                                       |
-| Negrita y Cursiva       | `***TEXTO***`              | ***Negrita y Cursiva***                         |
-| Vínculo                 | `[TEXTO](URL)`             | [Divulgando Ciencia](www.divulgandociencia.com) |
-| Código de cita          | ``` `TEXTO` ```            | `Código de cita`                                |
-| Código en varias líneas | ` ```TEXTO <br> TEXTO``` ` | ```Código <br> en <br> varias <br> líneas```    |
 
 
 ## Título a URL
