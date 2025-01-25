@@ -64,3 +64,17 @@ Nuestra web está construida con **Astro**, **Tailwind CSS** y **JavaScript**. E
 
 ### [Estructura para publicar en Markdown](docs/Estructura-Markdown.md)
 ### [Nuestro *Modus operandi*](docs/Modus-Operandi.md)
+
+# Contacto
+
+### Correo Electrónico
+ `support@divulgandociencia.com`
+
+### Redes Sociales
+ - [X (Twitter)](x.com/divcienciacom)
+ - [Instagram](instagram.com/divulgandociencia_ig)
+ - [Bluesky](bsky.app/profile/divulgandociencia.com)
+ - [Youtube](youtube.com/@divulgandocienciaforkids)
+ - [TikTok](tiktok.com/@divulgandociencia.com)
+ - [WhatsApp](https://whatsapp.com/channel/0029VaDOt4T7oQheyZdq1H2u)
+ - [Discord](discord.gg/7rTCp5KWPj)
