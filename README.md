@@ -12,7 +12,9 @@ Nuestra página web está dividida en varios apartados que corresponden a las di
 ### Índice
  - [Ciencias](#ciencias)
  - [Pilares de la web](#pilares-de-la-web)
+ - [Tecnologías utilizadas](#tecnologias-utilizadas)
  - [Documentación](#documentacion)
+ - [Contacto](#contacto)
 
 # Ciencias
 
