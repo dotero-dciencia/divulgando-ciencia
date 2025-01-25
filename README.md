@@ -1,11 +1,9 @@
 # DivulgandoCiencia.com
 
-**Descubre el poder de la divulgación científica abierta.**
+**Descubre el poder de la divulgación científica abierta.** \n
 *Una obra de Darío y Dorian, dos estudiantes apasionados por la ciencia.*
 
 Divulgando Ciencia está diseñado para hacer que el conocimiento científico sea accesible para todos a través de artículos, recursos y herramientas digitales creados por distintos autores de nuestra comunidad. Nuestro objetivo es fomentar el amor por la ciencia y promover una comunidad de aprendizaje.
-
-Nuestra página web está dividida en varios apartados que corresponden a las diferentes ciencias existentes.
 
 [divulgandociencia.com](www.divulgandociencia.com)
 
@@ -17,6 +15,8 @@ Nuestra página web está dividida en varios apartados que corresponden a las di
  - [Contacto](#contacto)
 
 # Ciencias
+
+Nuestra página web está dividida en varios apartados que corresponden a las diferentes ciencias existentes.
 
 ### 1. **Matemáticas**
 La base de toda la ciencia, las matemáticas estudian patrones, cantidades, estructuras y cambios. Es esencial para disciplinas como la física, informática y economía, ayudando a modelar y resolver problemas complejos.
