@@ -3,7 +3,7 @@
 **Descubre el poder de la divulgación científica abierta.** <br />
 *Una obra de Darío y Dorian, dos estudiantes apasionados por la ciencia.*
 
-Divulgando Ciencia está diseñado para hacer que el conocimiento científico sea accesible para todos a través de artículos, recursos y herramientas digitales creados por distintos autores de nuestra comunidad. Nuestro objetivo es fomentar el amor por la ciencia y promover una comunidad de aprendizaje.
+Divulgando Ciencia es una pagina web diseñada para hacer que el conocimiento científico sea accesible para todos a través de artículos, recursos y herramientas digitales creados por distintos autores de nuestra comunidad. Nuestro objetivo es fomentar el amor por la ciencia y promover una comunidad de aprendizaje.
 
 [divulgandociencia.com](www.divulgandociencia.com)
 
