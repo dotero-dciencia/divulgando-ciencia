@@ -1,4 +1,4 @@
-# [DivulgandoCiencia.com](www.divulgandociencia.com)
+# DivulgandoCiencia.com
 
  **Descubre el poder de la divulgación científica abierta.** 
 *Una obra de Darío y Dorian, dos estudiantes apasionados por la ciencia.*
@@ -7,10 +7,12 @@ Divulgando Ciencia está diseñado para hacer que el conocimiento científico se
 
 Nuestra página web está dividida en varios apartados que corresponden a las diferentes ciencias existentes.
 
+[divulgandociencia.com](www.divulgandociencia.com)
+
 ### Índice
- - [Ciencias](https://github.com/dotero-dciencia/divulgando-ciencia/blob/main/README.md#ciencias)
- - [Pilares de la web](https://github.com/dotero-dciencia/divulgando-ciencia/blob/main/README.md#pilares-de-la-web)
- - [Documentación](https://github.com/dotero-dciencia/divulgando-ciencia/blob/main/README.md#documentacion)
+ - [Ciencias](#ciencias)
+ - [Pilares de la web](#pilares-de-la-web)
+ - [Documentación](#documentacion)
 
 # Ciencias
 
