@@ -32,7 +32,7 @@ Contenido del Artículo
 | Negrita y Cursiva | `***TEXTO***` | ***Negrita y Cursiva*** |
 | Vínculo | `[TEXTO](URL)` | [Divulgando Ciencia](www.divulgandociencia.com) |
 | Código de cita | ``` `TEXTO` ``` | `Código de cita` |
-| Código en varias líneas | ` ```TEXTO\ TEXTO``` ` | ```Código\ en\ varias\ líneas``` |
+| Código en varias líneas | ` ```TEXTO &#13; TEXTO``` ` | ```Código &#13; en &#13; varias &#13; líneas``` |
 
 
 ## Título a URL
