@@ -54,3 +54,5 @@ Nos esforzamos para que todos los artículos que escribamos tengan un **contenid
 Colaboramos con **múltiples autores a nivel mundial** y la publicación de artículos está abierta a **todo el mundo**, previa revisión nuestra.
 
 # Documentación
+
+[Estructura para publicar en Markdown](docs/Estructura-Markdown.md)
