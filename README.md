@@ -62,5 +62,5 @@ Nuestra web está construida con **Astro**, **Tailwind CSS** y **JavaScript**. E
 
 # Documentación
 
-[Estructura para publicar en Markdown](docs/Estructura-Markdown.md)
-[Nuestro *Modus operandi*](docs/Modus-Operandi.md)
+### [Estructura para publicar en Markdown](docs/Estructura-Markdown.md)
+### [Nuestro *Modus operandi*](docs/Modus-Operandi.md)
