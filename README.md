@@ -42,7 +42,7 @@ El lenguaje de las máquinas. Permite crear aplicaciones, automatizar tareas y r
 ### 8. **🧑‍🔬 Científicos**
 El estudio de las vidas, descubrimientos y contribuciones de grandes mentes. Reconoce el impacto de quienes transformaron nuestro conocimiento del mundo.
 
-#🔌 Pilares de la web
+# 🔌 Pilares de la web
 
 ### 1. **Accesibilidad**
 Diseño favorable para **todos los dispositivos, combinaciones de colores** que no supongan ningún problema a gente con problemas de visión y seguimos los **estándares de accesibilidad de W3C**.
