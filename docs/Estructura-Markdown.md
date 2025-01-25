@@ -33,55 +33,79 @@ Contenido del Artículo
   <tr>
     <td>Bold</td>
     <td>
+      
 `**TEXTO**`
+
     </td>
     <td>
+    
 **Negrita**
+
     </td>
   </tr>
   <tr>
     <td>Cursiva</td>
     <td>
+      
 `*TEXTO*`
+
     </td>
     <td>
+    
 *Cursiva*
+
     </td>
   </tr>
   <tr>
     <td>Negrita y Cursiva</td>
     <td>
+      
 `***TEXTO***`
+
     </td> 
     <td>
+    
 ***Negrita y Cursiva***
+
     </td>
   </tr>
   <tr>
     <td>Vínculo</td> 
     <td>
+      
 `[TEXTO](URL)`
+
     </td> 
     <td>
+    
 [Divulgando Ciencia](www.divulgandociencia.com)
+
     </td>
   </tr>
   <tr>
     <td>Código de cita</td> 
     <td>
+      
 ``` `TEXTO` ```
+
     </td> 
     <td>
+    
 `Código de cita`
+
     </td>
   </tr>
   <tr>
     <td>Código en varias líneas</td> 
     <td>
+      
 ` ```TEXTO <br> TEXTO``` `
+
     </td> 
     <td>
+    
 ```Código <br> en <br> varias <br> líneas```
+
     </td>
   </tr>
 </tbody>
