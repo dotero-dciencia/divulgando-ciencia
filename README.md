@@ -5,16 +5,16 @@
 
 Divulgando Ciencia es una pagina web diseñada para hacer que el conocimiento científico sea accesible para todos a través de artículos, recursos y herramientas digitales creados por distintos autores de nuestra comunidad. Nuestro objetivo es fomentar el amor por la ciencia y promover una comunidad de aprendizaje.
 
-[divulgandociencia.com](www.divulgandociencia.com)
+:paperclip:	[divulgandociencia.com](www.divulgandociencia.com)
 
 ### Índice
- - [Ciencias](#ciencias)
- - [Pilares de la web](#pilares-de-la-web)
- - [Tecnologías utilizadas](#tecnologias-utilizadas)
- - [Documentación](#documentacion)
- - [Contacto](#contacto)
+ - [⚗️ Ciencias](#ciencias)
+ - [🔌 Pilares de la web](#pilares-de-la-web)
+ - [💾 Tecnologías utilizadas](#tecnologias-utilizadas)
+ - [📄 Documentación](#documentacion)
+ - [📱 Contacto](#contacto)
 
-# Ciencias
+# ⚗️	Ciencias
 
 Nuestra página web está dividida en varios apartados que corresponden a las diferentes ciencias existentes.
 
@@ -42,7 +42,7 @@ El lenguaje de las máquinas. Permite crear aplicaciones, automatizar tareas y r
 ### 8. **🧑‍🔬 Científicos**
 El estudio de las vidas, descubrimientos y contribuciones de grandes mentes. Reconoce el impacto de quienes transformaron nuestro conocimiento del mundo.
 
-# Pilares de la web
+#🔌 Pilares de la web
 
 ### 1. **Accesibilidad**
 Diseño favorable para **todos los dispositivos, combinaciones de colores** que no supongan ningún problema a gente con problemas de visión y seguimos los **estándares de accesibilidad de W3C**.
@@ -55,24 +55,24 @@ Nos esforzamos para que todos los artículos que escribamos tengan un **contenid
 
 Colaboramos con **múltiples autores a nivel mundial** y la publicación de artículos está abierta a **todo el mundo**, previa revisión nuestra.
 
-# Tecnologías utilizadas
+# 💾 Tecnologías utilizadas
 
 Nuestra web está construida con **Astro**, **Tailwind CSS** y **JavaScript**. Estas tecnologías nos ha permitido un desarrollo ágil y acorde a nuestras peticiones:
  - **Astro** es un **framework web** (una tecnología que te ayuda a desarrollar un sitio web) que nos aporta **mejoras respecto al HTML básico**. Entre las que se encuentran, la **facilidad** para hacer **artículos**, los **componentes** y **layouts HTML**, la **integración** con otras **herramientas**, la **velocidad** y el **SEO** (posicionamiento web).
  - **Tailwind CSS** es una herramienta que nos facilitaba el **programar los estilos** de nuestra web, ofreciendo **mejores resultados que el CSS normal** de una manera **más fácil**.
  - **JavaScript** aparece en algunas funcionalidades, como **Q-Bot**, donde es inevitable usarlo, aunque intentamos reducir su uso debido a que ralentiza la velocidad del sitio, pero es muy útil.
 
-# Documentación
+# 📄	Documentación
 
 ### [Estructura para publicar en Markdown](docs/Estructura-Markdown.md)
 ### [Nuestro *Modus operandi*](docs/Modus-Operandi.md)
 
-# Contacto
+# 📱	Contacto
 
-### Correo Electrónico
+### 📧 Correo Electrónico
  `support@divulgandociencia.com`
 
-### Redes Sociales
+### 💬 Redes Sociales
  - [X (Twitter)](x.com/divcienciacom)
  - [Instagram](instagram.com/divulgandociencia_ig)
  - [Bluesky](bsky.app/profile/divulgandociencia.com)
