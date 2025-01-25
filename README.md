@@ -8,9 +8,9 @@ Divulgando Ciencia está diseñado para hacer que el conocimiento científico se
 Nuestra página web está dividida en varios apartados que corresponden a las diferentes ciencias existentes.
 
 ### Índice
- - [Ciencias](https://github.com/dotero-dciencia/divulgando-ciencia/blob/main/README.md#Ciencias)
- - Pilares de la web
- - Documentación
+ - [Ciencias](https://github.com/dotero-dciencia/divulgando-ciencia/blob/main/README.md#ciencias)
+ - [Pilares de la web](https://github.com/dotero-dciencia/divulgando-ciencia/blob/main/README.md#pilares-de-la-web)
+ - [Documentación](https://github.com/dotero-dciencia/divulgando-ciencia/blob/main/README.md#documentacion)
 
 # Ciencias
 
