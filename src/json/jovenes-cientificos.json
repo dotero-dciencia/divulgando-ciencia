@@ -2,7 +2,7 @@
   "jovenes_cientificos":[
   {
     "nombre": "Darío Otero",
-    "descripcion": "Coordinador",
+    "descripcion": "Colaborador",
     "slug": "dario-otero",
     "biografia": "¡Hola! Soy Darío Otero, alumno del IESO Arroyo, y me gustan mucho las ciencias, especialmente las matemáticas y la informática. He participado en algunas olimpiadas, como la de Matemáticas de Castilla y León, la Miniolimpiada de Química y la Olimpiada Informática de Castilla y León, donde quedé en primer lugar (2024). Me encanta aprender cosas nuevas para seguir mejorando. Siempre trato de hacer lo mejor posible, disfrutar de todo lo que aprendo y compartirlo con los demás, por eso creé Divulgando Ciencia. ¡Nos vemos!",
     "email": "dotero@divulgandociencia.com",
@@ -12,15 +12,52 @@
     }
   },
   {
-    "nombre": "María Fernanda",
-    "descripcion": "Coordinadora",
-    "slug": "maria-fernanda",
-    "biografia": "",
+    "nombre": "Dorian Ruiz",
+    "descripcion": "Colaborador",
+    "slug": "dorian-ruiz",
+    "biografia": ".",
+    "email": "druiz@divulgandociencia.com",
+    "redes": {}
+  },
+  {
+    "nombre": "Javier Mateos",
+    "descripcion": "Colaborador",
+    "slug": "javier-mateos",
+    "biografia": ".",
     "email": "",
-    "redes": {
-      "x": "https://x.com/mariafernanda_dciencia",
-      "instagram": "https://x.com/mariafernanda_dciencia"
-    }
+    "redes": {}
+  },
+  {
+    "nombre": "Eric Manero",
+    "descripcion": "Coordinador de Ciencia POP",
+    "slug": "eric-manero",
+    "biografia": ".",
+    "email": "",
+    "redes": {} 
+  },
+  {
+    "nombre": "Yousra Saidi",
+    "descripcion": "Colaboradora",
+    "slug": "yousra-saidi",
+    "biografia": ".",
+    "email": "",
+    "redes": {} 
+  },
+  {
+    "nombre": "Carolina Anocíbar",
+    "descripcion": "Colaboradora",
+    "slug": "carolina-anocibar",
+    "biografia": ".",
+    "email": "",
+    "redes": {} 
+  },
+  {
+    "nombre": "Elvira Pelayo",
+    "descripcion": "Coordinadora de librería virtual",
+    "slug": "elvira-pelayo",
+    "biografia": ".",
+    "email": "elvira.pelayo.arauzo@gmail.com",
+    "redes": {} 
   }
   ]
 }
