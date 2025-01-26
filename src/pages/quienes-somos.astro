@@ -19,8 +19,9 @@ jovenes_cientificos.sort((a, b) => a.nombre.localeCompare(b.nombre))
         <nav class="grid grid-cols-5 gap-x-8 gap-y-6">
             {
                 jovenes_cientificos.map(({nombre, descripcion, slug}) => (
-                    <a href={"/jovenes-cientificos/" + slug} class="bg-principal-black dark:bg-principal-white rounded shadow-faded-black dark:shadow-faded-white shadow-lg text-principal-white dark:text-principal-black text-left">
-                        <img src={"/images/jovenes-cientificos/" + slug + ".webp"} class="rounded-t"/>
+                    <a href={"/jovenes-cientificos/" + slug}
+                    class="bg-principal-black dark:bg-principal-white rounded shadow-faded-black dark:shadow-faded-white shadow-lg text-principal-white dark:text-principal-black text-left">
+                        <img transition:name="autor" src={"/images/jovenes-cientificos/" + slug + ".webp"} class="rounded-t"/>
                         <div class="px-4 py-2">
                             <h4 class="font-generalsans-medium text-lg">{nombre}</h4>
                             <p>{descripcion}</p>
