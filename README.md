@@ -5,7 +5,7 @@
 
 Divulgando Ciencia es una pagina web diseñada para hacer que el conocimiento científico sea accesible para todos a través de artículos, recursos y herramientas digitales creados por distintos autores de nuestra comunidad. Nuestro objetivo es fomentar el amor por la ciencia y promover una comunidad de aprendizaje.
 
-:paperclip:	[divulgandociencia.com](www.divulgandociencia.com)
+:paperclip:	[divulgandociencia.com](https://www.divulgandociencia.com)
 
 ### Índice
  - [⚗️ Ciencias](#ciencias)
@@ -66,6 +66,8 @@ Nuestra web está construida con **Astro**, **Tailwind CSS** y **JavaScript**. E
 
 ### [Estructura para publicar en Markdown](docs/Estructura-Markdown.md)
 ### [Nuestro *Modus operandi*](docs/Modus-Operandi.md)
+### [Próximamente](docs/Proximamente.md)
+
 
 # 📱	Contacto
 
@@ -73,10 +75,10 @@ Nuestra web está construida con **Astro**, **Tailwind CSS** y **JavaScript**. E
  `support@divulgandociencia.com`
 
 ### 💬 Redes Sociales
- - [X (Twitter)](x.com/divcienciacom)
- - [Instagram](instagram.com/divulgandociencia_ig)
- - [Bluesky](bsky.app/profile/divulgandociencia.com)
- - [Youtube](youtube.com/@divulgandocienciaforkids)
- - [TikTok](tiktok.com/@divulgandociencia.com)
+ - [X (Twitter)](https://x.com/divcienciacom)
+ - [Instagram](https://instagram.com/divulgandociencia_ig)
+ - [Bluesky](https://bsky.app/profile/divulgandociencia.com)
+ - [Youtube](https://youtube.com/@divulgandocienciaforkids)
+ - [TikTok](https://tiktok.com/@divulgandociencia.com)
  - [WhatsApp](https://whatsapp.com/channel/0029VaDOt4T7oQheyZdq1H2u)
- - [Discord](discord.gg/7rTCp5KWPj)
+ - [Discord](https://discord.gg/7rTCp5KWPj)
