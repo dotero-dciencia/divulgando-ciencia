@@ -1,0 +1,25 @@
+---
+import { getBooks } from "@/js/notion";
+const books = await getBooks();
+
+import PrincipalLayout from "@/layouts/PrincipalLayout.astro";
+---
+
+<PrincipalLayout 
+    title="Sobre nosotros | Divulgando Ciencia" 
+    description="Somos dos estudiantes apasionados por la ciencia. Descubre el poder de la divulgación científica abierta con la misma pasión que nosotros."
+    image="/images/landing-page/portada.webp"
+>
+  <section class="mt-20 w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white grid grid-cols-5 gap-4">
+    {
+      books.map((book) => (
+        <div>
+          <h2>{book.title}</h2>
+          <p>{book.author}</p>
+        </div>
+      ))
+    }
+  </section>
+
+
+</PrincipalLayout>
