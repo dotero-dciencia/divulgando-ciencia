@@ -1,8 +1,12 @@
 ---
 import PrincipalLayout from "@/layouts/PrincipalLayout.astro"
-import {jovenes_cientificos} from "@/json/jovenes-cientificos.json"
+import { jovenes_cientificos } from "@/json/jovenes-cientificos.json"
 
 jovenes_cientificos.sort((a, b) => a.nombre.localeCompare(b.nombre))
+
+const getImagePath = (slug: string): string => {
+  return `/images/jovenes-cientificos/${slug}.webp`;
+}
 ---
 
 <PrincipalLayout 
@@ -21,7 +25,7 @@ jovenes_cientificos.sort((a, b) => a.nombre.localeCompare(b.nombre))
                 jovenes_cientificos.map(({nombre, descripcion, slug}) => (
                     <a href={"/jovenes-cientificos/" + slug}
                     class="bg-principal-black dark:bg-principal-white rounded shadow-faded-black dark:shadow-faded-white shadow-lg text-principal-white dark:text-principal-black text-left">
-                        <img transition:name="autor" src={"/images/jovenes-cientificos/" + slug + ".webp"} class="rounded-t"/>
+                        <img id={`img-${slug}`} transition:name="autor" src={getImagePath(slug)} class="rounded-t" onerror="this.onerror=null; this.src='/images/jovenes-cientificos/default.webp';"/>
                         <div class="px-4 py-2">
                             <h4 class="font-generalsans-medium text-lg">{nombre}</h4>
                             <p>{descripcion}</p>
@@ -29,7 +33,6 @@ jovenes_cientificos.sort((a, b) => a.nombre.localeCompare(b.nombre))
                     </a>
                 ))
             }
-            
         </nav>
     </section>
 </PrincipalLayout>

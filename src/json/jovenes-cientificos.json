@@ -2,7 +2,7 @@
   "jovenes_cientificos":[
   {
     "nombre": "Darío Otero",
-    "descripcion": "Colaborador",
+    "descripcion": "Coordinador Exposición 14M",
     "slug": "dario-otero",
     "biografia": "¡Hola! Soy Darío Otero, alumno del IESO Arroyo, y me gustan mucho las ciencias, especialmente las matemáticas y la informática. He participado en algunas olimpiadas, como la de Matemáticas de Castilla y León, la Miniolimpiada de Química y la Olimpiada Informática de Castilla y León, donde quedé en primer lugar (2024). Me encanta aprender cosas nuevas para seguir mejorando. Siempre trato de hacer lo mejor posible, disfrutar de todo lo que aprendo y compartirlo con los demás, por eso creé Divulgando Ciencia. ¡Nos vemos!",
     "email": "dotero@divulgandociencia.com",
@@ -13,7 +13,7 @@
   },
   {
     "nombre": "Dorian Ruiz",
-    "descripcion": "Colaborador",
+    "descripcion": "Coordinador gestión web",
     "slug": "dorian-ruiz",
     "biografia": ".",
     "email": "druiz@divulgandociencia.com",
@@ -57,6 +57,78 @@
     "slug": "elvira-pelayo",
     "biografia": ".",
     "email": "elvira.pelayo.arauzo@gmail.com",
+    "redes": {} 
+  },
+  {
+    "nombre": "Alejandra Martínez",
+    "descripcion": "Colaboradora",
+    "slug": "alejandra-martinez",
+    "biografia": ".",
+    "email": "",
+    "redes": {} 
+  },
+  {
+    "nombre": "Helena Belloso",
+    "descripcion": "Coordinadora de artículos",
+    "slug": "helena-belloso",
+    "biografia": ".",
+    "email": "",
+    "redes": {} 
+  },
+  {
+    "nombre": "Nerea Álvarez",
+    "descripcion": "Coordinadora de artículos",
+    "slug": "nerea-alvarez",
+    "biografia": ".",
+    "email": "",
+    "redes": {} 
+  },
+  {
+    "nombre": "Paula Esteve",
+    "descripcion": "Colaboradora",
+    "slug": "paula-esteve",
+    "biografia": ".",
+    "email": "",
+    "redes": {} 
+  },
+  {
+    "nombre": "Sophie",
+    "descripcion": "Colaboradora",
+    "slug": "sophie",
+    "biografia": ".",
+    "email": "",
+    "redes": {} 
+  },
+  {
+    "nombre": "Juan",
+    "descripcion": "Colaborador",
+    "slug": "juan",
+    "biografia": ".",
+    "email": "",
+    "redes": {} 
+  },
+  {
+    "nombre": "Sebas",
+    "descripcion": "Colaborador",
+    "slug": "sebas",
+    "biografia": ".",
+    "email": "",
+    "redes": {} 
+  },
+  {
+    "nombre": "Marc Pujadas",
+    "descripcion": "Coordinador de Redes Sociales",
+    "slug": "marc-pujadas",
+    "biografia": ".",
+    "email": "",
+    "redes": {} 
+  },
+  {
+    "nombre": "Lucas Manero",
+    "descripcion": "Colaborador",
+    "slug": "lucas-manero",
+    "biografia": ".",
+    "email": "",
     "redes": {} 
   }
   ]
