@@ -22,14 +22,14 @@ export const getBooks = async ({ filterBy } = {}) => {
 
   return results.map(page => {
     const { properties } = page
-    const { slug, title, img, opinion, author } = properties
+    const { enlace, titulo, imagen, opinion, autor } = properties
 
     return {
-      id: slug.rich_text[0].plain_text,
-      title: title.title[0].plain_text,
-      img: img.files[0].file.url,
+      id: enlace.rich_text[0].plain_text,
+      title: titulo.title[0].plain_text,
+      img: imagen.files[0].file.url,
       opinion: opinion.rich_text[0].plain_text,
-      author: author.rich_text[0].plain_text
+      author: autor.rich_text[0].plain_text
     }
   })
 }
