@@ -3,12 +3,10 @@
 
 ```
 ---
-layout: @/layout
 titulo:
 autor: 
 portadaAlt:
 descripcion:
-ciencia:
 fecha:
 ---
 
