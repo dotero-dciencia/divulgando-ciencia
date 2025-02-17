@@ -77,4 +77,4 @@ En esa época no se conocía ningún método para entrenar redes neuronales de v
 
 **Bibliografía**
 
-<https://www.youtube.com/watch?v=l-9ALe3U-Fg>
+[YouTube](https://www.youtube.com/watch?v=l-9ALe3U-Fg)
