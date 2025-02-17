@@ -1,0 +1,80 @@
+---
+titulo: Redes Neuronales 1 - Definición y Perceptrones
+autor: neplod
+portadaAlt:
+descripcion: Iniciación al mundo del funcionamiento de las redes neuronales y la inteligencia artificial. Resumen sobre redes neuronales y perceptrones.
+fecha: 2025-02-17
+---
+
+**¿Qué son?**
+
+Una **red neuronal** es un programa informático que intenta imitar cómo aprende el cerebro humano para poder aprender a resolver problemas o algoritmos muy complejos que un programador normal tardaría mucho en programar a mano. Es decir, es un programa que se reescribe a sí mismo muy rápido para resolver algoritmos muy complejos.
+
+En verdad no es como tal un programa informático como podría ser un _script_ de Python o JavaScript, sino más bien una red de muchos **parámetros**, como los diales de una radio. Estos recogen una entrada, realizan una serie de operaciones con esos parámetros, a veces entre medias se hacen algoritmos especiales, y dan una **predicción** al final.
+
+Estas tienen una fase de **entrenamiento** en la cual se pueden cambiar esos parámetros. Esto las permite aprender de sus errores para intentar dar una respuesta más acertada. El propósito de esta fase es bajar el porcentaje de **error** lo máximo posible, sobre un 0.01%, ya que es muy difícil disminuir este valor a un 0% total.
+
+**Historia**
+
+Las redes neuronales fueron inventadas en la década de **1940** por **Warren McCulloch** y **Walter Pitts**, que propusieron el primer modelo matemático de una neurona artificial.
+
+Más tarde, en **1958**, **Frank Rosenblatt** creó el **Perceptrón**, una de las primeras redes neuronales capaz de aprender, aunque no por sí misma, debido a las limitaciones tecnológicas de la época en las décadas de 1960 y 1970. Por ello, el interés por las redes neuronales disminuyó drásticamente.
+
+El verdadero auge llegó en los **años 80 y 90**, cuando se desarrollaron los primeros algoritmos de entrenamiento automáticos. Esto permitió crear redes neuronales más complejas. A partir de ahí no hubo mucho más avance hasta **2010**, cuando gracias a la potencia de las GPUs (Unidades de Procesamiento Gráfico) y la gran cantidad de datos disponibles se crearon las primeras aplicaciones de **deep learning** y cosas como el reconocimiento facial, los primeros **asistentes virtuales** y, más tarde, los **modelos de lenguaje avanzado**.
+
+**Usos**
+
+Las redes neuronales tienen muchos más usos de los que la gente suele pensar. Aparte de las IAs como ChatGPT o Gemini, se usan en algoritmos de recomendación de videos, en la búsqueda inteligente, en los traductores, en los sistemas de asistencia en la conducción, en los subtítulos automáticos, en los descubrimientos científicos recientes…
+
+En resumen, las redes neuronales hoy en día son una parte principal de la tecnología e innovación debido a su facilidad de entrenamiento ante cualquier tipo de problema e impulsan e impulsarán el rápido crecimiento de la tecnología y ciencia.
+
+**El Perceptrón**
+
+La primera red neuronal que se creó en un aparato electrónico fue el perceptrón, una máquina que tenía unas entradas en forma de interruptores, unos diales con los que hacía unos cálculos y una salida que mostraba el resultado de los cálculos.
+
+Esta máquina no estaba hecha como los ordenadores de hoy en día, entonces no calculaba con 0 o 1, si no que usaba corrientes negativas o positivas para las entradas y diales, y un amperímetro para la salida.
+
+Esta es la forma más fácil de una red neuronal, solo 2 capas, una de entrada y la otra de salida sin otras de por medio, con lo cual entenderlo es muy fácil.
+
+Para empezar, hay que definir el número de entradas. En este caso vamos a usar solo 2 entradas. El número de salidas siempre es 1. Con lo cual en nuestro perceptrón quedarían 2 interruptores, 3 diales y 1 amperímetro.
+
+Primero, los interruptores. Estos solo tienen 2 estados, encendido y apagado, con lo cual lo obvio sería definir que encendido es 1 y apagado es 0, pero debido a cómo funciona el perceptrón apagado no puede ser 0, por eso se usa -1. Vamos a identificar cada interruptor con un número y una ‘e’ para hacer más fácil los cálculos. Entonces tendríamos ‘e<sub>1</sub>’ y ‘e<sub>2</sub>’. Al ser una entrada es algo que los usuarios cambian para calcular la salida.
+
+Después los diales. Puede haberte extrañado que hayamos puesto 3 en vez de 2, pero tiene el sentido. Estos diales representan valores entre 2 números, uno negativo y el otro positivo. Por ejemplo, -2 y 2. A estos valores se les suele llamar peso, porque agregan un peso o valor a la entrada. Hay un valor extra que se denomina BIAS. Este simplemente sirve para terminar de ajustar un poco el resultado. También vamos a identificarlos, con una ‘p’ y un número, salvo al BIAS a la que denominaremos ‘b’. Entonces tenemos ‘p<sub>1</sub>’, ‘p<sub>2</sub>’ y ‘b’. Los usuarios cambian manualmente los valores de los diales para hacer que la salida sea correcta, aunque cuando se consigue no hace falta cambiarlos salvo para reducir el error.
+
+El amperímetro es la salida. Marca el amperaje de la corriente resultante, que puede ser positivo o negativo. Normalmente se suele decir que si el amperaje es positivo la salida es 1 o sí, y que si es negativo la salida es 0 o no. Para identificar a este vamos a usar la letra ‘s’.
+
+Ahora que tenemos identificados los distintos elementos del perceptrón podemos hacer los cálculos necesarios. Sabemos que para calcular ‘s’ hay que hacer unas operaciones con ‘e<sub>1</sub>’, ‘e<sub>2</sub>’, ‘p<sub>1</sub>’, ‘p<sub>2</sub>’ y ‘b’, pero aún no sabemos cuáles hay que hacer. Por suerte Warren McCulloch y Walter Pitts ya hicieron esos cálculos en 1940:
+
+Vale, eso aún puede parecer un poco complicado para algunas personas, pero es la base de lo que vamos a usar nosotros. Para simplificarlo un poco vamos a escribirlo de otra manera:
+
+Con esto ya sí que se puede ver mejor que está pasando exactamente. Podemos ver que la salida es la suma de las entradas multiplicadas por su correspondiente peso, y después se le suma el BIAS. Con lo cual ahora que sabemos que hace el calculo podemos escribir la ecuación que vamos a usar nosotros:
+
+Ahora ya sabemos lo que está pasando en nuestro perceptrón, más o menos. Con esto podemos entrenar a nuestro perceptrón para que resuelva un problema. Aunque no hace falta este conocimiento para entrenarlo facilita ese proceso.
+
+Vamos a poner un problema a nuestro perceptrón, por ejemplo, “Quiero que solo saques un resultado positivo cuando cualquiera de las entradas este encendida, pero uno negativo cuando ninguna lo esté”. Obviamente la máquina no entiende el lenguaje natural así que vamos a entrenarla nosotros mismos. Jugando un poco con los valores puedes dar con que poniendo los 2 pesos y el BIAS en positivo te da el resultado que querías.
+
+Ahora vamos a intentarlo con una máquina más compleja, como una de 4x4 interruptores para poder hacer algunos dibujos simples en ella. Con lo que ya sabemos podemos definir la fórmula como:
+
+Ahora el problema va a ser “Quiero que muestres un resultado positivo cuando reconozcas el patrón A (la letra L) y uno negativo cuando reconozcas el patrón B (la letra C)”. Pero esta vez es más difícil, debido a que con 16 pesos hay muchas posibilidades distintas, y cambiar los pesos aleatoriamente no va a funcionar como la otra vez. Pero por suerte hay una forma fácil y rápida de entrenar al perceptrón. Esta consiste en:
+
+1. Poner todos los diales a 0.
+2. Poner el patrón A en los interruptores.
+3. Cambiar los pesos de los interruptores para que el resultado de positivo. Los pesos de los interruptores encendidos hay que aumentarles sus valores y los de los interruptores apagados hay que disminuirles sus valores. También se puede jugar con el valor del BIAS.
+4. Poner el patrón B en los interruptores.
+5. Cambiar los pesos de los interruptores para que el resultado de negativo. Los pesos de los interruptores encendidos hay que disminuirles sus valores y los de los interruptores apagados hay que aumentarles sus valores. También se puede jugar con el valor del BIAS.
+6. Repetir pasos 2 al 5 hasta que las respuestas sean válidas.
+
+Si seguimos estos pasos podemos entrenar al perceptrón relativamente rápido, y podrá reconocer estos patrones.
+
+Pero estos tienen un problema. Para verlo vamos a volver al perceptrón de 2 entradas.
+
+En un plano 2D podemos representar las entradas como 4 puntos del plano, (1,1) (1,-1) (-1,1) (-1,-1), y la salida como una línea que separa los puntos que dan una salida positiva con los que dan una salida negativa, esto tiene sentido porque solo hay una capa de pesos. Es decir, en nuestro problema de antes, el perceptrón mejor entrenado sería el que tenga la línea en diagonal justo entre los puntos (-1,-1) y (0,0), es decir, que el centro de la línea es (-0.5,-0.5), y que además es diagonal con respecto a los ejes. Matemáticamente se representaría como:
+
+Ahora vamos a intentar entrenar el perceptrón para que salga positivo cuando solo una de las entradas esté encendida. Por mucho que intentemos no vamos a poder hacerlo debido a que no hay ninguna forma de colocar esa línea del plano de una forma en la que solo identifique como positivo 2 puntos opuestos. Aunque sí que se puede hacer, añadiendo otra capa al perceptrón ahora tendríamos 2 líneas en el plano. Esto rompe nuestra idea de perceptrón debido a que solo puede tener 2 capas, no 3. Por ello se inventaron los perceptrones multicapa, que aparte de la entrada y salida tienen las llamadas capas ocultas.
+
+En esa época no se conocía ningún método para entrenar redes neuronales de varias capas y además las limitaciones tecnológicas de la época impedían usar el mismo método para entrenar al perceptrón de varias capas por el mismo método. Por ello se abandonó la idea de las redes neuronales durante tanto tiempo.
+
+**Bibliografía**
+
+<https://www.youtube.com/watch?v=l-9ALe3U-Fg>
