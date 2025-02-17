@@ -1,7 +1,7 @@
 ---
 titulo: Redes Neuronales 1 - Definición y Perceptrones
 autor: neplod
-portadaAlt:
+portadaAlt: Imagen neurones en forma de red.
 descripcion: Iniciación al mundo del funcionamiento de las redes neuronales y la inteligencia artificial. Resumen sobre redes neuronales y perceptrones.
 fecha: 2025-02-17
 ---
