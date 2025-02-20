@@ -10,7 +10,8 @@ const articles = defineCollection({
     portadaAlt: z.string(),
     // descripcion: z.string().optional(),
     autor: reference('authors'),
-    fecha: z.date().optional()
+    fecha: z.date().optional(),
+    etiquetas: z.string().optional(),
   }),
 });
 
