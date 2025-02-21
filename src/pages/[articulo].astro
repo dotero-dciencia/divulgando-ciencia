@@ -15,9 +15,21 @@ const { Content } = await article.render();
 const portada = "/images/contenido/" + article.slug.split('/')[1] + "/portada.webp"
 
 import { getEntry } from "astro:content"
+import { addIssueToContext } from 'astro:schema';
 const autor = article.data.autor
-const autorData = await getEntry('authors', autor.id)
-const autorFotoUrl = "/images/autores/" + autor.id + ".webp"
+let autores = article.data.autores == undefined ? '' : article.data.autores
+let fautores = []
+if (autores!=''){
+  let fatm = autores.replace(' ','').split(',')
+  for(let a=0; a<fatm.length; a++){
+    fautores.push({'nombre': (await getEntry('authors', fatm[a])).data.nombre, 'foto':"/images/autores/" + fatm[a] + ".webp"});
+  };
+} else {
+  fautores = [{'nombre': (await getEntry('authors', autor.id)).data.nombre, 'foto':"/images/autores/" + autor.id + ".webp"}]
+}
+let autorData = await getEntry('authors', autor.id)
+let autorFotoUrl = "/images/autores/" + autor.id + ".webp"
+//const autores = [{'nombre':'Hola', 'foto':autorFotoUrl},{'nombre':'hola', 'foto':autorFotoUrl}]
 const ciencias = {
     "matematicas": "matemáticas",
     "biologia": "biología",
@@ -48,7 +60,7 @@ let etiquetas = article.data.etiquetas == undefined ? '' : article.data.etiqueta
         <p class=`tag-${ciencia} font-generalsans text-base` style="font-size:0.9rem">{etiquetas}</p>
       </div>
       <div style="padding-bottom:1%"></div>
-      <DatosAutor fotoDelAutor={autorFotoUrl} autor={autorData.data.nombre} {fecha}/>
+      <DatosAutor autores={fautores} fotoDelAutor={autorFotoUrl} autor={autorData.data.nombre} {fecha}/>
       <section class="w-full justify-center flex">
           <img data-pagefind-meta="image[src], image_alt[alt]" alt={article.data.portadaAlt} class="bg-principal-white w-full text-center justify-center object-cover rounded-lg mt-3 mb-2 h-[12rem] sm:h-[16rem] md:h-96 lg:h-[22rem] xl:h-[25rem] min-[1800px]:h-[32rem] min-[1800px]:w-1/2" src={portada}/>
       </section>

@@ -1,8 +1,7 @@
 ---
-const {contenido = 'article', id, autor, titulo, ciencia, fecha, design, portadaAlt} = Astro.props
-
+const {contenido = 'article', id, autor, autores, titulo, ciencia, fecha, design, portadaAlt} = Astro.props
 import { getEntry } from "astro:content"
-const autorData = await getEntry('authors', autor.id)
+const autorNombre = autores == undefined ? (await getEntry('authors', autor.id)).data.nombre : `${autores.split(',').length} autores`
 const autorFotoUrl = "/images/autores/" + autor.id + ".webp"
 
 const url = "/" + id
@@ -35,7 +34,7 @@ date = date.replace(' de ', ' ').replace(' de ', ', ');
                     <footer>
                         <div class="z-0 flex gap-x-1 min-[1800px]:gap-x-2 text-dark-gray dark:text-light-gray metadata-article text-[0.75rem] [&>p]:my-auto h-fit min-[1800px]:text-xl font-generalsans-medium">
                             <img alt="Foto de perfil del autor" src={autorFotoUrl} class="bg-principal-white h-4 w-4 min-[1800px]:h-6 min-[1800px]:w-6 rounded-full object-contain my-auto">
-                            <p>{autorData.data.nombre}</p>
+                            <p>{autorNombre}</p>
                             <p>·</p>
                             <p>{date}</p>
                         </div>

@@ -11,6 +11,7 @@ const articles = defineCollection({
     // descripcion: z.string().optional(),
     autor: reference('authors'),
     fecha: z.date().optional(),
+    autores: z.string().optional(),
     etiquetas: z.string().optional(),
   }),
 });

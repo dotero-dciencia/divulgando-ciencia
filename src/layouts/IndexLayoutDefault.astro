@@ -12,6 +12,7 @@ interface Article {
     titulo: string;
     // descripcion: string;
     autor: object;
+    autores: string;
     portadaAlt: string;
     fecha: Date|undefined;
     ciencia: string;
@@ -39,6 +40,7 @@ articles.slice(0,8).map(({data, slug}) => {
     lstArticles.push({
         titulo: data.titulo,
         autor: data.autor,
+        autores: data.autores,
         portadaAlt: data.portadaAlt,
         fecha: data.fecha,
         ciencia: ciencias[ciencia],
