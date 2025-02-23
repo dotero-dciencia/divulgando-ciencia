@@ -4,6 +4,7 @@ autor: dario-otero
 portadaAlt: Roberto mostrando el funcionamiento de una cámara de cielo.
 descripcion: "El GOA-UVa ha desarrollado un proyecto pionero: el proyecto Presente. Roberto nos cuenta en qué consiste."
 fecha: 2024-09-13
+etiquetas: Proyecto Presente, GOA-UVa
 ---
 
 En el [anterior artículo](/el-grupo-optica-atmosferica-de-la-uva) hablamos sobre el GOA-UVa, el Grupo de Óptica Atmosférica de la Universidad de Valladolid, cuyas instalaciones tuvimos el placer de visitar el pasado viernes 28 de junio de la mano de Roberto Román.
