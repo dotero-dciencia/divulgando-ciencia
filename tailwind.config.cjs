@@ -37,6 +37,8 @@ module.exports = {
 			'dark-coding': '#5A12B0',
 			'light-scientifics': '#16DAC0',
 			'dark-scientifics': '#004F3E',
+			'shop-white': '#F5F2F0',
+			'shop-black': '#242229',
 			'faded-white': 'rgb(245, 245, 245, .25)',
 			'faded-black': 'rgb(34, 34, 34, .1)'
 		}
