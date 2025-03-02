@@ -16,9 +16,9 @@ colaboradores.sort((a, b) => a.nombre.localeCompare(b.nombre))
         <h2 class="text-4xl font-generalsans-medium">
             Jóvenes apasionados por la ciencia
         </h2>
-        <p class="text-lg my-4 text-wrap">Somos un grupo de 20 jóvenes apasionados por la ciencia que queremos hacer llegar la ciencia a la gente a través de nuestras iniciativas.</p>
+        <p class="text-lg my-4 text-wrap">Somos un grupo de 16 jóvenes apasionados por la ciencia que queremos hacer llegar la ciencia a la gente a través de nuestras iniciativas.</p>
 
-        <nav class="grid grid-cols-5 gap-x-8 gap-y-6">
+        <nav class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 min-[1800px]:grid-cols-7 min-[2000px]:grid-cols-8 gap-x-8 gap-y-6">
             {
                 colaboradores.map(({nombre, rol, img, slug}) => (
                     <a href={"/quienes-somos/" + slug}

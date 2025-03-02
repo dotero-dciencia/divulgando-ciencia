@@ -35,7 +35,7 @@ export const getBooks = async ({ filterBy } = {}) => {
   })
 }
 
-const COLABORADORES_ID = '1aa99529e0d080b3baa7c5bb892872e3'
+const COLABORADORES_ID = import.meta.env.NOTION_COLABORADORES_ID
 
 export const getColaboradores = async ({ filterBy } = {}) => {
   const query = { database_id: COLABORADORES_ID }
