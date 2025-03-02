@@ -1,71 +1,84 @@
-# divulgandociencia.com
+# DivulgandoCiencia.com
 
-#### Descubre el poder de la divulgación científica abierta.
+**Descubre el poder de la divulgación científica abierta.** <br />
+*Una obra de Darío y Dorian, dos estudiantes apasionados por la ciencia.*
 
-Divulgando Ciencia es una iniciativa que consiste en una web de divulgación científica donde se publican diferentes artículos de divulgación con diversidad de autores.
+Divulgando Ciencia es una pagina web diseñada para hacer que el conocimiento científico sea accesible para todos a través de artículos, recursos y herramientas digitales creados por distintos autores de nuestra comunidad. Nuestro objetivo es fomentar el amor por la ciencia y promover una comunidad de aprendizaje.
 
-Esta web se fundamenta en varios pilares, que son los siguientes.
+:paperclip:	[divulgandociencia.com](https://www.divulgandociencia.com)
 
-## Accesibilidad
+### Índice
+ - [⚗️ Ciencias](#ciencias)
+ - [🔌 Pilares de la web](#pilares-de-la-web)
+ - [💾 Tecnologías utilizadas](#tecnologias-utilizadas)
+ - [📄 Documentación](#documentacion)
+ - [📱 Contacto](#contacto)
 
-Tratamos de que nuestra web sea accesible para todos los públicos y desde todos los dispositivos, por eso seguimos todas las reglas actuales de accesibilidad y usamos un diseño responsive.
+# ⚗️	Ciencias
 
-## Calidad
+Nuestra página web está dividida en varios apartados que corresponden a las diferentes ciencias existentes.
 
-Tratamos de que los artículos presentes en nuestra web sean de una calidad excepcional y estén siempre actualizados.
+### 1. **🔢 Matemáticas**
+La base de toda la ciencia, las matemáticas estudian patrones, cantidades, estructuras y cambios. Es esencial para disciplinas como la física, informática y economía, ayudando a modelar y resolver problemas complejos.
 
-## Comunidad
+### 2. **⚛️ Física**
+Analiza las propiedades fundamentales del universo, como materia, energía, espacio y tiempo. Desde partículas subatómicas hasta galaxias, busca comprender las leyes que rigen todo.
 
-Tratamos de que en nuestra web haya artículos de varios autores, por eso decimos que nuestra web también es de la comunidad.
+### 3. **🧪 Química**
+Estudia la composición, propiedades y transformaciones de la materia. Es crucial para la biomedicina, tecnología y sostenibilidad, transformando nuestra comprensión del mundo material.
 
-# Estructura para publicar en Markdown
+### 4. **🧬 Biología**
+La ciencia de la vida. Explora los organismos vivos, su estructura, función, crecimiento, evolución y ecosistemas. Desde el ADN hasta la biodiversidad, la biología explica cómo funciona la naturaleza.
 
-```
----
-layout: @/layout
-titulo:
-autor: 
-portadaAlt:
-descripcion:
-ciencia:
-fecha:
----
-```
+### 5. **🪨 Geología**
+La ciencia de la Tierra. Investiga su estructura, procesos internos y externos, y su historia. Desde terremotos hasta fósiles, nos conecta con el pasado de nuestro planeta.
 
-## Título a URL
+### 6. **🤖 Tecnología**
+Aborda la aplicación práctica del conocimiento para resolver problemas. Impulsa la innovación en áreas como informática, telecomunicaciones y diseño industrial.
 
-"¿Es buena idea beber agua del mar?" $\rightarrow$ "es-buena-idea-beber-agua-del-mar"
+### 7. **🖥️ Programación**
+El lenguaje de las máquinas. Permite crear aplicaciones, automatizar tareas y resolver problemas con lógica computacional. Es clave para el desarrollo tecnológico.
 
-"(Re)descubriendo átomos preparando el desayuno" $\rightarrow$ "redescubriendo-atomos-preparando-el-desayuno"
+### 8. **🧑‍🔬 Científicos**
+El estudio de las vidas, descubrimientos y contribuciones de grandes mentes. Reconoce el impacto de quienes transformaron nuestro conocimiento del mundo.
 
-## Autor a URL
+# 🔌 Pilares de la web
 
-Sin foto de autor $\rightarrow$ "anonimo.svg"
+### 1. **Accesibilidad**
+Diseño favorable para **todos los dispositivos, combinaciones de colores** que no supongan ningún problema a gente con problemas de visión y seguimos los **estándares de accesibilidad de W3C**.
 
-"Darío O." $\rightarrow$ "dario-o.webp"
+### 2. **Calidad**
 
-"BorealMantis" $\rightarrow$ "boreal-mantis.webp"
+Nos esforzamos para que todos los artículos que escribamos tengan un **contenido excelente**, revisamos los que nos envían para **verificar** que es así y mantenemos los existentes **actualizados** cada cierto tiempo.
 
-"Doctor Berti" $\rightarrow$ "doctor-berti.webp"
+### 3. **Comunidad**
 
-"Enzo Notario" $\rightarrow$ "enzo.webp"
+Colaboramos con **múltiples autores a nivel mundial** y la publicación de artículos está abierta a **todo el mundo**, previa revisión nuestra.
 
-"Inés Pellón Glez." $\rightarrow$ "ines-pellon-gonzalez.webp"
+# 💾 Tecnologías utilizadas
 
-"Neplod" $\rightarrow$ "neplod.webp"
+Nuestra web está construida con **Astro**, **Tailwind CSS** y **JavaScript**. Estas tecnologías nos ha permitido un desarrollo ágil y acorde a nuestras peticiones:
+ - **Astro** es un **framework web** (una tecnología que te ayuda a desarrollar un sitio web) que nos aporta **mejoras respecto al HTML básico**. Entre las que se encuentran, la **facilidad** para hacer **artículos**, los **componentes** y **layouts HTML**, la **integración** con otras **herramientas**, la **velocidad** y el **SEO** (posicionamiento web).
+ - **Tailwind CSS** es una herramienta que nos facilitaba el **programar los estilos** de nuestra web, ofreciendo **mejores resultados que el CSS normal** de una manera **más fácil**.
+ - **JavaScript** aparece en algunas funcionalidades, como **Q-Bot**, donde es inevitable usarlo, aunque intentamos reducir su uso debido a que ralentiza la velocidad del sitio, pero es muy útil.
 
-"Nerea A." $\rightarrow$ "nerea-a.webp"
+# 📄	Documentación
 
-"Pilar Ruiz-Lapuente" $\rightarrow$ "pilar-ruiz-lapuente.webp"
+### [Estructura para publicar en Markdown](docs/Estructura-Markdown.md)
+### [Nuestro *Modus operandi*](docs/Modus-Operandi.md)
+### [Próximamente](docs/Proximamente.md)
 
-## Ciencias
 
-matemáticas, biología, geología, física, química, tecnología, programación, científicos
+# 📱	Contacto
 
-## fechaMostrar y fechaOrdenar (respectivamente)
+### 📧 Correo Electrónico
+ `support@divulgandociencia.com`
 
-"29 de septiembre de 2023" $\rightarrow$ "29 septiembre, 2023" y "Sep 29, 2023"
-
-"13 de enero de 2024" $\rightarrow$ "13 enero, 2024" y "Jan 13, 2024"
-
-"25 de febrero de 2022" $\rightarrow$ "25 febrero, 2022" y "Feb 25, 2022"
+### 💬 Redes Sociales
+ - [X (Twitter)](https://x.com/divcienciacom)
+ - [Instagram](https://instagram.com/divulgandociencia_ig)
+ - [Bluesky](https://bsky.app/profile/divulgandociencia.com)
+ - [Youtube](https://youtube.com/@divulgandocienciaforkids)
+ - [TikTok](https://tiktok.com/@divulgandociencia.com)
+ - [WhatsApp](https://whatsapp.com/channel/0029VaDOt4T7oQheyZdq1H2u)
+ - [Discord](https://discord.gg/7rTCp5KWPj)

@@ -78,6 +78,13 @@ description="Descubre el poder de la divulgación científica abierta junto a no
                             </div>
                             )
                         })}
+			{ razones.map(({texto, autor}) => {
+                            return(
+                            <div class="slide">
+                                <TarjetaSlider {texto} {autor}/>
+                            </div>
+                            )
+                        })}
                     </div>
                 </div>
 			</header>
@@ -114,7 +121,7 @@ description="Descubre el poder de la divulgación científica abierta junto a no
     .slider .slide-track{
         animation: scroll 120s linear infinite;
         -webkit-animation: scroll 120s linear infinite;
-        width: calc(650px * 9);
+        width: calc(650px * 9 * 2);
     }
 
     .slider .slide{
@@ -128,12 +135,12 @@ description="Descubre el poder de la divulgación científica abierta junto a no
 
     @keyframes scroll{
         0% {
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-        }
-        100% {
-            -webkit-transform: translateX(calc(-650px * 9));
-            transform: translateX(calc(-650px*9));
-        }
+    	    transform: translateX(0);
+    	}
+    	100% {
+    	    transform: translateX(calc((-650px * 9) - 12px));
+    	}
     }
+
+
 </style>
