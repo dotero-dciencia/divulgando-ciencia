@@ -4,6 +4,7 @@ autor: dario-otero
 portadaAlt: Señor depositando su voto en una urna. Imagen generada con inteligencia artificial.
 descripcion: El método de reparto electoral d'Hondt es uno de los más populares, de hecho es el que se usa en España. Entra para descubrir en qué consiste.
 fecha: 2024-06-29
+etiquetas: Matemáticas Erectorales, Ley d'Hondt
 ---
 
 El método d'Hondt es una forma de **reparto electoral**, es decir, un sistema para convertir una cantidad de votos en escaños con el objetivo de hacer un reparto acorde a las peticiones de los votantes tras unas elecciones.

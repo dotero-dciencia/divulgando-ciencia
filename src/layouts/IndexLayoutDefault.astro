@@ -12,6 +12,7 @@ interface Article {
     titulo: string;
     // descripcion: string;
     autor: object;
+    autores: string;
     portadaAlt: string;
     fecha: Date|undefined;
     ciencia: string;
@@ -39,6 +40,7 @@ articles.slice(0,8).map(({data, slug}) => {
     lstArticles.push({
         titulo: data.titulo,
         autor: data.autor,
+        autores: data.autores,
         portadaAlt: data.portadaAlt,
         fecha: data.fecha,
         ciencia: ciencias[ciencia],
@@ -97,6 +99,9 @@ description="Descubre el poder de la divulgación científica abierta junto a no
 	</section>
     <!--Zona de los artículos-->
     <main class="w-full min-[1800px]:py-8">
+        <div class="bg-shop-black dark:bg-shop-white shop-adv h-12 rounded-full flex center mx-auto content-center" style="width:fit-content">
+            <h1 class="min-w-max px-4 mr-auto ml-auto my-auto outline-none h-7 resize-none text-lg font-generalsans-semibold overflow-hidden text-shop-white dark:text-shop-black">🎉 ¡VISITA YA NUESTRA TIENDA EN <a style="text-decoration: underline" href="https://shop.divulgandociencia.com">SHOP.DIVULGANDOCIENCIA.COM</a>!</h1>
+        </div>
         <SeccionArticulosPequenos num1="0" num2="2" num3="4" articulos={lstArticles}/>
         <SeccionArticulosPequenos num1="4" num2="6" num3="8" articulos={lstArticles}/>
         <section class="flex w-full justify-center lg:justify-end gap-x-3 px-36 font-generalsans-medium">
@@ -122,6 +127,12 @@ description="Descubre el poder de la divulgación científica abierta junto a no
         animation: scroll 120s linear infinite;
         -webkit-animation: scroll 120s linear infinite;
         width: calc(650px * 9 * 2);
+    }
+
+    @media (max-width:659px) {
+        .shop-adv{
+            display:none;
+        }
     }
 
     .slider .slide{

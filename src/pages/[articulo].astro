@@ -15,21 +15,52 @@ const { Content } = await article.render();
 const portada = "/images/contenido/" + article.slug.split('/')[1] + "/portada.webp"
 
 import { getEntry } from "astro:content"
+import { addIssueToContext } from 'astro:schema';
 const autor = article.data.autor
-const autorData = await getEntry('authors', autor.id)
-const autorFotoUrl = "/images/autores/" + autor.id + ".webp"
+let autores = article.data.autores == undefined ? '' : article.data.autores
+let fautores = []
+if (autores!=''){
+  let fatm = autores.replace(' ','').split(',')
+  for(let a=0; a<fatm.length; a++){
+    fautores.push({'nombre': (await getEntry('authors', fatm[a])).data.nombre, 'foto':"/images/autores/" + fatm[a] + ".webp"});
+  };
+} else {
+  fautores = [{'nombre': (await getEntry('authors', autor.id)).data.nombre, 'foto':"/images/autores/" + autor.id + ".webp"}]
+}
+let autorData = await getEntry('authors', autor.id)
+let autorFotoUrl = "/images/autores/" + autor.id + ".webp"
+//const autores = [{'nombre':'Hola', 'foto':autorFotoUrl},{'nombre':'hola', 'foto':autorFotoUrl}]
+const ciencias = {
+    "matematicas": "matemáticas",
+    "biologia": "biología",
+    "geologia": "geología",
+    "fisica": "física",
+    "quimica": "química",
+    "tecnologia": "tecnología",
+    "programacion": "programación",
+    "cientificos": "científicos"
+}
+const ciencia = ciencias[article.slug.split('/')[0]]
 
 const opciones = { year: 'numeric', month: 'long', day: 'numeric' }
 let fecha = article.data.fecha.toLocaleDateString('es-ES', opciones)
 fecha = fecha.replace(' de ', ' ').replace(' de ', ', ');
+let etiquetas = article.data.etiquetas == undefined ? '' : article.data.etiquetas;
+//if (article.data.etiquetas != undefined) {etiquetas = article.data.etiquetas.split(',').map((e) => {let t=e.split(' ').filter(c => c!== '').join(' '); return t.charAt(0).toUpperCase()+t.slice(1);}).join(', ')}
 ---
 
 <!-- <PrincipalLayout title={article.data.titulo} description={article.data.descripcion} image={portada} {article.data} robots={article.data.robots} altIMG = {article.data.portadaAlt}> -->
- <PrincipalLayout title={article.data.titulo} image={portada} altIMG = {article.data.portadaAlt} image={portada}>
+<PrincipalLayout title={article.data.titulo} image={portada} altIMG = {article.data.portadaAlt} image={portada}>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
   <section class="mt-24 w-full justify-center text-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white">
-      <h4 class="font-generalsans-medium uppercase text-base min-[1800px]:text-xl" id={article.data.ciencia} data-pagefind-filter="Ciencia">{article.data.ciencia}</h4>
-      <h1 class="font-generalsans-semibold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-4">{article.data.titulo}</h1>
-      <DatosAutor fotoDelAutor={autorFotoUrl} autor={autorData.data.nombre} {fecha}/>
+      <h1 class="font-generalsans-semibold text-5xl leading-[3.25rem] min-[1800px]:text-7xl mb-4 ">{article.data.titulo}</h1>
+      <h4 class=`tag-${ciencia} font-generalsans-medium uppercase text-base min-[1800px]:text-xl" id={ciencia} data-pagefind-filter="Ciencia` >{ciencia}</h4>
+      <div class='inline-flex items-center gap-2' style=`display:${etiquetas.replace(' ','')=='' ? 'none' : ''}`>
+        <i class=`tag-${ciencia} fa-solid fa-tag`></i>
+        <p class=`tag-${ciencia} font-generalsans text-base` style="font-size:0.9rem">{etiquetas}</p>
+      </div>
+      <div style="padding-bottom:1%"></div>
+      <DatosAutor autores={fautores} fotoDelAutor={autorFotoUrl} autor={autorData.data.nombre} {fecha}/>
       <section class="w-full justify-center flex">
           <img data-pagefind-meta="image[src], image_alt[alt]" alt={article.data.portadaAlt} class="bg-principal-white w-full text-center justify-center object-cover rounded-lg mt-3 mb-2 h-[12rem] sm:h-[16rem] md:h-96 lg:h-[22rem] xl:h-[25rem] min-[1800px]:h-[32rem] min-[1800px]:w-1/2" src={portada}/>
       </section>
@@ -65,4 +96,25 @@ fecha = fecha.replace(' de ', ' ').replace(' de ', ', ');
     }
   });
 </script>
+
+<style>
+  .tag-matemáticas{color:#004193;}
+  .tag-biología{color:#005100;}
+  .tag-geología{color:#6E3400;}
+  .tag-física{color:#950000;}
+  .tag-química{color:#820083;}
+  .tag-tecnología{color:#623B00;}
+  .tag-programación{color:#5a12b0;}
+  .tag-científicos{color:#004f3e;}
+
+  :is(.dark .tag-matemáticas) {color:#a8c6e3;}
+  :is(.dark .tag-información) {color:#b6b6b6;}
+  :is(.dark .tag-biología) {color:#64db62;}
+  :is(.dark .tag-geología) {color:#e2bba5;}
+  :is(.dark .tag-física) {color:#ffaaa2;}
+  :is(.dark .tag-química) {color:#ff99ff;}
+  :is(.dark .tag-tecnología) {color:#f2ba48;}
+  :is(.dark .tag-programación) {color:#e9aaff;}
+  :is(.dark .tag-científicos) {color:#16dac0;}
+</style>
 </PrincipalLayout>

@@ -4,6 +4,7 @@ autor: quintin-garrido
 portadaAlt: Portada del libro "CIENCIA, y otras "Easy Pieces"
 descripcion: Quintín Garrido coordina un nuevo proyecto que desencadena en un libro formidable compuesto por la colaboración altruista de varios científicos.
 fecha: 2024-10-05
+etiquetas: Libros
 ---
 
 ¿Está de broma Sr. Garrido?

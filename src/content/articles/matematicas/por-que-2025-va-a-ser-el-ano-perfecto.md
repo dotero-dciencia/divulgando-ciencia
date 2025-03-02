@@ -4,6 +4,7 @@ autor: dario-otero
 portadaAlt: Letras de 2025 en metal en 3D.
 descripcion: 2025 tiene un montón de propiedades matemáticas que nos hacen creer que va a ser el año perfecto. En este artículo las analizamos todas, ¡no te lo pierdas!
 fecha: 2025-01-26
+etiquetas: Matemagia, Numeros Curiosos
 ---
 
 El año 2025 tiene un montón de propiedades matemáticas que nos hacen creer que va a ser el año perfecto. En este artículo las analizamos todas.
