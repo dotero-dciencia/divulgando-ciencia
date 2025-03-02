@@ -27,9 +27,9 @@ const title = `${colaborador.nombre} | Divulgando Ciencia`;
     description = {colaborador.bio}
     image = {colaborador.img}
 >
-    <main class="mt-20 w-full justify-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white font-generalsans text-left lg:flex gap-x-8">
-      <section class="w-1/2 mb-8 lg:mb-0">
-        <img transition:name="autor" src={colaborador.img} class="w-96 rounded"/>
+    <main class="mt-20 xl:mt-28 w-full justify-center m-auto px-8 sm:px-32 lg:px-40 xl:px-64 text-principal-black dark:text-principal-white font-generalsans text-left lg:flex gap-x-8">
+      <section class="w-full lg:flex justify-end mb-8 lg:mb-0">
+        <img transition:name="autor" src={colaborador.img} class="w-96 rounded object-cover"/>
       </section>
       <section class="w-fit">
         <h2 class="text-4xl font-generalsans-medium">
