@@ -1,12 +1,10 @@
 ---
 import PrincipalLayout from "@/layouts/PrincipalLayout.astro"
-import { jovenes_cientificos } from "@/json/jovenes-cientificos.json"
+import { getColaboradores } from "@/js/notion";
+const colaboradores = await getColaboradores();
 
-jovenes_cientificos.sort((a, b) => a.nombre.localeCompare(b.nombre))
+colaboradores.sort((a, b) => a.nombre.localeCompare(b.nombre))
 
-const getImagePath = (slug: string): string => {
-  return `/images/jovenes-cientificos/${slug}.webp`;
-}
 ---
 
 <PrincipalLayout 
@@ -22,13 +20,13 @@ const getImagePath = (slug: string): string => {
 
         <nav class="grid grid-cols-5 gap-x-8 gap-y-6">
             {
-                jovenes_cientificos.map(({nombre, descripcion, slug}) => (
-                    <a href={"/jovenes-cientificos/" + slug}
+                colaboradores.map(({nombre, rol, img, slug}) => (
+                    <a href={"/quienes-somos/" + slug}
                     class="bg-principal-black dark:bg-principal-white rounded shadow-faded-black dark:shadow-faded-white shadow-lg text-principal-white dark:text-principal-black text-left">
-                        <img id={`img-${slug}`} transition:name="autor" src={getImagePath(slug)} class="rounded-t" onerror="this.onerror=null; this.src='/images/jovenes-cientificos/default.webp';"/>
+                        <img id={`img`} src={img} class="rounded-t"/>
                         <div class="px-4 py-2">
                             <h4 class="font-generalsans-medium text-lg">{nombre}</h4>
-                            <p>{descripcion}</p>
+                            <p>{rol}</p>
                         </div>
                     </a>
                 ))
