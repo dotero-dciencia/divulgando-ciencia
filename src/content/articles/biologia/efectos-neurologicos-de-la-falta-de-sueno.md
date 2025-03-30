@@ -3,7 +3,7 @@ titulo: Los efectos neurológicos de la falta de sueño
 autor: yousra
 portadaAlt: Ilustración de un cerebro durmiendo.
 descripcion: Es común hoy en día postergar la hora a la que nos vamos a dormir, ya sea para ver solo "un episodio más" de una serie o para empezar a estudiar para el examen de mañana. Pero ¿qué ocurre dentro de nuestra cabeza cuando llevamos a cabo este tipo de rutinas?
-fecha: 2025-09-03
+fecha: 2025-03-09
 ---
 
 ## Los efectos neurológicos de la privación del sueño.
