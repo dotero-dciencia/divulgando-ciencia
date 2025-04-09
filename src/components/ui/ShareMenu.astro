@@ -33,7 +33,7 @@ const { id, title = "Share this content", className = "", display="text+icon", m
             <div class={menuDisplay!=="icon" ? "pt-2" : "hidden"}><div class="pb-2 px-3 text-sm font-medium border-b mb-1 text-center">{title}</div></div>
             <div class={menuDisplay!=="icon" ? "py-1" : "flex"}>
                 <button class="share-option flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-accent transition-colors" data-platform="whatsapp">
-                    <Icon icon="whatsapp" className="h-4 w-4 text-muted-foreground" />
+                    <Icon icon="whatsapp" className="h-4 w-4 text-[#25d366]" />
                     <span class={menuDisplay!=="icon" ? "" : "hidden"}>WhatsApp</span>
                 </button>
                 <button class="share-option flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm hover:bg-accent transition-colors" data-platform="twitter">
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         switch (platform) {
             case 'whatsapp':
-                window.open(`https://wa.me/send?text=${encodeURIComponent(shareTitle)}%20${encodeURIComponent(shareUrl)}`, '_blank');
+                window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(shareTitle)}%20${encodeURIComponent(shareUrl)}`, '_blank');
                 break;
             case 'twitter':
                 window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareTitle)}`, '_blank');
