@@ -1,0 +1,88 @@
+---
+import { LANGUAGES } from '../i18n/config';
+import type { LanguageCode } from '../i18n/config';
+
+interface Props {
+    currentLang: LanguageCode | string;
+    className?: string;
+}
+
+const { currentLang, className = "" } = Astro.props;
+---
+
+<div class={`relative ${className}`}>
+    <button 
+        id="language-switcher-button" 
+        class="flex items-center gap-1 px-2 h-9 rounded-md border border-input bg-background hover:bg-accent transition-colors text-sm"
+        aria-haspopup="true" 
+        aria-expanded="false"
+    >
+        <span class="flex items-center gap-1">
+            <span class="w-5">{currentLang.toUpperCase()}</span>
+            <span class="hidden sm:inline">{LANGUAGES[currentLang]}</span>
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    
+    <div 
+        id="language-dropdown" 
+        class="absolute right-0 mt-1 w-40 rounded-md border bg-card shadow-md z-50 hidden"
+        role="menu"
+    >
+        <div class="py-1">
+            {Object.entries(LANGUAGES).map(([code, name]) => (
+                <button 
+                    class={`w-full text-left px-4 py-2 text-sm hover:bg-accent transition-colors ${currentLang === code ? 'bg-primary/10 font-medium' : ''}`}
+                    data-lang={code}
+                >
+                    <span class="w-5 inline-block">{code.toUpperCase()}</span> {name}
+                </button>
+            ))}
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const button = document.getElementById('language-switcher-button');
+        const dropdown = document.getElementById('language-dropdown');
+        
+        if (!button || !dropdown) return;
+        
+        // Toggle dropdown
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', (!expanded).toString());
+            dropdown.classList.toggle('hidden');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!button.contains(e.target as Node) && !dropdown.contains(e.target as Node)) {
+                button.setAttribute('aria-expanded', 'false');
+                dropdown.classList.add('hidden');
+            }
+        });
+        
+        // Handle language selection
+        const langButtons = dropdown.querySelectorAll('[data-lang]');
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.getAttribute('data-lang');
+                if (!lang) return;
+                
+                // Set cookie
+                const expiryDate = new Date();
+                expiryDate.setFullYear(expiryDate.getFullYear() + 1);
+                document.cookie = `divciencia-lang=${lang}; SameSite=None; Secure; domain=.divulgandociencia.com`;
+
+                // Set in localStorage
+                localStorage.setItem('language', lang);
+                
+                // Reload page to apply new language
+                window.location.reload();
+            });
+        });
+    });
+</script>
+

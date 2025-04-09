@@ -1,0 +1,19 @@
+---
+import Icon from "../ui/Icons.astro";
+import "astro/jsx-runtime"
+import { ScienceList } from "../Science"
+import { clientTranslations } from '../../i18n';
+const lang = Astro.locals.lang;
+const t = clientTranslations[lang];
+---
+
+<div class="space-y-2">
+    {ScienceList.map((science) => (
+        <a href={'/articles?page=1&science='+science.id} class={"flex items-center w-full px-3 py-2 text-sm rounded-md text-muted-foreground hover:bg-muted hover-color-"+science.color}>
+            <Icon icon={science.icon} className="mr-2 h-4 w-4" />
+            {t.sciences[science.name]}
+            <!--<span class="ml-auto text-xs">{science.count}</span>-->
+        </a>
+    ))}
+</div>
+

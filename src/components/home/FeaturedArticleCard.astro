@@ -1,0 +1,62 @@
+---
+import Icon from "../ui/Icons.astro";
+import Button from '../ui/Button.astro';
+import { ScienceList } from "../Science";
+import { calcReadTime } from "../readTime";
+import { getEntry } from "astro:content";
+const { slug, body, title, description, author, authors, date, className = "" } = Astro.props;
+
+const scienceData = ScienceList.filter(({id}) => id == slug.split('/')[1])[0];
+const authorData = (await getEntry("authors", author?.id || authors[0]?.id)).data;
+
+import { clientTranslations } from '../../i18n';
+const lang = Astro.locals.lang;
+const t = clientTranslations[lang];
+
+const authorName = authors !== undefined ? `${authorData.name} ${t.common.and} ${(authors.lenght - 1).toString} ${t.common.more}` : authorData.name;
+---
+
+<div class={`overflow-hidden rounded-lg bg-card text-card-foreground shadow-[0_0_48px_0_rgba(0,0,0,0.16)] h-full flex flex-col ${className}`}>
+    <div class="h-48 w-full relative overflow-hidden">
+        <a href={`/article/${slug.split('/')[2]}`}><img
+            src={"/images/contenido/"+slug.split('/')[2]+"/portada.webp" || "/placeholder.svg"}
+            alt={title}
+            width="400"
+            height="225"
+            class="h-full w-full object-cover transition-transform hover:scale-105"
+        /></a>
+        <div class="absolute top-2 left-2">
+            <span class={"text-primary-foreground px-2 py-1 text-xs font-medium rounded-full bg-color-"+scienceData.color}>
+                {t.sciences[scienceData.name]}
+            </span>
+        </div>
+    </div>
+    <div class="p-6 flex-1 flex flex-col">
+        <div class="mb-2">
+            <a href={`/article/${slug.split('/')[2]}`} class="hover:text-primary">
+                <h4 class="text-xl font-semibold line-clamp-2 group-hover:text-primary transition-colors">
+                    {title}
+                </h4>
+            </a>
+            <div class="flex items-center gap-2 text-sm text-muted-foreground mt-1">
+                <span>{date.toLocaleDateString(t.articles.timeStamp, { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                <span>•</span>
+                <span>{calcReadTime(body)} {t.articles.readTime}</span>
+            </div>
+        </div>
+        <p class="line-clamp-3 text-muted-foreground mb-4 flex-1">{description}</p>
+        <div class="flex justify-between items-center mt-auto">
+            <div class="flex">
+                <img alt=`Foto de perfil de ${authorData.name}` src=`/images/autores/${author.id}.webp` class="bg-principal-white h-6 w-6 rounded-full object-contain my-auto mr-2">
+                <div class="text-sm font-medium mt-0.5">{authorName}</div>
+            </div>
+            <a href={`/article/${slug.split('/')[2]}`}>
+                <Button variant="ghost" size="sm">
+                    <Icon icon="book-open" className="mr-2 h-4 w-4" />
+                    {t.common.readArticle}
+                </Button>
+            </a>
+        </div>
+    </div>
+</div>
+

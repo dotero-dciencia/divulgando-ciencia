@@ -1,6 +1,31 @@
 ---
-import IndexLayoutDefault from "@/layouts/IndexLayoutDefault.astro";
+import MainLayout from '../layouts/MainLayout.astro';
+import HeroSection from '../components/home/HeroSection.astro';
+import ArticlesSection from '../components/home/ArticlesSection.astro';
+import CommunitySection from '../components/home/CommunitySection.astro';
+import FeaturedResearch from '../components/home/FeaturedResearch.astro';
+import { getCollection } from 'astro:content';
+import PScript from '../components/home/ParticlesScript.astro'
+import { clientTranslations } from '../i18n';
+const lang = Astro.locals.lang;
+const t = clientTranslations[lang];
 
+// Get recent articles for the featured section
+const articles = (await getCollection('articles')).filter(({slug}) => slug.split('/')[0] === lang);
+const articlesData = articles.map(article => {
+    // Handle both author and authors fields
+    return {
+        slug: article.slug,
+        body: article.body,
+        ...article.data,
+    };
+});
 ---
 
-<IndexLayoutDefault/>
+<MainLayout title={t.titles.home}>
+    <PScript/>
+    <HeroSection />
+    <FeaturedResearch articles={articlesData.sort((a, b) => b.date.getTime() - a.date.getTime()).slice(0,3)} />
+    <ArticlesSection articles={articlesData} />
+    <CommunitySection />
+</MainLayout>

@@ -1,0 +1,79 @@
+---
+import Icon from '../ui/Icons.astro';
+import Button from '../ui/Button.astro';
+import { clientTranslations } from '../../i18n';
+const lang = Astro.locals.lang;
+const t = clientTranslations[lang];
+---
+
+<section class="w-full py-12 md:py-24 lg:py-32 bg-primary/5 relative overflow-hidden">
+	<div class="absolute top-0 left-0 w-full h-full">
+		<img alt="Dos chicos jóvenes mirando por microscopios. " class="h-full w-full object-cover opacity-80 bg-principal-black z-10" src="/images/landing-page/portada.webp">
+	</div>
+	<div class="container px-4 md:px-6 relative z-10">
+		<div class="flex flex-col items-center justify-center space-y-4 text-center">
+			<div class="space-y-2">
+				<h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+					Divulgando Ciencia
+				</h1>
+				<p class="mx-auto max-w-[700px] text-foreground md:text-xl">
+					{t.home.hero.subtitle} <br/><strong>{t.home.hero.subtitle_strong}</strong>
+				</p>
+			</div>
+			<div class="flex flex-col gap-2 min-[400px]:flex-row">
+				<a href="https://egm147anfot.typeform.com/to/snOxRfOe"><Button variant="primary" className="bg-primary hover:bg-primary/90 text-xs">
+					{t.home.hero.shareResearch1}<br />{t.home.hero.shareResearch2}
+					<Icon icon="arrowright" className="ml-2 h-4 w-4" />
+				</Button></a>
+				<a href="/articles"><Button variant="outline">{t.home.hero.browseArticles}</Button></a>
+			</div>
+		</div>
+	</div>
+	<div class="opacity-60 flex flex-row color-[#000] w-full justify-center z-10">
+		<div class="flex flex-row absolute gap-4 bottom-2 md:bottom-5">
+			<li class="list-none">
+				<a href="https://x.com/divcienciacom" target="_blank" class="hero__social-link">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M20 4.52604C19.2746 4.84115 18.6633 4.85156 18.0155 4.53993C18.8514 4.05208 18.8897 3.7092 19.1918 2.78733C18.4094 3.23958 17.5423 3.56858 16.62 3.74566C15.8822 2.98003 14.8298 2.5 13.6651 2.5C11.4284 2.5 9.61593 4.26736 9.61593 6.44444C9.61593 6.75347 9.65158 7.05469 9.72019 7.34375C6.35537 7.17969 3.37106 5.60938 1.37409 3.22222C1.02566 3.80469 0.826056 4.48264 0.826056 5.20573C0.826056 6.57465 1.54161 7.78125 2.62698 8.48872C1.96311 8.46788 1.33933 8.2908 0.793976 7.99566C0.793085 8.01215 0.793085 8.02778 0.793085 8.04514C0.793085 9.9566 2.18856 11.5503 4.04206 11.9132C3.44858 12.0703 2.82303 12.0946 2.21262 11.9818C2.72857 13.5477 4.22385 14.6884 5.99537 14.7205C4.26216 16.0434 2.11371 16.5946 0 16.3533C1.79291 17.4722 3.91998 18.125 6.20745 18.125C13.6553 18.125 17.7277 12.1146 17.7277 6.90191C17.7277 6.73003 17.725 6.56076 17.717 6.39149C18.5074 5.83594 19.4573 5.31771 20 4.52604Z" fill="currentColor"></path>
+					</svg>
+				</a>
+			</li>
+			<li class="list-none">
+				<a href="https://instagram.com/divulgandociencia_ig" target="_blank" class="hero__social-link">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M4.99525 0H15.0047C17.7635 0 20 2.23604 20 4.99525V15.0047C20 17.7635 17.764 20 15.0047 20H4.99525C2.23645 20 0 17.764 0 15.0047V4.99525C0 2.23645 2.23604 0 4.99525 0ZM2 15.0047C2 16.6592 3.34085 18 4.99525 18H15.0047C16.6592 18 18 16.6591 18 15.0047V4.99525C18 3.34078 16.6591 2 15.0047 2H4.99525C3.34078 2 2 3.34085 2 4.99525V15.0047ZM5 10C5 7.23858 7.23858 5 10 5C12.7614 5 15 7.23858 15 10C15 12.7614 12.7614 15 10 15C7.23858 15 5 12.7614 5 10ZM13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13C11.6569 13 13 11.6569 13 10ZM15 6C15.5523 6 16 5.55228 16 5C16 4.44772 15.5523 4 15 4C14.4477 4 14 4.44772 14 5C14 5.55228 14.4477 6 15 6Z" fill="currentColor"></path>
+					</svg>
+				</a>
+			</li>
+			<li class="list-none">
+				<a href="https://discordapp.com/invite/7rTCp5KWPj" target="_blank" class="hero__social-link">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M17.2727 4.31818C17.2727 4.31818 15.1882 2.68636 12.7273 2.5L12.5055 2.94409C14.73 3.48909 15.7509 4.26818 16.8182 5.22727C14.9786 4.28818 13.1636 3.40909 10 3.40909C6.83636 3.40909 5.02136 4.28818 3.18182 5.22727C4.24909 4.26818 5.46364 3.40182 7.49455 2.94409L7.27273 2.5C4.69091 2.74318 2.72727 4.31818 2.72727 4.31818C2.72727 4.31818 0.399545 7.69364 0 14.3182C2.34545 17.0241 5.90909 17.0455 5.90909 17.0455L6.65455 16.0527C5.38909 15.6127 3.96182 14.8277 2.72727 13.4091C4.19909 14.5227 6.42045 15.6818 10 15.6818C13.5795 15.6818 15.8009 14.5227 17.2727 13.4091C16.0386 14.8277 14.6114 15.6127 13.3455 16.0527L14.0909 17.0455C14.0909 17.0455 17.6545 17.0241 20 14.3182C19.6005 7.69364 17.2727 4.31818 17.2727 4.31818ZM7.04545 12.5C6.16636 12.5 5.45455 11.6864 5.45455 10.6818C5.45455 9.67727 6.16636 8.86364 7.04545 8.86364C7.92455 8.86364 8.63636 9.67727 8.63636 10.6818C8.63636 11.6864 7.92455 12.5 7.04545 12.5ZM12.9545 12.5C12.0755 12.5 11.3636 11.6864 11.3636 10.6818C11.3636 9.67727 12.0755 8.86364 12.9545 8.86364C13.8336 8.86364 14.5455 9.67727 14.5455 10.6818C14.5455 11.6864 13.8336 12.5 12.9545 12.5Z" fill="currentColor"></path>
+					</svg>
+				</a>
+			</li>
+			<li class="list-none">
+				<a href="https://www.tiktok.com/@divulgandociencia.com" target="_blank" class="hero__social-link">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M13.7329 0C14.0629 2.83809 15.6469 4.53015 18.401 4.71015V7.90226C16.805 8.05826 15.4069 7.53624 13.7809 6.55221V12.5224C13.7809 20.1067 5.51259 22.4767 2.18848 17.0406C0.0524123 13.5424 1.36045 7.40424 8.21268 7.15823V10.5243C7.69066 10.6083 7.13264 10.7403 6.62263 10.9144C5.09858 11.4304 4.23455 12.3964 4.47456 14.1005C4.93657 17.3646 10.9248 18.3306 10.4267 11.9524V0.00600019H13.7329V0Z" fill="currentColor"></path>
+					</svg>
+				</a>
+			</li>
+			<li class="list-none">
+				<a href="https://youtube.com/channel/UC_XroIJ1vhYqTnGJVnQApzw" target="_blank" class="hero__social-link">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16.7183 3.125H3.28167C1.4725 3.125 0 4.59833 0 6.4075V14.0083C0 15.8183 1.4725 17.2917 3.28167 17.2917H16.7192C18.5275 17.2917 20 15.8183 20 14.0083V6.4075C20 4.59833 18.5275 3.125 16.7183 3.125ZM13.7817 10.2342L8.14083 13.8433C8.0725 13.8867 7.99417 13.9092 7.91667 13.9092C7.8475 13.9092 7.77917 13.8917 7.71667 13.8575C7.58333 13.785 7.5 13.6442 7.5 13.4925V6.27417C7.5 6.12083 7.58333 5.98083 7.71667 5.9075C7.85083 5.835 8.01333 5.84083 8.14167 5.9225L13.7825 9.5325C13.9025 9.60917 13.975 9.74083 13.975 9.88333C13.9742 10.0258 13.9017 10.1575 13.7817 10.2342Z" fill="currentColor"></path>
+					</svg>
+				</a>
+			</li>
+			<li class="list-none">
+				<a href="https://github.com/dotero-dciencia/divulgando-ciencia" target="_blank" class="hero__social-link">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+					</svg>
+				</a>
+			</li>
+		<div>
+	</div>
+</section>
+

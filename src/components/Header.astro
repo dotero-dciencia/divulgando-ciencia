@@ -1,0 +1,87 @@
+---
+import Icon from './ui/Icons.astro';
+import Input from './ui/Input.astro';
+import ThemeToggle from './ThemeToggle.astro';
+import LangSwitcher from './LangSwitcher.astro';
+
+import { clientTranslations } from '../i18n';
+const lang = Astro.locals.lang;
+const t = clientTranslations[lang];
+---
+
+<header class="sticky top-0 z-50 w-full shadow-lg bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+<div class="container flex h-16 items-center justify-between py-4 px-4">
+    <div class="flex items-center gap-2">
+        <a href="/">
+            <div class="flex items-center gap-2">
+                <img src="/images/logo.webp" alt="Logo de divulgandociencia.com" class="h-8 w-8 rounded-md"/>
+                <span class="text-xl font-bold max-sm:hidden">Divulgando Ciencia</span>
+            </div>
+        </a>
+    </div>
+    <div class="hidden md:flex items-center gap-6">
+        <nav class="flex items-center gap-6">
+            <a href="/" class="text-sm font-medium hover:underline underline-offset-4">
+                {t.common.home}
+            </a>
+            <a href="/articles" class="text-sm font-medium hover:underline underline-offset-4">
+                {t.common.articles}
+            </a>
+            <a href="/tecnoherramientas" class="text-sm font-medium hover:underline underline-offset-4 inline-flex">
+                {t.common.lab}
+            </a>
+            <a href="/about" class="text-sm font-medium hover:underline underline-offset-4">
+                {t.common.about}
+            </a>
+        </nav>
+    </div>
+    <div class="flex items-center gap-4">
+        <form id="header-search-form" action="/articles" method="get" class="relative hidden lg:block">
+            <Icon icon="search" className="absolute left-2.5 top-2.5 mt-0.5 h-4 w-4 text-muted-foreground" />
+            <Input
+                type="search"
+                name="search"
+                id="header-search-input"
+                placeholder={t.header.searchArticles}
+                className="w-[200px] lg:w-[300px] pl-8"
+            />
+            <input type="hidden" name="page" value="1" />
+        </form>
+        <a href="/articles" class="flex h-9 w-9 items-center justify-center rounded-md border bg-background transition-colors hover:bg-muted lg:hidden">
+            <Icon icon="search" className="left-2.5 top-2.5 mt-0.5 h-4 w-4 text-muted-foreground" />
+        </a>
+        <ThemeToggle />
+        <LangSwitcher currentLang={lang}/>
+        <button id="menu-toggle" class="flex md:hidden h-9 w-9 items-center justify-center rounded-md border bg-background transition-colors hover:bg-muted" aria-label="Toggle theme">
+            <Icon icon="menu" className="left-2.5 top-2.5 mt-0.5 h-4 w-4" />
+        </button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchForm = document.getElementById('header-search-form');
+            const searchInput = document.getElementById('header-search-input');
+            
+            if (searchForm && searchInput) {
+                // Submit the form when Enter key is pressed
+                searchInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        if (searchInput.value.trim() !== '') {
+                            searchForm.submit();
+                        } else {
+                            e.preventDefault(); // Prevent submitting empty search
+                        }
+                    }
+                });
+                // Check if we're on the articles page and there's a search parameter
+                const urlParams = new URLSearchParams(window.location.search);
+                const searchParam = urlParams.get('search');
+                
+                // If we're on the articles page and there's a search parameter, populate the search input
+                if (window.location.pathname === '/articles' && searchParam) {
+                    searchInput.value = searchParam;
+                }
+            }
+        });
+    </script>
+</div>
+</header>

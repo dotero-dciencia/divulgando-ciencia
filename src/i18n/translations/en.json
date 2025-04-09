@@ -1,0 +1,226 @@
+{
+    "common": {
+        "search": "Search",
+        "searchPlaceholder": "Search articles...",
+        "home": "Home",
+        "articles": "Articles",
+        "lab": "Lab",
+        "about": "About",
+        "contact": "Contact",
+        "shop": "Shop",
+        "readMore": "Read More",
+        "readArticle": "Read Article",
+        "save": "Save",
+        "share": "Share",
+        "loading": "Loading...",
+        "notFound": "Not Found",
+        "back": "Back",
+        "and": "and",
+        "more": "more",
+        "description": "Discover the power of open scientific outreach with us."
+    },
+    "titles": {
+        "home": "Home",
+        "articles": "Articles",
+        "lab": "Lab",
+        "about": "About Us",
+        "contact": "Contact Us",
+        "terms": "Terms of Service",
+        "notFound": "Page Not Found"
+    },
+    "header": {
+        "searchArticles": "Search articles..."
+    },
+    "footer": {
+        "terms": "Terms",
+        "contact": "Contact"
+    },
+    "home": {
+        "hero": {
+            "subtitle": "Connect with researchers, share your discoveries, explore science and",
+            "subtitle_strong": "discover the power of open scientific communication.",
+            "shareResearch1": "Share Your",
+            "shareResearch2": "Research",
+            "browseArticles": "Browse Articles"
+        },
+        "featuredResearch": {
+            "title": "Featured Research",
+            "subtitle": "The latest discoveries and scientific research",
+            "filter": "Filter",
+            "viewAll": "View All"
+        },
+        "articles": {
+            "recent": "Recent",
+            "popular": "Popular",
+            "trending": "Trending",
+            "by": "By",
+            "sciences": "Sciences"
+        },
+        "community": {
+            "title": "Join Our Scientific Community",
+            "subtitle": "Connect with researchers, scientists and science enthusiasts worldwide.",
+            "emailPlaceholder": "Enter your email",
+            "subscribe": "Subscribe",
+            "privacyNotice": "By subscribing, you agree to our terms and privacy policy."
+        }
+    },
+    "articles": {
+        "title": "Scientific Articles",
+        "subtitle": "Explore the latest research and advancements from scientists around the world.",
+        "searchPlaceholder": "Search articles by title, author, or keywords...",
+        "filter": "Filter",
+        "removeTags": "Remove Tags Filter",
+        "tags": "Tags",
+        "noArticlesFound": "No articles found. Try adjusting your filters.",
+        "page": "Page",
+        "of": "of",
+        "timeStamp": "en-EN",
+        "readTime": "min. of reading",
+        "searchResults": "Search results for",
+        "recent": "Recent",
+        "popular": "Popular",
+        "by": "By",
+        "sciences": "Sciences",
+        "defaultBio": "Author in divulgandociencia.com"
+    },
+    "article": {
+        "aboutAuthor": "About the Author",
+        "aboutAuthors": "About the Authors",
+        "references": "References",
+        "tags": "Tags",
+        "relatedArticles": "Related Articles",
+        "viewMoreArticles": "View More Articles"
+    },
+    "languageSwitcher": {
+        "selectLanguage": "Select Language"
+    },
+    "notFound": {
+        "title": "Page Not Found",
+        "message": "The article or page you are looking for does not exist or has been moved."
+    },
+    "sciences": {
+        "all": "All Sciences",
+        "sciences": "Sciences",
+        "math": "Mathematics",
+        "physics": "Physics",
+        "chemistry": "Chemistry",
+        "biology": "Biology",
+        "geology": "Geology",
+        "technology": "Technology",
+        "coding": "Coding",
+        "scientists": "Scientists"
+    },
+    "about": {
+        "title": "About \"Divulgando Ciencia\"",
+        "subtitle": "Learn more about our mission and vision.",
+        "mission": {
+            "title": "Our Mission",
+            "description": {
+                "paragraph1": "Science is part of everything around us: from the smallest things we cannot see to the big ideas that change the course of the world. However, it is often presented in an inaccessible, technical, or even boring way.",
+                "paragraph2": "At \"Divulgando Ciencia\", we believe that knowledge should be available to everyone, particularly to those who are just beginning on discovering the world with curiosity.",
+                "paragraph3": "Our mission is to transform the way young people access science: making it approachable, clear, and exciting. We want the understanding of a formula, a discovery, or a theory to be a gateway to wonder, not a source of frustration.",
+                "paragraph4": "That is why we work to connect young people with real science—the kind which is experienced, discussed, lived, and shared. Because learning can also be an adventure, and understanding how the world works is one of the most powerful ways to change it."
+            }
+        },
+        "offer": {
+            "title": "What We Offer",
+            "card1": {
+                "title": "Scientific Articles",
+                "description": "We explain complex topics in a simple way without losing rigor. From atoms to black holes, we want you to understand the world around you."
+            },
+            "card2": {
+                "title": "Open Research",
+                "description": "Information and knowledge should be free to get, which is why we promote open research and free access to knowledge."
+            },
+            "card3": {
+                "title": "Scientific Community",
+                "description": "A network for sharing ideas, collaborating on projects, and giving visibility to your research, presentations, or scientific creations."
+            },
+            "card4": {
+                "title": "Global Access",
+                "description": "We want to break language and geographical barriers. Our website will be available in multiple languages and adapted to all types of devices."
+            },
+            "card5": {
+                "title": "Scientific Store",
+                "description": "Because science is also a lifestyle, we offer products related to science and scientific communication. Various scientific products, everything you need to live science the fullest."
+            },
+            "card6": {
+                "title": "Collaborations",
+                "description": "Opportunities to collaborate on research projects, publish your articles, and share your discoveries for free."
+            }
+        },
+        "team": {
+            "title": "Our Team",
+            "description": "Meet the passionate people behind this platform."
+        },
+        "proyect": {
+            "title": "A project by young people... for young people",
+            "description": "Divulgando Ciencia is led by students, like some of you, who want to change the way science is learned and talked about. We are driven by curiosity, enthusiasm, and the desire to show that science can also be creative, fun, and inspiring.",
+            "join": "We believe science is not just for textbooks. It is for sharing, questioning, and living.",
+            "join_strong": "Join us!"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "description": "Do you have questions, suggestions, or want to collaborate with us? We would love to hear from you!",
+            "contact_us": "Contact Us"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "description": "Do you have questions, suggestions, or want to collaborate with us? We would love to hear from you!",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "your_name": "Your name",
+            "your_email": "Your email",
+            "your_subject": "Subject of your message",
+            "your_message": "Your message",
+            "send": "Send Message"
+        },
+        "emails": {
+            "title": "Contact Information",
+            "subtitle": "Email Us",
+            "generalInquiries": "General Inquiries",
+            "support": "Support",
+            "submissions": "Submissions"
+        }
+    },
+    "terms": {
+        "title": "LEGAL DISCLAIMER",
+        "date": "Last updated: March 25, 2025.",
+        "subtitle": "Welcome to \"Divulgando Ciencia\". This legal disclaimer governs access and use of the website divulgandociencia.com, here in after referred to as \"the Website.\" By accessing and browsing this Website, you accept the terms set forth herein. If you do not agree with these terms, we recommend that you do not use the site.",
+        "paragraph1": {
+            "title": "1. IDENTIFICATION",
+            "p1": "Website owners:",
+            "p2": "Contact email:",
+            "p3": "Purpose of the website:",
+            "p4":"Non-profit scientific and educational dissemination."
+        },
+        "paragraph2": {
+            "title": "2. TERMS OF USE",
+            "description": "Access to this Website is free and voluntary. As a user, you agree to make appropriate use of the content and comply with current regulations. The use of the site for illegal, offensive, or rights-violating activities is not permitted."
+        },
+        "paragraph3": {
+            "title": "3. INTELLECTUAL AND INDUSTRIAL PROPERTY",
+            "description": "All content published on this website (texts, images, videos, graphics, logos, etc.) is protected by intellectual property rights and belongs to their respective authors. Unless otherwise stated, the content is under a Creative Commons CC BY 4.0 license, which means you can share and adapt the content as long as proper credit is given."
+        },
+        "paragraph4": {
+            "title": "4. THIRD-PARTY LINKS",
+            "description": "This site may include links to external pages. \"Divulgando Ciencia\" is not responsible for the content, privacy policies, or practices of such third-party sites."
+        },
+        "paragraph5": {
+            "title": "5. DISCLAIMER",
+            "description": "\"Divulgando Ciencia\" does not guarantee the continuous availability of the website or the absence of errors. We are not responsible for any damage or loss resulting from the use of the information provided on the site."
+        },
+        "paragraph6": {
+            "title": "6. MODIFICATIONS TO THE LEGAL NOTICE",
+            "description": "We reserve the right to modify this legal disclaimer at any time. Any changes will take effect upon publication on this page."
+        },
+        "paragraph7": {
+            "title": "7. CONTACT",
+            "description": "If you have any questions about this Legal Disclaimer, you can contact us via email: support@divulgandociencia.com."
+        }
+    }
+}

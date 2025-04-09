@@ -1,0 +1,29 @@
+---
+title: Physics in Science Fiction
+author: physics-league
+altImage: Image of electricity.
+description: How science fiction alters the laws of physics.
+date: 2024-05-03
+tags:
+    - Science Fiction
+    - Gravity
+---
+# Physics in Science Fiction
+
+Science fiction makes hypotheses and theories that are impossible in our world come true with a leap of faith, triple somersaults, and very long and complicated words that scientists in those worlds understand. No one is surprised by the ships and travels of Star Wars, but what happens when we try not to stray too far from our reality? The more realistic one tries to be by adding the minimum elements of fantasy, the more physical laws fail without us realizing it. Gravity is the first to be ignored. In all the movies, we see jumps that even professional athletes would not be able to make. Even so, there are times when common sense makes us think they are real, but physics tells us it is impossible.
+
+An interesting exercise is, instead of adhering to the parameters of the world we live in, to take others that are initially immovable. This is the case of Miss Valentine from One Piece, ([**Video - YouTube**](https://youtu.be/BWcN6CzoTbA?si=tnVDBjI1CiPgH6ww)), a character who has the ability to change her mass, but not her weight, at will between 1 kg and 10,000 kg. The use of her abilities in a world that takes many elements from the real one makes it difficult to distinguish what is purely fiction and what is unintentionally so. In this case, we can see two different examples: a clear element of science fiction that we already expected to be unreal and another that, by common sense, might seem real but is not.
+
+We must start by violating the law of conservation of matter, but we will see that even in this assumption, we must ignore many other laws. One of the first abilities she uses is reducing her weight to 1 kg to float. With a few calculations, we can see what would really happen in this case. Let us assume, based on statistical averages, a height of 165 cm and a "weight" of 55 kg, in addition to obtaining the average density of the human body: 933 kg/m³. If we reduce the weight to 1 kg without varying the volume, we obtain a new density of 16.96 kg/m³, which, compared to the air density of 1.2 kg/m³, is still much greater. Without delving into fluid physics with its parameter for viscosity, just by Archimedes' principle, it would be impossible for her to float—a result very different from the fantastical, but that’s okay, we already expected this.
+
+Moreover, by reducing her weight so much, thanks to Newton's second law, we can deduce what other things would also become impossible. Without delving into the forces necessary to move herself, let us assume she can move in the same way as before. We find a contentious gesture: how is it possible for her to grab the umbrella and spin it? In the law, we have mass and acceleration, which, when multiplied, give us the force exerted. If we reduce the mass while maintaining the same acceleration, the forces we can exert are much smaller. Holding the umbrella becomes an impossible task in this situation. This can still be understood intuitively: the less mass an object has, the easier it is to move it. This case is the reverse; if we do not have enough mass to exert the same force, we need greater acceleration.
+
+Where common sense begins to fail is in the speed of the fall. If the shape and volume are always the same, the drag exerted while descending is the same, and the gravitational field acceleration is the same for all bodies; only the force exerted changes. With this, we see that if initially, the air resistance was not enough to keep her afloat when she weighed 1 kg, increasing her weight would not change the acceleration of the fall. At the moment she starts to transition from floating to the mentioned 10,000 kg gradually, we see how she accelerates more and more. With all the assumptions we have made, this obviously would not happen. The body would accelerate while falling, but at the same rate from the moment it is at its highest point until it touches the ground. Moreover, with air resistance, falling bodies have a terminal velocity, so once reached, the change in mass would not matter; it would be impossible to go faster without changing the shape.
+
+In this case, it is clear that being able to change a person's mass at will is unreal. Additionally, doing the math, we see that it would not even be possible to fly this way, but none of these things surprise us. However, the idea that changing the body's mass changes the acceleration of the fall in jerks as the mass changes without altering the shape is false. Galileo demonstrated this 500 years ago by dropping two cannonballs of similar size but different materials and, consequently, different weights. Both reached the ground at the same time since the gravitational field accelerates all bodies equally; what changes is the resulting force due to the mass, as Newton's second law states. If this does not happen in our daily lives, it is because the air exerts drag, and then the object's shape comes into play when determining how it falls and at what rate. This example can also be seen more broadly using a vacuum chamber. Under these circumstances, it is observed that two objects with very different masses, such as a feather and a hammer, fall at the same rate.
+
+![Apple and feather falling at the same time.](/images/contenido/fisica-en-la-ciencia-ficcion/manzana-y-pluma.webp)
+
+*Figure 1: In a vacuum chamber, it is observed that under the action of gravity, all bodies experience the same acceleration.*
+
+In the end, in science fiction, none of this matters; it is a different world, and things can work however the author wants. What is curious is which elements inherited from the real world we intuitively take and turn out to be accidental fiction.

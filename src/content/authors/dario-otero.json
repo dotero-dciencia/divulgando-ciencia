@@ -1,8 +1,8 @@
 {
-  "nombre": "Darío Otero",
+  "name": "Darío Otero",
   "bio": "Hola qué tal",
   "email": "dotero@divulgandociencia.com",
-  "redes": {
+  "social_media": {
     "x": "https://x.com/dotero_dciencia",
     "instagram": "https://x.com/dotero_dciencia"
   }

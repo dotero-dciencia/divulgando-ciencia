@@ -1,0 +1,87 @@
+---
+import Icon from '../ui/Icons.astro';
+import Button from '../ui/Button.astro';
+import ArticleCard from './ArticleCard.astro';
+const { articles } = Astro.props;
+articles.sort((a, b) => b.date.getTime() - a.date.getTime())
+import { clientTranslations } from '../../i18n';
+const lang = Astro.locals.lang;
+const t = clientTranslations[lang];
+---
+
+<div class="w-full">
+    <div class="tabs">
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex border rounded-lg overflow-hidden">
+                <button class="px-4 py-2 bg-primary text-primary-foreground" data-tab="recent">{t.home.articles.recent}</button>
+                <button class="px-4 py-2 hover:bg-muted" data-tab="popular">{t.home.articles.popular}</button>
+                <button class="px-4 py-2 hover:bg-muted" data-tab="trending">{t.home.articles.trending}</button>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="recent">
+            <div class="space-y-4">
+                {articles.slice(0,6).map((article) => (
+                    <ArticleCard
+                        {...article}
+                    />
+                ))}
+            </div>
+        </div>
+        
+        <div class="tab-content hidden" id="popular">
+            <div class="space-y-4">
+                {articles.slice(0,6).map((article) => (
+                    <ArticleCard
+                        {...article}
+                    />
+                ))}
+            </div>
+        </div>
+        
+        <div class="tab-content hidden" id="trending">
+            <div class="space-y-4">
+                {articles.slice(0,6).map((article) => (
+                    <ArticleCard
+                        {...article}
+                    />
+                ))}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Simple tab functionality
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabButtons = document.querySelectorAll('[data-tab]');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                
+                // Update active tab button
+                tabButtons.forEach(btn => {
+                    if (btn.getAttribute('data-tab') === tabId) {
+                        btn.classList.add('bg-primary', 'text-primary-foreground');
+                        btn.classList.remove('hover:bg-muted');
+                    } else {
+                        btn.classList.remove('bg-primary', 'text-primary-foreground');
+                        btn.classList.add('hover:bg-muted');
+                    }
+                });
+                
+                // Show active tab content
+                tabContents.forEach(content => {
+                    if (content.id === tabId) {
+                        content.classList.remove('hidden');
+                    } else {
+                        content.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    });
+</script>
+

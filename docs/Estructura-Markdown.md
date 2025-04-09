@@ -6,7 +6,7 @@
 titulo:
 autor: 
 portadaAlt:
-descripcion:
+description:
 fecha:
 ---
 

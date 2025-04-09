@@ -3,53 +3,52 @@ import siteData from "../data/siteData.json";
 import jsonLDGenerator from "../js/jsonLD";
 
 const {
-  title,
-  description,
-  url = Astro.url,
-  image,
-  frontmatter,
-  robots,
-  altIMG
+    title,
+    description,
+    url = Astro.url,
+    image,
+    frontmatter,
+    robots,
+    altIMG,
+    lang
 } = Astro.props;
 
-const actualIMG = image ? "https://www.divulgandociencia.com" + image : "https:/www.divulgandociencia.com/images/portada.webp"
+const actualIMG = `https://og.tailgraph.com/og?fontFamily=Roboto&title=${encodeURIComponent(title)}&titleTailwind=font-bold%20text-6xl%20text-white%20rounded-full%20bg-%5B%23222%5D%2F50%20px-6%20mb-2&text=${encodeURIComponent(description)}&textTailwind=text-2xl%20text-white%20rounded-full%20bg-%5B%23222%5D%2F50%20w-fit%20px-4%20mx-auto&logoUrl=https%3A%2F%2Fdivulgandociencia.com%2Fimages%2Flogo.webp&logoTailwind=fixed%20bottom-4%20rounded-full%20right-%5B180px%5D%20h-%5B128px%5D&bgUrl=${(image !== undefined && image !== '') ? encodeURIComponent('https://www.divulgandociencia.com'+image) : encodeURIComponent('https://www.divulgandociencia.com/images/landing-page/Banner.svg')}&bgTailwind=bg-white%20bg-cover&footer=divulgandociencia.com&footerTailwind=text-2xl%20text-black%20font-bold%20text-center%20!text-%5B%23222%5D%20rounded-full%20bg-%5B%23f5f5f5%5D%2F50%20!w-fit%20!h-fit%20!right-auto%20!left-auto%20bottom-%5B46px%5D&t=1743970057262&refresh=1`
 const actualURL = "https://www.divulgandociencia.com" + (url.pathname)
 
 const jsonLD = jsonLDGenerator({
-  type: frontmatter ? "post" : "website",
-  post: frontmatter,
-  url,
+    type: frontmatter ? "post" : "website",
+    post: frontmatter,
+    url,
 });
 ---
 
 <!-- SEO -->
+
 <link rel="canonical" href={actualURL} />
 
-<!-- Open Graph -->
-<meta property="og:site_name" content="Divulgando Ciencia" />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
-<meta property="og:url" content={actualURL} />
-<meta property="og:image" content={actualIMG} />
-<meta property="og:image:url" content={actualIMG} />
-<meta
-  property="og:image:secure_url"
-  content={actualIMG}
-/>
-<meta property="og:image:type" content="image/webp" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="600" />
-<meta property="og:image:alt" content={altIMG ? altIMG :"Dos chicos jóvenes mirando por el microscopio."} />
+<!-- HTML Meta Tags -->
+<title>{title}</title>
+<meta name="description" content={description}>
+<meta name="generator" content={Astro.generator}>
 
-<!-- Twitter -->
-<meta name="twitter:title" content={title} />
-<meta name="twitter:description" content={description} />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content={actualIMG} />
-<meta name="twitter:image:alt" content={altIMG ? altIMG :"Dos chicos jóvenes mirando por el microscopio."} />
-<meta name="twitter:domain" content={import.meta.env.SITE} />
+<meta property="og:url" content={actualURL}>
+<meta property="og:type" content="website">
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:image" content={actualIMG}>
+<meta property="og:image:alt" content={altIMG}>
+
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="divulgandociencia.com">
+<meta property="twitter:url" content={actualURL}>
+<meta name="twitter:title" content={title}>
+<meta name="twitter:description" content={description}>
+<meta name="twitter:image" content={actualIMG}>
+<meta name="twitter:image:alt" content={altIMG}>
+<meta name="twitter:site" content="@divulgandociencia">
 
 {robots && <meta name="robots" content="noindex, nofollow" />}
 
 <!-- JSON LD -->
-<Fragment set:html={jsonLD} />
+<Fragment set:html={jsonLD}/>

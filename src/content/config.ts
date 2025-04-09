@@ -1,28 +1,13 @@
 // 1. Import utilities from `astro:content`
 import { z, reference, defineCollection } from 'astro:content';
 
-// 2. Define a `type` and `schema` for each collection
-const articles = defineCollection({
-  type: 'content', // v2.5.0 and later
-  schema: z.object({
-    borrador: z.boolean().optional(),
-    titulo: z.string(),
-    portadaAlt: z.string(),
-    // descripcion: z.string().optional(),
-    autor: reference('authors'),
-    fecha: z.date().optional(),
-    autores: z.string().optional(),
-    etiquetas: z.string().optional(),
-  }),
-});
-
 const authors = defineCollection({
   type: 'data',
   schema: z.object({
-    nombre: z.string(),
+    name: z.string(),
     bio: z.string().optional(),
     email: z.string().email().optional(),
-    redes: z.object({
+    social_media: z.object({
       x: z.string().optional(),
       instagram: z.string().optional(),
       youtube: z.string().optional(),
@@ -30,6 +15,26 @@ const authors = defineCollection({
       github: z.string().optional()
     }).optional(),
   })
+});
+
+const articles = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    altImage: z.string(),
+    authors: z.array(reference('authors')).optional(),
+    author: reference('authors').optional(),
+    date: z.date(),
+    tags: z.array(z.string()).optional(),
+    references: z.array(z.object({
+      title: z.string(),
+      authors: z.string(),
+      journal: z.string(),
+      year: z.string(),
+      doi: z.string(),
+    })).optional(),
+  }),
 });
 
 

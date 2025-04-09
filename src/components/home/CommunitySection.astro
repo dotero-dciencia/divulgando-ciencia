@@ -1,0 +1,36 @@
+---
+import Button from "../ui/Button.astro";
+import Input from "../ui/Input.astro";
+import Particles from "./Particles.astro";
+import JoinForm from "./JoinForm.astro";
+import { clientTranslations } from '../../i18n';
+const lang = Astro.locals.lang;
+const t = clientTranslations[lang];
+---
+
+<section
+    class="w-full py-12 md:py-24 shadow-[inset_0_20px_15px_-20px] shadow-[#000]/50 dark:shadow-[inset_0_20px_18px_-20px] dark:shadow-[#000]/50 lg:py-32 bg-primary/5 relative overflow-hidden mt-4"
+>
+    <div class="absolute top-0 left-0">
+        <Particles canvasName="particlesCommunity" />
+    </div>
+    <div class="tscience-pattern h-full w-full absolute top-0"></div>
+    <div class="container px-4 md:px-6 relative z-10">
+        <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl pb-3">
+                    {t.home.community.title}
+                </h2>
+                <p class="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                    {t.home.community.subtitle}
+                </p>
+            </div>
+            <div class="w-full max-w-sm mt-0">
+                <JoinForm/>
+                <p class="text-xs text-muted-foreground">
+                    {t.home.community.privacyNotice}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

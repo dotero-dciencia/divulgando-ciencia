@@ -1,0 +1,360 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 96%; /* #f5f5f5 */
+        --foreground: 222.2 84% 4.9%;
+        --card: 0 0% 96%;
+        --card-foreground: 222.2 84% 4.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
+        --primary: 221 83% 53%;
+        --primary-rgb: 37, 99, 235;
+        --primary-foreground: 210 40% 98%;
+        --secondary: 210 40% 96.1%;
+        --secondary-foreground: 222.2 47.4% 11.2%;
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+        --ring: 221 83% 53%;
+        --radius: 0.75rem;
+        --particles-color: 0,0,0;
+
+        --math:#004193;
+        --biology:#005100;
+        --geology:#6E3400;
+        --physics:#950000;
+        --chemistry:#820083;
+        --technology:#623B00;
+        --coding:#5a12b0;
+        --scientists:#004f3e;
+
+        --math-con:#a8c6e3;
+        --biology-con:#64db62;
+        --geology-con:#e2bba5;
+        --physics-con:#ffaaa2;
+        --chemistry-con:#ff99ff;
+        --technology-con:#f2ba48;
+        --coding-con:#e9aaff;
+        --scientists-con:#16dac0;
+    }
+
+    .dark {
+        --background: 0 0% 13.5%;
+        --foreground: 210 40% 98%;
+        --card: 0 0% 13.5%;
+        --card-foreground: 210 40% 98%;
+        --popover: 222.2 84% 4.9%;
+        --popover-foreground: 210 40% 98%;
+        --primary: 217.2 91.2% 59.8%;
+        --primary-rgb: 59, 130, 246;
+        --primary-foreground: 222.2 47.4% 11.2%;
+        --secondary: 217.2 32.6% 17.5%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%;
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 217.2 32.6% 20.5%;
+        --input: 217.2 32.6% 20.5%;
+        --ring: 224.3 76.3% 48%;
+        --particles-color: 255,255,255;
+
+        --math:#a8c6e3;
+        --biology:#64db62;
+        --geology:#e2bba5;
+        --physics:#ffaaa2;
+        --chemistry:#ff99ff;
+        --technology:#f2ba48;
+        --coding:#e9aaff;
+        --scientists:#16dac0;
+
+        --math-con:#004193;
+        --biology-con:#005100;
+        --geology-con:#6E3400;
+        --physics-con:#950000;
+        --chemistry-con:#820083;
+        --technology-con:#623B00;
+        --coding-con:#5a12b0;
+        --scientists-con:#004f3e;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-[hsl(var(--border))];
+    }
+    body {
+        @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
+    }
+}
+
+.science-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233b82f6' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+}
+
+:is(.dark .science-pattern) {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234b92fd' fill-opacity='0.01'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+}
+
+.tscience-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233b82f6' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+}
+
+.science-gradient {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.dark .science-gradient {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* Card hover effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Article styles */
+.prose {
+    max-width: 65ch;
+    color: var(--foreground);
+}
+
+.prose p {
+    margin-bottom: 1.25em;
+    line-height: 1.7;
+}
+
+.prose h2 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-weight: 700;
+}
+
+.prose figure {
+    margin: 2em 0;
+}
+
+.prose img {
+    border-radius: var(--radius);
+    transition: transform 0.3s ease, opacity 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.prose img:hover {
+    opacity: 0.95;
+    transform: scale(1.01);
+}
+
+.prose blockquote {
+    font-style: italic;
+    border-left: 4px solid hsl(var(--primary));
+    padding-left: 1.5rem;
+    margin: 1.5em 0;
+    color: hsl(var(--muted-foreground));
+    background-color: hsl(var(--muted) / 0.3);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+}
+
+.prose blockquote cite {
+    display: block;
+    margin-top: 0.75em;
+    font-size: 0.875em;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.prose ul,
+.prose ol {
+    margin: 1.25em 0;
+    padding-left: 1.625em;
+}
+
+.prose li {
+    margin-bottom: 0.5em;
+}
+
+.prose a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+}
+
+.prose a:hover {
+    text-decoration: none;
+    color: hsl(var(--primary) / 0.8);
+}
+
+.lead {
+    font-size: 1.125em;
+    font-weight: 500;
+    color: hsl(var(--foreground));
+}
+
+/* Animation utilities */
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Smooth transitions */
+a,
+button {
+    transition: all 0.2s ease;
+}
+
+/* Image lightbox zoom effect */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.zoom-in {
+    animation: zoomIn 0.3s forwards;
+}
+
+.gradient-math { background: linear-gradient(135deg, hsl(210, 50%, 88%), hsl(var(--background))); }
+.gradient-biology { background: linear-gradient(135deg, hsl(120, 50%, 88%), hsl(var(--background))); }
+.gradient-geology { background: linear-gradient(135deg, hsl(30, 50%, 88%), hsl(var(--background))); }
+.gradient-physics { background: linear-gradient(135deg, hsl(0, 50%, 88%), hsl(var(--background))); }
+.gradient-chemistry { background: linear-gradient(135deg, hsl(300, 50%, 88%), hsl(var(--background))); }
+.gradient-technology { background: linear-gradient(135deg, hsl(40, 50%, 88%), hsl(var(--background))); }
+.gradient-coding { background: linear-gradient(135deg, hsl(270, 50%, 88%), hsl(var(--background))); }
+.gradient-scientists { background: linear-gradient(135deg, hsl(180, 50%, 88%), hsl(var(--background))); }
+
+:is(.dark .gradient-math) { background: linear-gradient(135deg, hsl(210, 50%, 20%), hsl(var(--background))); }
+:is(.dark .gradient-biology) { background: linear-gradient(135deg, hsl(120, 50%, 20%), hsl(var(--background))); }
+:is(.dark .gradient-geology) { background: linear-gradient(135deg, hsl(30, 50%, 20%), hsl(var(--background))); }
+:is(.dark .gradient-physics) { background: linear-gradient(135deg, hsl(0, 50%, 20%), hsl(var(--background))); }
+:is(.dark .gradient-chemistry) { background: linear-gradient(135deg, hsl(300, 50%, 20%), hsl(var(--background))); }
+:is(.dark .gradient-technology) { background: linear-gradient(135deg, hsl(40, 50%, 20%), hsl(var(--background))); }
+:is(.dark .gradient-coding) { background: linear-gradient(135deg, hsl(270, 50%, 20%), hsl(var(--background))); }
+:is(.dark .gradient-scientists) { background: linear-gradient(135deg, hsl(180, 50%, 20%), hsl(var(--background))); }
+
+/* Custom colors for science categories */
+
+.color-math{color:#004193;}
+.color-biology{color:#005100;}
+.color-geology{color:#6E3400;}
+.color-physics{color:#950000;}
+.color-chemistry{color:#820083;}
+.color-technology{color:#623B00;}
+.color-coding{color:#5a12b0;}
+.color-scientists{color:#004f3e;}
+
+:is(.dark .color-math) {color:#a8c6e3;}
+:is(.dark .color-biology) {color:#64db62;}
+:is(.dark .color-geology) {color:#e2bba5;}
+:is(.dark .color-physics) {color:#ffaaa2;}
+:is(.dark .color-chemistry) {color:#ff99ff;}
+:is(.dark .color-technology) {color:#f2ba48;}
+:is(.dark .color-coding) {color:#e9aaff;}
+:is(.dark .color-scientists) {color:#16dac0;}
+
+.hover-color-math:hover{color:#004193;}
+.hover-color-biology:hover{color:#005100;}
+.hover-color-geology:hover{color:#6E3400;}
+.hover-color-physics:hover{color:#950000;}
+.hover-color-chemistry:hover{color:#820083;}
+.hover-color-technology:hover{color:#623B00;}
+.hover-color-coding:hover{color:#5a12b0;}
+.hover-color-scientists:hover{color:#004f3e;}
+
+:is(.dark .hover-color-math):hover {color:#a8c6e3;}
+:is(.dark .hover-color-biology):hover {color:#64db62;}
+:is(.dark .hover-color-geology):hover {color:#e2bba5;}
+:is(.dark .hover-color-physics):hover {color:#ffaaa2;}
+:is(.dark .hover-color-chemistry):hover {color:#ff99ff;}
+:is(.dark .hover-color-technology):hover {color:#f2ba48;}
+:is(.dark .hover-color-coding):hover {color:#e9aaff;}
+:is(.dark .hover-color-scientists):hover {color:#16dac0;}
+
+.color-con-math {color:#a8c6e3;}
+.color-con-biology {color:#64db62;}
+.color-con-geology {color:#e2bba5;}
+.color-con-physics {color:#ffaaa2;}
+.color-con-chemistry {color:#ff99ff;}
+.color-con-technology {color:#f2ba48;}
+.color-con-coding {color:#e9aaff;}
+.color-con-scientists {color:#16dac0;}
+
+:is(.dark .color-con-math) {color:#004193;}
+:is(.dark .color-con-biology) {color:#005100;}
+:is(.dark .color-con-geology) {color:#6E3400;}
+:is(.dark .color-con-physics) {color:#950000;}
+:is(.dark .color-con-chemistry) {color:#820083;}
+:is(.dark .color-con-technology) {color:#623B00;}
+:is(.dark .color-con-coding) {color:#5a12b0;}
+:is(.dark .color-con-scientists) {color:#004f3e;}
+
+.bg-color-math{background-color:#004193;}
+.bg-color-biology{background-color:#005100;}
+.bg-color-geology{background-color:#6E3400;}
+.bg-color-physics{background-color:#950000;}
+.bg-color-chemistry{background-color:#820083;}
+.bg-color-technology{background-color:#623B00;}
+.bg-color-coding{background-color:#5a12b0;}
+.bg-color-scientists{background-color:#004f3e;}
+
+:is(.dark .bg-color-math) {background-color:#a8c6e3;}
+:is(.dark .bg-color-biology) {background-color:#64db62;}
+:is(.dark .bg-color-geology) {background-color:#e2bba5;}
+:is(.dark .bg-color-physics) {background-color:#ffaaa2;}
+:is(.dark .bg-color-chemistry) {background-color:#ff99ff;}
+:is(.dark .bg-color-technology) {background-color:#f2ba48;}
+:is(.dark .bg-color-coding) {background-color:#e9aaff;}
+:is(.dark .bg-color-scientists) {background-color:#16dac0;}

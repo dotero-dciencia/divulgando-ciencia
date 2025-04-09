@@ -1,0 +1,142 @@
+---
+import ShareMenu from "../ui/ShareMenu.astro"
+---
+
+<div id="image-lightbox" class="fixed inset-0 z-50 flex items-center justify-center bg-[#000]/70 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="relative max-w-4xl max-h-[90vh] mx-4">
+        <div class="flex items-center"> 
+            <ShareMenu id="lightbox-share-menu" className="text-foreground -top-10" display="icon" menuDisplay="icon" buttonIconClass="h-6 w-6" menuStyle="top:-0.75rem; right:-255px; border-radius:50px; height:2.25rem"/>
+            <button id="lightbox-close" class="absolute -top-10 right-0 text-principal-white hover:text-primary transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                <span class="sr-only">Close</span>
+            </button>
+        </div>
+        <img id="lightbox-image" src="/placeholder.svg" alt="" class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl transform scale-95 transition-transform duration-300">
+        <div class="mt-4 text-center">
+            <p id="lightbox-caption" class="text-principal-white text-sm"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const lightbox = document.getElementById('image-lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+        
+        if (!lightbox || !lightboxImage || !lightboxCaption || !lightboxClose) return;
+
+        // Function to open the lightbox
+        function openLightbox(imgSrc, imgAlt, imgId) {
+            lightboxImage.src = imgSrc;
+            lightboxImage.alt = imgAlt;
+            lightboxCaption.textContent = imgAlt;
+            
+            // Update URL hash
+            window.location.hash = `image-${imgId}`;
+            
+            // Show lightbox
+            lightbox.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                lightboxImage.classList.remove('scale-95');
+            }, 10);
+            
+            // Prevent body scrolling
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Function to close the lightbox
+        function closeLightbox() {
+            lightboxImage.classList.add('scale-95');
+            lightbox.classList.add('opacity-0');
+            
+            // Allow a little time for the animation to complete
+            setTimeout(() => {
+                lightbox.classList.add('pointer-events-none');
+                // Remove hash from URL without page jump
+                history.pushState('', document.title, window.location.pathname + window.location.search);
+            }, 300);
+            
+            // Re-enable body scrolling
+            document.body.style.overflow = '';
+        }
+        
+        // Add click event to all article images
+        const articleImages = document.querySelectorAll('.prose img');
+        articleImages.forEach((img, index) => {
+            // Add a unique ID to each image
+            const imgId = `article-img-${index}`;
+            img.setAttribute('data-img-id', imgId);
+            
+            // Make images look clickable
+            img.classList.add('cursor-pointer', 'hover:opacity-90', 'transition-opacity');
+            
+            // Add click event
+            img.addEventListener('click', (e) => {
+                e.preventDefault();
+                const imgSrc = img.getAttribute('src');
+                const imgAlt = img.getAttribute('alt') || 'Article image';
+                openLightbox(imgSrc, imgAlt, imgId);
+            });
+        });
+        
+        // Handle featured image
+        const featuredImage = document.querySelector('[data-img-id="featured-image"]');
+        if (featuredImage) {
+            featuredImage.classList.add('cursor-pointer', 'hover:opacity-90', 'transition-opacity');
+            featuredImage.addEventListener('click', (e) => {
+                e.preventDefault();
+                const imgSrc = featuredImage.getAttribute('src');
+                const imgAlt = featuredImage.getAttribute('alt') || 'Featured image';
+                openLightbox(imgSrc, imgAlt, 'featured-image');
+            });
+        }
+        
+        // Close lightbox when clicking the close button
+        lightboxClose.addEventListener('click', closeLightbox);
+        
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+        
+        // Close lightbox when pressing Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !lightbox.classList.contains('pointer-events-none')) {
+                closeLightbox();
+            }
+        });
+        
+        // Check if URL has an image hash on page load
+        window.addEventListener('load', () => {
+            if (window.location.hash && window.location.hash.startsWith('#image-')) {
+                const imgId = window.location.hash.substring(7); // Remove '#image-'
+                
+                if (imgId === 'featured-image' && featuredImage) {
+                    // Handle featured image
+                    const imgSrc = featuredImage.getAttribute('src');
+                    const imgAlt = featuredImage.getAttribute('alt') || 'Featured image';
+                    openLightbox(imgSrc, imgAlt, 'featured-image');
+                    featuredImage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    // Handle article images
+                    const targetImage = document.querySelector(`[data-img-id="${imgId}"]`);
+                    if (targetImage) {
+                        // Small delay to ensure everything is loaded
+                        setTimeout(() => {
+                            const imgSrc = targetImage.getAttribute('src');
+                            const imgAlt = targetImage.getAttribute('alt') || 'Article image';
+                            openLightbox(imgSrc, imgAlt, imgId);
+                            
+                            // Scroll to the image location
+                            targetImage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 300);
+                    }
+                }
+            }
+        });
+    });
+</script>
