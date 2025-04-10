@@ -34,7 +34,7 @@ if (hasMultipleAuthors) {article.authors?.map(async(a) => {authors.push([(await 
 const scienceData = ScienceList.filter(({id}) => page.slug.split('/')[1] == id)[0]
 ---
 
-<MainLayout title={article.title} description={article.description} image={'/images/content/'+page.slug.split('/')[2]+'/portada.webp'}>
+<MainLayout title={article.title} description={article.description} image={'/images/contenido/'+page.slug.split('/')[2]+'/portada.webp'}>
     <div class="relative">
         <!-- Article Header -->
         <header class="container px-4 py-8 md:py-12 relative z-10">

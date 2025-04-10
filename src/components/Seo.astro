@@ -1,4 +1,5 @@
 ---
+import { string } from "astro:schema";
 import siteData from "../data/siteData.json";
 import jsonLDGenerator from "../js/jsonLD";
 
@@ -13,7 +14,9 @@ const {
     lang
 } = Astro.props;
 
-const actualIMG = `https://og.tailgraph.com/og?fontFamily=Roboto&title=${encodeURIComponent(title)}&titleTailwind=font-bold%20text-6xl%20text-white%20rounded-full%20bg-%5B%23222%5D%2F50%20px-6%20mb-2&text=${encodeURIComponent(description)}&textTailwind=text-2xl%20text-white%20rounded-full%20bg-%5B%23222%5D%2F50%20w-fit%20px-4%20mx-auto&logoUrl=https%3A%2F%2Fdivulgandociencia.com%2Fimages%2Flogo.webp&logoTailwind=fixed%20bottom-4%20rounded-full%20right-%5B180px%5D%20h-%5B128px%5D&bgUrl=${(image !== undefined && image !== '') ? encodeURIComponent('https://www.divulgandociencia.com'+image) : encodeURIComponent('https://www.divulgandociencia.com/images/landing-page/Banner.svg')}&bgTailwind=bg-white%20bg-cover&footer=divulgandociencia.com&footerTailwind=text-2xl%20text-black%20font-bold%20text-center%20!text-%5B%23222%5D%20rounded-full%20bg-%5B%23f5f5f5%5D%2F50%20!w-fit%20!h-fit%20!right-auto%20!left-auto%20bottom-%5B46px%5D&t=1743970057262&refresh=1`
+const imgDescription = description.length > 60 ? (description.substring(0, 60).endsWith(' ') ? description.substring(0, 59) + '...' : description.substring(0, 60).split(' ').slice(0, -1).join(' ') + '...') : description;
+
+const actualIMG = `https://og.tailgraph.com/og?fontFamily=Roboto&title=${encodeURIComponent(title)}&titleTailwind=font-bold%20text-6xl%20text-white%20rounded-full%20bg-%5B%23222%5D%2F50%20px-6%20mb-2%20mx-[32px]&text=${encodeURIComponent(imgDescription.substring(0,60))}&textTailwind=text-2xl%20text-white%20rounded-full%20bg-%5B%23222%5D%2F50%20w-fit%20px-6%20mx-[32px]&logoUrl=https%3A%2F%2Fdivulgandociencia.com%2Fimages%2Flogo.webp&logoTailwind=fixed%20bottom-4%20rounded-full%20right-%5B180px%5D%20h-%5B128px%5D&bgUrl=${(image !== undefined && image !== '') ? encodeURIComponent('https://www.divulgandociencia.com'+image) : encodeURIComponent('https://www.divulgandociencia.com/images/landing-page/banner.webp')}&bgTailwind=bg-white%20bg-cover&footer=divulgandociencia.com&footerTailwind=text-2xl%20text-black%20font-bold%20text-center%20!text-%5B%23222%5D%20rounded-full%20bg-%5B%23f5f5f5%5D%2F50%20!w-fit%20!h-fit%20!right-auto%20!left-auto%20bottom-%5B46px%5D&t=1743970057262&refresh=1`
 const actualURL = "https://www.divulgandociencia.com" + (url.pathname)
 
 const jsonLD = jsonLDGenerator({
