@@ -7,6 +7,7 @@ date: 2025-02-17
 tags: 
     - Neural Networks
 ---
+import Latex from '@/components/Latex.astro'
 
 # Neural Networks  
 ## What Are They?
@@ -49,21 +50,15 @@ The ammeter is the output. It shows the **amperage** of the resulting current, w
 
 Now that we’ve labeled all the components of the perceptron, we can perform the necessary calculations. We know that to calculate ‘s’, we need to do some operations using ‘e₁’, ‘e₂’, ‘p₁’, ‘p₂’, and ‘b’, but we don’t yet know what those operations are. Fortunately, **Warren McCulloch** and **Walter Pitts** figured that out in 1940:
 
-\[
-s = \sum_{i=0}^{n} e_i \cdot p_i + b
-\]
+<Latex formula='s=\sum\limits_{i=0}^{n} e_i\ p_i\ +b'/>
 
 Okay, that might still look a bit complicated, but it’s the basis of what we’ll use. Let’s simplify it:
 
-\[
-s = e₁ \cdot p₁ + … + eₙ \cdot pₙ + b
-\]
+<Latex formula='s=e_1\times p_1+\ldots+e_n\times p_n+b'/>
 
 Now we can clearly see what’s going on. The output is the sum of the inputs multiplied by their corresponding weights, plus the bias. So our specific formula will be:
 
-\[
-s = e₁ \cdot p₁ + e₂ \cdot p₂ + b
-\]
+<Latex formula='s=e_1\times p_1+e_2\times p_2+b'/>
 
 Now we understand what’s happening inside the perceptron. With this, we can train the perceptron to solve a problem. While this knowledge isn’t strictly necessary for training, it definitely helps.
 
@@ -71,9 +66,7 @@ Let’s give our perceptron a **problem**, like: “I want the output to be posi
 
 Now let’s try a more complex machine—one with a 4x4 grid of switches so we can draw simple shapes. Based on what we know, we can write the formula as:
 
-\[
-s = e₁ \cdot p₁ + e₂ \cdot p₂ + … + e₁₆ \cdot p₁₆ + b
-\]
+<Latex formula='s=e_1\times p_1+e_2\times p_2+\ldots+e_15\times p_15+e_16\times p_16+b'/>
 
 The new problem is: “I want the output to be positive when it recognizes **pattern A** (the letter L) and negative when it sees **pattern B** (the letter C).” This is harder because with 16 weights, there are many possible combinations, and randomly changing weights won’t work like before. Luckily, there’s a quick and easy way to train the perceptron:
 
@@ -90,9 +83,7 @@ But there’s a problem. To understand it, let’s go back to the 2-input percep
 
 In a 2D plane, we can represent the inputs as 4 points: (1,1), (1,-1), (-1,1), (-1,-1), and the output as a line that separates points with a positive output from those with a negative one. That makes sense because there’s only one layer of weights. So in our previous problem, the best-trained perceptron would have the line between (-1,-1) and (0,0)—in other words, centered at (-0.5,-0.5) and diagonal to the axes. Mathematically:
 
-\[
-y = f(x) = x - 1.5
-\]
+<Latex formula='y=f(x)=x-1.5'/>
 
 Now let’s try to train the perceptron to give a positive output **only** when exactly one of the inputs is on. No matter how hard we try, we won’t be able to do it, because there’s no way to draw a line that separates just two opposite points from the others. However, it can be done—by **adding another layer** to the perceptron, which gives us two lines instead of one. This breaks our simple perceptron model, since it only allows for two layers, not three. That’s why **multi-layer perceptrons** were invented. In addition to the input and output layers, they have **hidden layers**.
 

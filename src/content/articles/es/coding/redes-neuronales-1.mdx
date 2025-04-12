@@ -7,6 +7,7 @@ date: 2025-02-17
 tags: 
     - Redes Neuronales
 ---
+import Latex from '@/components/Latex.astro'.
 
 # Redes Neuronales
 ## ¿Qué son?
@@ -49,15 +50,15 @@ El amperímetro es la salida. Marca el **amperaje** de la corriente resultante, 
 
 Ahora que tenemos identificados los distintos elementos del perceptrón podemos hacer los cálculos necesarios. Sabemos que para calcular ‘s’ hay que hacer unas operaciones con ‘e<sub>1</sub>’, ‘e<sub>2</sub>’, ‘p<sub>1</sub>’, ‘p<sub>2</sub>’ y ‘b’, pero aún no sabemos cuáles hay que hacer. Por suerte **Warren McCulloch** y **Walter Pitts** ya hicieron esos cálculos en 1940:
 
-${s=\sum\limits_{i=0}^{n} e_i\ p_i\ +b}$
+<Latex formula='s=\sum\limits_{i=0}^{n} e_i\ p_i\ +b'/>
 
 Vale, eso aún puede parecer un poco complicado para algunas personas, pero es la base de lo que vamos a usar nosotros. Para simplificarlo un poco vamos a escribirlo de otra manera:
 
-${s=e_1\times p_1+\ldots+e_n\times p_n+b}$
+<Latex formula='s=e_1\times p_1+\ldots+e_n\times p_n+b'/>
 
 Con esto ya sí que se puede ver mejor que está pasando exactamente. Podemos ver que la salida es la suma de las entradas multiplicadas por su correspondiente peso, y después se le suma el BIAS. Con lo cual ahora que sabemos que hace el calculo podemos escribir la ecuación que vamos a usar nosotros:
 
-${s=e_1\times p_1+e_2\times p_2+b}$
+<Latex formula='s=e_1\times p_1+e_2\times p_2+b'/>
 
 Ahora ya sabemos lo que está pasando en nuestro perceptrón, más o menos. Con esto podemos entrenar a nuestro perceptrón para que resuelva un problema. Aunque no hace falta este conocimiento para entrenarlo, facilita ese proceso.
 
@@ -65,7 +66,7 @@ Vamos a poner un **problema** a nuestro perceptrón, por ejemplo, “Quiero que 
 
 Ahora vamos a intentarlo con una máquina más compleja, como una de 4x4 interruptores para poder hacer algunos dibujos simples en ella. Con lo que ya sabemos podemos definir la fórmula como:
 
-${s=e_1\times p_1+e_2\times p_2+\ldots+e_15\times p_15+e_16\times p_16+b}$
+<Latex formula='s=e_1\times p_1+e_2\times p_2+\ldots+e_15\times p_15+e_16\times p_16+b'/>
 
 Ahora el problema va a ser “Quiero que muestres un resultado positivo cuando reconozcas el **patrón A** (la letra L) y uno negativo cuando reconozcas el **patrón B** (la letra C)”. Pero esta vez es más difícil, debido a que con 16 pesos hay muchas posibilidades distintas, y cambiar los pesos aleatoriamente no va a funcionar como la otra vez. Pero por suerte hay una forma fácil y rápida de entrenar al perceptrón. Esta consiste en:
 
@@ -82,7 +83,7 @@ Pero estos tienen un problema. Para verlo vamos a volver al perceptrón de 2 ent
 
 En un plano 2D podemos representar las entradas como 4 puntos del plano, (1,1) (1,-1) (-1,1) (-1,-1), y la salida como una línea que separa los puntos que dan una salida positiva con los que dan una salida negativa, esto tiene sentido porque solo hay una capa de pesos. Es decir, en nuestro problema de antes, el perceptrón mejor entrenado sería el que tenga la línea justo entre los puntos (-1,-1) y (0,0), es decir, que el centro de la línea es (-0.5,-0.5), y que además este en diagonal con respecto a los ejes del plano. Matemáticamente se representaría como:
 
-${y=f(x)=x-1.5}$
+<Latex formula='y=f(x)=x-1.5'/>
 
 Ahora vamos a intentar entrenar el perceptrón para que salga positivo cuando solo una de las entradas esté encendida. Por mucho que intentemos no vamos a poder hacerlo debido a que no hay ninguna forma de colocar esa línea del plano de una forma en la que solo identifique como positivo 2 puntos opuestos del plano. Aunque sí que se puede hacer, añadiendo otra capa al perceptrón ahora tendríamos 2 líneas en el plano. Esto rompe nuestra idea de perceptrón debido a que solo puede tener 2 capas, no 3. Por ello se inventaron los perceptrones multicapa, que aparte de la entrada y salida tienen las llamadas capas ocultas.
 
