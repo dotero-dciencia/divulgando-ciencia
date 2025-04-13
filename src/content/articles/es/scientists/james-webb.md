@@ -1,8 +1,8 @@
 ---
-title: James Webb. Abriendo las Puertas a una Nueva Era Cósmica
+title: 'James Webb: Abriendo las Puertas a una Nueva Era Cósmica'
 author: sebastian
 altImage: Ilustración del Telescopio Espacial James Webb
-description: James Webb. Abriendo las Puertas a una Nueva Era Cósmica
+description: 'James Webb: Abriendo las Puertas a una Nueva Era Cósmica'
 date: 2025-04-13
 tags:
     - Biografia

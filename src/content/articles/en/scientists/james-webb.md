@@ -1,8 +1,8 @@
 ---
-title: James Webb. Opening the Doors to a New Cosmic Era
+title: 'James Webb: Opening the Doors to a New Cosmic Era'
 author: sebastian
 altImage: Illustration of the James Webb Space Telescope
-description: James Webb. Opening the Doors to a New Cosmic Era
+description: 'James Webb: Opening the Doors to a New Cosmic Era'
 date: 2025-04-13
 tags:
     - Biography
