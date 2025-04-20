@@ -23,9 +23,9 @@ const articlesData = articles.map(article => {
 ---
 
 <MainLayout title={t.titles.home}>
-    <!-- <PScript/> -->
     <HeroSection />
     <FeaturedResearch articles={articlesData.sort((a, b) => b.date.getTime() - a.date.getTime()).slice(0,3)} />
     <ArticlesSection articles={articlesData} />
     <CommunitySection />
+    <PScript/>
 </MainLayout>
