@@ -8,12 +8,13 @@ const t = clientTranslations[lang];
 
 <section class="w-full py-12 md:py-24 lg:py-32 bg-primary/5 relative overflow-hidden">
 	<div class="absolute top-0 left-0 w-full h-full">
-		<img 
-  alt="Dos chicos jóvenes mirando por microscopios." 
-  class="h-full w-full object-cover opacity-80 bg-principal-black z-10" 
-  src="/images/landing-page/portada.webp" 
-  srcset="/images/landing-page/portada-320w.webp 320w, /images/landing-page/portada-480w.webp 480w, /images/landing-page/portada-800w.webp 800w" 
-  sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px">
+		<img
+		fetchpriority="high" 
+		alt="Dos chicos jóvenes mirando por microscopios." 
+		class="h-full w-full object-cover opacity-80 bg-principal-black z-10" 
+		src="/images/landing-page/portada.webp" 
+		srcset="/images/landing-page/portada-320w.webp 320w, /images/landing-page/portada-480w.webp 480w, /images/landing-page/portada-800w.webp 800w" 
+		sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px">
 	</div>
 	<div class="container px-4 md:px-6 relative z-10">
 		<div class="flex flex-col items-center justify-center space-y-4 text-center">
