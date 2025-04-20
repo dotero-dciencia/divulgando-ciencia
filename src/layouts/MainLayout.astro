@@ -20,19 +20,24 @@ const actDescription = description === "" ? clientTranslations[Astro.locals.lang
 <!DOCTYPE html>
 <html lang={Astro.props.lang}>
     <head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>
+            {title} | Divulgando Ciencia
+        </title>
+
         <script defer src="https://api.pirsch.io/pa.js"
         id="pianjs"
         data-code="7gBFf70PSw7F7NCerGcKOV5YC1xKm51z"></script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/svg+xml" href="/images/logo.webp" />
-        <Seo title={title} description={actDescription} image={image} altIMG={altIMG} lang={Astro.props.lang} />
-        <title>{title} | Divulgando Ciencia</title>
+        
         <script define:vars={{redirect}}>
             if (redirect !== ''){
                 window.location.href = redirect;
             }
         </script>
+
         <script is:inline define:vars={{cookieTheme}}>
             const THEME_KEY = "theme";
             const DARK_CLASS = "dark";
@@ -57,6 +62,11 @@ const actDescription = description === "" ? clientTranslations[Astro.locals.lang
                 });
             }
         </script>
+
+        <link rel="icon" type="image/svg+xml" href="/images/logo.webp" />
+
+        <Seo title={title} description={actDescription} image={image} altIMG={altIMG} lang={Astro.props.lang} />
+        
     </head>
     <body class="flex min-h-screen flex-col relative">
         <Menu />
