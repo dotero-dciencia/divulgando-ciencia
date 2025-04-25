@@ -95,14 +95,14 @@ const t = clientTranslations[lang];
                 <a href="/contact" class="hover:underline underline-offset-4">{t.footer.contact}</a>
             </div>
             <div class="text-sm text-muted-foreground text-center mt-0.5">
-                © Divulgando Ciencia. <br/><a style="font-size:0.75rem" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>
+                © Divulgando Ciencia. <a style="font-size:0.75rem" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a>
             </div>
         </div>
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
+<script is:inline>
+    document.addEventListener('astro:page-load', () => {
         const menuToggle = document.getElementById('menu-toggle');
         const menu = document.getElementById('menu');
         const menuContent = document.getElementById('menu-content');

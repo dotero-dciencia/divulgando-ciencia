@@ -23,7 +23,7 @@ const t = clientTranslations[lang];
             {t.common.back}
         </Button>
     </div>
-    <script>
+    <script is:inline data-astro-rerun>
         document.getElementById('back-button').addEventListener('click', function() {
             window.history.back();
         });

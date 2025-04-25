@@ -1,5 +1,5 @@
 ---
-const { variant = 'default', size = 'default', className = '', type = 'button', id = '', dataElement='' } = Astro.props;
+const { variant = 'default', size = 'default', className = '', type = 'button', id = '', dataElement='', style='' } = Astro.props;
 
 const variantClasses = {
     default: 'bg-primary text-primary-foreground hover:bg-primary/90',
@@ -23,6 +23,6 @@ const classes = [
 ].join(' ');
 ---
 
-<button type={type} class={classes} id={id} data-element={dataElement}>
+<button type={type} class={classes} id={id} data-element={dataElement} style={style}>
     <slot />
 </button>

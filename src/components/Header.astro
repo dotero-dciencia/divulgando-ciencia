@@ -47,7 +47,7 @@ const t = clientTranslations[lang];
             />
             <input type="hidden" name="page" value="1" />
         </form>
-        <a href="/articles" class="flex h-9 w-9 items-center justify-center rounded-md border bg-background transition-colors hover:bg-muted lg:hidden">
+        <a href="/articles?page=1" class="flex h-9 w-9 items-center justify-center rounded-md border bg-background transition-colors hover:bg-muted lg:hidden">
             <Icon icon="search" className="left-2.5 top-2.5 h-4 w-4 text-foreground" />
         </a>
         <ThemeToggle />
@@ -56,8 +56,8 @@ const t = clientTranslations[lang];
             <Icon icon="menu" className="left-2.5 top-2.5 mt-0.5 h-4 w-4" />
         </button>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
+    <script is:inline>
+        document.addEventListener('astro:page-load', () => {
             const searchForm = document.getElementById('header-search-form');
             const searchInput = document.getElementById('header-search-input');
             

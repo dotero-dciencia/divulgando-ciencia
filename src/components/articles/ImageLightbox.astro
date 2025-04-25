@@ -5,7 +5,7 @@ import ShareMenu from "../ui/ShareMenu.astro"
 <div id="image-lightbox" class="fixed inset-0 z-50 flex items-center justify-center bg-[#000]/70 opacity-0 pointer-events-none transition-opacity duration-300">
     <div class="relative max-w-4xl max-h-[90vh] mx-4">
         <div class="flex items-center"> 
-            <ShareMenu id="lightbox-share-menu" className="text-foreground -top-10" display="icon" menuDisplay="icon" buttonIconClass="h-6 w-6" menuStyle="top:-0.75rem; right:-255px; border-radius:50px; height:2.25rem"/>
+            <ShareMenu id="lightbox-share-menu" className="text-foreground -top-10" display="icon" menuDisplay="icon" buttonIconClass="h-6 w-6" menuStyle="top:-0.9rem; right:-280px; border-radius:50px; height:2.25rem"/>
             <button id="lightbox-close" class="absolute -top-10 right-0 text-principal-white hover:text-primary transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
                 <span class="sr-only">Close</span>
@@ -18,8 +18,8 @@ import ShareMenu from "../ui/ShareMenu.astro"
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
+<script is:inline data-astro-rerun>
+    document.addEventListener('astro:page-load', () => {
         const lightbox = document.getElementById('image-lightbox');
         const lightboxImage = document.getElementById('lightbox-image');
         const lightboxCaption = document.getElementById('lightbox-caption');
@@ -111,32 +111,30 @@ import ShareMenu from "../ui/ShareMenu.astro"
         });
         
         // Check if URL has an image hash on page load
-        window.addEventListener('load', () => {
-            if (window.location.hash && window.location.hash.startsWith('#image-')) {
-                const imgId = window.location.hash.substring(7); // Remove '#image-'
-                
-                if (imgId === 'featured-image' && featuredImage) {
-                    // Handle featured image
-                    const imgSrc = featuredImage.getAttribute('src');
-                    const imgAlt = featuredImage.getAttribute('alt') || 'Featured image';
-                    openLightbox(imgSrc, imgAlt, 'featured-image');
-                    featuredImage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                } else {
-                    // Handle article images
-                    const targetImage = document.querySelector(`[data-img-id="${imgId}"]`);
-                    if (targetImage) {
-                        // Small delay to ensure everything is loaded
-                        setTimeout(() => {
-                            const imgSrc = targetImage.getAttribute('src');
-                            const imgAlt = targetImage.getAttribute('alt') || 'Article image';
-                            openLightbox(imgSrc, imgAlt, imgId);
-                            
-                            // Scroll to the image location
-                            targetImage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                        }, 300);
-                    }
+        if (window.location.hash && window.location.hash.startsWith('#image-')) {
+            const imgId = window.location.hash.substring(7); // Remove '#image-'
+            
+            if (imgId === 'featured-image' && featuredImage) {
+                // Handle featured image
+                const imgSrc = featuredImage.getAttribute('src');
+                const imgAlt = featuredImage.getAttribute('alt') || 'Featured image';
+                openLightbox(imgSrc, imgAlt, 'featured-image');
+                featuredImage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+                // Handle article images
+                const targetImage = document.querySelector(`[data-img-id="${imgId}"]`);
+                if (targetImage) {
+                    // Small delay to ensure everything is loaded
+                    setTimeout(() => {
+                        const imgSrc = targetImage.getAttribute('src');
+                        const imgAlt = targetImage.getAttribute('alt') || 'Article image';
+                        openLightbox(imgSrc, imgAlt, imgId);
+                        
+                        // Scroll to the image location
+                        targetImage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 300);
                 }
             }
-        });
+        }
     });
 </script>

@@ -8,7 +8,7 @@ const t = clientTranslations[lang];
 
 const { title, description, author, authors, tags, science } = Astro.props;
 
-const articleList = (await getCollection('articles')).filter(({slug}) => slug.split('/')[0] === lang).sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).filter(article => { return article.slug !== Astro.props.slug});
+const articleList = (await getCollection('articles')).filter(({slug}) => slug.split('/')[0] === lang).sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).filter(article => { return article.slug.split('/')[2] !== Astro.props.slug});
 const authorList = await getCollection('authors');
 let articles = [];
 function pushIfNotIncluded (arts: (typeof articleList[0])[]) {
@@ -36,12 +36,13 @@ if (science !== undefined) { pushIfNotIncluded(articleList.filter(article => { r
     <div class="space-y-4">
         {articles.slice(0,3).map(article => (
             <div class="group">
-                <a href={`/article/${article.slug}`} class="flex gap-3">
+                <a href={`/article/${article.slug.split('/')[2]}`} class="flex gap-3">
                     <div class="h-16 w-16 rounded-md overflow-hidden flex-shrink-0">
                         <img 
                             src={'/images/contenido/'+article.slug.split('/')[2]+'/portada.webp' || "/placeholder.svg"} 
                             alt={article.data.title}
-                            class="h-full w-full object-cover transition-transform group-hover:scale-105"
+                            transition:name={"media-portrait-"+article.slug.split('/')[2]}
+                            class="h-full w-full object-cover rounded-md transition-transform group-hover:scale-105"
                         />
                     </div>
                     <div>
@@ -54,6 +55,7 @@ if (science !== undefined) { pushIfNotIncluded(articleList.filter(article => { r
                     </div>
                 </a>
             </div>
+            
         ))}
     </div>
     

@@ -9,7 +9,7 @@ import Icon from './ui/Icons.astro';
 </button>
 
 <script is:inline>
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('astro:page-load', () => {
         const handleToggleClick = () => {
             const element = document.documentElement;
             element.classList.toggle("dark");

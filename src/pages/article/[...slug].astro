@@ -11,6 +11,7 @@ import { ScienceList } from "../../components/Science"
 import { calcReadTime } from '../../components/readTime';
 import ShareMenu from '../../components/ui/ShareMenu.astro';
 import { clientTranslations } from '../../i18n';
+import { supabase } from '../../lib/supabase';
 const lang = Astro.locals.lang;
 const t = clientTranslations[lang];
 
@@ -32,6 +33,7 @@ const hasMultipleAuthors = article.authors?.length > 1;
 let authors = [];
 if (hasMultipleAuthors) {article.authors?.map(async(a) => {authors.push([(await getEntry('authors', a.id)).data, a.id])})}
 const scienceData = ScienceList.filter(({id}) => page.slug.split('/')[1] == id)[0]
+supabase.rpc('register_view', { page_slug: page.slug.split('/')[2] }).then((response)=>{});
 ---
 
 <MainLayout title={article.title} description={article.description} image={'/images/contenido/'+page.slug.split('/')[2]+'/portada.webp'}>
@@ -91,8 +93,9 @@ const scienceData = ScienceList.filter(({id}) => page.slug.split('/')[1] == id)[
                 <img 
                     src={"/images/contenido/" + page.slug.split('/')[2] + "/portada.webp" || "/placeholder.svg"}
                     alt={article.title}
-                    class="w-full h-full object-cover"
+                    class="w-full h-full object-cover rounded-xl"
                     data-img-id="featured-image"
+                    transition:name={"media-portrait-"+page.slug.split('/')[2]}
                 />
             </div>
         </div>
@@ -167,7 +170,7 @@ const scienceData = ScienceList.filter(({id}) => page.slug.split('/')[1] == id)[
                         )}
                         
                         <!-- Related Articles  -->
-                        <RelatedArticles tags={article.tags} science={scienceData} />
+                        <RelatedArticles slug={slug} tags={article.tags} science={scienceData} />
                     </div>
                 </div>
             </div>
