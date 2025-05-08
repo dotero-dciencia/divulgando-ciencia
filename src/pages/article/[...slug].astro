@@ -33,7 +33,7 @@ const hasMultipleAuthors = article.authors?.length > 1;
 let authors = [];
 if (hasMultipleAuthors) {article.authors?.map(async(a) => {authors.push([(await getEntry('authors', a.id)).data, a.id])})}
 const scienceData = ScienceList.filter(({id}) => page.slug.split('/')[1] == id)[0]
-supabase.rpc('register_view', { page_slug: page.slug.split('/')[2] }).then((response)=>{});
+if (!supabase === null) supabase.rpc('register_view', { page_slug: page.slug.split('/')[2] }).then((response)=>{});
 ---
 
 <MainLayout title={article.title} description={article.description} image={'/images/contenido/'+page.slug.split('/')[2]+'/portada.webp'}>
